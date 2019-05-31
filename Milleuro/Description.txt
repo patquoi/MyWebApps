@@ -1,0 +1,20 @@
+Vous devez assembler pièces et billets afin d'obtenir des valeurs plus élevées, le but étant d'aller le plus loin possible. Vous ne pouvez que plaquer les pièces et les billets vers un des quatre côtés ou quatre coins de la grille sachant que les alignements dans le sens du mouvement permettent de réduire le nombre de pièces et de billets : 5 remplace deux de 2 et un de 1, 10 remplace deux de 5 ou cinq de 2, 20 remplace deux de 10 et ainsi de suite.You have to assembly coins and bill notes in order to increase their values and reduce their number: the goal is staying alive. You can only move coins and bill notes against a side or a corner of the grid then you can assembly coins and bill notes: 5 replaces two of 2 and one of 1, 10 replaces two of 5 or five of 2, 20 replaces two of 10 and so on.
+
+Devi radunare soldi e banconote per ottenere valori più alti, lo scopo è mantenersi il più lontano possibile. Puoi addossare i soldi e le banconote contro un lato o un angolo per ridurre il numero, allineandoli nel senso del movimento: 5 sostituisce due di 2 e uno di 1, 10 sostituisce due di 5 o cinque di 2, 20 sostituisce due di 10, ecc.
+
+VERSION 1.2
+
+Billets de 2000 et 5000 euros ajoutés
+Lingots d'argent et d'or ajoutés (de 10000 à 100000 euros)
+Diamant ajouté (200000 euros)
+Monnaie minimale affichée sous le score et le top
+
+Bill notes added: 2000 and 5000 euro
+Gold and silver bars added: from 10000 to 100000 euro
+Diamond added: 200000 euro
+Minimal money displayed under the score and the top
+
+Banconote di 2000 e 5000 euro aggiunti
+Lingotti d'oro e d'argento aggiunti (da 10000 a 100000 euro) 
+Diamante aggiunto (2000000 euro)
+Moneta minimale mostrata sotto lo score e il top

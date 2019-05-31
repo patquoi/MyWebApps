@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>O s m o t i s s i m o T</title>
+	
+	<link rel="stylesheet" media="only screen" href="desktop.css" type="text/css">
+	<link rel="icon" type="image/png" href="png/icon.png">
+	<script type="text/javascript" charset="utf-8" src="dicossimot.js"></script>
+	<script type="text/javascript" charset="utf-8" src="osmotissimot.js"></script>
+    <script type="text/javascript" charset="utf-8">	
+    	function onBodyLoad() {
+    		chargeJeu();
+    		bienvenue();
+        } 
+    </script>
+  </head>
+  <body onload="onBodyLoad()" bgcolor="#000000" text="#FFFFFF" link="#00FFFF" alink="#FF00FF" vlink="#FFFF00">
+   <center>
+    <div id="container">
+     <table border="0" cellpadding="0" cellspacing="0" id="grille">
+      <tr>
+       <td><img alt="4327" height=18 width=11 id="gn1" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="l1" onclick="clic(91)" src="png/Wg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dn1" src="png/cdng.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gnA" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lAA" src="png/Ag.png" onclick="clic(0)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnA" src="png/cdng.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gn2" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="l2" onclick="clic(92)" src="png/Xg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dn2" src="png/cdng.png"></td>
+      </tr>
+      <tr>
+       <td><img alt="4327" height=18 width=11 id="gs1" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="ds1" src="png/cdsg.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gnB" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lBA" src="png/Bg.png" onclick="clic(5)"></td>
+       <td><img alt="4327" height=18 width=11 id="nABA" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sAAB" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lAB" src="png/Bg.png" onclick="clic(1)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnB" src="png/cdng.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gs2" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="ds2" src="png/cdsg.png"></td>
+      </tr>
+      <tr>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gnC" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCA" src="png/Cg.png" onclick="clic(11)"></td>
+       <td><img alt="4327" height=18 width=11 id="nBCA" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sBAB" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lBB" src="png/Cg.png" onclick="clic(6)"></td>
+       <td><img alt="4327" height=18 width=11 id="nABB" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sABC" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lAC" src="png/Cg.png" onclick="clic(2)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnC" src="png/cdng.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"  height=3321></td>
+      </tr>
+      <tr>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gnD" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDA" src="png/Dg.png" onclick="clic(18)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDA" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sCAB" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCB" src="png/Dg.png" onclick="clic(12)"></td>
+       <td><img alt="4327" height=18 width=11 id="nBCB" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sBBC" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lBC" src="png/Dg.png" onclick="clic(7)"></td>
+       <td><img alt="4327" height=18 width=11 id="nABC" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sACD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lAD" src="png/Dg.png" onclick="clic(3)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnD" src="png/cdng.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+      </tr>
+      <tr>
+       <td><img alt="4327" height=18 width=11 id="gnE" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEA" src="png/Eg.png" onclick="clic(26)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEA" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDAB" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDB" src="png/Eg.png" onclick="clic(19)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDB" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sCBC" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCC" src="png/Eg.png" onclick="clic(13)"></td>
+       <td><img alt="4327" height=18 width=11 id="nBCC" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sBCD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lBD" src="png/Eg.png" onclick="clic(8)"></td>
+       <td><img alt="4327" height=18 width=11 id="nABD" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sADE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lAE" src="png/Eg.png" onclick="clic(4)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnE" src="png/cdng.png"></td>
+      </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 id="gsA" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEAB" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEB" src="png/Fg.png" onclick="clic(27)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEB" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDBC" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDC" src="png/Fg.png" onclick="clic(20)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDC" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sCCD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCD" src="png/Fg.png" onclick="clic(14)"></td>
+       <td><img alt="4327" height=18 width=11 id="nBCD" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sBDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lBE" src="png/Fg.png" onclick="clic(9)"></td>
+       <td><img alt="4327" height=18 width=11 id="nABE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsA" src="png/cdsg.png"></td>
+	  </tr>
+	  <tr>
+	   <td><img alt="4327" height=18 width=11 id="gnF" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFB" src="png/Gg.png" onclick="clic(35)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFB" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEBC" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEC" src="png/Gg.png" onclick="clic(28)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEC" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDCD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDD" src="png/Gg.png" onclick="clic(21)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDD" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sCDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCE" src="png/Gg.png" onclick="clic(15)"></td>
+       <td><img alt="4327" height=18 width=11 id="nBCE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sBEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lBF" src="png/Gg.png" onclick="clic(10)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnF" src="png/cdng.png"></td>
+ 	  </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 id="gsB" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFBC" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFC" src="png/Hg.png" onclick="clic(36)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFC" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sECD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lED" src="png/Hg.png" onclick="clic(29)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDED" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDE" src="png/Hg.png" onclick="clic(22)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sCEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCF" src="png/Hg.png" onclick="clic(16)"></td>
+       <td><img alt="4327" height=18 width=11 id="nBCF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsB" src="png/cdsg.png"></td>
+	  </tr>
+	  <tr>
+	   <td><img alt="4327" height=18 width=11 id="gnG" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGC" src="png/Ig.png" onclick="clic(43)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGC" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFCD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFD" src="png/Ig.png" onclick="clic(37)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFD" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEE" src="png/Ig.png" onclick="clic(30)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDF" src="png/Ig.png" onclick="clic(23)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sCFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lCG" src="png/Ig.png" onclick="clic(17)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnG" src="png/cdng.png"></td>
+ 	  </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 id="gsC" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sGCD" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGD" src="png/Jg.png" onclick="clic(44)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGD" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFE" src="png/Jg.png" onclick="clic(38)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEF" src="png/Jg.png" onclick="clic(31)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDG" src="png/Jg.png" onclick="clic(24)"></td>
+       <td><img alt="4327" height=18 width=11 id="nCDG" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsC" src="png/cdsg.png"></td>
+	  </tr>
+	  <tr>
+	   <td><img alt="4327" height=18 width=11 id="gnH" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lHD" src="png/Kg.png" onclick="clic(50)"></td>
+       <td><img alt="4327" height=18 width=11 id="nGHD" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sGDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGE" src="png/Kg.png" onclick="clic(45)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFF" src="png/Kg.png" onclick="clic(39)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEG" src="png/Kg.png" onclick="clic(32)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEG" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sDGH" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lDH" src="png/Kg.png" onclick="clic(25)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnH" src="png/cdng.png"></td>
+ 	  </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 id="gsD" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sHDE" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lHE" src="png/Lg.png" onclick="clic(51)"></td>
+       <td><img alt="4327" height=18 width=11 id="nGHE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sGEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGF" src="png/Lg.png" onclick="clic(46)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFG" src="png/Lg.png" onclick="clic(40)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFG" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEGH" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEH" src="png/Lg.png" onclick="clic(33)"></td>
+       <td><img alt="4327" height=18 width=11 id="nDEH" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsD" src="png/cdsg.png"></td>
+	  </tr>
+	  <tr>
+	   <td><img alt="4327" height=18 width=11 id="gnI" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lIE" src="png/Mg.png" onclick="clic(56)"></td>
+       <td><img alt="4327" height=18 width=11 id="nHIE" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sHEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lHF" src="png/Mg.png" onclick="clic(52)"></td>
+       <td><img alt="4327" height=18 width=11 id="nGHF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sGFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGG" src="png/Mg.png" onclick="clic(47)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGG" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFGH" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFH" src="png/Mg.png" onclick="clic(41)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFH" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sEHI" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lEI" src="png/Mg.png" onclick="clic(34)"></td>
+       <td><img alt="4327" height=18 width=11 id="dnI" src="png/cdng.png"></td>
+ 	  </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 id="gsE" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sIEF" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lIF" src="png/Ng.png" onclick="clic(57)"></td>
+       <td><img alt="4327" height=18 width=11 id="nHIF" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sHFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lHG" src="png/Ng.png" onclick="clic(53)"></td>
+       <td><img alt="4327" height=18 width=11 id="nGHG" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sGGH" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGH" src="png/Ng.png" onclick="clic(48)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGH" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sFHI" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lFI" src="png/Ng.png" onclick="clic(42)"></td>
+       <td><img alt="4327" height=18 width=11 id="nEFI" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsE" src="png/cdsg.png"></td>
+      </tr>
+	  <tr>
+	   <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gsF" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sIFG" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lIG" src="png/Og.png" onclick="clic(58)"></td>
+       <td><img alt="4327" height=18 width=11 id="nHIG" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sHGH" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lHH" src="png/Og.png" onclick="clic(54)"></td>
+       <td><img alt="4327" height=18 width=11 id="nGHH" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sGHI" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lGI" src="png/Og.png" onclick="clic(49)"></td>
+       <td><img alt="4327" height=18 width=11 id="nFGI" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsF" src="png/cdsg.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+ 	  </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gsG" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sIGH" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lIH" src="png/Pg.png" onclick="clic(59)"></td>
+       <td><img alt="4327" height=18 width=11 id="nHIH" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sHHI" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lHI" src="png/Pg.png" onclick="clic(55)"></td>
+       <td><img alt="4327" height=18 width=11 id="nGHI" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsG" src="png/cdsg.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+	  </tr>
+	  <tr>
+	   <td><img alt="4327" height=18 width=11 id="gn3" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="l3" onclick="clic(93)" src="png/Yg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dn3" src="png/cdng.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gsH" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="sIHI" src="png/csgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="lII" src="png/Qg.png" onclick="clic(60)"></td>
+       <td><img alt="4327" height=18 width=11 id="nHII" src="png/cngsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsH" src="png/cdsg.png"></td><td rowspan=2><img alt="8654" height=36 width=22 src="png/h0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gn4" src="png/cgng.png"></td><td rowspan=2><img alt="8654" height=36 width=22 id="l4" onclick="clic(94)" src="png/Zg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dn4" src="png/cdng.png"></td>
+	  </tr>
+	  <tr>
+       <td><img alt="4327" height=18 width=11 id="gs3" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="ds3" src="png/cdsg.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gsI" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="dsI" src="png/cdsg.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td>
+       <td><img alt="4327" height=18 width=11 src="png/cns0.png"></td><td><img alt="4354" height=18 width=22 src="png/hns0.png"></td>
+       <td><img alt="4327" height=18 width=11 id="gs4" src="png/cgsg.png"></td>
+       <td><img alt="4327" height=18 width=11 id="ds4" src="png/cdsg.png"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="0" cellspacing="0" id="compteurs">
+      <tr>
+       <td><img alt="4201" height=26 width=9 src="png/-.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnd0" onclick="clic(101)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnu0" onclick="clic(101)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cs0" src="png/-i.png" onclick="clic(101)"></td>
+       <td><img alt="4226" height=26 width=10 id="cdd0" onclick="clic(101)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cdu0" onclick="clic(101)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 src="png/-.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnd1" onclick="clic(102)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnu1" onclick="clic(102)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cs1" src="png/-i.png" onclick="clic(102)"></td>
+       <td><img alt="4226" height=26 width=10 id="cdd1" onclick="clic(102)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cdu1" onclick="clic(102)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 src="png/-.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnd2" onclick="clic(103)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnu2" onclick="clic(103)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cs2" src="png/-i.png" onclick="clic(103)"></td>
+       <td><img alt="4226" height=26 width=10 id="cdd2" onclick="clic(103)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cdu2" onclick="clic(103)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 src="png/-.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnd3" onclick="clic(104)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnu3" onclick="clic(104)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cs3" src="png/-i.png" onclick="clic(104)"></td>
+       <td><img alt="4226" height=26 width=10 id="cdd3" onclick="clic(104)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cdu3" onclick="clic(104)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 src="png/-.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnd4" onclick="clic(105)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cnu4" onclick="clic(105)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cs4" src="png/-i.png" onclick="clic(105)"></td>
+       <td><img alt="4226" height=26 width=10 id="cdd4" onclick="clic(105)" src="png/0i.png"></td>
+       <td><img alt="4226" height=26 width=10 id="cdu4" onclick="clic(105)" src="png/0i.png"></td>
+       <td><img alt="4201" height=26 width=9 src="png/-.png"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="0" cellspacing="0" id="mot">
+      <tr>
+       <td><img alt="4218" height=25 width=7 id="msd" onclick="clic(108)" src="png/sdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlA" onclick="clic(108)" src="png/Ag.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msAB" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlB" onclick="clic(108)" src="png/Bg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msBC" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlC" onclick="clic(108)" src="png/Cg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msCD" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlD" onclick="clic(108)" src="png/Dg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msDE" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlE" onclick="clic(108)" src="png/Eg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msEF" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlF" onclick="clic(108)" src="png/Fg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msFG" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlG" onclick="clic(108)" src="png/Gg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msGH" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlH" onclick="clic(108)" src="png/Hg.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msHI" onclick="clic(108)" src="png/sggdg.png"></td>
+       <td><img alt="4236" height=25 width=15 id="mlI" onclick="clic(108)" src="png/Ig.png"></td>
+       <td><img alt="4218" height=25 width=7 id="msf" onclick="clic(108)" src="png/sfg.png"></td>
+       <td><img alt="4241" height=25 width=17 id="mpd" onclick="clic(109)" src="png/0o.png"></td>
+       <td><img alt="4241" height=25 width=17 id="mpu" onclick="clic(109)" src="png/0o.png"></td>
+       <td><img alt="4202" height=25 width=45 id="mdc" src="png/dico-cnrtl.png" onclick="clic(99)"></td>
+       <td><a id="mld" href="http://www.cnrtl.fr/definition/" target="_blank"><img alt="4268" height=25 width=24 id="mdf" src="png/def.png"></a></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="0" cellspacing="0" id="scores">
+      <tr>
+       <td colspan=2 align=center><img alt="4258" height=18 width=24 id="btn1" onclick="clic(110)" src="png/a.png"></td>
+       <td colspan=2 align=center><img alt="4258" height=18 width=24 onclick="clic(112)" src="png/s.png"></td>
+       <td colspan=2 align=center><img alt="4258" height=18 width=24 id="btn2" onclick="clic(111)" src="png/i.png"></td>
+       <td><img alt="4290" height=18 width=50 src="png/score.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssnm" onclick="clic(113)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssnc" onclick="clic(113)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssnd" onclick="clic(113)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssnu" onclick="clic(113)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 src="png/-.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssdm" onclick="clic(114)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssdc" onclick="clic(114)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssdd" onclick="clic(114)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="ssdu" onclick="clic(114)" src="png/!o.png"></td>
+      </tr>
+      <tr>
+       <td><img alt="4262" height=18 width=26 id="grille" onclick="clic(115)" src="png/grillex.png"></td>
+       <td><img alt="4259" height=18 width=20 id="sgnd" onclick="clic(116)" src="png/0o.png"></td>
+       <td><img alt="4259" height=18 width=20 id="sgnu" onclick="clic(116)" src="png/0o.png"></td>
+       <td><img alt="4262" height=18 width=26 id="chances" onclick="clic(117)" src="png/chancesx.png"></td>
+       <td><img alt="4259" height=18 width=20 id="scnd" onclick="clic(118)" src="png/0o.png"></td>
+       <td><img alt="4259" height=18 width=20 id="scnu" onclick="clic(118)" src="png/0o.png"></td>
+       <td><img alt="4290" height=18 width=50 src="png/bonus.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbnm" onclick="clic(119)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbnc" onclick="clic(119)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbnd" onclick="clic(119)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbnu" onclick="clic(119)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 src="png/-.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbdm" onclick="clic(120)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbdc" onclick="clic(120)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbdd" onclick="clic(120)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="sbdu" onclick="clic(120)" src="png/!o.png"></td>
+      </tr>
+      <tr>
+       <td align=right><img alt="4259" height=18 width=20 id="spcm" onclick="clic(121)" src="png/0o.png"></td>
+       <td><img alt="4259" height=18 width=20 id="spdm" onclick="clic(121)" src="png/0o.png"></td>
+       <td><img alt="4259" height=18 width=20 id="spnm" onclick="clic(121)" src="png/0o.png"></td>
+       <td align=right><img alt="4259" height=18 width=20 id="spnc" onclick="clic(121)" src="png/0o.png"></td>
+       <td><img alt="4259" height=18 width=20 id="spnd" onclick="clic(121)" src="png/0o.png"></td>
+       <td><img alt="4259" height=18 width=20 id="spnu" onclick="clic(121)" src="png/0o.png"></td>
+       <td><img alt="4290" height=18 width=50 src="png/total.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stnm" onclick="clic(122)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stnc" onclick="clic(122)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stnd" onclick="clic(122)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stnu" onclick="clic(122)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 src="png/-.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stdm" onclick="clic(123)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stdc" onclick="clic(123)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stdd" onclick="clic(123)" src="png/0o.png"></td>
+       <td><img alt="4234" height=18 width=14 id="stdu" onclick="clic(123)" src="png/!o.png"></td>
+      </tr>
+     </table>
+    </div>
+    <FONT SIZE=1><A HREF="http://patquoi.fr/OsmotissimoT.html" target="_blank">Aide en ligne</A> - <A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="http://appstore.com/osmotissimot" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.OsmotissimoT" target="_blank">Play Store</A> - <A HREF="http://patquoi.fr/Osmotissimax.html" target="_blank">Osmotissimax</A> - <A HREF="http://patquoi.fr/Osmotik.html" target="_blank">Osmotik</A></center>
+  </body>
+</html>

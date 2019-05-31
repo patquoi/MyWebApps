@@ -1,0 +1,81 @@
+/*
+ 
+ File: desktop.css
+ 
+ Abstract: CSS properties for the Osmotik game
+ 
+ Version: <1.0>
+ 
+ Copyright (C) 2011 Patrice Fouquet. All Rights Reserved.
+*/
+
+body
+{
+ border: 0; 
+ text-align: center;
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+img 
+{ 
+ border: 0; 
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+ border-spacing: 0px;
+ border-collapse: collapse;
+ vertical-align: bottom
+}
+
+tbody
+{
+ border: 0; 
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+ border-spacing: 0px;
+ border-collapse: collapse;
+ vertical-align: bottom;
+}
+
+table
+{
+ border: 0; 
+ border-width: 0 0 0 0;
+ margin: 0 auto;
+ padding: 0;
+ border-spacing: 0px;
+ border-collapse: collapse;
+ vertical-align: bottom;
+}
+
+#container
+{
+ border: 0; 
+ width: 1024px;
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+.format
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+#content, #sidebar 
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+#footer
+{
+ display: none;
+}
+

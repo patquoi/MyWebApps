@@ -1,0 +1,4 @@
+Ajout d'un bouton "Top" qui permet de donner les autres cas de choix d'initiales permettant de découvrir les plus longs mots dans le Fil Rouge. 
+Le résultat de la recherche sur le dernier point de départ joué est accessible quand le bouton est rouge.
+Il est possible de désactiver la recherche des tops en touchant le bouton quand il est bleu : il devient gris.
+Toucher le bouton quand il est gris, réactive la recherche des tops.

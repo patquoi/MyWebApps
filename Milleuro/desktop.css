@@ -1,0 +1,63 @@
+/*
+ 
+ Fichier : desktop.css
+ 
+ Rôle : Propriétés CSS pour Centeuro
+ 
+ Version : <1.0>
+ 
+ Copyright (C) 2014 Patrice Fouquet. Tous droits réservés.
+
+*/
+
+td 
+{
+  text-align: center;
+  vertical-align: middle;
+}
+
+body
+{
+ text-align:center;
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+img 
+{ 
+ margin: 0;
+ padding: 0;
+ vertical-align: bottom
+}
+
+#container
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+.format
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+#content, #sidebar 
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+#footer
+{
+ display: none;
+}
+
+.abs
+{position: absolute}
+
+

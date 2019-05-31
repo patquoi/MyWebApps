@@ -1,0 +1,4 @@
+Contenu de la version 2.2-------------------------1. Affichage de la plus petite monnaie présente à droite de la plus grosse monnaie présente.
+2. Si la monnaie minimale disparaît de la grille la monnaie supérieure devient la monnaie minimale sauf pour 1 et 2 où il faut faire disparaître 1 et 2 pour faire apparaître au minimum des 5 par la suite (idem pour 10 et 20, 100 et 200, etc.).
+3. Réduction du déroulement du tutoriel (3/5).
+

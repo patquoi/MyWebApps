@@ -1,0 +1,1 @@
+ 1. Faire une fonction qui lance un match en automatique... 2. Faire les groupes et lancer les matches en automatique. 3. Afficher les classements après tous les matches de poules (1 point par match gagné, scores de partie et de manches). 

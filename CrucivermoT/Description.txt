@@ -1,0 +1,12 @@
+CrucivermoT est un jeu qui se joue seul ou à deux joueurs.
+
+Vous jouez les verbicrucistes en composant une grille de mots-croisés.
+Le but est de poser une lettre chacun son tour dans la grille afin qu'il soit possible de placer horizontalement ou verticalement le plus de mots possibles. Chaque joueur choisit la case où l'on pose une lettre à tour de rôle. La partie s'arrête quand toute la grille est remplie.
+
+Après la pose d'une lettre, on compte le nombre de mots possibles horizontalement et verticalement. Le compte total est le minimum de ces deux comptes. Le joueur ayant le meilleur compte total emporte un point. En cas d'égalité, c'est le joueur ayant le meilleur compte horizontal ou vertical qui emporte le point. Si le choix de la lettre est un des tops, un point de bonus est accordé.
+
+Si vous ne pouvez pas poser une lettre qui permette de placer au moins un mot horizontalement ou verticalement, une case noire est posée. Celle-ci peut entraîner un bonus/malus de -12 à +4 points selon la possibilité de placer des mots dans les nouvelles zones créées par la pose de la case noire.
+
+En mode solitaire, vous devez remplir la grille avec le plus de lettres possibles.
+La partie s'arrête dès qu'une zone ne permet pas la pose de mots.
+Si la grille est remplie, le score de la partie est doublé !

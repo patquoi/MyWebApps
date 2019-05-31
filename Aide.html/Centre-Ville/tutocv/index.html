@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>Bienvenue dans le tutoriel de Centre-Ville</TITLE>
+  <META Name="description" Content="Tutoriel de Centre-Ville, logiciel de simulation de circulation urbaine">
+  <META Name="keywords" Content="tutoriel, centre-ville, centre, ville, simulation, circulation, urbaine, GPL, GNU, sources, windows">
+ </HEAD>
+<BODY BGCOLOR="#000000" TEXT="#FFFFF" LINK="#00FFFF" VLINK="#A0A0FF">
+
+<A NAME="tdm"></A><H1>Tutoriel sur Centre-Ville, la simulation de circulation urbaine</H1>
+<A HREF="#rpdcv">Rapide présentation de Centre-Ville</A><BR><BR>
+<A HREF="#ldcv">Lancement de Centre-Ville</A><BR><BR>
+<A HREF="#cdunr">Création d'un nouveau réseau</A><BR><BR>
+<A HREF="#tdvdc">Tracé des voies de circulation</A><BR><BR>
+<A HREF="#pdelps">Pose des étapes : les parkings souterrains</A><BR><BR>
+<A HREF="#ddp">Définition des priorités</A>
+<UL>
+<LI><A HREF="#tdp">Types de priorités</A>
+<LI><A HREF="#odcp">Outils de carrefours prédéfinis</A>
+<LI><A HREF="#dmducaf">Définition manuelle d'un carrefour avec feux</A>
+</UL>
+<A HREF="#cdurdb">Création d'un réseau de bus</A>
+<UL>
+<LI><A HREF="#aeldb">Arrêts et lignes de bus</A>
+<LI><A HREF="#cdb">Couloirs de bus</A>
+</UL>
+<A HREF="#cdp">Circulation des piétons</A><BR><BR>
+<A HREF="#rdt">Création d'un réseau de trams</A>
+<UL>
+<LI><A HREF="#vdt">Voies de trams</A>
+<LI><A HREF="#tdvdt">Tracé des voies de trams</A>
+<LI><A HREF="#adt">Arrêts de trams</A>
+<LI><A HREF="#ldt">Lignes de trams</A>
+</UL>
+<A HREF="#pefdt">Places et files de taxis</A>*<BR><BR>
+<A HREF="#dtapei">Décoration (trottoirs, arbres, pelouse et immeubles)</A>*<BR><BR>
+<A HREF="#ndt">Notion de tore</A><BR><BR>
+<A HREF="#mepdfdp">Mise en place de feux de piétons</A>*<BR><BR>
+
+(*) Les fichiers de simulation exemples sont fournis à la fin des sections <A HREF="#pefdt">Places et files de taxis</A>, <A HREF="#dtapei">Décoration (trottoirs, arbres, pelouse et immeubles)</A>, <A HREF="#mepdfdp">Mise en place de feux de piétons</A> et correspondent au stade de la conception de ces sections.<BR><BR>
+
+<HR><A NAME="rpdcv"></A><H1>Rapide présentation de Centre-Ville</H1>
+
+<I>Centre-Ville</I> est une simulation de circulation urbaine.<BR>
+Il permet, à travers un réseau que vous définissez, d'y faire circuler des éléments en mouvement comme des véhicules, des piétons.<BR>
+Le réseau est formé de voies de circulation comme des routes pour les véhicules, des trottoirs pour les piétons et des voies ferrées pour les trams.<BR>
+Les véhicules peuvent être des voitures, des véhicules d'urgence (police, ambulance), des taxis, des bus et des trams.<BR>
+Ces trois derniers types de véhicules ont la particularité de prendre et de déposer des piétons au cours de la simulation.<BR>
+Les bus et les trams nécessitent la création d'un réseau de lignes passant par des arrêts définis sur leurs voies de passage.
+
+<HR><A NAME="ldcv"></A><H1>Lancement de Centre-Ville</H1>
+
+Si vous avez installé <I>Centre-Ville</I> grâce à l'archive d'installation, vous pouvez le lancer depuis le menu <I>Démarrer</I>...<BR><BR>
+<IMG SRC="demarrer.jpg" HEIGHT=86 WIDTH=742 ALT="Centre-Ville par le menu Démarrer"><BR><BR>
+
+Au lancement, vous obtenez une fenêtre comme ceci&nbsp;:<BR><BR>
+<IMG SRC="lancement.jpg" HEIGHT=305 WIDTH=407 ALT="Fenêtre principale au lancement de Centre-Ville"><BR><BR>
+
+<HR><A NAME="cdunr"></A><H1>Création d'un nouveau réseau</H1>
+
+Pour créer un nouveau réseau, appuyez sur la touche <B>[F4]</B> ou choisissez la rubrique <I>Fichier | Nouveau</I>.<BR>
+Cette fenêtre apparaît&nbsp;:<BR><BR>
+<IMG SRC="dimensions.jpg" HEIGHT=153 WIDTH=282 ALT="Première fenêtre de paramétrage du nouveau réseau : les dimensions"><BR><BR>
+Les paramètres affichés sont les paramètres par défaut à chaque création d'un nouveau réseau. Nous allons utiliser plutôt un carré de 64x64 pour notre réseau.<BR>
+Appuyez sur le bouton <B>[Créer]</B><BR>
+Cette fenêtre apparaît&nbsp;:<BR><BR>
+<IMG SRC="parametres.jpg" HEIGHT=525 WIDTH=286 ALT="Deuxièmes fenêtre de paramétrage du nouveau réseau : les autres paramètres"><BR><BR>
+Les paramètres affichés sont les paramètres que vous allez choisir pour créer notre exemple de réseau&nbsp;; il faut changer&nbsp;:
+<UL>
+<LI>Le nombre de véhicules (270),
+<LI>Le nombre de piétons (0) que l'on définira par la suite,
+<LI>Le nombre de tours par seconde (25).
+</UL>
+Appuyez enfin sur le bouton <B>[Vu]</B> puis enregistrez votre réseau en appuyant sur <B>[F2]</B> ou en choisissant la rubrique <I>Fichier | Enregistrer</I> puis en spécifiant le nom et le chemin.<BR>
+Afin de voir plus précisément les éléments du réseau, cliquez sur le bouton de zoom de la barre d'outils&nbsp;: <IMG SRC="zoom.jpg" HEIGHT=18 WIDTH=18 ALT="bouton de zoom">.<BR><BR>
+
+<HR><A NAME="tdvdc"></A><H1>Tracé des voies de circulation</H1>
+
+Les voies de circulation ont des sens. Si une case a au moins une <B>direction de circulation</B>, elle devient automatiquement une voie de circulation.<BR>
+Il y a quatre directions possibles&nbsp;: Haut, Bas, Gauche et Droite matérialisées par des flèches blanches lorsque l'option d'affichage <B>Directions</B> est activée (<B>[Ctrl]+[Alt]+[D]</B>).<BR>
+Une case de voie de circulation peut avoir d'une à quatre directions à la fois.<BR><BR>
+Il y a deux règles à respecter sur les directions de circulation&nbsp;:
+<UL>
+<LI>Deux cases contiguës ne peuvent pointer l'une sur l'autre&nbsp;;
+<LI>Une case doit pointer obligatoirement sur une autre case de circulation (case devant donc comporter au moins une direction).
+</UL>
+Nous allons utiliser quatre moyens de tracer des routes&nbsp;:<BR>
+<UL>
+<LI>Tracer case par case en utilisant les combinaisons de touches <B>[Ctrl]+[touche fléchée]</B> selon la direction souhaitée ou les boutons fléchés blancs de la barre d'outils&nbsp;: <IMG SRC="directions.jpg" HEIGHT=18 WIDTH=84 ALT="Boutons de directions de voie">,
+<LI>Tracer des segments de routes en faisant clic droit puis en choisissant la commande<BR><IMG SRC="segment.jpg" HEIGHT=18 WIDTH=113 ALT="Segment de route"> ou en utilisant la combinaison de touches <B>[Ctrl]+[0|à|@]</B>,
+<LI>Tracer des coins de routes (un ou deux sens) en sélectionnant une zone, en faisant clic droit et enfin en choisissant la commande<BR><IMG SRC="coins.jpg" HEIGHT=81 WIDTH=416 ALT="Commandes de coins de routes"> ou en utilisant la combinaison de touches indiquées,
+<LI>Tracer des périphériques de routes en sélectionnant une zone, en faisant clic droit et enfin en choisissant la commande<BR><IMG SRC="periphs.jpg" HEIGHT=43 WIDTH=381 ALT="Commandes de périphériques"> ou en utilisant la combinaison de touches indiquées.
+</UL>
+
+Pour notre exemple, vous allez tracer les voies suivant les indications du tableau qui suit à l'aide des outils de traçage de routes ci-dessus.<BR>
+Lorsqu'il y a plus d'une ligne et une colonne indiquées, il faut sélectionner une zone.<BR>
+Pour ce faire&nbsp;:
+<UL>
+<LI>Cliquer sur la <B>case départ</B> (les coordonnées sont affichées en bas à droite de la fenêtre principale <IMG SRC="coordonnees.jpg" HEIGHT=24 WIDTH=59 ALT="Coordonnées de la case courante">),
+<LI>Faire glisser dans la <B>direction</B> du tableau (tout en maintenant enfoncé le bouton gauche de la souris) jusqu'à voir le nombre de lignes et de colonnes du tableau s'afficher en bas à gauche dans la barre de statut.
+</UL>
+Un aperçu est montré après le tableau.<BR><BR>
+
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>Case départ</TH><TH>Direction**</TH><TH>Colonnes, Lignes</TH><TH>Type*</TH></TR>
+<TR><TD ALIGN=CENTER>(0, 0)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>64, 64</TD><TD ALIGN=CENTER>PE</TD></TR>
+<TR><TD ALIGN=CENTER>(1, 1)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>62, 62</TD><TD ALIGN=CENTER>PI</TD></TR>
+<TR><TD ALIGN=CENTER>(0, 10)</TD><TD ALIGN=CENTER>D</TD><TD ALIGN=CENTER>31, 2</TD><TD ROWSPAN=4 ALIGN=CENTER>SDR</TD></TR>
+<TR><TD ALIGN=CENTER>(12, 24)</TD><TD ALIGN=CENTER>B</TD><TD ALIGN=CENTER>2, 40</TD></TR>
+<TR><TD ALIGN=CENTER>(63, 37)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>46, 2</TD></TR>
+<TR><TD ALIGN=CENTER>(29, 0)</TD><TD ALIGN=CENTER>B</TD><TD ALIGN=CENTER>2, 53</TD></TR>
+<TR><TD ALIGN=CENTER>(37, 17)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>19, 36</TD><TD ALIGN=CENTER>PI</TD></TR>
+<TR><TD ALIGN=CENTER>(18, 45)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>29, 13</TD><TD ALIGN=CENTER>PE</TD></TR>
+<TR><TD ALIGN=CENTER>(5, 5)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>20, 26</TD><TD ALIGN=CENTER>PE</TD></TR>
+<TR><TD ALIGN=CENTER>(13, 24)</TD><TD ALIGN=CENTER>D</TD><TD ALIGN=CENTER>25, 1</TD><TD ROWSPAN=2 ALIGN=CENTER>SDR</TD></TR>
+<TR><TD ALIGN=CENTER>(12, 5)</TD><TD ALIGN=CENTER>B</TD><TD ALIGN=CENTER>1, 20</TD></TR>
+<TR><TD ALIGN=CENTER>(18, 37)</TD><TD ALIGN=CENTER>HG</TD><TD ALIGN=CENTER>19, 20</TD><TD ALIGN=CENTER>CSD</TD></TR>
+<TR><TD ALIGN=CENTER>(37, 17)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>14, 1</TD><TD ROWSPAN=6 ALIGN=CENTER>SDR</TD></TR>
+<TR><TD ALIGN=CENTER>(5, 19)</TD><TD ALIGN=CENTER>D</TD><TD ALIGN=CENTER>20, 1</TD></TR>
+<TR><TD ALIGN=CENTER>(45, 0)</TD><TD ALIGN=CENTER>B</TD><TD ALIGN=CENTER>2, 31</TD></TR>
+<TR><TD ALIGN=CENTER>(55, 29)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>10, 1</TD></TR>
+<TR><TD ALIGN=CENTER>(37, 30)</TD><TD ALIGN=CENTER>D</TD><TD ALIGN=CENTER>19, 1</TD></TR>
+<TR><TD ALIGN=CENTER>(37, 29)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>20, 1</TD></TR>
+<TR><TD ALIGN=CENTER>(63, 8)</TD><TD ALIGN=CENTER>BG</TD><TD ALIGN=CENTER>14, 16</TD><TD ROWSPAN=2 ALIGN=CENTER>CSG</TD></TR>
+<TR><TD ALIGN=CENTER>(50, 23)</TD><TD ALIGN=CENTER>BG</TD><TD ALIGN=CENTER>10, 7</TD></TR>
+<TR><TD ALIGN=CENTER>(41, 29)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>5, 1</TD><TD ALIGN=CENTER>SDR</TD></TR>
+<TR><TD ALIGN=CENTER>(29, 52)</TD><TD ALIGN=CENTER>HG</TD><TD ALIGN=CENTER>25, 23</TD><TD ALIGN=CENTER>CIG</TD></TR>
+<TR><TD ALIGN=CENTER>(30, 53)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>26, 4</TD><TD ALIGN=CENTER>PI</TD></TR>
+<TR><TD ALIGN=CENTER>(56, 63)</TD><TD ALIGN=CENTER>H</TD><TD ALIGN=CENTER>1, 27</TD><TD ALIGN=CENTER>SDR</TD></TR>
+<TR><TD ALIGN=CENTER>(56, 52)</TD><TD ALIGN=CENTER>BG</TD><TD ALIGN=CENTER>2, 2</TD><TD ALIGN=CENTER>PE</TD></TR>
+<TR><TD ALIGN=CENTER>(56, 53)</TD><TD ROWSPAN=3 ALIGN=CENTER>H</TD><TD ROWSPAN=3 ALIGN=CENTER>1, 1</TD><TD ROWSPAN=3 ALIGN=CENTER>H</TD></TR>
+<TR><TD ALIGN=CENTER>(37, 53)</TD></TR>
+<TR><TD ALIGN=CENTER>(30, 53)</TD></TR>
+<TR><TD ALIGN=CENTER>(24, 5)</TD><TD ALIGN=CENTER>BD</TD><TD ALIGN=CENTER>14, 13</TD><TD ALIGN=CENTER>CSD</TD></TR>
+<TR><TD ALIGN=CENTER>(41, 23)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>13, 1</TD><TD  ROWSPAN=6 ALIGN=CENTER>SDR</TD></TR>
+<TR><TD ALIGN=CENTER>(12, 38)</TD><TD ALIGN=CENTER>D</TD><TD ALIGN=CENTER>7, 1</TD></TR>
+<TR><TD ALIGN=CENTER>(18, 37)</TD><TD ALIGN=CENTER>B</TD><TD ALIGN=CENTER>1, 9</TD></TR>
+<TR><TD ALIGN=CENTER>(36, 29)</TD><TD ALIGN=CENTER>B</TD><TD ALIGN=CENTER>1, 25</TD></TR>
+<TR><TD ALIGN=CENTER>(29, 46)</TD><TD ALIGN=CENTER>D</TD><TD ALIGN=CENTER>28, 1</TD></TR>
+<TR><TD ALIGN=CENTER>(37, 52)</TD><TD ALIGN=CENTER>G</TD><TD ALIGN=CENTER>9, 1</TD></TR>
+</TABLE><BR>
+(*) H = <B>[Ctrl]+[Haut]</B> (équivalant à SDR pour une seule case)<BR>
+(*) PE = Clic droit | Périphérique... | Extérieur<BR>
+(*) PI = Clic droit | Périphérique... | Intérieur<BR>
+(*) CIG = Clic droit | Coins de route... | Inférieur Gauche<BR>
+(*) CID = Clic droit | Coins de route... | Inférieur Droit<BR>
+(*) CSG = Clic droit | Coins de route... | Supérieur Gauche<BR>
+(*) CSD = Clic droit | Coins de route... | Supérieur Droit<BR>
+(*) SDR = Clic droit | Segment de route.<BR>
+(**) Direction <B>Case départ</B> vers <B>Case arrivée</B> pour la sélection : H=Haut, B=Bas, G=Gauche, D=Droite.<BR><BR>
+
+<HR><A NAME="pdelps"></A><H1>Pose des étapes : les parkings souterrains</H1>
+
+Nous avons choisi de répartir les véhicules sur dix parkings souterrains...<BR><BR>
+Pour chacun de ces dix parkings souterrains, procéder comme suit&nbsp;:
+<UL>
+<LI>Cliquer sur la case aux coordonnées indiquées dans le tableau ci-dessous&nbsp;;
+<LI>Appuyer sur le bouton de parking souterrain dans la barre d'outils <IMG SRC="parking_souterrain.jpg" HEIGHT=18 WIDTH=18 ALT="Bouton parking souterrain">, un carré bleu auto-numéroté s'affiche dans la case <IMG SRC="parkings.jpg" HEIGHT=18 WIDTH=72 ALT="Parkings">.
+</UL><BR>
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>N°</TH><TH>Coordonnées</TH></TR>
+<TR><TD ALIGN=CENTER>1</TD><TD ALIGN=CENTER>(5, 5)</TD></TR>
+<TR><TD ALIGN=CENTER>2</TD><TD ALIGN=CENTER>(5, 52)</TD></TR>
+<TR><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>(37, 5)</TD></TR>
+<TR><TD ALIGN=CENTER>4</TD><TD ALIGN=CENTER>(55, 17)</TD></TR>
+<TR><TD ALIGN=CENTER>5</TD><TD ALIGN=CENTER>(37, 29)</TD></TR>
+<TR><TD ALIGN=CENTER>6</TD><TD ALIGN=CENTER>(18, 38)</TD></TR>
+<TR><TD ALIGN=CENTER>7</TD><TD ALIGN=CENTER>(37, 45)</TD></TR>
+<TR><TD ALIGN=CENTER>8</TD><TD ALIGN=CENTER>(56, 53)</TD></TR>
+<TR><TD ALIGN=CENTER>9</TD><TD ALIGN=CENTER>(18, 19)</TD></TR>
+<TR><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>(55, 38)</TD></TR>
+</TABLE><BR><BR>
+
+A ce stade de conception, le réseau est connexe c'est-à-dire qu'à tout point des voies de circulation, il est possible de se rendre à tout point de rendez-vous (parkings, arrêts, etc.) en empruntant le sens des voies.<BR>
+Cela implique que vous pouvez déjà lancer une simulation de circulation. Cliquer sur le bouton de Marche de la barre d'outils <IMG SRC="marche.jpg" HEIGHT=19 WIDTH=15 ALT="Bouton de lancement de la simulation (marche)"> ou appuyer sur <B>[Maj]+[Ctrl]+[M]</B>.<BR><BR>
+Voici l'aperçu du réseau obtenu à ce stade&nbsp;:<BR><BR>
+<IMG SRC="voies.jpg" HEIGHT=615 WIDTH=520 ALT="Aperçu du réseau à ce stade"><BR><BR>
+
+<HR><A NAME="ddp"></A><H1>Définition des priorités</H1>
+<A NAME="tdp"></A><H2>Types de priorités</H2>
+
+Centre-Ville ne gère pas les ponts et les tunnels (c'est volontaire) et donc il faut pouvoir gérer les intersections à savoir les priorités de passage.<BR>
+Il y a quatre types de priorité&nbsp;:
+<UL>
+<LI>La <B>priorité à droite</B> est la priorité par défaut&nbsp;; elle est effective lorsqu'aucun des autres types de priorité n'est défini ou lorsque les feux ne fonctionnent pas.
+<LI>Le <B>Cédez-le-passage</B> est matérialisé par un trait discontinu en travers de la voie avant le croisement&nbsp;; Il oblige à céder le passage si un véhicule a l'intention de passer sur la case devant le marquage de priorité.
+<LI>Le <B>Stop</B> est matérialisé par un trait continu en travers de la voie avant le croisement&nbsp;; Il oblige un arrêt d'un tour de simulation avant de céder le passage.
+<LI>Les <B>feux tricolores</B> sont matérialisés par des indicateurs tricolores à droite de la dernière case avant intersection&nbsp;:
+  <UL>
+  <LI>Le vert donne la priorité sur la case de l'intersection sauf par rapport aux véhicules d'urgence (police, pompiers),
+  <LI>Le feu orange suit le feu vert et précède le feu rouge. Ils interdisent le franchissement de l'intersection sauf pour les véhicules d'urgence.
+  </UL>
+</UL>
+
+Sur les carrefours, il est possible d'ajouter la contrainte d'obliger d'aller tout droit.<BR>
+Ainsi lorsqu'un véhicule arrive sur une case avec cette contrainte, elle a interdiction de changer de direction pour la prochaine destination.<BR>
+Nous allons ajouter cette contrainte sur la case (24, 24)&nbsp;:
+<UL>
+<LI>Cliquer sur la case (24, 24),
+<LI>Cliquer sur le bouton <IMG SRC="tout_droit.jpg" HEIGHT=16 WIDTH=16 Alt="Obligation d'aller tout droit">,
+<LI><B>Enregistrer</B>.
+</UL>
+Les contraintes d'aller tout droit apparaissent en bleu lorsque l'on active la visualisation des directions (<B>[Ctrl]+[Alt]+[D]</B>)&nbsp;:<BR><BR>
+<IMG SRC="visu_tout_droit.jpg" HEIGHT=50 WIDTH=48 Alt="Visualisation des contraintes d'aller tout droit"><BR>
+
+<A NAME="odcp"></A><H2>Outils de carrefours prédéfinis</H2>
+
+Des outils permettent de créer <I>clés en main</I> des carrefours.<BR>
+Pour notre réseau, nous allons créer quatorze carrefours avec feux tricolores.<BR>
+Pour ce faire&nbsp;:
+<UL>
+<LI>Sélectionner la zone d'intersection indiquée par les deux premières colonnes du tableau qui suit,
+<LI>Faire clic droit,
+<LI>Choisir l'un des trois carrefours proposés selon la colonne <B>Type</B> du tableau qui suit&nbsp;;<BR>
+En l'occurrence, il ne s'agit que de carrefours avec feux donc soit le deuxième, soit le troisième type&nbsp;:<BR><BR>
+<IMG SRC="carrefours.jpg" HEIGHT=70 WIDTH=214 ALT="Carrefours 4x4">
+</UL>
+
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>Case départ*</TH><TH>Colonnes, Lignes</TH><TH>Type**</TH><TH>Retouches</TH></TR>
+<TR><TD ALIGN=CENTER>(28, 36)</TD><TD ALIGN=CENTER>4, 4</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(35, 36)</TD><TD ALIGN=CENTER>4, 4</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(35, 44)</TD><TD ALIGN=CENTER>4, 4</TD><TD>Deuxième</TD><TD>Remettre le parking n°7 en (37, 45)</TD></TR>
+<TR><TD ALIGN=CENTER>(35, 51)</TD><TD ALIGN=CENTER>4, 3</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(28, 0)</TD><TD ALIGN=CENTER>4, 3</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(44, 0)</TD><TD ALIGN=CENTER>4, 3</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(11, 61)</TD><TD ALIGN=CENTER>4, 3</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(54, 51)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>Remettre le parking n°8 en (56, 53)</TD></TR>
+<TR><TD ALIGN=CENTER>(0, 9)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(61, 36)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
+<TR><TD ALIGN=CENTER>(29, 44)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>Rajouter la direction <I>Gauche</I> à la case (29, 45)</TD></TR>
+<TR><TD ALIGN=CENTER>(0, 17)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Troisième</TD><TD>- Supprimer la direction <I>Droite</I> des cases (0, 19), (1, 19) et (2, 19)&nbsp;;<BR>- Déplacer*** le feu (1, 20) en (1, 19).</TD></TR>
+<TR><TD ALIGN=CENTER>(28, 22)</TD><TD ALIGN=CENTER>4, 4</TD><TD>Troisième</TD><TD>Supprimer la direction <I>Gauche</I> des cases (28, 23) et (29, 23)</TD></TR>
+<TR><TD ALIGN=CENTER>(11, 28)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>- Ajouter la direction <I>Droite</I> à la case (13, 30)&nbsp;;<BR>- Supprimer la direction <I>Gauche</I> des cases (11, 29), (12, 29) et (13, 29).<BR>- Déplacer le feu (12, 28) en (12, 29).</TD></TR>
+</TABLE><BR>
+(*) Coin supérieur gauche de la sélection<BR>
+(**) Ordre de gauche à droite ou de bas en haut parmi les formes de carrefours correspondant à la sélection<BR>
+(***) Cliquer sur la case (1, 20) puis faire <IMG SRC="source_feu.jpg" ALT="commande déplacer feu (source)" HEIGHT=19 WIDTH=19> (<B>[Ctrl]+[F]</B>) puis sélectionner la case (1, 19) puis faire à nouveau <IMG SRC="cible_feu.jpg" ALT="commande déplacer feu (cible)" HEIGHT=19 WIDTH=19> (<B>[Ctrl]+[F])</B>.<BR><BR>
+
+<A NAME="dmducaf"></A><H2>Définition manuelle d'un carrefour avec feux</H2>
+
+La pose de carrefours prédéfinis ne permet pas de comprendre comment fonctionne les feux.<BR>
+Il y a deux types de comportements des feux&nbsp;:
+<UL>
+<LI>Ils peuvent être indépendants du trafic et donc ne pas réagir en fonction de la présence de véhicules avec un réglage de durées fixes, 
+<LI>Ils réagissent à la présence de véhicules, ainsi un feu peut rester rouge tant qu'aucun véhicule ne se présente à lui mais <I>demande le vert</I> dès qu'un véhicule arrive.
+</UL>
+
+La définition des feux se résume à se poser les questions suivantes pour chaque feu&nbsp;:
+<UL>
+<LI>De quelle couleur est-il au départ&nbsp;?
+<LI>Réagit-il à l'arrivée d'un véhicule&nbsp;?
+<LI>Réagit-il à la demande des autres feux qui réagissent à l'arrivée de véhicules&nbsp;?
+<LI>S'il est rouge au départ, demande-t-il le vert&nbsp;?
+<LI>S'il est vert au départ, lui demande-t-on le rouge&nbsp;?
+<LI>Quels feux doivent être au rouge pour qu'il passe au vert&nbsp;?
+<LI>Quels feux pourront passer au vert dès qu'il sera au rouge&nbsp;?
+<LI>Quelle est la durée minimale du vert et du rouge*&nbsp;?
+</UL>
+(*) La durée du feu orange est définie dans les paramètres de la simulation (<B>[Ctrl]+[Alt]+[P]</B>).<BR>
+Un paramétrage par défaut de la durée existe pour les feux vert et rouge et est utilisé lors de la définition d'un nouveau feu.<BR>
+De plus, il est possible depuis le paramétrage de la simulation d'appliquer la durée par défaut à tous les feux existants grâce au bouton <IMG SRC="btn_duree_feu.jpg" WIDTH=18 HEIGHT=17 ALT="Bouton permettant d'appliquer la même durée à tous les feux">.<BR><BR>
+Lorsqu'un carrefour a quatre feux, ils sont généralement couplés deux par deux ce qui implique que pour chaque feu la liste des feux devant être au rouge pour passer au vert est la même que la liste des feux qui peuvent passer au vert dès que c'est rouge.<BR><BR>
+Cependant, il peut arriver que les deux listes ne soient pas les mêmes dans le cas de carrefours à trois feux obligeant à n'avoir qu'un feu vert à la fois.<BR>
+C'est ce que l'on va ajouter comme carrefour à feux dans notre réseau exemple&nbsp;:<BR><BR>
+<IMG SRC="3_feux.jpg" WIDTH=98 HEIGHT=130 ALT="Carrefour aux trois feux à définir manuellement"><BR><BR> 
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>Numéro du feu</TH><TH>Case</TH><TH>Direction</TH><TH>Etat initial (1)</TH><TH>Feux devant être rouges (3)</TH><TH>Prochains feux verts (5)</TH><TH>Demande le feu vert dès...(2)</TH><TH>Passe au rouge dès...(4)</TH></TR>
+<TR><TD ALIGN=CENTER>47</TD><TD ALIGN=CENTER>(36, 24)</TD><TD ALIGN=CENTER>Est</TD><TD ALIGN=CENTER>Vert</TD><TD ALIGN=CENTER>2: 48 et 49</TD><TD ALIGN=CENTER>1: 48</TD><TD ROWSPAN=3 ALIGN=CENTER>...qu'un véhicule arrive</TD><TD ROWSPAN=3 ALIGN=CENTER>...qu'un feu le demande</TD></TR>
+<TR><TD ALIGN=CENTER>48</TD><TD ALIGN=CENTER>(37, 25)</TD><TD ALIGN=CENTER>Nord</TD><TD ALIGN=CENTER>Rouge</TD><TD ALIGN=CENTER>2: 47 et 49</TD><TD ALIGN=CENTER>1: 49</TD></TR>
+<TR><TD ALIGN=CENTER>49</TD><TD ALIGN=CENTER>(38, 23)</TD><TD ALIGN=CENTER>Ouest</TD><TD ALIGN=CENTER>Rouge</TD><TD ALIGN=CENTER>2: 47 et 48</TD><TD ALIGN=CENTER>1: 47</TD></TR>
+</TABLE><BR>
+Pour chaque feu et en se référant à chaque ligne du tableau ci-dessus pour les informations en <B>gras</B>, procéder de la manière suivante&nbsp;:
+<UL>
+<LI>Double cliquer sur la <B>case</B> du feu à définir&nbsp;;<BR><BR>
+<LI>Dans la fenêtre des propriétés, définir le feu comme montré ci-dessous&nbsp;:<BR><BR>
+<IMG SRC="def_feu.jpg" WIDTH=222 HEIGHT=300 ALT="Définition d'un feu comme propriété"><BR><BR>
+  <UL>
+  <LI>Dans le cadre de la <B>direction</B> du feu, choisir le bouton radio <I>Feu...</I> (1),
+  <LI>Appuyer sur le bouton <I>Appliquer</I>,
+  <LI>Cliquer sur le bouton <IMG SRC="btn_duree_feu.jpg" WIDTH=18 HEIGHT=17 ALT="Bouton d'accès aux propriétés du feu"> qui vient d'être activé (2)&nbsp;; 
+  </UL><BR>
+<LI>Dans la fenêtre de définition du feu...<BR><BR> 
+<IMG SRC="param_feu.jpg" WIDTH=296 HEIGHT=393 ALT="Paramètres d'un feu"><BR><BR>
+  <UL>
+  <LI>Choisir le bouton radio de la couleur de l'<B>état initial</B> (1)&nbsp;;
+  <LI>S'assurer que l'événement de demande de feu vert est sur l'arrivée d'un véhicule (2)&nbsp;;
+  <LI>Définir les <B>feux devant être rouges</B> de la manière suivante&nbsp;:
+    <UL>
+	<LI>Cliquer sur le bouton <IMG SRC="btn_select_feu.jpg" WIDTH=18 HEIGHT=18 ALT="Bouton de sélection de feux"> en face de <I>Feux devant être rouges</I> afin qu'il soit en position enfoncée, 
+	<LI>Pour chacun des <B>feux devant être rouges</B> (3) double cliquer sur la case où il se trouve&nbsp;: le feu doit apparaître avec ses trois couleurs allumées - comme ceci <IMG SRC="feu_selectionne.jpg" ALT="Feu sélectionné" WIDTH=7 HEIGHT=18> - signifiant qu'il est sélectionné et le nombre de <I>feux devant être rouges</I> s'incrémente,
+    <LI>Cliquer à nouveau sur le même bouton <IMG SRC="btn_select_feu.jpg" WIDTH=18 HEIGHT=18 ALT="Bouton de sélection de feux"> afin qu'il soit en position relevée,
+	<LI>Vérifier que le nombre de feux est bien <B>2</B>,
+	<LI>Appuyer sur le bouton <I>Appliquer</I>&nbsp;;
+	</UL>
+  <LI>S'assurer que l'événement de passage au feu rouge est sur la demande d'un feu (4)&nbsp;;
+  <LI>Définir les <B>prochains feux verts</B> de la manière suivante&nbsp;:
+    <UL>
+	<LI>Cliquer sur le bouton <IMG SRC="btn_select_feu.jpg" WIDTH=18 HEIGHT=18 ALT="Bouton de sélection de feux"> en face de <I>Prochains feux verts</I> afin qu'il soit en position enfoncée, 
+	<LI>Pour le <B>prochain feu vert</B> (5) double cliquer sur la case où il se trouve&nbsp;: le feu doit apparaître avec ses trois couleurs allumées et le nombre de <I>prochains feux verts</I> s'incrémente,
+    <LI>Cliquer à nouveau sur le même bouton <IMG SRC="btn_select_feu.jpg" WIDTH=18 HEIGHT=18 ALT="Bouton de sélection de feux"> afin qu'il soit en position relevée,
+	<LI>Vérifier que le nombre de feux est bien <B>1</B>,
+	<LI>Appuyer sur le bouton <I>Appliquer</I>&nbsp;;
+	</UL>
+  <LI>Fermer la fenêtre de paramétrage (bouton <I><U>V</U>u</I> ou touche <B>[Echap]</B>) après avoir appliqué les modifications&nbsp;;  
+  </UL><BR>
+<LI>Fermer la fenêtre de définition des priorités (bouton <I><U>V</U>u</I> ou touche <B>[Echap]</B>) et passer au feu suivant.
+</UL><BR>
+
+<HR><A NAME="cdurdb"></A><H1>Création d'un réseau de bus</H1>
+<A NAME="aeldb"></A><H2>Arrêts et lignes de bus</H2>
+
+Lorsque l'on lance une simulation, on remarque que le carrefour situé en (13, 63) n'est pas fréquenté.<BR>
+On va y remédier en faisant passer des bus sur ce carrefour.<BR>
+Qui dit bus, dit arrêts de bus et lignes de bus.<BR>
+On va faire passer quatre lignes de bus autour de ce carrefour.<BR>
+Pour pouvoir définir des arrêts de bus, il faut des trottoirs pour les piétons.<BR>
+On va donc commencer par créer des trottoirs avec tout l'espace restant de la zone de simulation.<BR>
+Rien de plus simple&nbsp;:
+<UL>
+<LI>Sélectionner toute la zone de simulation de la case (0, 0) à la case (63, 63),
+<LI>Faire clic droit puis sélectionner <B>Définir la nature de la zone</B> ou faire <B>[Ctrl]+[N]</B>,
+<LI>Cocher la case <B><U>T</U>rottoirs</B>, <B>appliquer</B> puis <B>fermer</B>.<BR><BR>
+<IMG SRC="trottoirs.jpg" ALT="Commande Trottoirs" HEIGHT=154 WIDTH=247>
+</UL>
+Un arrêt de bus ne peut être placé que si un trottoir est adjacent à la voie où se trouve matérialisé l'arrêt de bus.<BR>
+Ainsi, on ne peut placer d'arrêt de bus sur le périphérique extérieur qui fait tout le contour de la zone car aucun piéton ne pourrait y accéder.<BR>
+Les bus prenant deux cases, il faut au moins définir les arrêts de bus sur deux cases contiguës.<BR>
+La première case de l'arrêt de bus à définir doit être la tête, c'est-à-dire que la tête de bus s'arrêtera au niveau de la tête de l'arrêt.<BR>
+Les têtes d'arrêts de bus sont reconnaissables par l'astérisque qui suit le numéro de l'arrêt dans la barre de statut.<BR>
+Nous allons donc définir les arrêts de bus suivant le tableau qui suit.<BR>
+Chaque ligne correspond à un arrêt de bus. Seules les coordonnées de la tête sont données.<BR>
+On va définir treize arrêts de bus. Pour ce faire
+<UL>
+<LI>Aller au menu <B>Simulation | Paramètres</B>,
+<LI>Définir <B>13 arrêts de bus</B>,
+<LI><B>Appliquer</B>,
+<LI><B>Enregistrer.</B>
+</UL>
+
+Pour chaque ligne du tableau ci-dessous et donc chaque arrêt, procéder comme ceci&nbsp;:
+<UL>
+<LI>Cliquer sur la case de la future tête d'arrêt de bus,
+<LI>Cliquer sur le bouton <IMG SRC="arret_bus.jpg" ALT="Commande Arrêt de Bus" HEIGHT=17 WIDTH=17> ou faire <B>[Ctrl]+[A]</B>,
+<LI>Cliquer sur la case adjacente suivant le sens opposé au sens de la voie,
+<LI>Cliquer à nouveau sur le bouton <IMG SRC="arret_bus.jpg" ALT="Commande Arrêt de Bus" HEIGHT=17 WIDTH=17> ou faire <B>[Ctrl]+[A]</B>.
+</UL>
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>N°</TH><TH>Tête</TH></TR>
+<TR><TD ALIGN=CENTER>1</TD><TD ALIGN=CENTER>(56, 58)</TD></TR>
+<TR><TD ALIGN=CENTER>2</TD><TD ALIGN=CENTER>(33, 62)</TD></TR>
+<TR><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>(59, 38)</TD></TR>
+<TR><TD ALIGN=CENTER>4</TD><TD ALIGN=CENTER>(22, 24)</TD></TR>
+<TR><TD ALIGN=CENTER>5</TD><TD ALIGN=CENTER>(1, 22)</TD></TR>
+<TR><TD ALIGN=CENTER>6</TD><TD ALIGN=CENTER>(27, 11)</TD></TR>
+<TR><TD ALIGN=CENTER>7</TD><TD ALIGN=CENTER>(45, 37)</TD></TR>
+<TR><TD ALIGN=CENTER>8</TD><TD ALIGN=CENTER>(38, 56)</TD></TR>
+<TR><TD ALIGN=CENTER>9</TD><TD ALIGN=CENTER>(18, 49)</TD></TR>
+<TR><TD ALIGN=CENTER>10</TD><TD ALIGN=CENTER>(5, 32)</TD></TR>
+<TR><TD ALIGN=CENTER>11</TD><TD ALIGN=CENTER>(42, 23)</TD></TR>
+<TR><TD ALIGN=CENTER>12</TD><TD ALIGN=CENTER>(3, 18)</TD></TR>
+<TR><TD ALIGN=CENTER>13</TD><TD ALIGN=CENTER>(52, 8)</TD></TR>
+</TABLE><BR>
+
+Pour que les bus puissent apparaître dans la simulation, il faut définir un et un seul dépôt de bus le plus central possible.<BR>
+Celui-ci doit être au moins en mode sortie (la case du dépôt doit avoir au moins une direction vers l'extérieur).<BR>
+Pour ne pas gêner la circulation en sortie, nous allons le placer à côté d'une voie existante.<BR>
+Pour définir le dépôt de bus&nbsp;:
+<UL>
+<LI>Cliquer sur la case (24, 36),
+<LI>Appuyer sur <B>[Ctrl]+[Bas]</B> ou sur le bouton <IMG SRC="voie_bas.jpg" HEIGHT=17 WIDTH=17 ALT="Voie avec direction vers le bas"> pour créer la voie afin de pouvoir y placer le dépôt de bus,
+<LI>Appuyer sur <B>[Ctrl]+[O]</B> ou sur le bouton <IMG SRC="depot.jpg" HEIGHT=17 WIDTH=17 ALT="Dépôt de bus"> pour y placer le dépôt de bus,
+<LI>Cliquer sur la case (24, 37),
+<LI>Appuyer sur <B>[Ctrl]+[Bas]</B> ou sur le bouton <IMG SRC="voie_bas.jpg" HEIGHT=17 WIDTH=17 ALT="Voie avec direction vers le bas"> afin de permettre aux bus de partir vers la gauche,
+<LI><B>Enregistrer</B>.
+</UL>
+
+À présent, il faut définir le réseau de bus.<BR>
+Nous allons définir 4 lignes utilisant les 13 arrêts de bus définis ci-dessus.<BR>
+Pour ce faire&nbsp;:
+<UL>
+<LI>Si une simulation est en cours, l'arrêter,
+<LI>Cliquer sur le bouton <IMG SRC="bouton_parametres.jpg" ALT="Bouton d'accès aux paramètres" HEIGHT=18 WIDTH=18>,
+<LI>Cliquer sur le bouton <IMG SRC="bouton_bus.jpg" ALT="Bouton d'accès au réseau de bus" HEIGHT=16 WIDTH=16>,
+<LI>Définir le réseau comme suit en commençant par définir le nombre d'arrêts de bus avant de préciser les numéros d'arrêts de bus,
+<LI><B>Appliquer</B> le réseau puis <B>fermer</B> (deux fois <B>[Echap]</B>),
+<LI><B>Enregistrer</B> les modifications (<B>[F2]</B>).
+</UL>
+<IMG SRC="reseau_bus.jpg" ALT="Paramètres du réseau de bus" HEIGHT=366 WIDTH=469><BR><BR>
+
+Il est possible de visualiser le trajet des bus mais uniquement en cours de simulation.<BR>
+Pour ce faire&nbsp;:
+<UL>
+<LI>Lancer la simulation en appuyant sur le bouton <IMG SRC="marche.jpg" HEIGHT=19 WIDTH=15 ALT="Bouton de lancement de la simulation (marche)">,
+<LI>Aussitôt après, mettre en pause en appuyant sur le bouton  <IMG SRC="pause.jpg" HEIGHT=18 WIDTH=14 ALT="Bouton de mise en pause">, 
+<LI>Répondre "Non" à la question "Voulez-vous voir les statistiques de fluidité et de trafic en couleurs ?"
+<LI>Cliquer sur le bouton <IMG SRC="bouton_parametres.jpg" ALT="Bouton d'accès aux paramètres" HEIGHT=18 WIDTH=18>,
+<LI>Cliquer sur le bouton <IMG SRC="bouton_bus.jpg" ALT="Bouton d'accès au réseau de bus" HEIGHT=16 WIDTH=16>,
+<LI>Cocher la case <IMG SRC="tout_cocher.jpg" ALT="Visualiser tout le réseau de bus" HEIGHT=20 WIDTH=37>,
+<LI>Une fois le réseau visualisé, restaurer la fenêtre des paramètres réseau qui a été automatiquement réduite.
+</UL>
+<IMG SRC="visu_reseau_bus.jpg" ALT="Aperçu du réseau de bus" HEIGHT=514 WIDTH=514><BR><BR>
+Les numéros qui apparaissent sur les tracés des lignes de bus sont les arrêts de bus.<BR>
+Il est possible de visualiser chaque ligne de bus en cochant la case à gauche du numéro de ligne au lieu de la case <IMG SRC="tout_cocher.jpg" ALT="Visualiser tout le réseau de bus" HEIGHT=20 WIDTH=37>.<BR>
+
+<A NAME="cdb"></A><H2>Couloirs de bus</H2>
+Ils permettent de réserver la voie aux bus, aux véhicules d'urgence (police, pompiers) et aux taxis.<BR>
+Pour définir un passage de bus sur une voie, il faut appuyer sur <B>[Ctrl]+[B]</B> ou cliquer sur le bouton <IMG SRC="bouton_psg_bus.jpg" WIDTH=16 HEIGHT=16 ALT="Bouton Passage réservé aux bus">.<BR>
+
+<HR><A NAME="cdp"></A><H1>Circulation des piétons</H1>
+
+Le réseau de bus est défini mais lorsque les bus s'arrêtent aux arrêts, personne n'entre ou ne sort.<BR>
+On va y remédier en ajoutant les piétons.<BR>
+Pour ce faire&nbsp;:
+<UL>
+<LI>Cliquer sur le bouton <IMG SRC="bouton_parametres.jpg" ALT="Bouton d'accès aux paramètres" HEIGHT=18 WIDTH=18>,
+<LI>Augmenter le nombre de véhicules (comme dans l'exemple ci-dessous),
+<LI>Définir un pourcentage non nul de piétons (pourcentage par rapport au nombre de véhicules).
+</UL>
+<IMG SRC="vehicules_pietons.jpg" ALT="Paramètres Véhicules et Piétons" WIDTH=158 HEIGHT=49><BR><BR>
+
+Si une simulation est lancée, on remarque que les piétons ne traversent pas les voies...<BR>
+On peut remédier à ce problème en posant des passages piétons.<BR>
+Il n'est possible de poser un passage piétons que dans les conditions suivantes&nbsp;:
+<UL>
+<LI>La case est une voie de circulation,
+<LI>La direction des piétons et celle des véhicules doivent être perpendiculaires (les piétons <U>traversent</U> la route),
+<LI>Le passage piétons peut prendre plusieurs cases mais elles doivent être contiguës et former une ligne,
+<LI>Le début et la fin de la ligne formée par le passage piétons doivent être adjacents à un trottoir (voir ci-dessous). 
+</UL>
+<IMG SRC="passage_pietons.jpg" ALT="Passage piétons" WIDTH=48 HEIGHT=29><BR><BR>
+
+Pour placer un passage piétons sur une voie, utiliser le bouton <IMG SRC="bouton_psg_ptn.jpg" WIDTH=16 HEIGHT=16 ALT="Bouton Passage piétons"> ou appuyer sur <B>[Ctrl]+[G]</B>.<BR>
+Il faut faire en sorte que chaque îlot de trottoirs soit rattaché au moins à un autre îlot.<BR><BR>
+Une fois les passages piétons définis, les piétons peuvent aller et venir d'un bout à l'autre de la zone de simulation.<BR><BR>
+Voici ce que peut donner une simulation avec les paramètres au maximum (990 véhicules et 495 piétons)&nbsp;:<BR><BR>
+<IMG SRC="simulation.jpg" ALT="Simulation en cours avec beaucoup de véhicules et de piétons" WIDTH=520 HEIGHT=618>
+
+<HR><A NAME="rdt"></A><H1>Réseau de trams</H1>
+
+Sur notre réseau, il y a encore beaucoup d'espace à utiliser (surface des trottoirs).<BR>
+Nous allons l'utiliser pour créer un réseau de trams.<BR>
+Le réseau de trams est similaire à celui des bus&nbsp;:
+<UL>
+<LI>Il y a des arrêts de trams desquels sortent et vers lesquels vont les piétons.
+<LI>Il y a des lignes de trams définis exactement comme les lignes de bus.
+</UL>
+<A NAME="vdt"></A><H2>Voies de trams</H2>
+Néanmoins, la différence réside dans la voie de circulation.<BR>
+Les voies de trams sont spécifiques, elles sont ferrées et non pas de notions de sens.<BR>
+Par exemple, pour une voie horizontale, il n'y a pas de sens <I>gauche vers droite</I> ou <I>droite vers gauche</I>.
+Il n'y a pas de restriction de sens comme pour les voies de circulation des véhicules.<BR><BR>
+Le sens du mouvement des trams est conditionné par la pose des arrêts et des aiguillages aux intersections des voies ferrées.<BR><BR>
+Dans l'exemple-ci&nbsp;: <IMG SRC="aiguillages.jpg" HEIGHT=53 WIDTH=48 ALT="Exemple d'intersection de voies de trams">, les seules contraintes de circulation sont les suivantes&nbsp;:
+<UL>
+<LI>Si un tram vient du haut ou de la droite, il ne pourra aller que vers la gauche ou vers le bas.
+<LI>Si un tram vient du bas ou de la gauche, il ne pourra aller que vers le haut ou vers la droite.
+</UL>
+Les voies de trams peuvent croiser les voies de circulation des véhicules.<BR>
+Les types de priorités applicables sont les mêmes et peuvent donc être mixtes.<BR>
+
+<A NAME="tdvdt"></A><H2>Tracé des voies de trams</H2>
+
+Pour tracer des voies de trams, il faut utiliser les combinaisons de touches <B>[Maj][Ctrl]</B>[<I>Touche fléchée</I>].<BR>
+Néanmoins, il y a une subtilité par rapport aux voies de circulation des véhicules, il y a deux commandes à faire au lieu d'une&nbsp;:
+<UL>
+<LI>La première commande détermine la provenance en effectuant un déplacement du curseur (à l'aide des touches fléchées) de la case source à la case cible du tracé qui doit être contiguë,
+<LI>La deuxième commande (combinaison de touches indiquée ci-dessus) détermine la destination et permet ainsi le tracé la voie sur la case courante.
+</UL>
+N'ayant pas de notion de sens, il est toujours possible de faire un même tracé de deux manières (en inversant source et destination).<BR><BR>
+Par exemple, on souhaite poser la voie comme indiquée ci-dessous&nbsp;:<BR><BR>
+<IMG SRC="trace_voix_tram.jpg" HEIGHT=48 WIDTH=44 ALT="Exemple de tracé de voie"><BR>
+<UL>
+<LI>La partie en trait continu est le tracé de la voie déjà faite,
+<LI>La case où se situe le curseur est l'endroit où l'on souhaite tracer la voie exactement comme indiqué,
+<LI>Soit (x, y) les coordonnées du curseur de l'image ci-dessus,
+<LI>La partie en pointillé est le tracé de la suite de la voie.
+</UL>
+Pour pouvoir tracer la courbe voie, il faut procéder comme suit&nbsp;:
+<UL>
+<LI>Positionner le curseur sur la case source située en dessous en (x, y+1), la case où la voie est déjà tracée&nbsp;;
+<LI>Déplacer le curseur vers le haut afin de revenir en (x, y)&nbsp;;
+<LI>Appuyer sur la combinaison de touches <B>[Maj][Ctrl][Droite]</B> afin d'indiquer la destination (x+1, y) et d'effectuer le tracé de la courbe voie.
+</UL>
+Les commandes sont involutives, c'est-à-dire que deux mêmes actions consécutives annulent l'effet de la première action.<BR>
+D'autre part, si un tracé est déjà présent sur une case et que l'on souhaite poser un autre tracé différent, ils seront cumulés.<BR>
+Dans l'exemple ci-dessus, si la case (x, y) contenait déjà un tracé de voie vertical, le résultat de l'opération effectuée ci-dessus donnerait ce résultat&nbsp;:<BR><BR>
+<IMG SRC="trace_aiguillage.jpg" HEIGHT=48 WIDTH=44 ALT="Exemple d'aiguillage"><BR>
+ 
+<A NAME="adt"></A><H2>Arrêts de trams</H2>
+
+La commande est commune à celle des <A HREF="#aeldb">arrêts de bus</A>. Il s'agit de la combinaison de touches <B>[Ctrl]+[A]</B>.<BR>
+Il y a également une tête pour chaque arrêt de tram.<BR>
+Si un tram peut arriver par un sens ou l'autre, il est conseillé de définir l'arrêt sur trois cases et positionner la tête au milieu (tête toujours définie en premier).<BR>
+Ceci permettra de faire arrêter le tram (occupant deux cases comme les bus) entièrement sur l'arrêt.<BR>
+Si, sur une voie, les trams ne circulent que dans un sens, l'arrêt peut être défini sur deux cases.<BR>
+Il faut alors faire correspondre la tête du tram avec la tête de l'arrêt comme pour les bus.<BR>
+Les arrêts de trams sont matérialisés par des voies jaunes.<BR>
+
+<A NAME="cdurdt"></A><H2>Ajout d'un réseau de trams</H2>
+Dans notre réseau exemple, nous allons ajouter un réseau de trams&nbsp;:
+<UL>
+<LI>Tracer les voies et les arrêts de trams selon le plan suivant en déduisant les aiguillages à partir des sens indiqués,<BR>
+<LI>Définir les arrêts de trams dans l'ordre de la numérotation indiquée et en positionnant la tête de l'arrêt en fonction du sens indiqué en rouge de telle sorte qu'elle corresponde à la tête du tram lorsque celui-ci occupe tout l'arrêt.
+</UL>
+<IMG SRC="visu_reseau_tram.jpg" HEIGHT=514 WIDTH=514 ALT="Réseau des voies de trams"><BR>
+
+<A NAME="ldt"></A><H2>Lignes de trams</H2>
+ 
+Pour définir les lignes de tram, procéder comme suit&nbsp;:
+<UL>
+<LI>Aller dans les paramètres de la simulation (<B>[Ctrl]+[Alt]+[P]</B>),
+<LI>Cliquer sur le bouton de définition du réseau de tram <IMG SRC="bouton_tram.jpg" HEIGHT=16 WIDTH=16 ALT="bouton de paramétrage du réseau de trams">,
+<LI>Définir les lignes de trams de la même façon que pour les lignes de bus selon le paramétrage ci-dessous.
+</UL>
+<IMG SRC="reseau_tram.jpg" HEIGHT=390 WIDTH=469 ALT="Réseau des voies de trams"><BR><BR>
+
+Le réseau de trams est alors prêt à fonctionner.<BR>
+Les trams démarrent directement depuis leurs arrêts (il n'y a pas case <I>dépôt de trams</I>).
+Cependant, le réseau de voies de trams a morcelé les zones piétonnes, il faut donc rajouter des passages piétons afin que les arrêts de trams soient accessibles le plus facilement possible.<BR><BR>
+
+Voici un aperçu détaillé d'une simulation après avoir ajouté des passages piétons (990 véhicules et 495 piétons)&nbsp;:<BR><BR> 
+<IMG SRC="zoom_simul.bmp" HEIGHT=1024 WIDTH=1024 ALT="Simulation en cours (zoom activé)"><BR><BR>
+
+<HR><A NAME="pefdt"></A><H1>Places et files de taxis</H1>
+
+Les taxis sont des véhicules qui, comme les bus et les trams, prennent et déposent des piétons.<BR>
+Les taxis prennent toujours les piétons lorsqu'ils sont sur leurs places réservées (cases portant une croix jaune).<BR>
+Par contre ils déposent les piétons à n'importe quel moment tant que ces derniers peuvent descendre (présence d'un trottoir adjacent à la voie où se trouve le taxi).<BR>
+Une fois la course effectuée, le taxi revient à sa file désignée au départ.<BR>
+Les places de taxis qui sont adjacentes l'une à l'autre forment une file de taxis. Seul le taxi en tête de file prend des piétons.<BR>
+Le taxi en tête qui commence sa course est alors remplacé par le deuxième de la file et ainsi de suite.<BR>
+Lorsqu'un taxi a terminé sa course, il rejoint la file contenant sa place en y entrant par la fin comme une file d'attente classique.<BR>
+Les files de taxis sont donc à créer comme des arrêts de bus ou de trams en définissant la tête de la file dans le sens de la voie.<BR>
+La tête de file doit toujours permettre de faire sortir les taxis.<BR>
+La queue de file doit toujours permettre de faire entrer les taxis.<BR>
+Les places de taxis qui ne sont ni en tête, ni en queue doivent avoir comme provenance et direction une autre place de taxi.<BR><BR>
+Pour notre réseau exemple, nous allons définir 5 files de 3 places (voir tableau qui suit)&nbsp;:
+<UL>
+<LI>Rajouter des voies afin d'y placer les places de taxis,
+<LI>Définir les places de taxi (cases portant les croix jaunes) en commençant par la tête de file jusqu'à la queue de file dans le sens contraire du sens de la voie de la file,
+<LI>Définir la zone en couloirs de bus (hachurage jaune) afin que les véhicules autres que taxis, bus, police et pompiers n'entrent pas dans la zone,
+<LI>Pour la zone centrale uniquement, rajouter des passages piétons indiqués afin qu'ils puissent atteindre la tête de file.
+</UL>
+
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>File (numéro et emplacement)</TH><TH>Place (numéro et coordonnées)</TH></TR>
+<TR><TD ROWSPAN=3 ALIGN=CENTER>1: en haut à gauche<BR><IMG SRC="file_taxi_hg.jpg" WIDTH=81 HEIGHT=47 ALT="File de taxi n°1 en haut à gauche"></TD><TD>01: (8, 6)*</TD></TR>
+<TR><TD>02: (9, 6)</TD></TR>
+<TR><TD>03: (10, 6)**</TD></TR>
+<TR><TD ROWSPAN=3 ALIGN=CENTER>2: en haut à droite<BR><IMG SRC="file_taxi_hd.jpg" WIDTH=60 HEIGHT=152 ALT="File de taxi n°2 en haut à droite"></TD><TD>04: (49, 21)*</TD></TR>
+<TR><TD>05: (49, 20)</TD></TR>
+<TR><TD>06: (49, 19)**</TD></TR>
+<TR><TD ROWSPAN=3 ALIGN=CENTER>3: en bas à droite<BR><IMG SRC="file_taxi_bd.jpg" WIDTH=120 HEIGHT=106 ALT="File de taxi n°3 en bas à droite"></TD><TD>07: (48, 54)*</TD></TR>
+<TR><TD>08: (48, 55)</TD></TR>
+<TR><TD>09: (49, 55)**</TD></TR>
+<TR><TD ROWSPAN=3 ALIGN=CENTER>N°4&nbsp;: en bas à gauche<BR><IMG SRC="file_taxi_bg.jpg" WIDTH=72 HEIGHT=75 ALT="File de taxi n°4 en bas à gauche"></TD><TD>10: (6, 50)*</TD></TR>
+<TR><TD>11: (6, 51)</TD></TR>
+<TR><TD>12: (7, 51)**</TD></TR>
+<TR><TD ROWSPAN=3 ALIGN=CENTER>N°5&nbsp;: au centre<BR><IMG SRC="file_taxi_c.jpg" WIDTH=160 HEIGHT=187 ALT="File de taxi n°5 au centre"></TD><TD>13: (33, 34)*</TD></TR>
+<TR><TD>14: (33, 33)</TD></TR>
+<TR><TD>15: (33, 32)**</TD></TR>
+</TABLE><BR>
+(*) Tête de file. Dans la barre de statut, le symbole qui suit le numéro de place est ">".<BR>
+(**) Queue de file. Dans la barre de statut, le symbole qui suit le numéro de place est "<".<BR><BR>
+Pour ouvrir le fichier de simulation à ce stade, cliquer <A HREF="tutocv.cvw">ici</A>.<BR><BR>
+
+<HR><A NAME="dtapei"></A><H1>Décoration (trottoirs, arbres, pelouse et immeubles)</H1>
+
+Pour embellir la zone de simulation, il est possible de mettre des décors.<BR>
+Les décors sont définissables hors des voies de circulation des véhicules et des trams.<BR>
+Les trottoirs sont considérés comme des décors et sont les seules voies de circulation des piétons.<BR>
+Pour placer un décor&nbsp;:
+<UL>
+<LI>Cliquer sur la case cible,
+<LI>Cliquer sur le bouton <B>Nature et décors</B> puis sur la rubrique suivant le décor souhaité&nbsp;:<BR>
+<IMG SRC="decors.jpg" HEIGHT=120 WIDTH=184 ALT="Commandes des décors">
+</UL>
+
+Il est possible également d'appliquer le même décor sur une zone sélectionnée. Pour ce faire&nbsp;:
+<UL>
+<LI>Sélectionner la zone,
+<LI>Faire clic droit,
+<LI>Choisir <B>Définir la nature de la zone...</B> ou appuyer sur la combinaison de touches <B>[Ctrl]+[N]</B> 
+</UL>
+Cette boîte de dialogue apparaît&nbsp;:<BR>
+<IMG SRC="nature.jpg" HEIGHT=154 WIDTH=247 ALT="Définition de la nature à appliquer sur une zone"><BR><BR>
+Plusieurs cas se présentent&nbsp;:
+<UL>
+<LI>Pour ne pas changer les décors existants se trouvant dans la zone sélectionnée, s'assurer que la case <B><U>E</U>craser si autre nature</B> est décochée&nbsp;;
+<LI>Pour retirer toute nature dans la zone sélectionnée (y compris trottoirs)&nbsp;:
+  <UL>
+  <LI>Choisir le bouton radio <B><U>V</U>oies de circulation</B>,
+  <LI>Cocher la case <B><U>E</U>craser si autre nature</B>&nbsp;;
+  </UL>
+<LI>Pour définir des trottoirs&nbsp;:
+  <UL>
+  <LI>Choisir le bouton radio <B><U>T</U>rottoirs</B>,
+  <LI>S'assurer que la case <B>Pelouse</B> est décochée&nbsp;;  
+  </UL>  
+<LI>Pour définir de la pelouse&nbsp;:
+  <UL>
+  <LI>Choisir le bouton radio <B><U>T</U>rottoirs</B>,
+  <LI>Cocher la case <B>Pelouse</B>&nbsp;;  
+  </UL>  
+<LI>Pour définir des immeubles, choisir le bouton radio <B><U>I</U>mmeubles</B>.
+</UL>
+Dans tous les cas de figures ci-dessus, il faut appuyer sur le bouton <B>A<U>p</U>pliquer</B> pour effectuer le changement.<BR>
+Pour se faire plaisir et terminer <I>en beauté</I> ce tutoriel, il reste à décorer notre réseau.<BR>
+Voici un exemple de décoration (avec quelques rajouts de passages piétons)&nbsp;:<BR><BR>
+<IMG SRC="zoom_simul_decoree.bmp" HEIGHT=1024 WIDTH=1024 ALT="Simulation décorée en cours (zoom activé)"><BR><BR>
+Pour ouvrir le fichier de simulation avec la décoration ci-dessus, cliquer <A HREF="tutocvdeco.cvw">ici</A>.<BR><BR>
+<HR><A NAME="ndt"></A><H1>Notion de tore</H1>
+L'exemple du tutoriel n'a pas la propriété de tore.<BR>
+Cette propriété permet de faire boucler la simulation par les bords.<BR>
+Ainsi, si une direction va vers le bord de la zone, elle pointe en fait vers la case qui se situe sur le bord opposé.<BR>
+Par exemple, sur une zone de 10 cases sur 10&nbsp;:
+<UL>
+<LI>La case (0, 0) pointe vers le haut sur la case (0, 9),
+<LI>La case (0, 9) pointe vers le bas sur la case (0, 0),
+<LI>La case (0, 0) pointe vers la gauche sur la case (9, 0),
+<LI>La case (9, 0) pointe vers la droite sur la case (0, 0).
+</UL>
+<HR><A NAME="mepdfdp"></A><H1>Mise en place de feux de piétons</H1>
+Nous allons à présent voir la pose de feux de piétons.<BR>
+Elle va être mise en place dans la petite zone dans un carré bien délimité dont le coin supérieur gauche est (25, 18) et le coin inférieur droit est (36, 28). 
+Au centre de cette zone il y a un carrefour complet avec un croisement à deux voies à double sens&nbsp;:<BR><BR> 
+<IMG SRC="zoom_carrefour_avant0.bmp" HEIGHT=196 WIDTH=180 ALT="Carrefour à aménager avec des feux de piétons"><BR><BR>
+Pour permettre de placer des feux de piétons, il faut reculer les quatre feux d'une case et placer des passages piétons.<BR>
+Pour ce faire, effectuer pour chaque feu du carrefour les opérations suivantes&nbsp;:
+<UL>
+<LI>Cliquer sur la case où se situe le feu,
+<LI>Appuyer sur le bouton <IMG SRC="source_feu.jpg" WIDTH=19 HEIGHT=19> ou <B>[Ctrl]+[F]</B>,
+<LI>Cliquer sur la case située derrière le feu,
+<LI>Appuyer sur le bouton <IMG SRC="cible_feu.jpg" WIDTH=19 HEIGHT=19> ou <B>[Ctrl]+[F]</B>.
+</UL>
+Ensuite, il faut supprimer tous les passages piétons de la zone délimitée ci-dessus en cliquant sur chaque passage piétons et en choisissant <IMG SRC="bouton_psg_ptn.jpg" WIDTH=16 HEIGHT=16 ALT="Bouton Passage piétons"> ou <B>[Ctrl]+[G]</B>.<BR>
+Il faut enfin placer des passages piétons devant les quatre feux en utilisant le même bouton ou le même raccourci.<BR><BR> 
+Vous obtenez ceci&nbsp;:<BR>
+<IMG SRC="zoom_carrefour_avant1.bmp" HEIGHT=196 WIDTH=180 ALT="Carrefour après avoir déplacé les feux et les passages piétons"><BR><BR>
+
+À présent, il faut placer les feux de piétons. Il doivent toujours être situés sur un trottoir et à côté d'un passage piétons.<BR>
+Placer un feu revient en fait à en poser deux de chaque côté d'un passage piétons.<BR> 
+L'autre feu sera automatiquement posé de l'autre côté et aura le même numéro.<BR>
+
+Nous allons donc placer 4 feux de piétons pour en avoir au total 8 de placés&nbsp;:<BR><BR>
+<TABLE CELLPADDING=3 BORDER=1 CELLSPACING=0>
+<TR><TH>N°</TH><TH>Coordonnées</TH><TH>Direction</TH><TH>Feu opposé</TH><TH>Etat initial</TH><TH>Feu tricolore lié</TH></TR>
+<TR><TD ALIGN=CENTER>1</TD><TD ALIGN=CENTER>(28, 22)</TD><TD ALIGN=CENTER>Est</TD><TD ALIGN=CENTER>(31, 22)</TD><TD>Rouge</TD><TD ALIGN=CENTER>(29, 21)</TD></TR>
+<TR><TD ALIGN=CENTER>2</TD><TD ALIGN=CENTER>(31, 22)</TD><TD ALIGN=CENTER>Sud</TD><TD ALIGN=CENTER>(31, 25)</TD><TD>Vert</TD><TD ALIGN=CENTER>(32, 23)</TD></TR>
+<TR><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>(31, 25)</TD><TD ALIGN=CENTER>Ouest</TD><TD ALIGN=CENTER>(28, 25)</TD><TD>Rouge</TD><TD ALIGN=CENTER>(30, 26)</TD></TR>
+<TR><TD ALIGN=CENTER>4</TD><TD ALIGN=CENTER>(28, 25)</TD><TD ALIGN=CENTER>Nord</TD><TD ALIGN=CENTER>(28, 23)</TD><TD>Vert</TD><TD ALIGN=CENTER>(27, 24)</TD></TR>
+</TABLE><BR>
+
+Pour chaque feu de piétons procéder comme suit&nbsp;:
+<UL>
+<LI>Double cliquer sur la case des coordonnées indiquée dans le tableau (colonne 2)&nbsp;: Cette fenêtre apparaît (pour le feu n°1)&nbsp;:<BR><IMG SRC="feux_ptn.jpg" WIDTH=247 HEIGHT=321 Alt="Pose des feux de piétons">
+<LI>Cliquer sur le bouton correspondant à la direction indiquée dans le tableau (colonne 3)&nbsp;: Cette fenêtre apparaît (pour le feu n°1)&nbsp;:<BR><IMG SRC="def_feu_ptn.jpg" WIDTH=296 HEIGHT=381 Alt="Définition du feu de piétons">
+<LI>Choisir l'état initial indiqué dans le tableau (colonne 5). Vous pouvez remarquer que les coordonnées du feu opposé (colonne 4) sont affichées.
+<LI>Choisir le feu tricolore lié en utilisant exactement le même principe que dans la définition d'un feu tricolore, à savoir&nbsp;:
+  <UL>
+  <LI>Cliquer sur le bouton <IMG SRC="btn_select_feu.jpg" WIDTH=18 HEIGHT=18 ALT="Bouton de sélection de feux"> afin qu'il soit en position enfoncée, 
+  <LI>Double cliquer sur la case où se trouve le feu tricole (colonne 6 du tableau)&nbsp;: le feu doit apparaître avec ses trois couleurs allumées <IMG SRC="feu_selectionne.jpg" ALT="Feu sélectionné" WIDTH=7 HEIGHT=18> indiquant qu'il est sélectionné, et le nombre de <I>feux de circulation liés</I> s'incrémente,
+  <LI>Cliquer à nouveau sur le même bouton <IMG SRC="btn_select_feu.jpg" WIDTH=18 HEIGHT=18 ALT="Bouton de sélection de feux"> afin qu'il soit en position relevée,
+  <LI>Appuyer sur le bouton <I>Vu</I>&nbsp;: la fenêtre de définition de feu disparaît&nbsp;;
+  </UL>
+<LI>Appuyer sur le bouton <I>Vu</I>&nbsp;: la fenêtre des feux de piétons disparaît.
+</UL>
+Après la pose et la définition des feux de piétons, on obtient ceci&nbsp;:<BR>
+<IMG SRC="zoom_carrefour_apres.bmp" HEIGHT=196 WIDTH=180 ALT="Carrefour après avoir placé et configuré les feux de piétons"><BR><BR>
+Le nombre intitulé <I>Durée traversée</I> correspond au nombre de tours nécessaires à un piéton pour traverser la voie par le passage piétons.<BR>
+Il s'agit du nombre de tours entre le moment où le feu de piétons passe au rouge et le moment où le feu de circulation lié passe au vert.<BR>
+Ceci assure à tout piéton engagé de pouvoir finir la traversée.<BR><BR>
+Les autres paramètres ont les mêmes fonctions que ceux des feux de circulation étant entendu que le piéton est au feu piéton ce que le véhicule (ou le tram) est au feu de circulation.<BR>
+Pour ouvrir le fichier de simulation à ce stade, cliquer <A HREF="tutocvptn.cvw">ici</A>.<BR><BR>
+<HR>
+Ce Tutoriel est à jour par rapport à la version 5.2.1 de <I>Centre-Ville</I>. Dernière mise à jour le 18 mars 2009.<BR>
+</BODY>
+</HTML>

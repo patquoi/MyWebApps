@@ -1,0 +1,1 @@
+Livraison Version 1.3---------------------Livrer les png de têtes 8 gtl.png, 8 gtt*.png, 8 ftl*.png et 8 ftt*.pngSupprimer les versions sans garniture (ftl?.png, ftt?.png, gtl?.png, gtt?.png)Livrer Memorissibon.html (patquoi.free.fr)Pour les apps, reporter les changements v3.1 de Memorissibon.jsIl y a 196608 possibilités de personnages au lieu de 98304...

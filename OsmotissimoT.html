@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>O s m o t i s s i m o T</title>
+<link rel="icon" type="image/png" href="OsmotissimoT/png/icon.png">
+</head>
+<body BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00FFFF" VLINK="#A0A0FF">
+<H1 ALIGN=CENTER>OsmotissimoT</H1>
+Bienvenue sur la page d'<B>OsmotissimoT</B>.<BR>
+Vous trouverez ici des informations sur l'application pour tablette tactile.<P>
+<H2>Table des matières</H2>
+
+<UL>
+<LI><A HREF="#P">Présentation</A>
+<LI><A HREF="#PEM">Partie et manche</A>
+<LI><A HREF="#C">Chances</A>
+<LI><A HREF="#SBET">Score, bonus et total</A>
+ <UL>
+ <LI><A HREF="#SBETSDM">Score des mots</A>
+ <LI><A HREF="#SBETB">Bonus</A>
+ <LI><A HREF="#SBETT">Total</A>
+ </UL>
+<LI><A HREF="#IEO">Informations et options</A>
+<LI><A HREF="#SER">Tops et Statistiques</A>
+ <UL>
+ <LI><A HREF="#SERR">Tops</A>
+ <LI><A HREF="#SERS">Statistiques</A>
+ </UL>
+<LI><A HREF="#FO">Fil Orange</A>
+ <UL>
+ <LI><A HREF="#FOVDMF">Visualisation des mots formés et score du dernier coup</A>
+ <LI><A HREF="#FOSDM">Score des mots</A>
+ <LI><A HREF="#FOB">Bonus</A>
+ <LI><A HREF="#FOT">Total</A>
+ <LI><A HREF="#FOSER">Tops et Statistiques</A>
+ </UL>
+<LI><A HREF="#DDM">Définition des mots</A>
+<LI><A HREF="#CDUG">Création d'une grille</A>
+</UL>
+
+<CENTER><IMG SRC="OsmotissimoT/img/OsmotissimoT.png" WIDTH=320 HEIGHT=480 BORDER=1 Alt="Exemple de partie d'OsmotissimoT"></CENTER><P>
+
+<A NAME="P"></A><H2>Présentation</H2>
+
+<B>OsmotissimoT</B> est un jeu de mots mêlés comme <A HREF="MelissimoT.html">MélissimoT</A>, mais avec deux différences&nbsp;:<UL>
+<LI>la grille est hexagonale et non plus carrée,
+<LI>il y a une phase supplémentaire dans laquelle on peut engranger des points sans risquer de perdre la partie&nbsp;: le <B>Fil Orange</B>.
+</UL>
+
+Une version en ligne est disponible <A HREF="OsmotissimoT/index.html">ici</A> pour le navigateur <B>Safari, Firefox, Chrome sur PC et Mac</B> ainsi que sur les appareils utilisant les navigateurs par défaut des systèmes <B>iOS et Android</B>.<P>
+Une app dédiée aux tablettes existe, avec une grille plus grande, des mots jusqu'à 11 lettres et une résolution plus grande&nbsp;: <A HREF="Osmotissimax.html">Osmotissimax</A>.
+
+<A NAME="PEM"></A><H2>Partie et manche</H2>
+
+Une partie d'<B>OsmotissimoT</B> se déroule en plusieurs manches avec une grille différente par manche. Il n'y a pas de temps imparti.
+Dans chaque manche, il y a deux phases...<UL>
+<LI>Dans une première phase, <FONT COLOR="#00FF00">verte</FONT>, vous devez trouver les mots cachés dans la grille en sélectionnant des mots valides selon un dictionnaire de référence qui est l'<I>ODS7</I>* (noms communs, verbes conjugués). Les mots à découvrir apparaissent alignés mais dans toutes les directions. Pour sélectionner un mot, touchez la première lettre qui s'affiche alors en <FONT COLOR="FF0000">rouge</FONT>, puis la dernière lettre du mot dans le sens de lecture&nbsp;:<UL>
+ <LI>Si le mot est valide, ses lettres se <FONT COLOR="#00FF00">verdissent</FONT> dans la grille. Le mot s'affiche sous la grille avec le nombre de points gagnés. Dans l'exemple ci-dessus, le mot <TT>CARPE</TT> a été trouvé en centre de la partie inférieure de la grille.
+ <LI>Si le mot n'est pas valide, vous perdez une chance. Si vous n'avez plus de chance, la partie est terminée.
+ </UL>
+Vous pouvez (et devez si vous souhaitez gagner les bonus) sélectionner les mots même s'ils sont inclus dans d'autres mots ou si les lettres sont déjà toutes <FONT COLOR="#00FF00">vertes</FONT>, par exemple&nbsp;:<UL>
+ <LI>Dans le mot <TT>ORIENTER</TT>, il y a également les mots <TT>ORIENTE</TT>, <TT>ORIENT</TT> et <TT>RIENT</TT> dans le même sens.
+ <LI>Dans le mot <TT>GAINER</TT> il y a également le mot <TT>RENIA</TT> dans le sens opposé. 
+ <LI>Les palindromes doivent être sélectionnés dans les deux sens, comme par exemple&nbsp;: <TT>ETETE</TT>, ainsi que les anagrammes inversés comme par exemple <TT>ECART</TT> et <TT>TRACE</TT>.
+ </UL>
+Vous devez <FONT COLOR="#00FF00">verdir</FONT> toute la grille pour passer à la phase suivante&nbsp;: le <FONT COLOR="#FF8000">Fil Orange</FONT>.<P>
+<LI>Dans la deuxième phase, appelée <FONT COLOR="#FF8000">Fil Orange</FONT>, vous ne pouvez pas perdre de chances et donc la partie. Le but est, cette fois, d'<FONT COLOR="#FF8000">ocrer</FONT> toute la grille afin de doubler le score du <FONT COLOR="#FF8000">Fil Orange</FONT>. Le principe est de changer une lettre afin que la nouvelle lettre forme de nouveaux mots de 5 à 9 lettres. Tous les mots formés grâce à cette nouvelle lettre deviennent <FONT COLOR="#FF8000">orange</FONT>. Le <FONT COLOR="#FF8000">Fil Orange</FONT> s'arrête dès que vous ne pouvez plus jouer ou dès que vous avez fait un choix qui n'entraîne pas de formation de mot.
+Quelle que soit l'issue du <FONT COLOR="#FF8000">Fil Orange</FONT>, vous passez à une nouvelle grille et la partie continue.
+</UL>
+<FONT SIZE=2>(*) À partir de la version 1.7, sinon <I>ODS6</I>.</FONT>
+
+<A NAME="C"></A><H2>Chances</H2>
+Vous avez <B>cinq</B> chances de vous tromper au début d'une partie (première manche ou grille). L'accès à la deuxième grille vous donne droit à <B>quatre</B> chances supplémentaires, puis <B>trois</B> dans la troisième et ainsi de suite jusqu'à un plancher d'une chance à partir de la cinquième manche. Toutes les chances inutilisées d'une manche sont reportées sur la suivante. Les chances ne concernent pas le <FONT COLOR="#FF8000">Fil Orange</FONT>.
+
+<A NAME="SBET"></A><H2>Score, bonus et total</H2>
+
+<A NAME="SBETSDM"></A><H3>Score des mots</H3>
+Dans la première phase, le score pour chaque mot trouvé va 4 à 63 points selon de sa <B>taille</B> (inversement proportionnelle) et son <B>orientation</B> dans la grille&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Taille&nbsp;×&nbsp;Orientation</TH>
+    <TH><IMG SRC="OsmotissimoT/img/0h.png" width=16 height=16 alt="0h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/2h.png" width=16 height=16 alt="2h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/4h.png" width=16 height=16 alt="4h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/6h.png" width=16 height=16 alt="6h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/8h.png" width=16 height=16 alt="8h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/10h.png" width=16 height=16 alt="10h"></TH></TR>
+<TR><TH>5 lettres</TH><TD>5&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>35</B></TD><TD>5&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>25</B></TD><TD>5&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>20</B></TD><TD>5&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>30</B></TD><TD>5&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>40</B></TD><TD>5&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>45</B></TD></TR>
+<TR><TH>6 lettres</TH><TD>4&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>28</B></TD><TD>4&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>20</B></TD><TD>4&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>16</B></TD><TD>4&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>24</B></TD><TD>4&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>32</B></TD><TD>4&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>36</B></TD></TR>
+<TR><TH>7 lettres</TH><TD>3&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>21</B></TD><TD>3&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>15</B></TD><TD>3&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>12</B></TD><TD>3&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>18</B></TD><TD>3&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>24</B></TD><TD>3&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>27</B></TD></TR>
+<TR><TH>8 lettres</TH><TD>2&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>14</B></TD><TD>2&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>10</B></TD><TD>2&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>8</B></TD><TD>2&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>12</B></TD><TD>2&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>16</B></TD><TD>2&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>18</B></TD></TR>
+<TR><TH>9 lettres</TH><TD>1&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>7</B></TD><TD>1&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>5</B></TD><TD>1&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>4</B></TD><TD>1&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>6</B></TD><TD>1&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>8</B></TD><TD>1&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>9</B></TD></TR>
+</TABLE>
+</CENTER><P>
+
+<A NAME="SBETB"></A><H3>Bonus</H3>
+Il y a <B>huit</B> bonus différents à gagner&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Situation de jeu</TH><TH>Bonus</TH></TR>
+<TR><TD align=center>Tous les mots de 9 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 9 lettres de la grille × 1 point</TD></TR>
+<TR><TD align=center>Tous les mots de 8 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 8 lettres de la grille × 2 points</TD></TR>
+<TR><TD align=center>Tous les mots de 7 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 7 lettres de la grille × 3 points</TD></TR>
+<TR><TD align=center>Tous les mots de 6 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 6 lettres de la grille × 4 points</TD></TR>
+<TR><TD align=center>Tous les mots de 5 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 5 lettres de la grille × 5 points</TD></TR>
+<TR><TD align=center>Tous les mots de la grille ont été trouvés</TD><TD align=center>Cumul des sept bonus précédents (bonus doublé)</TD></TR>
+</TABLE>
+</CENTER>
+
+<A NAME="SBETT"></A><H3>Total</H3>
+Le total est le cumul du score et des bonus.
+ 
+<A NAME="IEO"></A><H2>Informations et options</H2>
+
+Reportez-vous aux renvois numérotés en <FONT COLOR="#FF8000">orange</FONT> pour les détails…<P>
+<CENTER><IMG SRC="OsmotissimoT/img/phaseverte.png" WIDTH=320 HEIGHT=480 border=1 Alt="Phase verte"></CENTER><BR>
+<B><U>Description</U></B>&nbsp;:<P>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;1</B></TT></FONT>. Nombre de mots de <B>5</B> lettres trouvés* sur le nombre total* de mots de 5 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;2</B></TT></FONT>. Nombre de mots de <B>6</B> lettres trouvés* sur le nombre total* de mots de 6 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;3</B></TT></FONT>. Nombre de mots de <B>7</B> lettres trouvés* sur le nombre total* de mots de 7 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;4</B></TT></FONT>. Nombre de mots de <B>8</B> lettres trouvés* sur le nombre total* de mots de 8 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;5</B></TT></FONT>. Nombre de mots de <B>9</B> lettres trouvés* sur le nombre total* de mots de 9 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;6</B></TT></FONT>. Dernier mot trouvé** avec le score obtenu***.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;7</B></TT></FONT>. Accès au dictionnaire des définitions° du dernier mot trouvé.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;8</B></TT></FONT>. À propos d'<B>OsmotissimoT</B>.<BR>
+<FONT COLOR="#FF8000"><TT><B>&nbsp;9</B></TT></FONT>. Accès aux statistiques et tops de parties et de grilles.<BR>
+<FONT COLOR="#FF8000"><TT><B>10</B></TT></FONT>. Aide succinte sur la règle du jeu affichée la toute première fois.<BR>
+<FONT COLOR="#FF8000"><TT><B>11</B></TT></FONT>. N° de grille courante. <B>Grille</B> permet de changer°° de grille ou d'abandonner°° la partie.<BR>
+<FONT COLOR="#FF8000"><TT><B>12</B></TT></FONT>. Nombre restant°°° de chances.<BR>
+<FONT COLOR="#FF8000"><TT><B>13</B></TT></FONT>. Score* de la grille courante (scores des mots trouvés) suivi de sa proportion par rapport au total maximal possible (scores des mots à trouver).<BR>
+<FONT COLOR="#FF8000"><TT><B>14</B></TT></FONT>. Bonus* de la grille courante (obtenus en trouvant tous les mots par taille et/ou de toute la grille) suivi de sa proportion par rapport au bonus maximal possible.<BR>
+<FONT COLOR="#FF8000"><TT><B>15</B></TT></FONT>. Total* de la grille courante (score + bonus) suivi de sa proportion par rapport au total maximal possible.<BR>
+<FONT COLOR="#FF8000"><TT><B>16</B></TT></FONT>. Score de la partie, cumul des totaux des grilles successives.<BR>
+<FONT COLOR="#FF8000"><TT><B>17</B></TT></FONT>. Lien vers l'aide en ligne que vous êtes en train de lire&nbsp;!<P>
+<FONT SIZE=2>
+(*) Les compteurs sont en <FONT COLOR="#00FF00">vert</FONT> lorsque le maximum (indiqué à droite) est atteint sinon il sont en <FONT COLOR="#FF0000">rouge</FONT> sauf si le maximum est à zéro (<FONT COLOR="#A0A0A0">gris foncé</FONT>). Dans le <FONT COLOR="#FF8000">Fil Orange</FONT>, les compteurs sont <FONT COLOR="#FF8000">orange</FONT> et il n'y a pas de compteur max (qui sont en <FONT COLOR="#A0A0A0">gris foncé</FONT>).<BR>
+(**) La couleur des lettres reflète leur état <B>avant</B> la sélection.<BR>
+(***) Voir <A HREF="#SBETSDM">tableau</A> plus haut pour la distribution des points.<BR>
+(°) Toucher le livre ouvert permet de changer le dictionnaire. Vous avez alors le choix entre le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A> (par défaut), le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, <A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, <A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et <A HREF="http://1mot.fr" target="_blank">1mot.fr</A>. Une connexion internet est nécessaire. Toucher le point d'interrogation blanc permet d'accéder à la définition du mot affiché à gauche du livre ouvert via le site internet choisi.<BR>
+(°°) Toucher <IMG SRC="OsmotissimoT/img/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)"> abandonne la partie&nbsp;; Toucher <IMG SRC="OsmotissimoT/img/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)"> passe au Fil Orange&nbsp;; Toucher <IMG SRC="OsmotissimoT/img/grilleo.png" HEIGHT=16 WIDTH=18 Alt="Grille (orange)"> passe à la manche suivante.<BR>
+(°°°) <FONT COLOR="#00FF00">Chance</FONT> indique que vous pouvez encore vous tromper. <FONT COLOR="#FF0000">Chance</FONT> indique que vous n'avez plus droit à l'erreur (0 chance). Le nombre de chances ne peut dépasser 99.<BR>
+</FONT>
+
+<A NAME="SER"></A><H2>Tops et Statistiques</H2>
+
+En cours de partie, lorsque vous touchez <IMG SRC="OsmotissimoT/img/s.png" HEIGHT=12 WIDTH=16 Alt="%"> une première fois vous obtenez les tops (voir première figure ci-dessous).<BR>
+La deuxième fois de suite, vous obtenez les statistiques (voir deuxième figure ci-dessous)…<P>
+
+<CENTER>
+<IMG SRC="OsmotissimoT/img/records.png" HEIGHT=300 WIDTH=250 BORDER=1 Alt="Exemple de tops">&nbsp;<IMG SRC="OsmotissimoT/img/stats.png" HEIGHT=300 WIDTH=250 BORDER=1 Alt="Exemple de statistiques">
+</CENTER><P>
+
+Voici les détails…
+
+<A NAME="SERR"></A><H3>Tops</H3>
+
+<FONT COLOR="#00FF00"><TT><B>&nbsp;1</B></TT></FONT>. Dans une partie&nbsp;: Nombres tops de grilles et de chances suivi du score top.<BR>
+<FONT COLOR="#00FF00"><TT><B>&nbsp;2</B></TT></FONT>. Dans une grille&nbsp;: Score (points des mots trouvés), bonus et total (score + bonus) tops hors Fil Orange.<BR>
+<FONT COLOR="#00FF00"><TT><B>&nbsp;3</B></TT></FONT>. Nombre top de mots trouvés dans une grille, par taille de mot, hors Fil Orange.<P>
+
+<A NAME="SERS"></A><H3>Statistiques</H3>
+
+<FONT COLOR="#FF0000"><TT><B>&nbsp;1</B></TT></FONT>. Nombre de parties pour lesquelles sont été calculées le score moyen qui suit.<BR>
+<FONT COLOR="#FF0000"><TT><B>&nbsp;2</B></TT></FONT>. Score moyen d'une partie, calculé sur le nombre de parties indiqué juste avant.<BR>
+<FONT COLOR="#FF0000"><TT><B>&nbsp;3</B></TT></FONT>. Nombre de grilles (ou manches) pour lesquelles ont été calculées les statistiques qui suivent. Il s'agit de moyennes.<BR>
+<FONT COLOR="#FF0000"><TT><B>&nbsp;4</B></TT></FONT>. Score (cumul du score des mots trouvés), Bonus (en trouvant tous les mots par taille ou tous les mots de la grille) et Total (score + bonus) moyens* par manche hors Fil Orange.<BR>
+<FONT COLOR="#FF0000"><TT><B>&nbsp;5</B></TT></FONT>. Nombre moyen* des mots trouvés dans une grille, par taille de 5 à 9 lettres.<P>
+
+<FONT SIZE=2>
+(*) Le pourcentage indiqué juste après entre parenthèses est le rapport entre les valeurs indiquées avant et le maximum possible (lui-même une moyenne).
+</FONT>
+
+<A NAME="FO"></A><H2>Fil Orange</H2>
+
+<CENTER><IMG SRC="OsmotissimoT/img/filorange.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Exemple de Fil Orange"></CENTER><P>
+Le <FONT COLOR="#FF8000">Fil Orange</FONT> commence dès que vous avez <FONT COLOR="#00FF00">verdi</FONT> la grille, vu les éventuels mots non trouvés puis touché <IMG SRC="OsmotissimoT/img/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)">. Vous remarquerez, comme dans l'exemple ci-dessus, que des lettres apparaissent autour de la grille&nbsp;: il s'agit des lettres qui y sont absentes. Elles permettent le choix lors du changement de lettre.<P>
+Un coup, dans le <FONT COLOR="#FF8000">Fil Orange</FONT>, consiste à changer une lettre afin de former de nouveaux mots d'au moins <B>cinq</B> lettres. Chaque nouveau mot formé est alors <FONT COLOR="#FF8000">ocré</FONT> et le but du <FONT COLOR="#FF8000">Fil Orange</FONT> est d'ocrer toute la grille.<P>
+Dans l'exemple ci-dessus, remplacer un <TT>O</TT> par un <TT>I</TT> permet de former le mot <TT>VIEUX</TT> (en rouge) mais également, dans la direction 8h, les mots <TT>TAISE</TT> et <TT>OTAIS</TT>.<P>
+Les scores et compteurs sont en <FONT COLOR="#FF8000">orange</FONT> et il n'y a pas de max (en <FONT COLOR="#A0A0A0">gris foncé</FONT>). Il n'est pas assuré que la grille puisse être entièrement <FONT COLOR="#FF8000">ocrée</FONT> mais il y a une forte probabilité.<P>
+
+Le changement de lettre est simple… Il suffit de toucher la lettre à changer puis la nouvelle lettre. Si vous ne la voyez pas dans la grille, elle devrait être parmi les lettres autour de la grille. Elles sont limitées à <B>quatre</B>, donc il se peut que la lettre recherchée n'y soit pas. Dans ce cas, il faut jouer un autre coup car les lettres autour de la grille changent.<P>
+
+Pour passer le <FONT COLOR="#FF8000">Fil Orange</FONT> et accéder à la grille suivante, touchez <IMG SRC="OsmotissimoT/img/grilleo.png" HEIGHT=16 WIDTH=18 Alt="Grille (orange)">. <U><B>Attention, il n'y a pas de confirmation.</B></U> Si vous abandonnez le <FONT COLOR="#FF8000">Fil Orange</FONT> parce que vous ne trouvez plus de coup à jouer, une solution vous est donnée...<P>
+<CENTER><IMG SRC="OsmotissimoT/img/solution.png" HEIGHT=273 WIDTH=265 BORDER=1 Alt="Exemple de solution donnée"></CENTER><P>
+Le système de coordonnées, <TT>(C,F)</TT> dans l'exemple, est le même que celui utilisé dans <A HREF="Osmotik.html#sdcedd">Osmotik</A> (il faut imaginer les lettres autour de la grille.)
+
+<A NAME="FOVDMF"></A><H3>Visualisation des mots formés et score du dernier coup</H3>
+
+Contrairement à la <FONT COLOR="#00FF00">phase verte</FONT>, dès que vous avez choisi la nouvelle lettre, le premier mot formé s'affiche et les scores sont mis à jour. Si d'autres mots sont formés, il faut toucher <IMG SRC="OsmotissimoT/img/p.png" HEIGHT=12 WIDTH=16 Alt=">"> pour voir le mot suivant ou terminer la visualisation des mots formés. Si aucun changement de lettre (entraînant la formation d'au moins un mot d'au moins <B>cinq</B> lettres) n'est possible, un message vous en informe et le <FONT COLOR="#FF8000">Fil Orange</FONT> se termine. Touchez alors <IMG SRC="OsmotissimoT/img/grilleo.png" HEIGHT=16 WIDTH=18 Alt="Grille (orange)"> pour passer à la grille suivante.<P>
+
+Après l'affichage du dernier mot en rouge dans la grille, le bouton <IMG SRC="OsmotissimoT/img/grilleo.png" HEIGHT=16 WIDTH=18 Alt="Grille (orange)"> est remplacé par un sablier <IMG SRC="OsmotissimoT/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier"> le temps de savoir si un coup est encore possible. Si ce n'est pas le cas, un message informe de la fin du <FONT COLOR="#FF8000">Fil Orange</FONT>.<P>
+
+Après la visualisation, le nombre de mots formés et le score du dernier coup sont affichés, suivis du meilleur score (top)&nbsp;:<P>
+<IMG SRC="OsmotissimoT/img/drncp.png" width=190 height=25 Alt="Score du dernier coup suivi du meilleur score">
+
+<A NAME="FOSDM"></A><H3>Score des mots</H3>
+Durant le <FONT COLOR="#FF8000">Fil Orange</FONT>, le score pour chaque mot trouvé va 4 à 63 points selon de sa <B>taille</B> (proportionnelle) et son <B>orientation</B> dans la grille&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Taille&nbsp;×&nbsp;Orientation</TH>
+    <TH><IMG SRC="OsmotissimoT/img/0h.png" width=16 height=16 alt="0h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/2h.png" width=16 height=16 alt="2h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/4h.png" width=16 height=16 alt="4h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/6h.png" width=16 height=16 alt="6h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/8h.png" width=16 height=16 alt="8h"></TH>
+    <TH><IMG SRC="OsmotissimoT/img/10h.png" width=16 height=16 alt="10h"></TH></TR>
+<TR><TH>5 lettres</TH><TD>1&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>7</B></TD><TD>1&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>5</B></TD><TD>1&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>4</B></TD><TD>1&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>6</B></TD><TD>1&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>8</B></TD><TD>1&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>9</B></TD></TR>
+<TR><TH>6 lettres</TH><TD>2&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>14</B></TD><TD>2&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>10</B></TD><TD>2&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>8</B></TD><TD>2&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>12</B></TD><TD>2&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>16</B></TD><TD>2&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>18</B></TD></TR>
+<TR><TH>7 lettres</TH><TD>3&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>21</B></TD><TD>3&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>15</B></TD><TD>3&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>12</B></TD><TD>3&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>18</B></TD><TD>3&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>24</B></TD><TD>3&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>27</B></TD></TR>
+<TR><TH>8 lettres</TH><TD>4&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>28</B></TD><TD>4&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>20</B></TD><TD>4&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>16</B></TD><TD>4&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>24</B></TD><TD>4&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>32</B></TD><TD>4&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>36</B></TD></TR>
+<TR><TH>9 lettres</TH><TD>5&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>35</B></TD><TD>5&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>25</B></TD><TD>5&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>20</B></TD><TD>5&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>30</B></TD><TD>5&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>40</B></TD><TD>5&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>45</B></TD></TR>
+<TR><TH>10 lettres</TH><TD>6&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>42</B></TD><TD>6&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>30</B></TD><TD>6&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>24</B></TD><TD>6&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>36</B></TD><TD>6&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>48</B></TD><TD>6&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>54</B></TD></TR>
+<TR><TH>11 lettres</TH><TD>7&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>49</B></TD><TD>7&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>35</B></TD><TD>7&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>28</B></TD><TD>7&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>42</B></TD><TD>7&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>56</B></TD><TD>7&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>63</B></TD></TR>
+</TABLE>
+</CENTER><P>
+
+<A NAME="FOB"></A><H3>Bonus</H3>
+
+Dans le <FONT COLOR="#FF8000">Fil Orange</FONT>, il n'y a qu'un bonus mais de taille&nbsp;! Le score du <FONT COLOR="#FF8000">Fil Orange</FONT> est doublé si toute la grille est <FONT COLOR="#FF8000">ocrée</FONT>&nbsp;!<BR>
+Ce bonus n'est pas toujours possible d'une grille à l'autre mais une stratégie de jeu à découvrir peut faciliter l'obtention de ce bonus.
+
+<A NAME="FOT"></A><H3>Total</H3>
+Le total du <FONT COLOR="#FF8000">Fil Orange</FONT> est comme pour la <FONT COLOR="#00FF00">phase verte</FONT>, le cumul du score et du bonus.
+ 
+<A NAME="FOSER"></A><H3>Tops et Statistiques</H3>
+
+<CENTER><IMG SRC="OsmotissimoT/img/statsfo.png" HEIGHT=275 WIDTH=250 border=0 Alt="Stats Fil Orange">&nbsp;<IMG SRC="OsmotissimoT/img/recordsfo.png" HEIGHT=275 WIDTH=250 border=0 Alt="Tops Fil Orange"></CENTER><P>
+
+L'accès aux tops et statistiques du <FONT COLOR="#FF8000">Fil Orange</FONT> n'est possible que lors de cette phase. Réciproquement, il n'est pas possible de consulter les tops et statistiques du <FONT COLOR="#FF8000">Fil Orange</FONT> en dehors du <FONT COLOR="#FF8000">Fil Orange</FONT>.
+À la différence de la <FONT COLOR="#00FF00">phase verte</FONT>, il n'y a ni tops de max, ni statistiques de max.<P>
+Tout ce qui est indiqué dans les tops et statistiques ne concerne que le <FONT COLOR="#FF8000">Fil Orange</FONT>…<P>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;1</B></TT></FONT>. Nombre de grilles sur lesquelles les statistiques qui suivent ont été calculées.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;2</B></TT></FONT>. Score, bonus et total moyen.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;3</B></TT></FONT>. Nombre moyen de mots formés par taille.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;4</B></TT></FONT>. Sur le nombre de coups indiqués, nombre de mots formés et score moyens par coup.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;5</B></TT></FONT>. Toucher <IMG SRC="OsmotissimoT/img/s.png" HEIGHT=12 WIDTH=16 Alt="%"> une deuxième fois permet de voir les statistiques du <FONT COLOR="#FF8000">Fil Orange</FONT>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;6</B></TT></FONT>. Meilleurs score, bonus et total.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;7</B></TT></FONT>. Nombres tops de mots trouvés de 5, 6, 7, 8 et 9 lettres.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;8</B></TT></FONT>. Meilleur nombre de mots formés et score en un coup.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;9</B></TT></FONT>. Toucher <IMG SRC="OsmotissimoT/img/s.png" HEIGHT=12 WIDTH=16 Alt="%"> une troisième fois permet de réinitialiser toutes les statistiques et tous les tops avec demande de confirmation, comme lors de la <FONT COLOR="#00FF00">phase verte</FONT>.<BR>
+ 
+<A NAME="DDM"></A><H2>Définition des mots</H2>
+
+Les définitions de mots ne sont pas incluses dans le jeu. Les définitions sont néanmoins accessibles mais elles nécessitent une connexion internet. Vous avez actuellement le choix entre <B>cinq</B> sites de définitions de mots&nbsp;: le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A>* (par défaut), le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, <A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, <A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et <A HREF="http://1mot.fr" target="_blank">1mot.fr</A>**. Touchez le livre ouvert pour choisir le site et touchez le point d'interrogation blanc pour voir la définition du dernier mot trouvé affiché à gauche du livre ouvert. Si vous ne trouvez pas la définition sur un site, essayez sur les autres.<P>
+
+<FONT SIZE=2>
+(*) Centre National de Ressources Textuelles et Lexicales.<BR>
+(**) Ce site ne donne que des éléments grammaticaux et non lexicaux. Par contre tous les mots du jeu y ont une page consacrée.
+</FONT>
+
+<A NAME="CDUG"></A><H2>Création d'une grille</H2>
+
+Chaque nouvelle grille est créée aléatoirement garantissant un nombre illimité de grilles.<P>
+À chaque fois qu'une grille est en cours de création, le bouton <B>Grille</B> est remplacé par un sablier <IMG SRC="OsmotissimoT/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier">&nbsp;: attendez que le bouton <B>Grille</B> s'affiche avant de continuer.<P>
+Le temps nécessaire à la création d'une grille varie selon le cours de la création et les performances du matériel mais prend autour de trente secondes.<P>
+
+<HR>
+<CENTER><FONT SIZE=2>
+&copy; 2012, Patrice Fouquet - Dernière mise à jour le 23 novembre 2016<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:OsmotissimoT@patquoi.fr?subject=OsmotissimoT">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/osmotissimot" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.OsmotissimoT" target="_blank">Google Play</A> - <A HREF="OsmotissimoT/index.html" target="_blank">WebApp OsmotissimoT</A>
+</FONT></CENTER>
+</body>
+</html>

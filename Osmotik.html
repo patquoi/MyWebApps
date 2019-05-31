@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>O s m o t i k</title>
+<link rel="icon" type="image/png" href="Osmotik/png/icon.png">
+</head>
+<body BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00FFFF" VLINK="#A0A0FF">
+<H1 align=center>Osmotik pour tablette tactile</H1>
+
+<CENTER><IMG SRC="Osmotik/img/logo.png" HEIGHT=354 WIDTH=340 BORDER=0 Alt="Osmotik"></CENTER><P>
+
+Bienvenue sur la page d'informations d'Osmotik. Tu trouveras ici des informations sur l'application pour tablette tactile.<BR>
+<B>Osmotik</B> est disponible sur <A HREF="http://appstore.com/osmotik">iOS</A>, <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.Osmotik">Android</A> et en <A HREF="http://patquoi.fr/Osmotik">WebApp</A> (Firefox, Chrome et Safari ou navigateur sur tablette).
+
+<H1>Sommaire</H1>
+
+<UL>
+<LI><A HREF="#pdj">Principe du jeu</A>
+<LI><A HREF="#a">Aperçu</A>
+<LI><A HREF="#edj">&Eacute;léments de jeu</A><UL>
+ <LI><A HREF="#pdj2">Plateau de jeu</A></UL>
+<LI><A HREF="#ddj">Déroulement du jeu</A><UL>
+ <LI><A HREF="#ddlp">Début de la partie</A>
+ <LI><A HREF="#pdlslpdj">Pose de lettres sur le plateau de jeu</A><UL>
+  <LI><A HREF="#cdlap">Choix des lettres à poser</A> 
+  <LI><A HREF="#cdlcd">Choix de la case départ</A>
+  <LI><A HREF="#cdlddlp">Choix de la direction de la pose</A></UL>
+ <LI><A HREF="#sdcedd">Système de coordonnées et de direction</A><UL>
+  <LI><A HREF="#cduc">Coordonnées d'une case</A>
+  <LI><A HREF="#ddum">Direction d'un mot</A></UL>
+ <LI><A HREF="#vdlpdl">Validité de la pose de lettres</A>
+ <LI><A HREF="#ddmedp">Décompte des mots et des points</A><UL>
+  <LI><A HREF="#mp">Mot principal</A>
+  <LI><A HREF="#mps">Mots principaux siamois</A>
+  <LI><A HREF="#ms">Mots secondaires</A>
+  <LI><A HREF="#mi">Mots inclus, palindromes et anagrammes inversés</A>
+  <LI><A HREF="#ddp">Décompte des points</A><UL>
+   <LI><A HREF="#sdldp">Score des lettres du plateau</A>
+   <LI><A HREF="#sdjc">Score du joueur courant</A></UL>
+  <LI><A HREF="#edc">Exemple de comptabilisation</A></UL>
+ <LI><A HREF="#adl">Achat de lettres</A>
+ <LI><A HREF="#mde">Messages d'erreur</A>
+ <LI><A HREF="#sde">Statistiques des échanges</A>
+ <LI><A HREF="#pst">Passer son tour</A>
+ <LI><A HREF="#fdj">Fin de jeu</A></UL>
+</UL>
+
+<A NAME="pdj"></A><H1>Principe du jeu</H1>
+
+Osmotik est un jeu de guerre des mots qui se joue à 2, 3 ou 6 joueurs sur la même tablette mais pas en solo.<BR>
+Tu dois former des mots pour vivre et trouver le potentiel pour attaquer et affaiblir ton ou tes ennemis.<BR>
+Former des mots permet d'étendre ton territoire, mais aussi - à plus long terme - d'alimenter en lettres ton jeu et d'être réactif face à tes adversaires&nbsp;!<P> 
+
+<A NAME="a"></A><H1>Aperçu</H1>
+
+Reporte-toi à la figure ci-dessous pour localiser toutes les parties du jeu.<BR>
+Dans toute cette page, les renvois chiffrés en <FONT COLOR="#00FF00">vert</FONT> correspondent aux différentes parties apparaissant ci-dessous. Par exemple (<FONT COLOR="#00FF00">5</FONT>) montre comment se présente un bouton (<TT>CONTINUER</TT>).<P>
+
+<CENTER><IMG SRC="Osmotik/img/description.png" HEIGHT=741 WIDTH=1024 BORDER=0 Alt="Description des éléments du jeu"></CENTER><P>
+
+<A NAME="edj"></A><H1>&Eacute;léments de jeu</H1>
+
+L'écran se compose de cinq parties, de gauche à droite&nbsp;:<UL>
+<LI>À gauche de l'hexagone central, se trouve une colonne des 26 lettres de l'alphabet, en noir, accompagnées en dessous, d'un chiffre (<FONT COLOR="#00FF00">1</FONT>). Il s'agit du <B>jeu témoin</B>. Le chiffre a deux significations&nbsp;:<UL>
+ <LI>D'une part, le nombre d'exemplaires de la lettre au début du jeu pour tous les joueurs&nbsp;;
+ <LI>D'autre part, le nombre de points nécessaires pour <A HREF="#adl">acheter</A> un nouvel exemplaire de la lettre.</UL>
+<LI>Au centre se trouve le <B>plateau de jeu</B> (<FONT COLOR="#00FF00">2</FONT>), hexagonal, composé de 169 cases hexagonales sur lequel chaque joueur place à tour de rôle d'une à six lettres.
+<LI>À droite du plateau de jeu se trouve une deuxième colonne des 26 lettres de l'alphabet (<FONT COLOR="#00FF00">3</FONT>). Il s'agit du <B>jeu</B> du joueur courant. 
+La couleur des lettres est celle du joueur qui est en train de jouer. Le chiffre indiqué sous chaque lettre est le nombre d'exemplaires dans son jeu. 
+Les lettres en noir ne sont plus disponibles (comme par exemple le <TT>C</TT>).
+<LI>En dessous du plateau de jeu se trouve la <B>zone de messages</B> (<FONT COLOR="#00FF00">4</FONT>). Des <B>boutons</B> apparaissent avec un fond gris (<FONT COLOR="#00FF00">5</FONT>). Il suffit de les toucher pour agir.
+<LI>À droite du jeu du joueur courant, se trouve la <B>zone des scores et d'évolution de la partie</B>&nbsp;:<UL>
+<LI>En haut, se trouve la <B>zone des scores</B> avec tout d'abord les <B>scores de la partie</B> (<FONT COLOR="#00FF00">6</FONT>) et ensuite, juste en dessous, les <B>scores du tour courant</B> (<FONT COLOR="#00FF00">7</FONT>).
+<LI>Sous les scores du tour, se trouve toute la <B>zone d'évolution de la partie</B> avec le mot formé lors de la pose des lettres (<FONT COLOR="#00FF00">8</FONT>), le score par mot formé (<FONT COLOR="#00FF00">9</FONT>) et les <A HREF="#adl">lettres achetées</A>.
+<LI>La ligne de flèches (<FONT COLOR="#00FF00">10</FONT>) indique la dernière ligne d'informations sur l'évolution de la partie, car cette zone d'affichage ne défile pas, mais reprend juste sous la ligne <TT>EVOLUTION DE LA PARTIE</TT> (<FONT COLOR="#00FF00">8</FONT>).</UL></UL>
+
+<A NAME="pdj2"></A><H2>Plateau de jeu</H2>
+
+Sur le plateau de jeu, les lettres sont de la couleur de leur propriétaire. Le chiffre indiqué en dessous est le score de la lettre.<BR>
+Chaque lettre posée est fixée jusqu'à la fin de la partie, mais son score - qui lui est propre - peut évoluer au cours du jeu, ainsi que sa couleur. Elle peut donc passer d'un joueur à un autre.<BR>
+Lorsque tu formes des mots, ceux-ci sont montrés en blanc (<FONT COLOR="#00FF00">11</FONT>).
+Le score d'une lettre peut changer de couleur&nbsp;:<UL>
+<LI>Lorsqu'il est nul, il devient noir (<FONT COLOR="#00FF00">12</FONT>). Ceci permet d'alerter les joueurs que la lettre risque de basculer du côté d'un adversaire si ce dernier l'utilise.
+<LI>Lorsqu'il devient blanc (<FONT COLOR="#00FF00">13</FONT>), cela signifie qu'un nouvel exemplaire de la lettre peut être acheté.</UL>
+Les étoiles sur les arêtes du plateau (<FONT COLOR="#00FF00">14</FONT>) sont de la couleur du joueur qui devra y poser l'une des lettres lors de son premier tour.<BR>
+Quand le jeu est occupé, des sabliers <IMG SRC="Osmotik/img/sablier.png" HEIGHT=18 WIDTH=20 BORDER=0 Alt="Sablier"> apparaissent sous les colonnes de lettres (<FONT COLOR="#00FF00">15</FONT>).
+
+<A NAME="ddj"></A><H1>Déroulement du jeu</H1>
+
+Une partie d'Osmotik se joue à deux, trois ou six joueurs.<BR>
+Selon le nombre de joueurs, la position initiale (<FONT COLOR="#00FF00">14</FONT>) et la couleur des joueurs diffèrent.<BR>
+Dans l'exemple, l'étoile (<FONT COLOR="#00FF00">14</FONT>) est la position du troisième joueur - de couleur <FONT COLOR="#FFFF00">jaune</FONT> - située en bas à gauche du plateau de jeu, mais cette position correspond à une partie à trois joueurs.<BR> 
+Voici la position initiale et la couleur du joueur en fonction du nombre de joueurs (sens des aiguilles d'une montre)&nbsp;:<P>
+<TABLE CELLSPACING=0 BORDER=1>
+<TR><TH>Joueurs</TH><TH>Joueur&nbsp;1</TH><TH>Joueur&nbsp;2</TH><TH>Joueur&nbsp;3</TH><TH>Joueur&nbsp;4</TH><TH>Joueur&nbsp;5</TH><TH>Joueur&nbsp;6</TH></TR>
+<TR><TD align=center>2</TD><TD align=center><FONT color="#00A0FF">12h</FONT></TD><TD align=center><FONT color="#FF0000">6h</FONT></TD><TD align=center>-</TD><TD align=center>-</TD><TD align=center>-</TD><TD align=center>-</TD></TR>
+<TR><TD align=center>3</TD><TD align=center><FONT color="#00A0FF">12h</FONT></TD><TD align=center><FONT color="#FF0000">4h</FONT></TD><TD align=center><FONT color="#FFFF00">8h</FONT></TD><TD align=center>-</TD><TD align=center>-</TD><TD align=center>-</TD></TR>
+<TR><TD align=center>6</TD><TD align=center><FONT color="#00A0FF">12h</FONT></TD><TD align=center><FONT color="#FF0000">2h</FONT></TD><TD align=center><FONT color="#FFFF00">4h</FONT></TD><TD align=center><FONT color="#00FFFF">6h</FONT></TD><TD align=center><FONT COLOR="#FFB400">8h</FONT></TD><TD align=center><FONT COLOR="#00FF00">10h</FONT></TD></TR>
+</TABLE><P> 
+L'ordinateur ne participe pas en tant que joueur, mais détermine automatiquement les mots formés lors de la pose de lettres sur le plateau de jeu selon le dictionnaire en vigueur*.<P>
+Chaque joueur dispose au départ des 26 lettres de l'alphabet en un nombre d'exemplaires indiqué dans le jeu témoin (<FONT COLOR="#00FF00">1</FONT>).<BR>
+Dans chaque tour de jeu et pour chaque joueur, il y a deux actions différentes possibles dans n'importe quel ordre...<P>
+
+<FONT SIZE=2>(*) ODS6 depuis la version 1.1 et ODS7 depuis la version 1.4</FONT>
+
+<A NAME="ddlp"></A><H2>Début de la partie</H2>
+
+Le premier tour de jeu, pendant lequel chaque joueur pose ses premières lettres, est particulier par rapport aux tours suivants.<BR>
+En effet, pendant ce premier tour, tu dois poser des lettres de telle sorte qu'elles vérifient les conditions suivantes&nbsp;:<UL>
+<LI>elles sont au nombre de deux jusqu'à six,
+<LI>elles doivent être alignées et contiguës,
+<LI>elles doivent former un mot valide selon le dictionnaire de référence,
+<LI>l'une d'elles doit recouvrir la case étoilée (<FONT COLOR="#00FF00">14</FONT>) de la couleur du joueur (qui n'est pas nécessairement l'initiale, il peut s'agir de la finale).</UL>
+
+Voici un exemple de premier tour pour six joueurs (respectivement avant et après le premier tour de jeu)&nbsp;:<P>
+<CENTER><IMG SRC="Osmotik/img/debutdujeu0.png" HEIGHT=345 WIDTH=312 Alt="Plateau de jeu vide en début de partie pour six joueurs"><IMG SRC="Osmotik/img/debutdujeu1.png" HEIGHT=345 WIDTH=306 Alt="Exemple de plateau de jeu après un premier tour avec six joueurs"></CENTER><P>
+Tu peux constater dans cet exemple que <FONT COLOR="#FF0000">Rouge</FONT>, <FONT COLOR="#FFFF00">Jaune</FONT> et <FONT COLOR="00FF00">Vert</FONT> ont la finale de leurs mots sur la case étoilée.  
+<A NAME="pdlslpdj"></A><H2>Pose de lettres sur le plateau de jeu</H2>
+
+La pose de lettres s'effectue en plusieurs étapes&nbsp;:<UL>
+<LI>D'abord, le <A HREF="#cdlap">choix des lettres à poser</A>.
+<LI>Ensuite, la <A HREF="#cdlcd">case départ de la première lettre</A>.
+<LI>Enfin, la <A HREF="#cdlddlp">direction de la pose</A>.</UL>
+
+<A NAME="cdlap"></A><H3>Choix des lettres à poser</H3>
+
+Le message suivant s'affiche quand tu dois sélectionner les lettres à poser&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/msgtllap.png" HEIGHT=48 WIDTH=693 BORDER=0 Alt="Message invitant à toucher les lettres à placer sur le plateau de jeu"></CENTER><P>
+
+Il faut alors toucher les lettres dans son jeu (<FONT COLOR="#00FF00">3</FONT>) qui seront à placer sur le plateau de jeu, dans l'ordre de pose.<BR>
+Les lettres seront placées contiguës et alignées.<BR>
+Si une case est déjà occupée, la lettre suivante sera posée après les cases occupées (voir la pose dans l'<A HREF="#edc">exemple de comptabilisation</A>).<P>
+
+Les lettres choisies apparaissent à côté du message <TT>TOUCHE LES LETTRES À PLACER :</TT><BR>
+Sous le message, plusieurs boutons permettent d'agir sur la sélection des lettres&nbsp;:<UL>
+<LI>Le bouton <TT>EFFACER</TT> retire la dernière lettre choisie.
+<LI>Le bouton <TT>TOUT EFFACER</TT> permet de retirer toutes les lettres choisies.
+<LI>Le bouton <TT>PLACER</TT> permet de terminer le choix des lettres et de passer au <A HREF="#cdlcd">choix de la case départ</A>.<BR>Cette action peut également être obtenue en touchant directement la case départ de la pose.
+<LI>Le bouton <TT>PASSER</TT> permet d'abandonner et de <A HREF="#pst">passer son tour</A>.</UL>
+
+Le nombre d'exemplaires varie en fonction de l'action effectuée&nbsp;:<UL>
+<LI>Lorsqu'une lettre du jeu (<FONT COLOR="#00FF00">3</FONT>) est choisie, le chiffre indiqué en dessous, diminue.
+<LI>Lorsqu'une lettre est retirée de la pose, le chiffre indiqué en dessous de la lettre dans le jeu (<FONT COLOR="#00FF00">3</FONT>), augmente.</UL> 
+
+<A NAME="cdlcd"></A><H3>Choix de la case départ</H3>
+
+Lorsque tu touches le bouton <TT>PLACER</TT>, le message suivant s'affiche avec entre guillemets les lettres à placer&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/msgtlcd.png" HEIGHT=49 WIDTH=521 Alt="Message invitant à choisir la case départ sur le plateau de jeu"></CENTER><P> 
+
+Il faut alors toucher une des cases libres du plateau de jeu, c'est-à-dire non occupée par une lettre.<BR>
+Le bouton <TT>RETOUR</TT> permet de revenir au <A HREF="#cdlap">choix des lettres à poser</A>.<P>
+Il est possible d'éviter le bouton <TT>PLACER</TT> en touchant directement la case départ sur le plateau de jeu.<P>
+Dès qu'une case libre est touchée, des flèches apparaissent autour de la case choisie, indiquant toutes les directions possibles&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/casetoilee.png" WIDTH=118 HEIGHT=128 Alt="Affichage des directions possibles"></CENTER>
+
+<A NAME="cdlddlp"></A><H3>Choix de la direction de la pose</H3>
+
+Lorsque les flèches de directions apparaissent autour de la case départ, le message suivant apparaît&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/msgtld.png" HEIGHT=48 WIDTH=494 Alt="Message invitant au choix de la direction de la pose"></CENTER><P>
+
+Il suffit de toucher la flèche qui correspond à la direction de la pose des lettres.<BR>
+Le bouton <TT>RETOUR</TT> permet de revenir au <A HREF="#cdlcd">choix de la case départ</A>.
+
+Lorsque la direction est choisie, le mot formé (<A HREF="#mp">mot principal</A>) apparaît en blanc (<FONT COLOR="#00FF00">11</FONT>).
+
+<A NAME="sdcedd"></A><H2>Système de coordonnées et de direction</H2>
+
+<A NAME="cduc"></A><H3>Coordonnées d'une case</H3>
+
+Autour de la partie haute du plateau de jeu, sont affichées deux fois les lettres de <TT>A</TT> à <TT>O</TT>, réparties de part et d'autre du plateau de jeu.<BR>
+Il s'agit des coordonnées des cases. Les coordonnées d'une case sont deux lettres de <TT>A</TT> à <TT>O</TT>.<BR>
+Une case est l'intersection de deux lignes d'hexagones se croisant en diagonales.<P>
+
+Dans l'exemple ci-dessous, on montre les coordonnées de la première lettre du mot <TT>VERBE</TT> affiché en blanc.<BR>
+Les coordonnées de la case où se trouve le <TT>V</TT> est donc <TT>JE</TT>.
+
+<CENTER><IMG SRC="Osmotik/img/motforme.png" HEIGHT=368 WIDTH=638 Alt="Coordonnées et direction"></CENTER>
+
+<A NAME="ddum"></A><H3>Direction d'un mot</H3>
+
+La direction d'un mot est exprimée en heures comme ce qu'indique la petite aiguille d'une montre&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/heures.png" WIDTH=118 HEIGHT=128 Alt="expression de la direction d'un mot"></CENTER><P>
+
+Le mot <TT>VERBE</TT> affiché en blanc dans l'exemple plus haut est formé verticalement du bas vers le haut.<BR>
+Sa direction est donc <TT>12h</TT>.  
+
+<A NAME="vdlpdl"></A><H2>Validité de la pose de lettres</H2>
+
+L'apparition en blanc d'un mot formé indique que la pose est valide.<P>
+
+Tu dois poser des lettres sur le plateau de jeu de telle sorte que, toutes les lettres posées + au moins une lettre déjà posée et de ta couleur, participent à un mot valide.<BR>
+Les mots sont valides s'ils appartiennent au dictionnaire de référence*.<P>
+Dans l'exemple du mot formé <TT>VERBE</TT> plus haut, <FONT COLOR="#00A0FF">Bleu</FONT> pose les lettres <TT>V</TT> et <TT>E</TT> (en blanc ci-dessous) depuis la case <TT>JE</TT> à 12h&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/poselettres.png" HEIGHT=302 WIDTH=194 Alt="Pose valide de lettres"></CENTER><P>
+
+Le mot <TT>VERBE</TT> formé par <FONT COLOR="#00A0FF">Bleu</FONT>, contient bien toutes ses lettres posées (<TT>V</TT> et <TT>E</TT>) ainsi qu'au moins une de ses lettres (et même deux&nbsp;: <FONT COLOR="#00A0FF">B</FONT> en <TT>GB</TT> et <FONT COLOR="#00A0FF">E</FONT> en <TT>FA</TT>).<P>
+
+<FONT SIZE=2>(*) ODS6 depuis la version 1.1 et ODS7 depuis la version 1.4</FONT><P>
+
+<A NAME="ddmedp"></A><H2>Décompte des mots et des points</H2>
+
+Le décompte des mots et des points commence après avoir choisi la <A HREF="#cdlddlp">direction de la pose</A>.<BR>
+
+<A NAME="mp"></A><H3>Mot principal</H3>
+
+Le décompte commence par le mot principal, celui qui permet de valider la pose et qui contient toutes les lettres posées ainsi qu'au moins une lettre déjà placée.<P>
+
+<A NAME="mps"></A><H3>Mots principaux siamois</H3>
+Il est possible (dans de rares cas sauf si une seule lettre est posée) qu'il y ait deux mots principaux dans le même axe, mais dans les sens opposés.<BR>
+C'est dans le cas où des lettres déjà placées du joueur courant sont de part et d'autres des lettres posées et permettent de former deux mots.<P>
+Par exemple, <FONT COLOR="#FF0000">Rouge</FONT> place les lettres <TT>R</TT>, <TT>E</TT> et <TT>P</TT> sur une ligne <TT><FONT COLOR="#FF0000">E</FONT><FONT COLOR="#00FFFF">T</FONT><FONT COLOR="#808080">REP</FONT><FONT COLOR="#00FFFF">O</FONT><FONT COLOR="#FF0000">S</FONT></TT>. Il y a deux mots principaux…<UL>
+<LI>De gauche à droite, il y a <TT>REPOS</TT> utilisant les lettres posées <TT>REP</TT> et le <FONT COLOR="#FF0000">S</FONT> déjà placé&nbsp;: <TT><FONT COLOR="#FF0000">E</FONT><FONT COLOR="#00FFFF">T</FONT>REPOS</TT>&nbsp;; 
+<LI>De droite à gauche, il y a <TT>PERTE</TT> utilisant les lettres posées <TT>PER</TT> et le <FONT COLOR="#FF0000">E</FONT> déjà placé&nbsp;: <TT>ETREP<FONT COLOR="#00FFFF">O</FONT><FONT COLOR="#FF0000">S</FONT></TT>.</UL> 
+
+<A NAME="ms"></A><H3>Mots secondaires</H3>
+
+Après le décompte du mot principal, les mots secondaires sont recherchés.<BR>
+Un mot secondaire est comptabilisé si&nbsp;:<UL>
+<LI>Il est valable selon le dictionnaire de référence et doit avoir de deux à quinze lettres
+<LI>Il doit contenir au moins l'une des lettres posées
+<LI>Il ne doit être ni dans la même direction, ni dans la direction opposée du mot principal (voir <A HREF="#mps">mots principaux siamois</A>)</UL>
+
+<A NAME="mi"></A><H3>Mots inclus, palindromes et anagrammes inversés</H3>
+
+Tout mot inclus dans un mot formé (dans les deux sens) n'est pas comptabilisé, y compris les palindromes (par exemple <TT>SELLES</TT>) et les anagrammes inversés (comme <TT>ARRET</TT> et <TT>TERRA</TT>).<BR>
+Par exemple, si le mot <TT>DESARMERA</TT> est comptabilisé, alors les mots inclus suivants ne seront pas comptabilisés&nbsp;:<UL>
+<LI>Dans le même sens&nbsp;: <TT>DESARMER</TT>, <TT>DESARME</TT>, <TT>ARMERA</TT>, <TT>ARMER</TT>, <TT>ARME</TT>&nbsp;;
+<LI>Dans le sens inverse&nbsp;: <TT>REM</TT> et <TT>RAME</TT>.</UL>
+
+Lorqu'un mot formé est trouvé, il apparaît en blanc sur le plateau et le message suivant apparaît&nbsp;:<P>
+<CENTER><IMG SRC="Osmotik/img/msgtflm.png" HEIGHT=50 WIDTH=407 Alt="Message quand un mot formé est trouvé"></CENTER><P>
+Pour passer au mot suivant ou terminer le décompte, il suffit de toucher le bouton <TT>CONTINUER</TT> ou de toucher n'importe quelle case du plateau de jeu.
+
+<A NAME="ddp"></A><H3>Décompte des points</H3>
+
+Il y a deux décomptes de points&nbsp;:<UL>
+<LI>Celui du score des lettres du plateau,
+<LI>Celui du score du joueur courant.</UL>
+
+<A NAME="sdldp"></A><H4>Score des lettres du plateau</H4>
+
+Une lettre a son score touché autant de fois qu'elle participe à un mot formé&nbsp;:<UL>
+<LI>Si une lettre appartient au joueur courant (même couleur) et participe à un mot formé, son score est augmenté d'un point.
+<LI>Si une lettre adverse participe à un mot formé et son score est supérieur à zéro, son score est diminué d'un point.
+<LI>Si une lettre adverse participe à un mot formé et son score est nul, elle change de propriétaire (et donc de couleur) et son score est augmenté d'un point (lettre prise aux adversaires).</UL>
+
+<A NAME="sdjc"></A><H4>Score du joueur courant</H4>
+
+Chaque joueur a un score qui augmente à chaque fois qu'il joue.<BR>
+Son score à chaque tour est simplement la somme des tailles de tous les mots qu'il forme.<BR>
+Ce score est également le cumul&nbsp;:<UL>
+<LI>des points augmentés sur les lettres qu'il a posées sur le plateau,
+<LI>des points augmentés sur ses propres lettres déjà placées,
+<LI>des points diminués sur les lettres adverses,
+<LI>des points augmentés sur les lettres prises aux adversaires.</UL>
+
+<A NAME="edc"></A><H3>Exemple de comptabilisation</H3>
+
+Voici un exemple de comptabilisation des mots et des points&nbsp;:<BR>
+<FONT COLOR="#FFFF00">Jaune</FONT> place les lettres <TT>C</TT>, <TT>A</TT> et <TT>U</TT>, depuis la case entourée de flèches (à gauche ci-dessous), dans la direction de 8h, pour former le mot <TT><FONT COLOR="#808080">CA</FONT><FONT COLOR="#00A0FF">N</FONT><FONT COLOR="#808080">U</FONT><FONT COLOR="#FFFF00">SE</FONT></TT>.<P>
+<CENTER><IMG SRC="Osmotik/img/decompte1.png" HEIGHT=230 WIDTH=300 Alt="Choix de la direction de la pose"> <IMG SRC="Osmotik/img/decompte2.png" HEIGHT=230 WIDTH=300 Alt="Choix de la direction de la pose"></CENTER><P>
+Le score des lettres participant à la formation d'un mot est mis à jour <U>après</U> la mise en évidence du mot en blanc.<P>
+Dans notre exemple, voici l'affichage successif des mots formés après le mot principal (montré à droite ci-dessus)&nbsp;:<P>
+<CENTER>
+<IMG SRC="Osmotik/img/decompte3.png" HEIGHT=230 WIDTH=300 Alt="mot secondaire"> 
+<IMG SRC="Osmotik/img/decompte4.png" HEIGHT=230 WIDTH=300 Alt="mot secondaire"> 
+<IMG SRC="Osmotik/img/decompte5.png" HEIGHT=230 WIDTH=300 Alt="mot secondaire"></CENTER><P>
+Les mots secondaires sont <TT>TA</TT>, <TT>AU</TT> et <TT>UT</TT>. Note qu'il n'y a pas le mot <TT>TU</TT> considéré comme un <A HREF="#mi">mot inclus</A> en tant qu'anagramme d'<TT>UT</TT>. On aurait tout aussi bien pu considérer le mot <TT>TU</TT> à la place du mot <TT>UT</TT>, le choix étant arbitraire.<P>
+L'affichage d'un mot formé sur le plateau de jeu fait apparaître une ligne dans la zone d'évolution de la partie (<FONT COLOR="#00FF00">9</FONT>) après l'affichage de la pose (<FONT COLOR="#00FF00">8</FONT>).<BR>
+<A NAME="ddlpedmf"></A>Dans notre exemple, voici le détail de la pose et des mots formés&nbsp;:<P>
+<CENTER><IMG SRC="Osmotik/img/decompte7.png" HEIGHT=160 WIDTH=182 Alt="détail de la pose et des mots formés"></CENTER><P>
+Voici la composition du décompte affiché dans la zone d'évolution de la partie&nbsp;:<UL>
+<LI>La première ligne est le détail de la pose avec la case départ (<TT>FH</TT>) et la direction (<TT>8H</TT>).
+<LI>La troisième ligne est le mot principal <TT>CANUSE</TT>.
+<LI>De la quatrième à la sixième ligne, sont affichés les mots secondaires <TT>TA</TT>, <TT>AU</TT> et <TT>UT</TT>.
+<LI>La dernière ligne est le cumul des scores.</UL>
+
+La couleur des lettres de la pose et des mots affichés, renseigne sur le type et le propriétaire de la lettre&nbsp;:<UL>
+<LI>Les lettres en <FONT COLOR="#808080">gris</FONT> sont les lettres posées.
+<LI>Les lettres dans une couleur de joueur (<FONT COLOR="#00A0FF">bleu</FONT>, <FONT COLOR="#FF0000">rouge</FONT>, <FONT COLOR="#FFFF00">jaune</FONT>, <FONT COLOR="#00FF00">vert</FONT>, <FONT COLOR="#00FFFF">ciel</FONT> et <FONT COLOR="#FFB400">orange</FONT>) sont les lettres déjà placées. La couleur reflète l'appartenance de la lettre <U>avant</U> le décompte des points du mot.  
+</UL>
+
+Trois scores sont affichés à côté de chaque mot formé avec un cumul à la fin&nbsp;:<UL>
+<LI><TT>S </TT> = Score du mot ajouté au <A HREF="#sdjc">score du joueur</A>. Il s'agit simplement de la taille du mot.
+<LI><TT>P+</TT> = Points pris aux adversaires (réduction du score des lettres adverses).
+<LI><TT>L+</TT> = Lettres prises aux adversaires (changement de couleur et score incrémenté).
+</UL> 
+
+Une fois tous les mots formés montrés, la couleur et le score de toutes les lettres apparaissent&nbsp;:<P> 
+<CENTER><IMG SRC="Osmotik/img/decompte6.png" HEIGHT=230 WIDTH=300 Alt="mot secondaire"></CENTER><P>
+
+Les scores sont également mis à jour (respectivement avant et après le décompte)&nbsp;:<P>
+<CENTER><IMG SRC="Osmotik/img/decompte0.png" HEIGHT=182 WIDTH=182 Alt="mot secondaire"><IMG SRC="Osmotik/img/decompte8.png" HEIGHT=182 WIDTH=182 Alt="mot secondaire"></CENTER><P>
+ 
+Voici la description des scores. La couleur correspond à celle du joueur&nbsp;:<UL>
+<LI>Premier tableau (scores de la partie)&nbsp;:<UL>
+<LI><TT>PTS</TT> = Score du joueur
+<LI><TT>PJ</TT> = Score des lettres sur le plateau
+<LI><TT>NJ</TT> = Nombre de lettres sur le plateau
+<LI><TT>P+</TT> = Points pris sur les lettres adverses
+<LI><TT>L+</TT> = Lettres prises aux adversaires
+<LI><TT>P-</TT> = Points pris par les adversaires
+<LI><TT>L-</TT> = Lettres prises par les adversaires</UL><BR>
+<LI>Deuxième tableau (scores du dernier tour de jeu)&nbsp;:<UL>
+<LI><TT>T</TT><I>+tour</I> = Score du joueur
+<LI><TT>PJ</TT> = Score des lettres sur le plateau**
+<LI><TT>NJ</TT> = Nombre de lettres sur le plateau**
+<LI><TT>P+</TT> = Points pris sur les lettres adverses
+<LI><TT>L+</TT> = Lettres prises aux adversaires
+<LI><TT>LA</TT> = <A HREF="#adl">Lettres achetées</A>
+<LI><TT>PP</TT> = Points payés pour l'<A HREF="#adl">achat de lettres</A></UL></UL>
+
+<FONT SIZE=2>(**) Les score (<TT>PJ</TT>) et nombre (<TT>NJ</TT>) de lettres sur le plateau peuvent être négatifs dans le tableau du dernier tour, car des points et des lettres peuvent être pris par les adversaires.<BR>
+Par exemple, si <FONT COLOR="#00A0FF">Bleu</FONT> et <FONT COLOR="#FF0000">Rouge</FONT> n'avaient pas joué avant <FONT COLOR="#FFFF00">Jaune</FONT>, ils auraient respectivement des scores négatifs&nbsp;:
+<CENTER><TT>T02 PJ NJ P+ L+ LA PP</TT><BR>
+<TT>
+<FONT COlOR="#FFFF00">&nbsp;12&nbsp;&nbsp;9&nbsp;&nbsp;4&nbsp;&nbsp;3&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0</FONT><BR>
+<FONT COlOR="#00A0FF">&nbsp;&nbsp;0&nbsp;-1&nbsp;-1&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0</FONT><BR>
+<FONT COlOR="#FF0000">&nbsp;&nbsp;0&nbsp;-2&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0</FONT></TT></CENTER></FONT><BR>
+
+Concernant ces scores négatifs, si l'on se réfère au <A HREF="#ddlpedmf">détail des mots formés</A>&nbsp;:<UL>
+<LI>Le point pris à <FONT COLOR="#00A0FF">Bleu</FONT> est celui du <FONT COLOR="#00A0FF">T</FONT> du mot <TT>UT</TT>.
+<LI>Les deux points pris à <FONT COLOR="#FF0000">Rouge</FONT> sont ceux des lettres <TT><FONT COLOR="#FF0000">T</FONT></TT> et <TT><FONT COLOR="#FF0000">A</FONT></TT> des mots <TT>TA</TT> et <TT>AU</TT>.
+<LI>La lettre prise à <FONT COLOR="#00A0FF">Bleu</FONT> est le <FONT COLOR="#00A0FF">N</FONT> de <TT>CANUSE</TT>.</UL>
+
+Concernant la ligne des scores du tour n°2 de <FONT COLOR="#FFFF00">Jaune</FONT>&nbsp;:<UL>
+<LI><TT>T02</TT>, <TT>P+</TT> et <TT>L+</TT> correspondent à la ligne <TT>TOTAL</TT> (<TT>S</TT>, <TT>P+</TT> et <TT>L+</TT>) du <A HREF="#ddlpedmf">décompte des mots et des points</A>.
+<LI>Le nombre de lettres <TT>NJ</TT> (4) est…<UL>
+ <LI>le nombre de lettres posées (3 : <TT>C</TT>, <TT>A</TT> et <TT>U</TT>)
+ <LI>+ le nombre de lettres prises (1 : le <TT><FONT COLOR="#00A0FF">N</FONT></TT> de <TT>CANUSE</TT>)
+ <LI>- le nombre de lettres prises par l'adversaire (aucune).</UL>
+<LI>Le nombre de points sur les lettres placées<TT>PJ</TT> (9) est…<UL>
+ <LI>le nombre de points pris par les lettres posées (6)&nbsp;:<UL>
+  <LI>3 qui forment <TT>CANUSE</TT> (<TT>C</TT>, <TT>A</TT> et <TT>U</TT>)&nbsp;+
+  <LI>1 qui forme <TT>TA</TT> (<TT>A</TT>)&nbsp;+
+  <LI>1 qui forme <TT>AU</TT> (<TT>U</TT>)&nbsp;+
+  <LI>1 qui forme <TT>UT</TT> (encore le <TT>U</TT>)&nbsp;;</UL>
+ <LI>+ le nombre de points pris par les lettres du joueur (<FONT COLOR="#FFFF00">Jaune</FONT>) déjà placées (2)&nbsp;:<UL>
+  <LI>2 qui forment <TT>CANUSE</TT> (<TT><FONT COLOR="#FFFF00">S</FONT></TT> et <TT><FONT COLOR="#FFFF00">E</FONT></TT>)&nbsp;+</UL>
+ <LI>+ le nombre de points des lettres prises aux adversaires (1)&nbsp;:<UL>
+  <LI>1 qui forme <TT>CANUSE</TT> (<TT><FONT COLOR="#00A0FF">N</FONT></TT>).</UL></UL>
+</UL> 
+
+<A NAME="adl"></A><H2>Achat de lettres</H2>
+
+L'achat d'une lettre peut se faire à tout moment du tour de jeu.<BR>
+Les lettres qui peuvent être achetées apparaissent sur le plateau de jeu avec un score en blanc (<FONT COLOR="#00FF00">13</FONT>).<BR>
+Pour éviter qu'un joueur n'oublie d'acheter des lettres dans le cas où il est possible de le faire, un message apparaît à la fin de son tour&nbsp;:<P>
+
+<CENTER><IMG SRC="Osmotik/img/msgtpadl.png" Height=20 WIDTH=808 Alt="Message prévenant de la possibilité d'achat de lettres"></CENTER><P>
+
+Toucher une lettre à score blanc de sa couleur entraîne&nbsp;:<UL>
+<LI>l'augmentation du nombre d'exemplaires dans son jeu (<FONT COLOR="#00FF00">3</FONT>),
+<LI>la réduction du score de la lettre touchée, du prix d'achat indiqué dans le jeu témoin (<FONT COLOR="#00FF00">1</FONT>),
+<LI>l'augmentation du nombre de lettres achetées dans la colonne <TT>LA</TT> du tableau des scores du tour (<FONT COLOR="#00FF00">7</FONT>),
+<LI>l'augmentation des points payés du prix de la lettre achetée dans la colonne <TT>PP</TT> (<FONT COLOR="#00FF00">7</FONT>),
+<LI>l'affichage du message d'achat de lettre dans la zone d'évolution de la partie (lettre, coordonnées et prix), comme par exemple…<BR>
+<IMG SRC="Osmotik/img/achatlettre.png" HEIGHT=22 WIDTH=181 Alt="Annonce de l'achat d'une lettre"></UL>
+
+<A NAME="mde"></A><H2>Messages d'erreur</H2>
+
+Au cours du jeu, tu peux rencontrer trois messages d'erreur&nbsp;:<UL>
+<LI>Quand tu choisis la case départ, tu peux voir ce message&nbsp;:<BR>
+<CENTER><IMG SRC="Osmotik/img/msgtdcucl.png" HEIGHT=46 WIDTH=730 Alt="Message quand on touche une case occupée"></CENTER>
+Tu as touché une case sur laquelle une lettre était déjà présente.
+<LI>Quand tu choisis une direction, tu peux voir ce message&nbsp;:<BR>
+<CENTER><IMG SRC="Osmotik/img/msgpi.png" HEIGHT=46 WIDTH=730 Alt="Message quand on ne peux pas placer toutes les lettres"></CENTER>
+Il n'est pas possible de placer toutes les lettres, il n'y a pas assez de place.
+<LI>Quand tu choisis une direction, tu peux voir ce message&nbsp;:<BR>
+<CENTER><IMG SRC="Osmotik/img/msgpdmvalp.png" HEIGHT=46 WIDTH=558 Alt="Message quand on aucun mot valable ne peut être formé"></CENTER>
+Aucun mot valable n'est trouvé. Il y a alors deux possibilités&nbsp;:<UL>
+ <LI>Il n'y a pas au moins une de tes lettres déjà présente qui participe au mot formé.
+ <LI>Il y a bien au moins une de tes lettres déjà présente mais il n'y a pas de mot valable possible.</UL>  
+</UL>
+
+<A NAME="sde"></A><H2>Statistiques des échanges</H2>
+
+Chaque joueur, à la fin de son tour de jeu, peut consulter les statistiques sur les échanges de points et de lettres.<BR>
+Pour ce faire, il suffit de toucher le bouton <TT>AFFICHER STATS</TT>, à l'annonce de la possibilité d'achat de lettres ou de fin de tour.<BR>
+Le tableau de statistiques s'affiche dans la zone d'évolution de la partie, par exemple…<P>
+<CENTER><IMG SRC="Osmotik/img/statsechanges.png" HEIGHT=115 WIDTH=180 Alt="Exemple de statistiques"></CENTER><P>
+Il s'agit de la répartition en pourcentage, du nombre de points (<TT>P</TT>) et lettres prises (<TT>L</TT>) à (<TT>+</TT>) ou par (<TT>-</TT>) l'adversaire.<BR>
+La couleur des pourcentages est celle des joueurs cibles.<P>
+L'exemple ci-dessus indique donc que&nbsp;:<UL>
+<LI>Sur 7 points, <FONT COLOR="#00A0FF">Bleu</FONT> en a pris 71% à <FONT COLOR="#FFFF00">Jaune</FONT> et 29% à <FONT COLOR="#FF0000">Rouge</FONT>.
+<LI><FONT COLOR="#00A0FF">Bleu</FONT> a pris 1 lettre à <FONT COLOR="#FFFF00">Jaune</FONT> (100%)
+<LI>Sur les 11 points de <FONT COLOR="#00A0FF">Bleu</FONT>, <FONT COLOR="#FF0000">Rouge</FONT> lui en a pris 82% et <FONT COLOR="#FFFF00">Jaune</FONT>, 18%.
+<LI>Jaune a pris 3 lettres  à <FONT COLOR="#00A0FF">Bleu</FONT> (100%).</UL>
+
+<A NAME="pst"></A><H2>Passer son tour</H2>
+
+Toucher le bouton <TT>PASSER</TT> permet de passer la main au joueur suivant.<BR>
+Comme pour l'action <TT>RETOUR</TT>, le bouton est accessible à tout moment du tour de jeu.<BR>
+Après avoir touché le bouton <TT>PASSER</TT>, un message de confirmation est demandé. Il faut alors répondre <TT>OUI</TT> pour confirmer et <TT>NON</TT> pour annuler.
+
+<A NAME="fdj"></A><H2>Fin de jeu</H2>
+
+La fin de jeu se produit dans deux cas&nbsp;:<UL>
+<LI>Il n'y a plus de cases libres sur le plateau de jeu,
+<LI>Tous les joueurs ont <A HREF="#pst">passé leur tour</A> à la suite, sans poser de lettres.</UL>
+
+Le vainqueur de la partie est celui qui a le meilleur score (colonne <TT>PTS</TT> du tableau des scores de la partie) (<FONT COLOR="#00FF00">6</FONT>).<BR>
+En cas d'égalité, il faut regarder dans l'ordre&nbsp;:<UL>
+<LI>le plus grand score des lettres placées (<TT>PJ</TT>) puis
+<LI>le plus grand nombre de lettres placées (<TT>NJ</TT>) puis
+<LI>le plus grand nombre de points pris aux adversaires (<TT>P+</TT>) puis 
+<LI>le plus grand nombre de lettres prises aux adversaires (<TT>L+</TT>) puis 
+<LI>le plus petit nombre de points pris par les adversaires (<TT>P-</TT>) puis 
+<LI>le plus petit nombre de lettres prises par les adversaires (<TT>L-</TT>).</UL><P>
+
+<HR>
+
+<CENTER>&copy; 2011, Patrice Fouquet - Dernière mise à jour le 24 novembre 2016<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:osmotik@patquoi.fr?subject=Osmotik webApp/TabApp">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/osmotik" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.Osmotik" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.Osmotik" target="_blank">Amazon.fr</A></CENTER>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>M o t i s s i m o T</title>
+<link rel="icon" type="image/png" href="http://patquoi.fr/MotissimoT/png/icon.png">
+</head>
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#00FFFF" VLINK="#A0A0FF">
+<H1 ALIGN=CENTER>MotissimoT</H1>
+Bienvenue sur la page de <B>MotissimoT</B> pour mobile.<BR>
+Vous trouverez ici des informations sur l'application mobile.<P>
+
+<CENTER><IMG SRC="http://patquoi.fr/MotissimoT/img/M53.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Exemple de partie de MotissimoT"></CENTER><P>
+Une version de <B>MotissimoT</B> est dédiée aux tablettes <B>Android</B> et <B>iPad</B>&nbsp;: <A HREF="Motissimax.html"><B>Motissimax</B></A>. Une autre version permet de jouer à deux sur une même tablette (<B>Android</B> et <B>iOS</B>)&nbsp;: <A HREF="MotissimoDuo.html"><B>MotissimoDuo</B></A>.<P>
+Une version <B>WebApp</B> en ligne est disponible <A HREF="MotissimoT">ici</A>.
+<H2>Partie et niveaux</H2>
+
+Une partie de MotissimoT se déroule en plusieurs niveaux.<BR>
+Dans chaque niveau, vous devez trouver un mot caché en proposant des mots valides selon un dictionnaire de référence qui est l'<I>ODS7</I>* (noms communs, verbes conjugués).<P> 
+Pour entrer un mot, touchez les lettres en bas de l'écran. Dès que toutes les lettres sont saisies, la réponse tombe aussitôt&nbsp;:<UL>
+<LI>Si le mot saisi est valide selon le dictionnaire, les lettres se colorisent en fonction de leur existence et leur place dans le mot à trouver :<UL>
+ <LI>Si la lettre est <B>bien placée</B> dans le mot caché, la lettre est <FONT COLOR="#00FF00">verte</FONT>&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/Vb.png" HEIGHT=16 WIDTH=16 Alt="Lettre bien placée">.
+ <LI>Si la lettre est <B>mal placée</B> dans le mot caché, la lettre est <FONT COLOR="#FF0000">rouge</FONT>&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/Rm.png" HEIGHT=16 WIDTH=16 Alt="Lettre mal placée">.
+ <LI>Si la lettre est <B>mal placée 2 fois</B> dans le mot, la lettre est <FONT COLOR="#FFB400">orange</FONT>°&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/Od.png" HEIGHT=16 WIDTH=16 Alt="Lettre mal placée deux fois">
+ <LI>Si la lettre est <B>inexistante</B> dans le mot caché, la lettre est <FONT COLOR="#808080">grise</FONT>&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/Gp.png" HEIGHT=16 WIDTH=16 Alt="Lettre inexistante">.
+ </UL>
+<LI>Si un mot saisi n'est pas valide, les lettres restent noires sur fond blanc&nbsp;:<IMG SRC="http://patquoi.fr/MotissimoT/png/Nx.png" HEIGHT=16 WIDTH=16 Alt="Lettre de mot invalide">.</UL>
+<U>Attention</U>&nbsp;:<UL>
+<LI>Si une lettre est <FONT COLOR="#FFB400">orange</FONT> et en un seul exemplaire, cela signifie qu'au moins deux exemplaires de cette lettre sont mal placés dans le mot à trouver.  
+<LI>Si une lettre est <FONT COLOR="#FFB400">orange</FONT> et un deuxième exemplaire <FONT COLOR="#FF0000">rouge</FONT>, cela signifie qu'exactement trois exemplaires de cette lettre sont mal placés dans le mot à trouver.  
+<LI>Si une lettre est <FONT COLOR="#808080">grise</FONT> et un deuxième exemplaire <FONT COLOR="#FFB400">orange</FONT>, cela signifie qu'exactement deux exemplaires de cette lettre sont mal placés dans le mot à trouver. 
+<LI>Si une lettre est <FONT COLOR="#FF0000">rouge</FONT> et en un seul exemplaire dans le mot saisi et…<UL>
+ <LI>Si l'option d'affichage des <I>lettres mal placées deux fois</I>** est activée (option <IMG SRC="http://patquoi.fr/MotissimoT/png/Xb.png" HEIGHT=16 WIDTH=16 Alt="Option X activée">) alors cette lettre existe en <B>un seul exemplaire</B> dans le mot à trouver.  
+ <LI>Si l'option d'affichage des <I>lettres mal placées deux fois</I>** est désactivée (option <IMG SRC="http://patquoi.fr/MotissimoT/png/Xm.png" HEIGHT=16 WIDTH=16 Alt="Option X désactivée">) alors cette lettre existe <B>au moins en un exemplaire</B> dans le mot à trouver.</UL>  
+</UL>
+<FONT SIZE=2>(*) À partir de la version 2.1 sinon <I>ODS6</I></FONT><BR>
+<FONT SIZE=2>(**) À partir de la version 1.6 seulement et hors mode <I>Mastermind</I>.</FONT>
+
+<H2>Autres règles</H2> 
+
+<UL>
+<LI>Au premier niveau, vous devez trouver un mot de 5 lettres en un maximum de 5 coups.<BR>
+<LI>Il n'y a pas de temps imparti donc vous avez tout votre temps&nbsp;!<BR>
+<LI>Selon la force de la partie, au plus deux lettres peuvent vous être données au départ.<BR>
+<LI>Si vous trouvez le mot caché avant le dernier coup vous gagnez le nombre de coups économisés pour le niveau suivant jusqu'à un maximum de 2 coups supplémentaires soit un total de 7 coups maximum pour trouver le mot caché.</UL>
+
+<H2>Score</H2>
+
+Le score à chaque niveau est simple&nbsp;:<UL>
+<LI>Si vous trouvez le mot, vous gagnez un point par lettre découverte.<BR>
+<LI>Si vous avez économisé des coups, vous avez un bonus équivalent au nombre de coups économisés multiplié par le nombre de lettres découvertes.<BR>
+</UL>
+Dans l'exemple montré au début, il fallait trouver un mot de 7 lettres dont la troisième lettre était <TT>S</TT>.<BR>
+Il a été trouvé en 5 coups (au lieu de 7). Le mot <TT>SESAMIE</TT> rapporte 6 points (7 lettres moins 1 lettre donnée).<BR>
+Un bonus de 2&nbsp;x&nbsp;6&nbsp;=&nbsp;12&nbsp;points est accordé pour avoir économisé 2 coups. Le score total du niveau est donc de 6&nbsp;+&nbsp;12&nbsp;=&nbsp;18&nbsp;points.<BR>
+
+<H2>Force</H2>
+
+La difficulté des parties est définie par la force allant de très facile (couleur verte) à très difficile (couleur rouge).<BR>
+La difficulté ne concerne pas les mots à trouver mais le nombre de lettres données au départ&nbsp;:<P>
+
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Niveau/Force</TH><TH><font color="#00C000">Très facile</FONT></TH><TH><font color="#00C0C0">Facile</FONT></TH><TH><font color="#808080">Moyenne</FONT></TH><TH><font color="#C08000">Difficile°</FONT></TH><TH><font color="#C00000">Très difficile°</FONT></TH></TR>
+<TR><TH>Niveau 1</TH><TD align=center>5**</TD><TD align=center>5**</TD><TD align=center>5*</TD><TD align=center>5*</TD><TD align=center>5</TD></TR>
+<TR><TH>Niveau 2</TH><TD align=center>5*</TD><TD align=center>5*</TD><TD align=center>5</TD><TD align=center>5</TD><TD align=center>5</TD></TR>
+<TR><TH>Niveau 3</TH><TD align=center>6**</TD><TD align=center>6**</TD><TD align=center>6*</TD><TD align=center>6*</TD><TD align=center>6</TD></TR>
+<TR><TH>Niveau 4</TH><TD align=center>6*</TD><TD align=center>6*</TD><TD align=center>6</TD><TD align=center>6</TD><TD align=center>6</TD></TR>
+<TR><TH>Niveau 5</TH><TD align=center>7**</TD><TD align=center>7*</TD><TD align=center>7*</TD><TD align=center>7</TD><TD align=center>7</TD></TR>
+<TR><TH>Niveau 6</TH><TD align=center>7*</TD><TD align=center>7</TD><TD align=center>7</TD><TD align=center>7</TD><TD align=center>7</TD></TR>
+<TR><TH>Niveau 7</TH><TD align=center>8**</TD><TD align=center>8*</TD><TD align=center>8*</TD><TD align=center>8</TD><TD align=center>8</TD></TR>
+<TR><TH>Niveau 8</TH><TD align=center>8*</TD><TD align=center>8</TD><TD align=center>8</TD><TD align=center>8</TD><TD align=center>8</TD></TR>
+</TABLE></CENTER>
+(*) À partir de la version 1.5&nbsp;: avec une lettre donnée. Jusqu'à la version 1.4.6&nbsp;: avec une initiale donnée.<BR> 
+(**) À partir de la version 1.5&nbsp;: avec deux lettres données. Jusqu'à la version 1.4.6&nbsp;: avec initiale + finale données.<BR>
+(°) Versions 1.4.2 ou ultérieures. Les versions antérieures n'ont pas de niveaux répétés (7 et 8).
+
+<H2>Mode Mastermind</H2>
+
+Ce mode spécial augmente la force d'une partie.
+Dans ce mode, vous n'avez plus les lettres bien placées ou mal placées qui sont indiquées, mais seulement leur nombre.
+Seules les lettres données au départ restent colorées en vert si elles sont à leur place dans le mot saisi.<P>
+
+<CENTER><IMG SRC="http://patquoi.fr/MotissimoT/img/M55.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Exemple de partie en mode Mastermind"></CENTER><P>
+
+Après la saisie d'un mot, des marqueurs de couleurs apparaissent à sa droite&nbsp;:<UL> 
+<LI>Le nombre de lettres bien placées est indiqué par des marqueurs <FONT COLOR="#008000"><B>verts</B></FONT> à droite du mot saisi&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/550.png" HEIGHT=16 WIDTH=16 Alt="Marqueurs verts">.
+<LI>Le nombre de lettres mal placées est indiqué par des marqueurs <FONT COLOR="#800000"><B>rouges</B></FONT> à droite du mot saisi&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/505.png" HEIGHT=16 WIDTH=16 Alt="Marqueurs rouges">.
+<LI>Le nombre de lettres inexistantes est indiqué par des marqueurs <FONT COLOR="#808080"><B>gris</B></FONT> à droite du mot saisi&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/500.png" HEIGHT=16 WIDTH=16 Alt="Marqueurs gris">.
+</UL><P>
+<U>Exemples</U>&nbsp;:<P><UL>
+<LI>Pour un mot de 5 lettres, si 2 lettres sont bien placées et 1 est mal placée, on a les marqueurs suivants&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/521.png" HEIGHT=16 WIDTH=16 Alt="Exemple de pentamarqueurs">
+<LI>Pour un mot de 6 lettres, si 1 lettre est bien placée et 3 sont mal placées, on a les marqueurs suivants&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/613.png" HEIGHT=16 WIDTH=16 Alt="Exemple d'hexamarqueurs">
+<LI>Pour un mot de 7 lettres, si 3 lettres sont bien placées et 2 sont mal placées, on a les marqueurs suivants&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/732.png" HEIGHT=16 WIDTH=16 Alt="Exemple de septamarqueurs">
+<LI>Pour un mot de 8 lettres, si aucune lettre n'est bien placée et 4 sont mal placées, on a les marqueurs suivants&nbsp;: <IMG SRC="http://patquoi.fr/MotissimoT/png/804.png" HEIGHT=16 WIDTH=16 Alt="Exemple d'octomarqueurs">
+</UL><P>
+
+<U>Remarques</U>&nbsp;:<UL>
+<LI>La position des marqueurs colorés n'a aucun rapport avec la position des lettres.
+<LI>Le score en mode Mastermind est le score du mode classique multiplié par lui-même au niveau de chaque ligne.
+<LI>Le nombre de coups passe de 5 à 7 coups maximum quel que soit le niveau. 
+</UL>
+
+<H2>Paramètres de jeu, informations et autres options</H2>
+
+Les paramètres de jeu, infos et options diverses sont accessibles en touchant le symbole <IMG SRC="http://patquoi.fr/MotissimoT/png/£x.png" HEIGHT=16 WIDTH=16 Alt="Touche (i)">. Il permet également de revenir à la partie en cours.<P>
+
+<CENTER><IMG SRC="http://patquoi.fr/MotissimoT/img/IO.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Affichage de la légende et accès aux options"></CENTER><P>
+
+L'accès se trouve en dessous de la légende des lettres et des touches de jeu.
+
+<H3>Paramètres de jeu</H3>
+
+Il y a trois paramètres de jeu&nbsp;:<UL>
+<LI>le <B>mode Mastermind</B> (lettre M),
+<LI>l'option de <B>rappel automatique des lettres bien placées</B> sur la ligne suivante (lettre R),
+<LI>la <B>force</B> (lettre F).
+</UL><P>
+
+La couleur des lettres renseigne sur l'état des paramètres de jeu&nbsp;:<UL>
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Fb.png" HEIGHT=16 WIDTH=16 Alt="Force très facile"> indique que la <B>force <I>Très facile</I></B> est activée (force par défaut).
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Fc.png" HEIGHT=16 WIDTH=16 Alt="Force facile"> indique que la <B>force <I>Facile</I></B> est activée.
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Fp.png" HEIGHT=16 WIDTH=16 Alt="Force moyenne"> indique que la <B>force <I>Moyenne</I></B> est activée.
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Ff.png" HEIGHT=16 WIDTH=16 Alt="Force difficile"> indique que la <B>force <I>Difficile</I></B> est activée.
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Fm.png" HEIGHT=16 WIDTH=16 Alt="Force très difficile"> indique que la <B>force <I>Très difficile</I></B> est activée.
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Mb.png" HEIGHT=16 WIDTH=16 Alt="Mode Mastermind activé"> indique que le <B>mode Mastermind est activé</B>.
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Mm.png" HEIGHT=16 WIDTH=16 Alt="Mode Mastermind désactivé"> indique que le <B>mode Mastermind est désactivé</B> (mode par défaut).
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Rb.png" HEIGHT=16 WIDTH=16 Alt="Rappel des lettres bien placées activé"> indique que le <B>rappel des lettres bien placées est activé</B> (mode par défaut).
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Rm.png" HEIGHT=16 WIDTH=16 Alt="Rappel des lettres bien placées désactivé"> indique que le <B>rappel des lettres bien placées est désactivé</B>.
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Xb.png" HEIGHT=16 WIDTH=16 Alt="Affichage des lettres mal placées deux fois activé"> indique que l'<B>affichage des lettres mal placées deux fois (colorées en <FONT COLOR="#FFB400">orange</FONT>) est activé</B> (mode par défaut).
+<LI><IMG SRC="http://patquoi.fr/MotissimoT/png/Xm.png" HEIGHT=16 WIDTH=16 Alt="Affichage des lettres mal placées deux fois désactivé"> indique que l'<B>affichage des lettres mal placées deux fois (colorées en <FONT COLOR="#FFB400">orange</FONT>) est désactivé</B>.
+</UL>
+
+<U>Attention</U>&nbsp;:<UL>
+<LI>Lorsqu'une option est changée en touchant la lettre correspondante, le changement prend effet à la prochaine partie.
+<LI>Lorsqu'une partie est gagnée, c'est-à-dire que les niveaux sont tous réussis, la force est automatiquement augmentée.
+<LI>Lorsqu'une partie de force très difficile est gagnée dans le mode classique, le mode Mastermind est automatiquement activé en force très facile.
+</UL>
+
+<H3>Informations et autres options</H3>
+
+Les touches grises du clavier sont inopérantes.<BR>
+
+Les touches noires correspondent à des informations ou des options&nbsp;:<UL>
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/$x.png" HEIGHT=16 WIDTH=16 Alt="Touche ?"> permet d'afficher les informations <B>à propos de MotissimoT</B>.
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Ax.png" HEIGHT=16 WIDTH=16 Alt="Touche A"> permet d'afficher une aide succinte sur la <B>règle du jeu</B> (affichée au lancement du jeu).
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Ox.png" HEIGHT=16 WIDTH=16 Alt="Touche O"> permet d'afficher <B>toutes les options</B> (cette liste).
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Cx.png" HEIGHT=16 WIDTH=16 Alt="Touche C"> permet d'afficher l'aide sur le <B>comptage des points</B>.
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Nx.png" HEIGHT=16 WIDTH=16 Alt="Touche N"> permet d'afficher l'aide sur les  <B>niveaux et les forces</B>.
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Sx.png" HEIGHT=16 WIDTH=16 Alt="Touche S"> permet d'afficher <B>statistiques et records</B> (nombre de parties et niveaux joués et gagnés + meilleur score).
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Dx.png" HEIGHT=16 WIDTH=16 Alt="Touche D"> permet de <B>remettre à zéro les paramètres de jeu</B> (options par défaut + remise à zéro des statistiques et des records).
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/Zx.png" HEIGHT=16 WIDTH=16 Alt="Touche Z"> permet de <B>remettre à zéro les statistiques et les records</B>.
+</UL>  
+
+<U>Remarques</U>&nbsp;:<UL>
+<LI>Les options <IMG SRC="http://patquoi.fr/MotissimoT/png/Dx.png" HEIGHT=16 WIDTH=16 Alt="Touche D"> et <IMG SRC="http://patquoi.fr/MotissimoT/png/Zx.png" HEIGHT=16 WIDTH=16 Alt="Touche Z"> requièrent une confirmation en touchant une deuxième fois la lettre.
+<LI>La touche <IMG SRC="http://patquoi.fr/MotissimoT/png/!x.png" HEIGHT=16 WIDTH=16 Alt="Touche RAZ"> (en mode jeu) permet de recommencer une partie. Comme pour les deux options précédentes, un avertissement oblige à appuyer une deuxième fois pour confirmer.
+</UL>
+
+<H2>Définition des mots</H2>
+
+Les définitions de mots ne sont pas incluses dans le jeu. Depuis la version 1.9, les définitions sont néanmoins accessibles mais elles nécessitent une connexion internet. 
+Vous avez actuellement le choix entre <B>cinq</B> sites de définitions de mots&nbsp;:<UL> 
+<LI>le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A>*, 
+<LI>le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, 
+<LI><A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, 
+<LI><A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et 
+<LI><A HREF="http://1mot.fr" target="_blank">1mot.fr</A>**.</UL> 
+<FONT SIZE=2>
+(*) Centre National de Ressources Textuelles et Lexicales.<BR>
+(**) Ce site ne donne que des éléments grammaticaux et non lexicaux. Par contre tous les mots du jeu y ont une page consacrée.
+</FONT><P>
+Il faut toucher une des lettres du mot à trouver quand celui-ci est révélé. Il y a un site différent par lettre avec un choix parmi les cinq sites ci-dessus. Si vous ne trouvez pas la définition sur un site, essayez sur les autres. Voici la répartition des sites selon les lettres dans cet exemple&nbsp;:<P>
+<CENTER><IMG SRC="http://patquoi.fr/MotissimoT/img/motissitesweb.png" HEIGHT=112 WIDTH=320 Alt="Sites de définitions de mots selon la lettre"></CENTER>
+
+<HR>
+<CENTER>&copy; Patrice Fouquet - Dernière mise à jour le 17 novembre 2016<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:motissimot@patquoi.fr?subject=MotissimoT">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/motissimot" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.MotissimoT">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.MotissimoT" target="_blank">Amazon.fr</A> - <A HREF="http://patquoi.fr/Motissimax.html" target="_blank">Motissimax</A> - <A HREF="http://patquoi.fr/MotissimoDuo.html" target="_blank">MotissimoDuo</A></CENTER>
+</body>
+</html>

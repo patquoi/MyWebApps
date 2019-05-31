@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Bienvenue dans l'aide contextuelle de Centre-Ville</TITLE>
+<META Name="description" Content="Aide de Centre-Ville, logiciel de simulation de circulation urbaine">
+<META Name="keywords" Content="aide, centre-ville, centre, ville, simulation, circulation, urbaine, GPL, GNU, sources, windows">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<A NAME="ASCV"></A><H1>Aide sur Centre-Ville</H1>
+<UL>
+<LI><A HREF="#BR">But recherché</A>
+<LI><A HREF="#EDLS">&Eacute;léments de la simulation</A>
+<LI><A HREF="#PDLI">Présentation de l&rsquo;interface</A>
+    <UL>    
+	<LI><A HREF="#LMP">Le menu principal</A>
+        <UL>  
+		<LI><A HREF="#LMF">Le menu Fichier</A>
+		<LI><A HREF="#LMA">Le menu Affichage</A>
+		<LI><A HREF="#LMSI">Le menu Simulation</A>
+		<LI><A HREF="#LMST">Le menu Statistiques</A>
+		<LI><A HREF="#LMI">Le menu ?</A>
+		<LI><A HREF="#PDLS">Paramètres de la simulation</A>
+			<UL>  
+			<LI><A HREF="#PDLSEDLS">Eléments de la simulation</A>
+			<LI><A HREF="#PDLSPDF">Paramètres de fonctionnement</A>
+			<LI><A HREF="#PDLSPPD">Paramètres par défaut</A>
+			<LI><A HREF="#DDDDLZDS">Définition des dimensions de la zone de simulation</A>
+			<LI><A HREF="#GADUR">Génération aléatoire d&rsquo;un réseau</A>
+			</UL>  
+		<LI><A HREF="#PDRDB">Paramètres du réseau de bus</A>
+			<UL>  
+			<LI><A HREF="#PDRDBCDRDB">Composition du réseau de bus</A>
+			<LI><A HREF="#PDRDBDDLDB">Définition des lignes de bus</A>
+			<LI><A HREF="#PDRDBAP">Autres paramètres</A>
+			<LI><A HREF="#PDRDBMS">Mode simulation</A>
+			</UL>  
+		<LI><A HREF="#PDRDT">Paramètres du réseau de trams</A>
+			<UL>  
+			<LI><A HREF="#PDRDTCDRDT">Composition du réseau de bus</A>
+			<LI><A HREF="#PDRDTDDLDT">Définition des lignes de bus</A>
+			<LI><A HREF="#PDRDTAP">Autres paramètres</A>
+			<LI><A HREF="#PDRDTMS">Mode simulation</A>
+			</UL>  
+		<LI><A HREF="#PDT">Paramètres des taxis</A>
+		<LI><A HREF="#PDV">Paramètres des vehlibs</A>
+		<LI><A HREF="#CDLS">Commandes de la simulation</A>
+			<UL>  
+			<LI><A HREF="#CDLSCG">Commandes générales</A>
+			<LI><A HREF="#CDLSCRALCS">Commandes relatives à la case sélectionnée</A>
+			</UL>  
+		<LI><A HREF="#SDLS">Statistiques de la simulation</A>
+		<LI><A HREF="#SSLCDR">Statistiques sur la composition du réseau</A>
+		<LI><A HREF="#PDLADSDE">Paramètres de l&rsquo;affichage des statistiques d&rsquo;évolution</A>
+		</UL>
+    <LI><A HREF="#LBDO">Les barres d&rsquo;outils</A>
+		<UL>
+		<LI><A HREF="#LBDOF">La barre d&rsquo;outils Fichier</A>
+		<LI><A HREF="#LBDOA">La barre d&rsquo;outils Affichage</A>
+		<LI><A HREF="#LBDOSV">La barre d&rsquo;outils Simulation</A>
+		<LI><A HREF="#LBDOST">La barre d&rsquo;outils Statistiques</A>
+		<LI><A HREF="#LBDOIF">La barre d&rsquo;outils Informations</A>
+		<LI><A HREF="#LBDOEC">La barre d&rsquo;outils Edition (case)</A>
+		<LI><A HREF="#LBDOES">La barre d&rsquo;outils Edition (sélection)</A>
+		</UL>
+	<LI><A HREF="#LZDS">La zone de simulation</A>
+		<UL>
+		<LI><A HREF="#LDEDLZDS">Les différents éléments de la simulation</A>
+		<LI><A HREF="#LMD">Les menus déroulants</A>
+		</UL>
+	<LI><A HREF="#LBDE">La barre d&rsquo;état</A>
+	</UL>
+<LI><A HREF="#CDR">Construction du réseau</A>
+	<UL>
+	<LI><A HREF="#DDP">Définition des priorités</A>
+	<LI><A HREF="#DDF">Définitions des feux</A>
+	<LI><A HREF="#DDPP">Définition des priorités piétons</A>
+	<LI><A HREF="#ODC">Outils de construction</A>
+	<LI><A HREF="#C">Carrefours</A>
+	<LI><A HREF="#BDN">Boutons de navigation</A>
+	<LI><A HREF="#DDLNDUZ">Définition de la nature d&rsquo;une zone</A>
+	</UL>
+<LI><A HREF="#LDLS">Lancement de la simulation</A>
+	<UL>
+	<LI><A HREF="#EGDLS">Evolution générale de la simulation</A>
+	<LI><A HREF="#SDFEDT">Statistiques de fluidité et de trafic</A>
+	<LI><A HREF="#SDVDUEAUA">Statistiques des véhicules d&rsquo;un parking à un autre</A>
+	<LI><A HREF="#ADDJAE">Affichage des distances jusqu&rsquo;aux parkings</A>
+	<LI><A HREF="#ADDJAADB">Affichage des distances jusqu&rsquo;aux arrêts de bus</A>
+	<LI><A HREF="#ADDJAADT">Affichage des distances jusqu&rsquo;aux arrêts de tram</A>
+	<LI><A HREF="#ADDJAFDT">Affichage des distances jusqu&rsquo;aux files de taxis</A>
+	<LI><A HREF="#ADDJAFDP">Affichage des distances jusqu&rsquo;aux files de parkings</A>
+	<LI><A HREF="#ADDJAPDV">Affichage des distances jusqu&rsquo;aux places de vehlib</A>
+	<LI><A HREF="#RDUEDLS">Recherche d&rsquo;un élément de la simulation</A>
+	<LI><A HREF="#ISUV">Informations sur un véhicule</A>
+	<LI><A HREF="#ISUB">Informations sur un bus</A>
+	<LI><A HREF="#ISUT">Informations sur un tram</A>
+	<LI><A HREF="#ISUVDT">Informations sur un taxi</A>
+	<LI><A HREF="#ISUVL">Informations sur un vehlib</A>
+	<LI><A HREF="#ISUP">Informations sur un piéton</A>
+		<UL>
+		<LI><A HREF="#ISUPPP">Positions possibles</A>
+		<LI><A HREF="#ISUPSP">Situations possibles</A>
+		</UL>
+	<LI><A HREF="#RC">Raccourcis clavier</A>
+		<UL>
+		<LI><A HREF="#RCMP">Menu principal</A>
+		<LI><A HREF="#RCMD">Menus déroulants</A>
+		<LI><A HREF="#RCMS">Mode simulation</A>
+	   </UL>
+	<LI><A HREF="#MDE">Messages d&rsquo;erreur</A>
+	   <UL>
+	   <LI><A HREF="#MDEVDI">Vérification d&rsquo;intégrité</A>
+       <LI><A HREF="#MDEVDR">Vérification du réseau</A>
+       </UL>
+	</UL>
+</UL>
+
+<HR>
+
+<A NAME="BR"></A><H2>But recherché</H2>
+Le but de <I>Centre-Ville</I> est en fait un challenge à relever soi-même&nbsp;: définir un <B>réseau de voies de circulation</B> efficace sachant que c&rsquo;est l&rsquo;ordinateur qui va vous noter. Le challenge, c&rsquo;est vous qui vous le fixez. Vous vous fixez au départ <I>n</I> points (appelés <B>parkings souterrains</B>&nbsp;&ndash; <I>anciennement étapes</I>) et le but est de construire un réseau routier autour de ces <I>n</I> points de telle sorte que le <B>déplacement de véhicules</B> à travers ce réseau soit le plus efficace possible (ou alors le plus encombrant sans être bloqué&nbsp;!). Lors du <A HREF="#LDLS">lancement de la simulation</A>, chaque véhicule aura pour <B>mission</B> d&rsquo;aller d&rsquo;un parking à un autre.<P>
+Dans les versions successives de <I>Centre-Ville</I>, des éléments ont été ajoutés comme les <B>piétons</B>, des <B>véhicules de police</B> et <B>d&rsquo;urgence</B>, des <B>bus</B>, des <B>trams</B>, des <B>taxis</B>, des <B>places de parking</B>, des <B>vehlibs</B> pour un peu &laquo;&nbsp;assaisonner&nbsp;&raquo; la simulation.
+
+<HR>
+
+<A NAME="EDLS"></A><H2>&Eacute;léments de la simulation</H2>
+<IMG Alt="" SRC="CVW.jpg" HEIGHT=586 WIDTH=784 BORDER=0><P>
+Les premiers éléments de base sont les <B>parkings souterrains</B>. On les relie en construisant d&rsquo;abord les <B>voies de circulation</B>. Les voie se caractérisent par une direction et un sens. Plus précisément, une voie est un assemblage de cases. &Agrave; partir de chacune d&rsquo;elles on détermine sur quelles cases voisines un véhicule peut se déplacer. Les directions utilisées sont <I>nord</I>, <I>est</I>, <I>sud</I> et <I>ouest</I>.<P>
+Ensuite, sur les voies de circulation, on ajoute une <B>signalisation</B>. Cette dernière est essentiellement une signalisation de <B>priorités</B>&nbsp;: elle est constituée de stops, de cédez-le-passage et de feux. La signalisation de priorités permet de <B>décider</B> quel véhicule pourra se placer sur une case.<P>
+Tous les éléments entrant dans la définition du réseau sont là.<P>
+Pour pouvoir démarrer la simulation, on introduit des <B>véhicules</B>. L&rsquo;ordinateur va générer des véhicules qui, partant d&rsquo;un parking donné, auront pour mission d&rsquo;arriver à un autre parking donné. Pour que la simulation soit équilibrée, il y aura toujours autant de véhicules partant d&rsquo;un parking que de véhicules arrivant à un parking.<P>
+Depuis la version 2.2, parmi les véhicules, il y a des <B>véhicules prioritaires</B>. Ils ne sont pas soumis aux priorités et ne respectent aucune signalisation (<I>cédez-le-passage</I>, <I>stops</I>, <I>feux</I> et <I>priorités à droite</I>). Ils sont prioritaires à tout autre véhicule. Il y a les véhicules d&rsquo;urgence (en rouge vif) et de police (en blanc)&nbsp;: ils sont reconnaissables par leur couleur mais aussi par un gyrophare clignotant (voir la <A HREF="#LZDS">zone de simulation</A>). Entre eux, c&rsquo;est le véhicule de police qui est prioritaire par rapport au véhicule d&rsquo;urgence. Enfin, il y a 1% de véhicules d&rsquo;urgence et 1% de véhicules de police.<P>
+Il est possible d&rsquo;introduire des <B>piétons</B> dans la simulation. Ceux-ci se déplacent en dehors des voies et à travers celles-ci sur les <B>passages piétons</B>.<P>
+Depuis la version 5.2, il possible de définir des <B>priorités piétons</B> vis-à-vis des véhicules et des trams en plaçant des <B>feux de piétons</B> liés à des feux de circulation. Ces feux de piétons se placent aux extrémités des passages piétons.<P>
+Depuis la version 3.0, un <B>réseau de bus</B> peut être ajouté au réseau de véhicules. Les <B>bus</B> sortent d&rsquo;un <B>dépôt</B> et passent d&rsquo;un <B>arrêt</B> à l&rsquo;autre indéfiniment.<P>
+Depuis la version 3.5, un <B>réseau de trams</B> peut être ajouté au réseau de véhicules. Les trams passent d&rsquo;un arrêt à l&rsquo;autre indéfiniment comme les bus.<P>
+Depuis la version 3.6, les <B>taxis</B> peuvent être ajoutés à la simulation. Les taxis partent des <B>places de taxis</B> pour y revenir une fois le piéton déposé.<P>
+Depuis la version 5.0, les <B>places et files de parkings</B> peuvent être ajoutées à la simulation. Elles complètent les <B>parkings souterrains</B> dans leur rôle de générateurs de missions de trajet.<P>
+Depuis la version 5.3, des <B>vehlibs</B> (<I>véh</I>icules de <I>lib</I>re service) peuvent être ajoutés à la simulation. Un <I>vehlib</I> est choisi par un piéton et part toujours d&rsquo;une <B>place de vehlib</B> à une autre.<P>
+<U>Note importante sur le terme &laquo;&nbsp;parking&nbsp;&raquo;</U>&nbsp;:<UL>
+<LI>Quand le mot &laquo;&nbsp;parking&nbsp;&raquo; est utilisé seul, il sous-entend <B>souterrain</B> (anciennement <I>étape</I>).
+<LI>Quand il s&rsquo;agit de parking de surface, le mot &laquo;&nbsp;parking&nbsp;&raquo; est alors accompagné du mot <B>file</B> (file de parkings) ou du mot <B>place</B> (place de parking).</UL>
+<I>Centre-Ville</I> permet de construire un réseau de voies de circulation dans un espace à deux dimensions représenté par un tore de 99 cases par 63 par défaut.<P>
+Pour visualiser ces différents éléments, voir la description de la <A HREF="#LZDS">zone de simulation</A>.
+
+<HR>
+
+<A NAME="PDLI"></A><H2>Présentation de l&rsquo;interface</H2>
+Avant de lancer l&rsquo;application <I>Centre-Ville</I>, assurez-vous d&rsquo;avoir une résolution d&rsquo;écran d&rsquo;au moins 800&times;600 car dans cette résolution la fenêtre principale couvre tout l&rsquo;écran pour une zone par défaut de 99&times;63.<P>
+La fenêtre principale est composée de quatre parties de haut en bas&nbsp;:<UL>
+<LI><A HREF="#LMP">le menu principal</A>
+<LI><A HREF="#LBDO">la barre d&rsquo;outils</A>
+<LI><A HREF="#LZDS">la zone de simulation</A>
+<LI><A HREF="#LBDE">la barre d&rsquo;état</A></UL>
+
+<HR>
+
+<A NAME="LMP"></A><H2>Le menu principal</H2>
+Le menu principal traite des commandes générales de l&rsquo;application&nbsp;:<UL>
+<LI>la gestion des <B>fichiers de sauvegarde</B>&nbsp;: <A HREF="#LMF">le menu <I>Fichier</I></A>
+<LI>l&rsquo;affichage de la <B>zone de simulation</B>&nbsp;: <A HREF="#LMA">le menu <I>Affichage</I></A>
+<LI>les <B>paramètres</B> et les <B>commandes</B> de la simulation&nbsp;: <A HREF="#LMSI">le menu <I>Simulation</I></A>
+<LI>l&rsquo;accès et les paramètres des <B>statistiques</B>&nbsp;: <A HREF="#LMST">le menu <I>Statistiques</I></A>
+<LI>l&rsquo;<B>aide</B> et autres <B>informations</B>&nbsp;: <A HREF="#LMI">le menu <I>?</I></A></UL>
+
+<HR>
+
+<A NAME="LMF"></A><H2>Le menu <I><U>F</U>ichier</I></H2>
+<IMG Alt="" SRC="MF.jpg" HEIGHT=144 WIDTH=214 BORDER=0><P>
+Les commandes permettant de créer, ouvrir et enregistrer un fichier de sauvegarde d&rsquo;un réseau se situent dans le menu <I><U>F</U>ichier</I>.<BR>
+Les fichiers de sauvegarde des réseaux ont pour extension <TT>.cvw</TT>.<BR>
+Ils sont également reconnaissables par leur icône <IMG Alt="" SRC="ICOCV.jpg" HEIGHT=32 WIDTH=32 BORDER=0>.<BR>
+Si vous double cliquez sur un de ces fichiers, l&rsquo;application <I>Centre-Ville</I> s&rsquo;exécute et l&rsquo;ouvre.<BR>
+Pour quitter <I>Centre-Ville</I>, choisissez la rubrique <I><U>Q</U>uitter</I> ou appuyez sur <I>Alt+F4</I>.
+<H3>Compatibilité</H3>
+Depuis la version 3.0, la compatibilité entre versions différentes de fichiers sauvegardés est gérée automatiquement. Seuls les fichiers enregistrés avec une version antérieure à la version 2.0 ne peuvent pas être ouverts avec la version 3.0 ou supérieure.
+<H3>Intégrité</H3>
+Jusqu&rsquo;à la version 1.6 de <I>Centre-Ville</I>, pour chaque fichier ouvert, était vérifiée systématiquement l&rsquo;intégrité de ses données. &Agrave; présent (depuis la version 1.6.1), il faut cocher la rubrique <I>Vérifier l&rsquo;intégrité après ouverture</I>.
+
+<HR>
+
+<A NAME="LMA"></A><H2>Le menu <I><U>A</U>ffichage</I></H2>
+<IMG Alt="" SRC="MA.jpg" HEIGHT=185 WIDTH=200 BORDER=0><P>
+Ce menu permet de régler l&rsquo;affichage des différents types d&rsquo;éléments dans la zone de simulation&nbsp;:<UL>
+<LI><B>Zoom</B>&nbsp;: Zoom avant (coché) ou zoom arrière (décoché). Le grossissement est &times;2.
+<LI><B>Rafraîchir</B>&nbsp;: Mise à jour immédiat de l&rsquo;affichage de la zone de simulation
+<LI><B>Directions</B>&nbsp;: Affichage (coché) ou masquage (décoché) des directions possibles sur les voies de circulation (zoom &times;2 uniquement)
+<LI><B>Signalisations</B>&nbsp;: Affichage (coché) ou masquage (décoché) de la signalisation (feux, priorités, arrêts de bus ou de tram, passages de bus ou piétons)
+<LI><B>Voies de circulation</B>&nbsp;: Affichage (coché) ou masquage (décoché) des voies de circulation (chaussées et voies de tram)
+<LI><B>Véhicules</B>&nbsp;: Affichage (coché) ou masquage (décoché) des voitures, des bus et des trams
+<LI><B>Piétons</B>&nbsp;: Affichage (coché) ou masquage (décoché) des piétons
+<LI><B>Quadrillage</B>&nbsp;: Affichage (coché) ou masquage (décoché) du quadrillage (un point au centre de chaque case)
+<LI><B>Environnement</B>&nbsp;: Affichage (coché) ou masquage (décoché) de l&rsquo;environnement, c&rsquo;est-à-dire les décors (trottoirs, bâtiments, pelouses, arbres...)</UL>
+
+<HR>
+
+<A NAME="LMSI"></A><H2>Le menu <I><U>S</U>imulation</I></H2>
+<IMG Alt="" SRC="MSI.jpg" HEIGHT=174 WIDTH=218 BORDER=0><P>
+Ce menu regroupe le paramétrage et les commandes de la simulation&nbsp;:<UL> 
+<LI><A HREF="#PDLS">Paramètres de la simulation</A> (<I>Ctrl+Alt+P</I> ou rubrique <I><U>P</U>aramètres</I>) ;
+<LI><A HREF="#CDLS">Commandes de la simulation</A></UL>
+<U>Note</U>&nbsp;: Tous les paramètres sont enregistrés dans les fichiers de sauvegarde.
+
+<HR>
+
+<A NAME="LMST"></A><H2>Le menu <I>S<U>t</U>atistiques</I></H2>
+<IMG Alt="" SRC="MST.jpg" HEIGHT=109 WIDTH=222 BORDER=0><P>
+Ce menu regroupe l&rsquo;accès aux différentes statistiques ainsi qu&rsquo;au paramétrage d&rsquo;affichage des statistiques d&rsquo;évolution&nbsp;:<UL> 
+<LI><A HREF="#SDLS">Statistiques de la simulation</A> (rubriques <I>Evolution, Fluidité & Trafic, Parkings</I>) ;
+<LI><A HREF="#SSLCDR">Statistiques sur la composition du réseau</A> (rubrique <I>Composition du réseau</I>) ;
+<LI><A HREF="#PDLADSDE">Paramétrage de l&rsquo;affichage des statistiques d&rsquo;évolution</A> (sous-menu <I>Affichage</I>).</UL>
+  
+<HR>
+
+<A NAME="LMI"></A><H2>Le menu <I><U>?</U></I></H2>
+<IMG Alt="" SRC="MI.jpg" HEIGHT=63 WIDTH=217 BORDER=0><P>
+Ce menu permet d&rsquo;obtenir des informations sur la version (rubrique <I>&Agrave; propos</I>) et d&rsquo;accéder au <A HREF="#ASCV">sommaire</A> de l&rsquo;aide que vous êtes en train de lire.<BR>
+La rubrique <I>Tutoriel</I> est une page HTML qui permet de suivre les étapes de création d&rsquo;un réseau complet &laquo;&nbsp;de A à Z&nbsp;&raquo;.
+
+<HR>
+
+<A NAME="PDLS"></A><H2>Paramètres de la simulation</H2>
+Lorsque vous choisissez la rubrique <I><U>S</U>imulation | <U>P</U>aramètres</I> ou lorsque vous appuyez sur <I>Ctrl+Alt+P</I>, vous obtenez une boîte de dialogue comme ceci&nbsp;:<P>
+<IMG Alt="" SRC="PDLS.jpg" HEIGHT=525 WIDTH=286 BORDER=0>
+<A NAME="PDLSEDLS"></A><H3>&Eacute;léments de la simulation</H3>
+La première partie des paramètres est le nombre d&rsquo;éléments à utiliser dans la simulation : les véhicules et les piétons (attention, le nombre de piétons à définir est un pourcentage du nombre de véhicules).<P>
+Les dimensions de la zone de simulation <B>[colonnes &times; lignes]</B> sont affichées dans le titre de la boîte de dialogue (depuis la version 4.0). Ils ne sont pas modifiables ici. Pour <A HREF="#DDDDLZDS">définir les dimensions de la zone</A>, il faut créer une nouvelle simulation (rubrique <I><U>F</U>ichier | <U>N</U>ouveau</I>).<P>
+Les possibilités de choix du nombre de véhicules est en fonction du nombre de parkings de telle sorte qu&rsquo;il y ait toujours au moins 10 véhicules qui aillent d&rsquo;un parking à un autre, et ce, pour chaque possibilité de trajet parking de départ/parking d&rsquo;arrivée.<P>
+Depuis la version 3.0, le bouton <IMG Alt="" SRC="BRDB.jpg" HEIGHT=24 WIDTH=25 BORDER=0> permet de <A HREF="#PDRDB">définir le réseau de bus</A>. Le bouton est grisé et inaccessible <IMG Alt="" SRC="BRDBI.jpg" HEIGHT=24 WIDTH=25 BORDER=0> si aucun arrêt de bus n&rsquo;est posé.<P>
+Depuis la version 3.5, le bouton <IMG Alt="" SRC="BRDTM.jpg" HEIGHT=24 WIDTH=26 BORDER=0> permet de <A HREF="#PDRDT">définir le réseau de trams</A>. Le bouton est grisé et inaccessible <IMG Alt="" SRC="BRDTMI.jpg" HEIGHT=24 WIDTH=25 BORDER=0> si aucun arrêt de tram n&rsquo;est posé.<P>
+Depuis la version 3.5, le bouton <IMG Alt="" SRC="BRDTX.jpg" HEIGHT=24 WIDTH=25 BORDER=0> permet de <A HREF="#PDT">définir les paramètres des taxis</A>. Le bouton est grisé et inaccessible <IMG Alt="" SRC="BRDTXI.jpg" HEIGHT=24 WIDTH=25 BORDER=0> si aucune place de taxi n&rsquo;est posée.<P>
+Depuis la version 5.3, le bouton <IMG Alt="" SRC="BPDVL.jpg" HEIGHT=24 WIDTH=25 BORDER=0> permet de <A HREF="#PDV">définir les paramètres des vehlibs</A>. Le bouton est grisé et inaccessible <IMG Alt="" SRC="BPDVLI.jpg" HEIGHT=24 WIDTH=25 BORDER=0> si aucune place de vehlib n&rsquo;est posée.<P>
+<A NAME="PDLSPDF"></A><H3>Paramètres de fonctionnement</H3>
+La deuxième partie des paramètres concerne le <B>comportement de la simulation</B>&nbsp;:<UL>
+<LI>Combien de tours minimal dure un feu vert par défaut (c&rsquo;est-à-dire à la création d&rsquo;un feu)
+<LI>Combien de tours dure un feu orange (quel que soit le feu) ;
+<LI>Combien de tours minimal dure un feu rouge par défaut ;
+<LI>Combien de tours un véhicule attend avant de choisir un autre trajet ;
+<LI>Combien il y a de tours pendant une seconde (vitesse de simulation).</UL>
+Pour les durées par défaut du feu vert et du feu rouge, un bouton <IMG Alt="" SRC="BMF.jpg" HEIGHT=20 WIDTH=20 BORDER=0> est disponible après avoir validé les modifications : il permet d&rsquo;appliquer le paramètre à tous les feux du réseau existant.<P>
+Le paramètre de vitesse donne le nombre de vitesses à répartir de manière égale sur tous les véhicules. Ce paramètre est toujours initialisé à 1 vitesse à chaque nouvelle simulation. La vitesse est attribuée de manière régulière entre les véhicules.<P>
+<U>Note</U>&nbsp;: les véhicules prioritaires n&rsquo;ont qu&rsquo;une seule vitesse&nbsp;: la vitesse maximale, c&rsquo;est-à-dire 1 case/tour.
+<A NAME="PDLSPPD"></A><H3>Paramètres par défaut</H3>
+Les valeurs affichées dans la boîte de dialogue des paramètres ci-dessus sont les valeurs par défaut à la création d&rsquo;une simulation (les dimensions de la zone sont 99&times;63 par défaut).
+
+<HR>
+
+<A NAME="DDDDLZDS"></A><H2>Définition des dimensions de la zone de simulation</H2>
+Depuis la version 4.0, les dimensions de la zone peuvent être définies. Cependant, cela ne peut se faire qu&rsquo;au moment de créer une nouvelle simulation (rubrique <I><U>F</U>ichier | <U>N</U>ouveau</I>). Cette boîte de dialogue apparaît alors&nbsp;:<P>
+<IMG Alt="" SRC="DDLZ.jpg" HEIGHT=153 WIDTH=282 BORDER=0><P>
+Par défaut, les dimensions sont 99&times;63 (correspondant à une fenêtre maximale pour une résolution 800&times;600 comme pour les versions antérieures à la version 4.0). Si une simulation était déjà ouverte, ses dimensions sont alors proposées. Pour créer une nouvelle simulation avec les dimensions saisies, il suffit de choisir le bouton <I><U>C</U>réer</I>. Le bouton <I>Annuler</I> abandonne la création d&rsquo;une nouvelle simulation.<P>
+<H3>Autres paramètres</H3>
+<U>Afficher les paramètres après création de la zone</U>&nbsp;: montre les <A HREF="#PDLS">paramètres de la simulation</A> juste après avoir appuyé sur le bouton <I><U>C</U>réer</I> (action par défaut).<BR>
+<U>Générer aléatoirement un réseau</U>&nbsp;: affiche la boîte de dialogue de <A HREF="#GADUR">génération aléatoire d&rsquo;un réseau</A> après avoir appuyé sur le bouton <I><U>C</U>réer</I> et après l&rsquo;affichage éventuel des paramètres.
+
+<HR>
+
+<A NAME="GADUR"></A><H2>Génération aléatoire d&rsquo;un réseau</H2>
+Depuis la version 4.2, il est possible de générer aléatoirement un réseau (voies de circulation automobile seulement) : Pour ce faire, il faut cocher la case <I>Générer aléatoirement un réseau</I> dans la boîte de dialogue de <A HREF="#DDDDLZDS">définition des dimensions de la zone de simulation</A>, cette boîte de dialogue apparaît ensuite&nbsp;:<P>
+<IMG Alt="" SRC="GADUR.jpg" HEIGHT=215 WIDTH=693 BORDER=0><P>
+Le premier paramètre est l&rsquo;intervalle de longueur des segments de voie générés par rapport à la longueur et la largeur de la zone. Par exemple, si la zone a une taille de 99&times;63 avec les paramètres ci-dessus, les segments de voies horizontaux feront de 1 à 29 de longueur (3&times;99/10) et verticalement de 1 à 18 de longueur (3&times;63/10).<P>
+Les probabilités sont exprimées en dixièmes : de 0/10 (jamais) à 10/10 (toujours).
+
+<HR>
+
+<A NAME="PDRDB"></A><H2>Paramètres du réseau de bus</H2>
+Pour pouvoir accéder aux paramètres du réseau de bus, il faut ouvrir la boîte de dialogue des paramètres de la simulation en choisissant la rubrique <I><U>S</U>imulation | <U>P</U>aramètres</I> (<I>Ctrl+Alt+P</I>).<P>
+Si le nombre d&rsquo;arrêts de bus est défini alors le bouton situé à droite apparaît <IMG Alt="" SRC="BRDB.jpg" HEIGHT=24 WIDTH=25 BORDER=0> sinon il apparaît <IMG Alt="" SRC="BRDBI.jpg" HEIGHT=24 WIDTH=25 BORDER=0>.<BR>
+Cliquez sur le bouton lorsqu&rsquo;il n&rsquo;est pas grisé pour faire apparaître la boîte de dialogue de paramétrage du réseau de bus&nbsp;:<P>
+<IMG Alt="" SRC="PDRDB.jpg" HEIGHT=487 WIDTH=469 BORDER=0><P>
+<I><U>Attention</U>, cet aspect n&rsquo;est visible qu&rsquo;en mode simulation (voir fin du paragraphe). En dehors du mode simulation, la colonne de cases à cocher n&rsquo;apparaît pas et les champs ne sont pas grisés.</I><P>
+<A NAME="PDRDBCDRDB"></A><H3>Composition du réseau de bus</H3>
+Le premier cadre donne la situation de la composition des éléments du réseau de bus : le nombre d&rsquo;arrêts de bus définis et le nombre de bus qui seront créés au lancement de la simulation.
+<A NAME="PDRDBDDLDB"></A><H3>Définition des lignes de bus</H3>
+Le paramétrage du réseau de bus consiste tout d&rsquo;abord à définir les lignes de bus en leur associant des arrêts de bus.<P>
+Chacune des 9 lignes de chiffres (de 1 à 9) représente une ligne de bus. Chaque ligne de bus est déterminée par une couleur et un numéro (première colonne). Les bus dans la simulation sont d&rsquo;une seule couleur : la couleur de la ligne de bus.<P>
+Pour chaque ligne de bus il faut d&rsquo;abord définir le nombre d&rsquo;arrêts de bus. De plus, ces derniers doivent avoir été déjà définis sur le réseau routier (<IMG Alt="" SRC="ADB.jpg" HEIGHT=8 WIDTH=26 BORDER=0>) avant de pouvoir être associés à des lignes de bus.<P>
+Les arrêts de bus peuvent être posés en utilisant le bouton <IMG Alt="" SRC="BADB.jpg" HEIGHT=24 WIDTH=24 BORDER=0> dans la barre de statut ou la rubrique Arrêt de bus/tram (<I>Ctrl+A</I>) en faisant clic droit sur la case souhaitée.<P>
+Un même arrêt peut bien entendu être utilisé par plusieurs lignes. Les bus passent par les arrêts désignés dans l&rsquo;ordre du premier au dernier arrêt défini puis repassent à nouveau par le premier arrêt et ainsi de suite indéfiniment. Au lancement de la simulation, les bus sortent du dépôt de bus <IMG Alt="" SRC="DDB.jpg" HEIGHT=16 WIDTH=16 BORDER=0> puis parcourent le réseau d&rsquo;arrêt en arrêt suivant l&rsquo;ordre défini.<P>
+Lorsqu&rsquo;un arrêt de bus est défini, ce dernier clignote sur le réseau pour visualiser sa position. <U>Il est fortement conseillé</U> de placer les arrêts d&rsquo;une même ligne sur le réseau puis de définir cette ligne avant de placer les arrêts des autres lignes.<P>
+En haut à droite des <A HREF="#BDN">boutons de navigation</A> sont à disposition pour vous permettre de naviguer dans la zone de simulation sans sortir des paramètres.<P>
+Une fois les lignes de bus définies, il y a quelques paramètres pour le fonctionnement et le comportement de la simulation&nbsp;:<P>
+<A NAME="PDRDBAP"></A><H3>Autres paramètres</H3>
+<U>Capacité d&rsquo;un bus</U>&nbsp;: Nombre maximal de personnes que peut prendre un bus.<BR>
+<U>Stop à l&rsquo;arrêt</U>&nbsp;: Nombre de tours minimal pendant lesquels chaque bus reste à un arrêt dès qu&rsquo;il y arrive.<P>
+<B>La suite des paramètres concernent uniquement le comportement des piétons vis-à-vis du réseau de bus.</B><P>
+<U>Détecte un arrêt jusqu&rsquo;à <I>n</I> cases</U>&nbsp;: Comme pour les passages piétons, il s&rsquo;agit du rayon de détection des piétons concernant les arrêts de bus. &Agrave; chaque case, un piéton peut détecter un arrêt jusqu&rsquo;à un nombre limité de cases. Une fois un arrêt détecté, il s&rsquo;y dirige et attend un bus.<P>
+<U>Probabilité de s&rsquo;y diriger</U>&nbsp;: Pourcentage de chance qu&rsquo;un piéton décide de se diriger vers un arrêt de bus détecté.<P>
+<U>Attend un bus jusqu&rsquo;à <I>n</I> tours</U>&nbsp;: Nombre de tours maximal pendant lesquels un piéton attendra qu&rsquo;un bus arrive en restant immobile à côté de l&rsquo;arrêt. Si aucun bus ne vient, il reprendra sa promenade.<P>
+<U>Probabilité arrêt demandé</U>&nbsp;: Pourcentage de chance qu&rsquo;à chaque arrêt qu&rsquo;une personne dans un bus décide de descendre à l&rsquo;arrêt suivant.
+<A NAME="PDRDBMS"></A><H3>Mode simulation</H3>
+En mode simulation, les paramètres de lignes de bus ne sont pas modifiables (grisés).<BR>
+Des cases à cocher à gauche de chaque numéro de ligne permettent de visualiser le trajet de la ligne de bus correspondante sur la zone de simulation.<BR>
+Lorsque l&rsquo;on coche une de ces cases, la boîte de dialogue est minimisée et le trajet de la ligne sélectionnée est affiché sur la zone de simulation.<BR>
+Les numéros des arrêts de bus sont également affichés pour les repérer.<BR>
+Cliquer sur la case <IMG Alt="" SRC="CACT.jpg" HEIGHT=18 WIDTH=18 BORDER=0> revient à cliquer sur toutes les cases de toutes les lignes définies en une fois.
+
+<HR>
+
+<A NAME="PDRDT"></A><H2>Paramètres du réseau de trams</H2>
+Pour pouvoir accéder aux paramètres du réseau de trams, il faut ouvrir la boîte de dialogue des paramètres de la simulation en choisissant la rubrique <I><U>S</U>imulation | <U>P</U>aramètres</I> (<I>Ctrl+Alt+P</I>).<P>
+Si le nombre d&rsquo;arrêts de trams est défini alors le bouton situé à droite apparaît <IMG Alt="" SRC="BRDTM.jpg" HEIGHT=24 WIDTH=26 BORDER=0> sinon il apparaît <IMG Alt="" SRC="BRDTMI.jpg" HEIGHT=24 WIDTH=25 BORDER=0>.<BR>
+Cliquez sur le bouton lorsqu&rsquo;il n&rsquo;est pas grisé pour faire apparaître la boîte de dialogue de paramétrage du réseau de trams&nbsp;:<P>
+<IMG Alt="" SRC="PDRDT.jpg" HEIGHT=487 WIDTH=469 BORDER=0><P>
+<I><U>Attention</U>, cet aspect n&rsquo;est visible qu&rsquo;en mode conception (voir début du paragraphe). En dehors du mode conception, une colonne de cases à cocher apparaît à gauche des numéros de lignes de trams et les champs sont grisés.</I><P>
+<A NAME="PDRDTCDRDT"></A><H3>Composition du réseau de trams</H3>
+Le premier cadre donne la situation de la composition des éléments du réseau de trams : le nombre d&rsquo;arrêts de trams définis et le nombre de trams qui seront créés au lancement de la simulation.
+<A NAME="PDRDTDDLDT"></A><H3>Définition des lignes de trams</H3>
+Le paramétrage du réseau de trams consiste tout d&rsquo;abord à définir les lignes de trams en leur associant des arrêts de trams.<P>
+Chacune des 9 lignes de lettres (de A à I) représente une ligne de trams. Chaque ligne de trams est déterminée par une couleur et une lettre (première colonne). Les trams dans la simulation sont d&rsquo;une seule couleur : la couleur de la ligne de trams.<P>
+Pour chaque ligne de trams il faut d&rsquo;abord définir le nombre d&rsquo;arrêts de trams. De plus, ces derniers doivent avoir été déjà définis sur le réseau routier (parties des voies de tram en jaune) avant de pouvoir être associés à des lignes de trams.<P>
+Les arrêts de trams peuvent être posés en utilisant le bouton <IMG Alt="" SRC="BADB.jpg" HEIGHT=24 WIDTH=24 BORDER=0> dans la barre de statut ou la rubrique Arrêt de bus/tram (<I>Ctrl+A</I>) en faisant clic droit sur la case souhaitée.<P>
+Un même arrêt peut bien entendu être utilisé par plusieurs lignes. Les trams passent par les arrêts désignés dans l&rsquo;ordre du premier au dernier arrêt défini puis repassent à nouveau par le premier arrêt et ainsi de suite indéfiniment. Au lancement de la simulation, chaque tram démarre à partir d&rsquo;un arrêt.<P>
+On place les trams sur les premiers arrêts de leur ligne respective. Si un arrêt est déjà occupé, on le place sur l&rsquo;arrêt suivant et ainsi de suite. S&rsquo;il n&rsquo;est pas possible de placer tous les trams au départ, un message d&rsquo;erreur s&rsquo;affiche et il faut revoir le réseau de trams.<P>
+Lorsqu&rsquo;un arrêt de trams est défini, ce dernier clignote sur le réseau pour visualiser sa position. Il est fortement conseillé de placer les arrêts d&rsquo;une même ligne sur le réseau puis de définir cette ligne avant de placer les arrêts des autres lignes.<P>
+En haut à droite des <A HREF="#BDN">boutons de navigation</A> sont à disposition pour vous permettre de naviguer dans la zone de simulation sans sortir des paramètres.<P>
+Une fois les lignes de trams définies, il y a quelques paramètres pour le fonctionnement et le comportement de la simulation&nbsp;:<P>
+<A NAME="PDRDTAP"></A><H3>Autres paramètres</H3>
+<U>Capacité d&rsquo;un tram</U>&nbsp;: Nombre maximal de personnes que peut prendre un tram.<P>
+<U>Stop à l&rsquo;arrêt</U>&nbsp;: Nombre de tours minimal pendant lesquels chaque tram reste à un arrêt dès qu&rsquo;il y arrive.<P>
+<B>La suite des paramètres concernent uniquement le comportement des piétons vis-à-vis du réseau de trams.</B><P>
+<U>Détecte un arrêt jusqu&rsquo;à <I>n</I> cases</U>&nbsp;: Comme pour les passages piétons, il s&rsquo;agit du rayon de détection des piétons concernant les arrêts de trams. &Agrave; chaque case, un piéton peut détecter un arrêt jusqu&rsquo;à un nombre limité de cases. Une fois un arrêt détecté, il s&rsquo;y dirige et attend un tram.<P>
+<U>Probabilité de s&rsquo;y diriger</U>&nbsp;: Pourcentage de chance qu&rsquo;un piéton décide de se diriger vers un arrêt de trams détecté.<P>
+<U>Attend un tram jusqu&rsquo;à <I>n</I> tours</U>&nbsp;: Nombre de tours maximal pendant lesquels un piéton attendra qu&rsquo;un tram arrive en restant immobile à côté de l&rsquo;arrêt. Si aucun tram ne vient, il reprendra sa promenade.<P>
+<U>Probabilité arrêt demandé</U>&nbsp;: Pourcentage de chance qu&rsquo;à chaque arrêt qu&rsquo;une personne dans un tram décide de descendre à l&rsquo;arrêt suivant.
+<A NAME="PDRDTMS"></A><H3>Mode simulation</H3>
+En mode simulation, les paramètres de lignes de trams ne sont pas modifiables (grisés).<BR>
+Des cases à cocher à gauche de chaque numéro de ligne permettent de visualiser le trajet de la ligne de trams correspondante sur la zone de simulation.<BR>
+Lorsque l&rsquo;on coche une de ces cases, la boîte de dialogue est minimisée et le trajet de la ligne sélectionnée est affiché sur la zone de simulation.<BR>
+Les numéros des arrêts de trams sont également affichés pour les repérer.<BR>
+Cliquer sur la case <IMG Alt="" SRC="CACT.jpg" HEIGHT=18 WIDTH=18 BORDER=0> revient à cliquer sur toutes les cases de toutes les lignes définies en une fois.
+
+<HR>
+
+<A NAME="PDT"></A><H2>Paramètres des taxis</H2>
+Pour pouvoir accéder aux paramètres des taxis, il faut ouvrir la boîte de dialogue des paramètres de la simulation en choisissant la rubrique <I><U>S</U>imulation | <U>P</U>aramètres</I> (<I>Ctrl+Alt+P</I>).<P>
+Si le nombre de places de taxis est défini alors le bouton situé à droite apparaît <IMG Alt="" SRC="BRDTX.jpg" HEIGHT=24 WIDTH=25 BORDER=0> sinon il apparaît <IMG Alt="" SRC="BRDTXI.jpg" HEIGHT=24 WIDTH=25 BORDER=0>.<BR>
+Cliquez sur le bouton lorsqu&rsquo;il n&rsquo;est pas grisé pour faire apparaître la boîte de dialogue de paramétrage des taxis&nbsp;:<P>
+<IMG Alt="" SRC="PDT.jpg" HEIGHT=230 WIDTH=275 BORDER=0><P>
+<H3>Paramètres</H3>
+<U>Capacité d&rsquo;un taxi</U>&nbsp;: Nombre maximal de personnes que peut prendre un taxi.<P>
+<B>La suite des paramètres concernent uniquement le comportement des piétons vis-à-vis des taxis.</B><P>
+<U>Détecte une file de taxis jusqu&rsquo;à <I>n</I> cases</U>&nbsp;: Comme pour les passages piétons, il s&rsquo;agit du rayon de détection des piétons concernant les places de taxis. &Agrave; chaque case, un piéton peut détecter une tête de file de taxis jusqu&rsquo;à un nombre limité de cases. Une fois détectée, il s&rsquo;y dirige et attend un taxi.<P>
+<U>Probabilité de s&rsquo;y diriger</U>&nbsp;: Pourcentage de chance qu&rsquo;un piéton décide de se diriger vers la tête d&rsquo;une file de taxis.<P>
+<U>Attend un taxi jusqu&rsquo;à <I>n</I> tours</U>&nbsp;: Nombre de tours maximal pendant lesquels un piéton attendra qu&rsquo;un taxi arrive en restant immobile à côté de la tête de file. Si aucun taxi ne vient, il reprendra sa promenade.<P>
+<U>Probabilité descente demandée</U>&nbsp;: Pourcentage de chance qu&rsquo;un piéton descende du taxi.
+
+<HR>
+
+<A NAME="PDV"></A><H2>Paramètres des vehlibs</H2>
+Pour pouvoir accéder aux paramètres des vehlibs, il faut ouvrir la boîte de dialogue des paramètres de la simulation en choisissant la rubrique <I><U>S</U>imulation | <U>P</U>aramètres</I> (<I>Ctrl+Alt+P</I>).<P>
+Si le nombre de places de vehlibs est défini alors le bouton situé à droite apparaît <IMG Alt="" SRC="BPDVL.jpg" HEIGHT=24 WIDTH=25 BORDER=0> sinon il apparaît <IMG Alt="" SRC="BPDVLI.jpg" HEIGHT=24 WIDTH=25 BORDER=0>.<BR>
+Cliquez sur le bouton lorsqu&rsquo;il n&rsquo;est pas grisé pour faire apparaître la boîte de dialogue de paramétrage des vehlibs&nbsp;:<P>
+<IMG Alt="" SRC="PDRDVL.jpg" HEIGHT=226 WIDTH=301 BORDER=0><P>
+<H3>Paramètres</H3>
+<U>Capacité d&rsquo;un vehlib</U>&nbsp;: Nombre maximal de personnes que peut prendre un vehlib.<P>
+<B>La suite des paramètres concernent uniquement le comportement des piétons vis-à-vis des vehlibs.</B><P>
+<U>Détecte une place de vehlib jusqu&rsquo;à <I>n</I> cases</U>&nbsp;: Comme pour les passages piétons, il s&rsquo;agit du rayon de détection des piétons concernant les places de vehlibs. &Agrave; chaque case, un piéton peut détecter une place de vehlib jusqu&rsquo;à un nombre limité de cases. Une fois détectée, il s&rsquo;y dirige et prend un vehlib.<P>
+<U>Probabilité de s&rsquo;y diriger</U>&nbsp;: Pourcentage de chance qu&rsquo;un piéton décide de se diriger vers une place de vehlib.<P>
+<U>Taux de remplissage d'une place</U>&nbsp;: Au départ de la simulation, les places sont occupées par des vehlibs avec le taux de remplissage indiqué. Comme avertit le message qui suit l'astérisque, un taux de 100% empêche l'emprunt de vehlib par manque de place libre. Le taux par défaut (80%) permet un remplissage de 4/5 pour des groupes de 5 places et un réseau de vehlibs efficace.
+
+<HR>
+
+<A NAME="CDLS"></A><H2>Commandes de la simulation</H2>
+Chaque commande de la simulation (voir ci-dessous) correspond à un bouton de la barre d&rsquo;outils et un raccourci clavier (sauf la rubrique <I>Vérifier l&rsquo;intégrité avant simulation</I>)&nbsp;: voir fin de cette rubrique.
+<A NAME="CDLSCG"></A><H3>Commandes générales</H3>
+<B>Les commandes générales</B> de la simulation (<A HREF="#PDLS">Paramètres de la simulation</A> et <A HREF="#LDLS">Lancement de la simulation</A>) sont dans le menu déroulant <I><U>S</U>imulation</I> du menu principal&nbsp;:<P>
+<IMG Alt="" SRC="MSI.jpg" HEIGHT=174 WIDTH=218 BORDER=0><P>
+<H4>Vérifier l&rsquo;intégrité avant simulation</H4>
+Jusqu&rsquo;à la version 1.6 de <I>Centre-Ville</I>, comme pour chaque fichier ouvert, était vérifiée systématiquement l&rsquo;intégrité de ses données avant lancement d&rsquo;une simulation. &Agrave; présent (depuis la version 1.6.1), il faut cocher la rubrique <I>Vérifier l&rsquo;intégrité avant simulation</I>.<P>
+<A NAME="CDLSCRALCS"></A><H3>Commandes relatives à la case sélectionnée</H3>
+Les <B>commandes relatives à la case sélectionnée</B> dans la zone de simulation (où est situé le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0>) sont dans le menu déroulant lorsque l&rsquo;on clique droit sur la zone de simulation&nbsp;:<P>
+<IMG Alt="" SRC="MCC.jpg" HEIGHT=82 WIDTH=147 BORDER=0><P>
+Chaque ligne correspond à un menu déroulant (sauf la rubrique <I><U>R</U>echercher</I>)&nbsp;:
+<H4>Menu Détail</H4>
+<IMG Alt="" SRC="MCDTL.jpg" HEIGHT=120 WIDTH=126 BORDER=0><P>
+Chaque rubrique permet d&rsquo;obtenir des informations détaillées sur un élément mobile de la simulation (véhicules, bus, trams ou piétons). Il correspond à l&rsquo;élément sélectionné dans la zone de simulation. Si l&rsquo;élément est suivi (voir ci-dessous), le curseur est toujours sur lui et l&rsquo;affichage détaillé des informations le concernant suit son évolution. Si aucun élément n&rsquo;est suivi, il s&rsquo;agit de l&rsquo;élément qui passe par la case sélectionnée (les informations ne restent pas longtemps si l&rsquo;élément mobile arrive sur la case puis la quitte).
+<H4>Menu Suivi</H4>
+<IMG Alt="" SRC="MCS.jpg" HEIGHT=147 WIDTH=159 BORDER=0><P>
+Les rubriques permettent de suivre l&rsquo;élément sur la case sélectionnée sur la zone de simulation. Les rubriques actives (non grisées) montrent le type d&rsquo;élément mobile qui se trouve sur la case sélectionnée. Il ne peut pas y avoir plus d&rsquo;un élément à la fois (comme sur l&rsquo;exemple ci-dessus) sauf 2 piétons sur une même cases (d&rsquo;où les deux lignes de rubriques).
+<H4>Menu Distances</H4>
+<IMG Alt="" SRC="MCDST.jpg" HEIGHT=120 WIDTH=204 BORDER=0><P>
+Les rubriques permettent d&rsquo;afficher les distances aux parkings (1<SUP>ère</SUP> rubrique), aux arrêts de bus (2<SUP>ème</SUP> rubrique) ou aux arrêts de trams depuis la case sélectionnée. Chaque représente une direction possible et chaque ligne un parking ou un arrêt (suivant le type de distance).<P>
+Se reporter au paragraphe <I>Les commandes de simulation</I> de la rubrique <A HREF="#LBDO">Les barres d&rsquo;outils</A>.
+
+<HR>
+
+<A NAME="SDLS"></A><H2>Statistiques de la simulation</H2>
+Il y a trois statistiques proposées&nbsp;: un <B>graphe d&rsquo;évolution</B>, les chiffres concernant les <B>véhicules d&rsquo;un parking à un autre</B> et les statistiques de <B>fluidité</B> et de <B>trafic</B>&nbsp;:<UL>
+<LI><A HREF="#EGDLS">Evolution générale de la simulation</A>
+<LI><A HREF="#SDVDUEAUA">Statistiques des véhicules d&rsquo;un parking à un autre</A>
+<LI><A HREF="#SDFEDT">Statistiques de fluidité et de trafic</A></UL>
+ 
+<HR>
+ 
+<A NAME="SSLCDR"></A><H2>Statistiques sur la composition du réseau</H2>
+Lorsque vous appuyez soit sur le bouton <IMG Alt="" SRC="BST.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, soit sur <I>Maj+Ctrl+R</I> ou lorsque vous choisissez la rubrique <I>S<U>t</U>atistiques | Composition du réseau</I>, une boîte de dialogue comme suit s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="SSLCDR.jpg" HEIGHT=545 WIDTH=387 BORDER=0><P>
+Elle donne des informations sur le nombre et la répartition des éléments du réseau.<BR>
+Elle permet également de savoir s&rsquo;il reste à définir des parkings, des arrêts de bus ou de trams ou encore des feux (colonne Dispo.)
+
+<HR>
+
+<A NAME="PDLADSDE"></A><H2>Paramétrage de l&rsquo;affichage des statistiques d&rsquo;évolution</H2>
+Lorsque vous choisissez le menu <I>S<U>t</U>atistiques | <U>A</U>ffichage</I> au menu principal, ce menu déroulant apparaît&nbsp;:<P>
+<IMG Alt="" SRC="MSA.jpg" HEIGHT=193 WIDTH=234 BORDER=0><P>
+Il permet de configurer l&rsquo;affichage du <A HREF="#EGDLS">graphique d&rsquo;évolution</A>&nbsp;:<UL>
+<LI>La rubrique <I><U></U>Quadrillage</I> (<I>Maj+Ctrl+Q</I>) permet d&rsquo;activer ou de désactiver le quadrillage par points.
+<LI>La deuxième partie du menu déroulant concerne la façon de présenter l&rsquo;évolution de la simulation&nbsp;:<UL>
+ <LI>soit par nombre de véhicules (<I>Maj+Ctrl+V</I> ou rubrique <I>par Véhicule</I>)
+ <LI>soit par pourcentage (<I>Maj+Ctrl+C</I> ou rubrique <I>par Pourcentage</I>).</UL>
+ Seul l&rsquo;affichage de la dernière courbe (<FONT COLOR="#008000">couleur verte</FONT>) varie selon le choix de la présentation&nbsp;: si l&rsquo;évolution est présentée par pourcentage, la courbe des véhicules qui se sont déplacés représente la proportion des véhicules déplacés par rapport aux véhicules sortis qui n&rsquo;ont pas encore rejoint leur parking d&rsquo;arrivée.
+<LI>La troisième partie permet de fixer le nombre de tours soumis aux statistiques. Les statistiques concernent un certain nombre de derniers tours.</UL>
+
+<HR>
+
+<A NAME="LBDO"></A><H2>Les barres d&rsquo;outils</H2>
+La barre d&rsquo;outils est composée de boutons (icônes) permettant d&rsquo;accéder à la plupart des commandes existantes dans les différents menus (menu principal et menus déroulants).<BR>
+Pour les accès directs au clavier, reportez-vous à la liste des <A HREF="#RC">raccourcis clavier</A>.<P>
+La barre d&rsquo;outils est divisée en 5 parties détachables séparément&nbsp;:
+<A NAME="LBDOF"></A><H3>La barre d&rsquo;outils <I>Fichier</I></H3>
+Elle correspond aux commandes du menu <I><U>F</U>ichier</I> du menu principal.<P>
+<IMG Alt="" SRC="BDOF.jpg" HEIGHT=50 WIDTH=79 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOF1.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Crée une nouvelle simulation (vide la zone de simulation).</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOF2.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ouvre un fichier de simulation (extension cvw).</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOF3.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Enregistre le réseau courant dans un fichier (extension cvw).</TD></TR></TABLE>
+<A NAME="LBDOA"></A><H3>La barre d&rsquo;outils <I>Affichage</I></H3>
+Elle correspond aux commandes du menu <I><U>A</U>ffichage</I> du menu principal.<P>
+<IMG Alt="" SRC="BDOA.jpg" HEIGHT=50 WIDTH=217 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOA1.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Effectue un zoom x2 avant (bouton enfoncé) ou arrière (bouton relevé).</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA2.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Rafraîchit la zone de simulation.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA3.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque les directions possibles des voies.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA4.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque la signalisation.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA5.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque les voies de circulation.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA6.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque les voitures, bus et trams.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA7.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque les piétons.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA8.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque le quadrillage.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOA9.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque l&rsquo;environnement (nature et décors).</TD></TR></TABLE>
+<A NAME="LBDOSV"></A><H3>La barre d&rsquo;outils <I>Simulation</I></H3>
+Elle correspond respectivement aux commandes du menu <I><U>S</U>imulation</I> du menu principal&nbsp;:<UL>
+<LI><A HREF="#PDLS">Paramètres de la simulation</A> pour le premier bouton
+<LI><A HREF="#LDLS">Lancement de la simulation</A> pour les quatre suivants.</UL><P>
+<IMG Alt="" SRC="BDOSI.jpg" HEIGHT=50 WIDTH=148 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOSI1.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche les <A HREF="#PDLS">paramètres de la simulation</A>.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOSI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Vérifie l&rsquo;integrité du réseau (connexité).</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOSI3.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Lance la simulation.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOSI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Met en pause la simulation en cours et permet d&rsquo;afficher les <A HREF="#SDFEDT">statistiques de fluidité et de trafic</A>.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOSI5.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Arrête la simulation en cours et permet d&rsquo;afficher les <A HREF="#SDFEDT">statistiques de fluidité et de trafic</A>.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOSI6.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Active (bouton enfoncé) ou désactive (bouton relevé) le mode sanglant.</TD></TR></TABLE>
+<A NAME="LBDOST"></A><H3>La barre d&rsquo;outils <I>Statistiques</I></H3>
+Elle correspond aux commandes du menu <I>S<U>t</U>atistiques</I> du menu principal.<P>
+<IMG Alt="" SRC="BDOST.jpg" HEIGHT=50 WIDTH=102 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOST1.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche la composition du réseau.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOST2.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche (bouton enfoncé) ou masque (bouton relevé) les statistiques des véhicules parking à parking.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOST3.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche ou masque les statistiques d&rsquo;évolution.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOST4.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche les statistiques de fluidité et de trafic.</TD></TR></TABLE>
+<A NAME="LBDOIF"></A><H3>La barre d&rsquo;outils <I>Informations</I></H3>
+Elle correspond aux commandes du menu déroulant en <B>mode simulation</B> (clic droit sur la zone de simulation).<P>
+<IMG Alt="" SRC="BDOI.jpg" HEIGHT=50 WIDTH=102 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOI1.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche (bouton enfoncé) ou masque (bouton relevé) la recherche d&rsquo;éléments.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche le menu déroulant d&rsquo;informations sur les éléments mobiles.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOI3.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche le menu déroulant du suivi des éléments mobiles.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche le menu déroulant des distances aux parkings, arrêts de bus/tram, files de taxis/parkings.</TD></TR></TABLE>
+<A NAME="LBDOEC"></A><H3>La barre d&rsquo;outils <I>Edition (case)</I></H3>
+Elle correspond aux commandes du menu déroulant en <B>mode conception</B> (clic droit sur la zone de simulation) et quand une <B>seule case est sélectionnée</B>.<P>
+<IMG Alt="" SRC="BDOEC.jpg" HEIGHT=45 WIDTH=505 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOEC1.jpg" HEIGHT=24 WIDTH=86 BORDER=0></TD><TD>Ajoute (bouton enfoncé) ou supprime (bouton relevé) une direction possible de voie de circulation.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC2.jpg" HEIGHT=24 WIDTH=86 BORDER=0></TD><TD>Ajoute ou supprime un prolongement de voie de tram.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC3.jpg" HEIGHT=24 WIDTH=24 BORDER=0>&nbsp;<IMG Alt="" SRC="BBDOEC4.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Supprime la chaussée, les voies de trams.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC5.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime l&rsquo;obligation de continuer tout droit.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC6.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche (bouton enfoncé) ou masque (bouton relevé) les priorités*.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC7.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche (bouton enfoncé) ou masque (bouton relevé) les priorités piétons*.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC8.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime un parking souterrain.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC9.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime un dépôt de bus.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC10.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime un passage piéton.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC11.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime un arrêt de bus ou tram.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC12.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime un passage réservé aux bus.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC13.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime une place de taxi.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC14.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime une place de parking.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC17.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Ajoute ou supprime une place de vehlib.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC15.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Déplace le feu sélectionné puis attend le choix de la case destination (bouton enfoncé).</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOEC16.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Définit la nature (trottoir, immeuble) ou ajoute/retire un décor (arbre, pelouse).</TD></TR></TABLE>
+<FONT SIZE=1>(*) Les priorités et priorités piétons sont exclusives dépendant de la présence de voies de circulation.</FONT>
+<A NAME="LBDOES"></A><H3>La barre d&rsquo;outils Edition (sélection)</H3>
+Elle correspond aux commandes du menu déroulant en <B>mode conception</B> (clic droit sur la zone de simulation) et quand <B>plusieurs cases sont sélectionnées</B>.<P>
+<IMG Alt="" SRC="BDOES.jpg" HEIGHT=50 WIDTH=194 BORDER=0><P>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="BBDOES1.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Trace ou efface un segment de chaussée, de voies de tram.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOES2.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche un menu déroulant des tracés de bord de voies.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOES3.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Trace ou efface un périphérique extérieur, intérieur.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOES4.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Affiche la boîte de dialogue des types de carrefours.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOES5.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Supprime la chaussée, les voies de trams.</TD></TR>
+<TR><TD><IMG Alt="" SRC="BBDOES6.jpg" HEIGHT=24 WIDTH=24 BORDER=0></TD><TD>Définit la nature de la zone (voies de circulation, trottoirs ou immeubles).</TD></TR></TABLE>
+
+<HR>
+
+<A NAME="LZDS"></A><H2>La zone de simulation</H2>
+Cette grande zone noire est la zone où est visualisée la simulation.
+Il y a deux modes qui modifient le comportement de cette zone&nbsp;:<UL>
+<LI>le mode simulation
+<LI>le mode conception</UL>
+Dans le <B>mode simulation</B>, cette zone n&rsquo;est pas modifiable directement. Seule le déroulement de la simulation modifie la zone.<BR>
+Dans le <B>mode conception</B>, on peut y poser et retirer les éléments qui constituent le réseau (voies, véhicules, priorités, feux, passages, arrêts, etc.) : voir <A HREF="#CDR">Construction du réseau</A>.<BR>
+Dans les deux modes ont peut changer la visibilité des éléments de la simulation : voir <I>Commandes d&rsquo;affichage</I> de la rubrique <A HREF="#LBDO">Les barres d&rsquo;outils</A>.<P>
+Le curseur sur la zone d&rsquo;édition est matérialisé par un carré en pointillés&nbsp;: <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0>.<BR>
+Si un message d&rsquo;erreur s&rsquo;affiche lors de la vérification du réseau et concerne une case, il s&rsquo;affiche dans la <A HREF="#LBDE">barre d&rsquo;état</A> et un autre curseur (jaune) apparaît en clignotant&nbsp;: <IMG Alt="" SRC="CDLZDSME.jpg" HEIGHT=18 WIDTH=18 BORDER=0>.
+<H3>Plus d&rsquo;informations</H3>
+<UL>
+<LI><A HREF="#LDEDLZDS">Les différents éléments de la simulation</A>
+<LI><A HREF="#LMD">Les menus déroulants</A></UL>
+
+<HR>
+
+<A NAME="LDEDLZDS"></A><H2>Les différents éléments de la simulation</H2>
+<TABLE BORDER=0 CELLPADDING=1 CELLSPACING=1>
+<TR><TD><IMG Alt="" SRC="FND.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Fond de la zone (vide)</TD></TR>
+<TR><TD><IMG Alt="" SRC="VOIE.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Voie (chaussée)</TD></TR>
+<TR><TD><IMG Alt="" SRC="VOIET1.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="VOIET2.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Voie de tram</TD></TR>
+<TR><TD><IMG Alt="" SRC="PRKS1.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="PRKS2.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="PRKS3.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="PRKS4.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Parkings souterrains (anciennement <I>étapes</I>)</TD></TR>
+<TR><TD><IMG Alt="" SRC="VEH2.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="VEH3.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="VEH4.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="VEH5.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="VEH6.jpg" HEIGHT=16 WIDTH=12 BORDER=0></TD><TD>Véhicules</TD></TR>
+<TR><TD><IMG Alt="" SRC="VEH1.jpg" HEIGHT=16 WIDTH=12 BORDER=0></TD><TD>Vehlib (véhicule gris)</TD></TR>
+<TR><TD><IMG Alt="" SRC="VEHPU1.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="VEHPU2.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;&nbsp;<IMG Alt="" SRC="VEHPP1.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="VEHPP2.jpg" HEIGHT=16 WIDTH=12 BORDER=0></TD><TD>Véhicules prioritaires (urgence en rouge, police en blanc)</TD></TR>
+<TR><TD><IMG Alt="" SRC="PTN1.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="PTN2.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="PTN3.jpg" HEIGHT=16 WIDTH=12 BORDER=0>&nbsp;<IMG Alt="" SRC="PTN4.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Piétons</TD></TR>
+<TR><TD><IMG Alt="" SRC="PTNE.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Piéton(s) écrasé(s)</TD></TR>
+<TR><TD><IMG Alt="" SRC="DCR1.jpg" HEIGHT=36 WIDTH=68 BORDER=0></TD><TD>Trottoirs</TD></TR>
+<TR><TD><IMG Alt="" SRC="DCR2.jpg" HEIGHT=48 WIDTH=64 BORDER=0></TD><TD>Immeubles</TD></TR>
+<TR><TD><IMG Alt="" SRC="BUSTRM1.jpg" HEIGHT=8 WIDTH=18 BORDER=0>&nbsp;<IMG Alt="" SRC="BUSTRM2.jpg" HEIGHT=8 WIDTH=18 BORDER=0>&nbsp;<IMG Alt="" SRC="BUSTRM3.jpg" HEIGHT=8 WIDTH=18 BORDER=0></TD><TD>Bus, trams</TD></TR>
+<TR><TD><IMG Alt="" SRC="DDB.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Dépôt de bus</TD></TR>
+<TR><TD><IMG Alt="" SRC="ADB.jpg" HEIGHT=8 WIDTH=26 BORDER=0></TD><TD>Arrêt de bus</TD></TR>
+<TR><TD><IMG Alt="" SRC="BALA.jpg" HEIGHT=8 WIDTH=26 BORDER=0></TD><TD>Bus à l&rsquo;arrêt</TD></TR>
+<TR><TD><IMG Alt="" SRC="PRABEAVP.jpg" HEIGHT=12 WIDTH=36 BORDER=0></TD><TD>Passage réservé aux bus et aux véhicules prioritaires</TD></TR>
+<TR><TD><IMG Alt="" SRC="ADT1.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="ADT2.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Arrêts de tram</TD></TR>
+<TR><TD><IMG Alt="" SRC="FDTX.jpg" HEIGHT=12 WIDTH=26 BORDER=0></TD><TD>File de (places de) taxis</TD></TR>
+<TR><TD><IMG Alt="" SRC="TAXI.jpg" HEIGHT=11 WIDTH=26 BORDER=0></TD><TD>Taxis</TD></TR>
+<TR><TD><IMG Alt="" SRC="FDPDP.jpg" HEIGHT=18 WIDTH=66 BORDER=0></TD><TD>File de places de parking</TD></TR>
+<TR><TD><IMG Alt="" SRC="FDVL.jpg" HEIGHT=18 WIDTH=66 BORDER=0></TD><TD>Places de vehlibs (places libres/réservées)</TD></TR>
+<TR><TD><IMG Alt="" SRC="FEU1.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="FEU2.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="FEU3.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Feux</TD></TR>
+<TR><TD><IMG Alt="" SRC="STOP.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Stop</TD></TR>
+<TR><TD><IMG Alt="" SRC="CLP.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Cédez-le-passage</TD></TR>
+<TR><TD><IMG Alt="" SRC="PSGPTN.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Passage piéton</TD></TR>
+<TR><TD><IMG Alt="" SRC="FEUP.jpg" HEIGHT=17 WIDTH=17 BORDER=0></TD><TD>Feux piéton</TD></TR>
+<TR><TD><IMG Alt="" SRC="DAC1.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="DAC2.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="DAC3.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="DAC4.jpg" HEIGHT=16 WIDTH=16 BORDER=0>&nbsp;<IMG Alt="" SRC="DAC5.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Directions au carrefour (mode Zoom x2 uniquement)</TD></TR>
+<TR><TD><IMG Alt="" SRC="DIRPOSS.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Directions possibles</TD></TR>
+<TR><TD><IMG Alt="" SRC="DPAODATD.jpg" HEIGHT=16 WIDTH=16 BORDER=0></TD><TD>Directions possibles avec obligation d&rsquo;aller tout droit</TD></TR></TABLE><P>
+	Les véhicules ne sont pas des éléments qui sont définissables lors de la construction mais dans les paramètres de la simulationPDLS car ils n&rsquo;existent pas en dehors d&rsquo;une simulation en marche.<P> 
+<U>Notes</U>&nbsp;:<UL>
+<LI>Sur les véhicules occupant une case, les points jaunes matérialisent les phares (avant du véhicule) et les points rouges, les feux de stop (arrière du véhicule). Les véhicules prioritaires sont reconnaissables en rouge vif (urgence) et en blanc (police) avec un gyrophare clignotant.
+<LI>Depuis la version 5.0, les étapes sont appelées parkings (souterrains) et sont des carrés bleus numérotés (au lieu de rouges). Le bouton de pose passe d&rsquo;un drapeau rouge à un &laquo;&nbsp;P&nbsp;&raquo; blanc sur fond bleu.</UL>
+ 
+<HR>
+
+<A NAME="LMD"></A><H2>Les menus déroulants</H2>
+Lorsque l&rsquo;on clique avec le bouton droit de la souris sur la zone de simulation, un menu déroulant apparaît.<P>
+Il y a trois cas possibles&nbsp;: le mode conception avec une case sélectionnée ou plusieurs cases sélectionnées et enfin le mode simulation.<P>
+<H3>Menu conception avec une case sélectionnée</H3>
+<IMG Alt="" SRC="MCAUCS.jpg" HEIGHT=449 WIDTH=329 BORDER=0><P>
+<U>Remarque</U>&nbsp;: Si la case&nbsp;&ndash; sur laquelle le menu déroulant est appelé&nbsp;&ndash; n&rsquo;a pas de voies de circulation, alors la rubrique <IMG Alt="" SRC="PRIORITEV.jpg" HEIGHT=19 WIDTH=115 BORDER=0> est remplacée par la rubrique <IMG Alt="" SRC="PRIORITEP.jpg" HEIGHT=21 WIDTH=154 BORDER=0>.
+<H3>Menu conception avec plusieurs cases sélectionnées</H3>
+<IMG Alt="" SRC="MCAPCS.jpg" HEIGHT=209 WIDTH=253 BORDER=0><P>
+<H3>Menu simulation</H3>
+<IMG Alt="" SRC="MSI.jpg" HEIGHT=174 WIDTH=218 BORDER=0><P>
+Les 3 menus ci-dessus correspondent respectivement aux 3 <A HREF="#LBDO">barres d&rsquo;outils</A> suivantes&;nbsp;:<UL>
+<LI><I>Edition (case)</I>
+<LI><I>Edition (sélection)</I>
+<LI><I>Simulation</I></UL>
+<H3>Modes conception et simulation</H3>
+Les rubriques des menus déroulants sont détaillées en fonction de leur mode respectif&nbsp;:<UL>
+<LI>Pour le <B>mode conception</B>, voir <A HREF="#ODC">Outils de construction</A>
+<LI>Pour le <B>mode simulation</B>, voir <A HREF="#LDLS">Lancement de la simulation</A>.</UL>
+
+<HR>
+
+<A NAME="LBDE"></A><H2>La barre d&rsquo;état</H2>
+Elle permet l&rsquo;affichage...<UL>
+<LI>de messages
+<LI>d&rsquo;informations sur la case où est situé le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> ou <IMG Alt="" SRC="CDLZDSME.jpg" HEIGHT=18 WIDTH=18 BORDER=0>
+<LI>de la situation lorsqu&rsquo;une simulation est en cours.</UL>
+La barre d&rsquo;état est divisée en quatre parties&nbsp;:<UL>
+<LI>La première partie est réservée aux messages (traitements en cours, messages d&rsquo;erreur, situation de la simulation en cours, etc.)
+<LI>La deuxième partie donne les éléments que contient la case où est situé le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> (type et numéro). Il s&rsquo;agit des feux, des parkings et des véhicules
+<LI>Sur la troisième partie, s&rsquo;affichent les directions possibles de la case sélectionnée
+<LI>La dernière partie contient les coordonnées du curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> (autrement la case sélectionnée) ou bien le nombre de tours lorsqu&rsquo;une simulation est en cours.</UL>
+Notez que la case de coordonnées <TT><B>(0, 0)</B></TT> est située sur le bord supérieur gauche.
+
+<HR>
+
+<A NAME="CDR"></A><H2>Construction du réseau</H2>
+La construction peut se résumer en quatre phases...<UL>
+<LI><B>Définir le niveau du challenge</B>&nbsp;: paramétrer la simulation.
+<LI><B>Poser les fondations</B>&nbsp;: définir les parkings qui doivent être reliés entre eux.
+<LI><B>Définir la structure</B>&nbsp;: relier les parkings par un système de voies de circulation.
+<LI><B>Régler le système</B>&nbsp;: définir les priorités aux intersections.</UL>
+<H3>C&rsquo;est parti...</H3>
+<UL>
+<LI>Tout d&rsquo;abord, partez d&rsquo;une situation vierge : choisissez <I><U>F</U>ichier | <U>N</U>ouveau</I>.
+<LI>Ensuite, choisissez <I><U>P</U>aramètres | <U>S</U>imulation</I> pour <B>définir le nombre d&rsquo;éléments</B>&nbsp;: le nombre maximal de feux et de parkings et le nombre de véhicules pour la simulation (voir <A HREF="#LMSI">Menu Simulation</A>).
+<LI><B>Tracez les voies de circulation</B><A HREF="#CDR1">*</A>&nbsp;: Définissez les directions possibles en utilisant les boutons <IMG Alt="" SRC="BDIRN.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, <IMG Alt="" SRC="BDIRE.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, <IMG Alt="" SRC="BDIRS.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, <IMG Alt="" SRC="BDIRO.jpg" HEIGHT=24 WIDTH=24 BORDER=0> et visualisez-les avec le bouton <IMG Alt="" SRC="BVDIR.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.
+<LI>Il est possible sur une case d&rsquo;obliger les véhicules de <B>continuer tout droit</B> (autrement dit, de les interdire de tourner à gauche ou à droite) en activant le bouton <IMG Alt="" SRC="BODATD.jpg" HEIGHT=24 WIDTH=24 BORDER=0>&nbsp;: les flèches des directions possibles sur le réseau deviennent alors bleu ciel <IMG Alt="" SRC="DPAODATD.jpg" HEIGHT=16 WIDTH=16 BORDER=0>.
+<LI>Définissez les <B>priorités</B> (stop, cédez-le-passage et feux) pour chaque intersection<A HREF="#CDR1">*</A> (cases voisines des cases ayant plus d&rsquo;une direction possible) en utilisant le bouton <IMG Alt="" SRC="BBDOEC6.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou en double cliquant sur les cases.
+<LI>Posez vos <B>parkings souterrains</B> (le nombre que vous avez défini) en utilisant le bouton <IMG Alt="" SRC="BPRKS.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.<BR>
+    <U>Attention</U>, chaque parking doit être posé sur une chaussée, c&rsquo;est-à-dire sur une case ayant au moins une direction possible).
+<LI>Si vous souhaitez introduire des <B>piétons</B>, il faut qu&rsquo;ils puissent&nbsp;&ndash; depuis des trottoirs&nbsp;&ndash; traverser les chaussées.<BR>
+    Pour cela, posez-y des <B>passages piétons</B>.<BR>
+	<U>Attention</U>, un passage piéton ne peut être posé que s&rsquo;il traverse une voie de circulation (chaussée ou voie de tram).<BR>
+	De plus, la case sur laquelle doit être posé un passage piéton, doit au moins avoir une direction de circulation possible perpendiculaire au sens du passage piéton.<BR>
+	Pour poser (ou retirer) un passage piéton, utilisez le bouton <IMG Alt="" SRC="BPSGPTN.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.
+<LI>Vous pouvez ensuite définir des <B>priorités</B> entre piétons et voies de circulation en mettant des <B>feux de piétons</B> aux extrémités des passages piétons et <B>lier des feux de circulation</B>.<BR>
+    Utilisez le bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> pour placer et définir des feux de piétons.
+<LI>Vérifiez que le <B>réseau est correct</B> avant de lancer une simulation.<BR> 
+    Pour ce faire, appuyez sur le bouton <IMG Alt="" SRC="BVERIFR.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.<BR>
+	Le réseau est toujours vérifié avant le lancement de la simulation (<B>connexité</B> du réseau).
+	</UL>
+Vous pouvez également construire et paramétrer&nbsp;:<UL>
+<LI>un <A HREF="#PDRDB">réseau de bus</A>
+<LI>un <A HREF="#PDRDT">réseau de tram</A>
+<LI>des <A HREF="#PDT">files de taxis</A></UL>
+<U>Remarques</U>&nbsp;:<UL>
+<LI>Si vous utilisez un <B>réseau de bus</B>, vous devez définir obligatoirement un dépôt de bus <IMG Alt="" SRC="BDDB.jpg" HEIGHT=24 WIDTH=24 BORDER=0> d&rsquo;où sortiront les bus au début de la simulation.
+<LI>En ce qui concerne les <B>trams</B>, utilisez les boutons <IMG Alt="" SRC="BDRTN.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, <IMG Alt="" SRC="BDRTE.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, <IMG Alt="" SRC="BDRTS.jpg" HEIGHT=24 WIDTH=24 BORDER=0> et <IMG Alt="" SRC="BDRTO.jpg" HEIGHT=24 WIDTH=24 BORDER=0> pour tracer les voies de tram.<BR>
+    Lorsque l&rsquo;on appuie sur un de ces boutons, la voie est tracée de la case voisine d&rsquo;où vient le curseur en prenant la direction choisie correspondant au bouton.<BR>
+    Par exemple, si vous appuyez sur la touche fléchée &uarr; puis sur le bouton <IMG Alt="" SRC="BDRTE.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, une voie permettant d&rsquo;aller de la case du bas vers la case de droite sera ajoutée sur la case courante (ou retirée si elle existe déjà)&nbsp;: <IMG Alt="" SRC="EXDPTRM.jpg" HEIGHT=22 WIDTH=22 BORDER=0></UL>
+<A NAME="CDR1">(*)</A>&nbsp;<I>Pour construire votre réseau, il y a plusieurs outils d&rsquo;aide à la construction, voir ci-dessous.</I>
+<H3>Plus d&rsquo;informations</H3>
+<UL><LI><A HREF="#DDP">Définition des priorités</A>
+<LI><A HREF="#DDF">Définition des feux</A>
+<LI><A HREF="#DDPP">Définition des priorités piétons</A>
+<LI><A HREF="#DDFDP">Définition des feux de piétons</A>
+<LI><A HREF="#ODC">Outils de construction</A>
+<LI><A HREF="#C">Carrefours</A>
+<LI><A HREF="#BDN">Boutons de navigation</A>
+<LI><A HREF="#DDLNDUZ">Définition de la nature d&rsquo;une zone</A></UL>
+
+<HR>
+
+<A NAME="DDP"></A><H2>Définition des priorités</H2>
+Lorsque vous cliquez sur le bouton <IMG Alt="" SRC="BDEFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, vous obtenez une boîte de dialogue comme ceci&nbsp;:<P>
+<IMG Alt="" SRC="PDLC.jpg" HEIGHT=400 WIDTH=296 BORDER=0><P>
+La boîte de dialogue est non modale, c&rsquo;est-à-dire que même affichée vous pouvez agir sur la zone de simulation, accéder aux menus, barres d&rsquo;outils et zone d&rsquo;édition. Les informations de cette boîte de dialogue sont celles de la case courante indiquée par le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0>. Si la case courante change, les informations affichées changent en temps réel.<P> 
+Les quatre parties représentent les priorités dans les quatre directions&nbsp;: nord, est, sud et ouest. Seules les priorités dans les directions possibles de la case sont&nbsp;&ndash; bien entendu&nbsp;&ndash; modifiables. Les voies de tram peuvent avoir les mêmes priorités que les voies de circulation. Les priorités des voies de tram sont affichées en <FONT COLOR="#000080"><B>bleu</B></FONT> (voir exemple ci-dessus pour les directions nord et sud).<P>
+Utilisez le bouton <I><U>A</U>ppliquer</I> pour valider les modifications apportées et rafraîchir la zone d&rsquo;édition.<P>
+Le bouton <IMG Alt="" SRC="BDEFFI.jpg" HEIGHT=20 WIDTH=20 BORDER=0> devient <IMG Alt="" SRC="BDEFF.jpg" HEIGHT=20 WIDTH=20 BORDER=0> que lorsque vous choisissez un feu (il faut appuyer sur <I>Feu...</I> puis sur <I><U>A</U>ppliquer</I>). Ce bouton permet de définir le feu.<P>
+Voici les conditions concernant la case courante pour lesquelles il est impossible de définir ou modifier les priorités (les priorités dans les 4 directions apparaissent grisées)&nbsp;:<UL>
+<LI>Il n&rsquo;y a ni chaussée ni voie de tram, ou
+<LI>Une voie de tram traverse une chaussée, ou
+<LI>Il y a plus de deux directions possibles de voies de tram, ou
+<LI>Il y a un parking ou un dépôt de bus.</UL>
+
+<HR>
+
+<A NAME="DDF"></A><H2>Définition des feux</H2>
+Lorsque vous appuyez sur le bouton <IMG Alt="" SRC="BDEFF.jpg" HEIGHT=20 WIDTH=20 BORDER=0> vous obtenez la boîte de dialogue suivante&nbsp;:<P>
+<IMG Alt="" SRC="DDFT.jpg" HEIGHT=430 WIDTH=296 BORDER=0><P>
+Cette boîte de dialogue permet de paramétrer les feux. Il est fortement conseillé de définir d&rsquo;abord tous les feux (position et éventuellement l&rsquo;état initial) avant de paramétrer le reste car pour chaque feu, on doit associer d&rsquo;autres feux.<P>
+Comme pour la <A HREF="#DDP">définition des priorités d&rsquo;une case</A>, elle est non modale. De plus, si vous changez de case, cette boîte de dialogue est fermée automatiquement.<P>
+La position du feu est indiquée en haut de la boîte de dialogue (coordonnées et sens). Suit ensuite son état initial, autrement dit sa couleur (inactif, vert, orange ou rouge). L&rsquo;état inactif permet de désactiver un feu : il reste alors inactif durant toute une simulation et n&rsquo;agit pas sur les véhicules.<P>
+Les autres paramètres du feu concernent son comportement et les autres feux qui y sont liés.<P>
+Avant de présenter les autres paramètres, il faut connaître quelles sont les situations  successives d&rsquo;un feu. Mais tout d&rsquo;abord il faut définir ce qu&rsquo;est un feu opposé&nbsp;:<P>
+
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=1>
+<TR><TD>Le feu A est un <I>feu opposé</I> pour le feu B si le feu A doit être rouge pour que le feu B puisse passer au vert.</TD></TR></TABLE><P>
+
+&Agrave; présent, voici quelles sont les situations successives d&rsquo;un feu&nbsp;:<OL>
+<LI>Feu vert
+<LI>Le rouge est demandé par un des feux opposés
+<LI>Délai du vert dépassé
+<LI>Feu orange
+<LI>Délai du feu orange dépassé
+<LI>Feu rouge&nbsp;: définition du ou des prochains feux à passer au vert
+<LI>Délai du feu rouge dépassé
+<LI>Attente de l&rsquo;arrivée d&rsquo;un véhicule dans le cas de ce type d&rsquo;attente
+<LI>Un des feux opposés est vert
+<LI>Demande de passer au vert&nbsp;: le rouge est demandé aux feux opposés
+<LI>Les feux opposés (feux devant être rouges) sont tous rouges
+<LI>Prochain feu à passer au vert</OL><P>
+<U>Notes</U>&nbsp;:<UL>
+<LI>Les situations 8, 9, 10 et 11 sont court-circuitées si la situation 12 arrive entre les situations 7 et 8
+<LI>La situation 6 entraîne la situation 12 pour les prochains feux à passer au vert
+<LI>La situation 10 entraîne pour les feux opposés la situation 2.</UL>
+<H3>Définition des paramètres liés au comportement du feu</H3>
+Les passages au feu vert ou au feu rouge sont déclenchés en fonction de la situation du carrefour.<P>
+Pour qu&rsquo;un feu puisse passer au vert, il faut&nbsp;:<UL>
+<LI>que la durée du rouge soit écoulée
+<LI>qu&rsquo;il soit le ou l&rsquo;un des prochains feux à passer au vert
+<LI>que tous les feux opposés soient au rouge.</UL>
+Par contre, un feu peut être réglé pour qu&rsquo;il réagisse en fonction de l&rsquo;arrivée d&rsquo;un véhicule (bouton radio Demande le feu vert... dès qu&rsquo;un véhicule arrive). Dans ce cas, si un véhicule est immobilisé devant le feu, ce dernier demande le vert aux feux opposés dès qu&rsquo;un de ces derniers est vert. Il passe alors au vert dès que tous les feux opposés sont rouges.<P>
+Pour qu&rsquo;un feu passe au rouge, il faut d&rsquo;abord que la durée du vert soit écoulée. Ensuite, un feu peut être paramétré pour qu&rsquo;il passe au rouge dès qu&rsquo;un feu opposé le lui demande (bouton radio Passe au rouge dès... qu&rsquo;un feu le demande).<P>
+<H3>Définition des feux associés</H3>
+Pour définir un ou plusieurs feux associés (les feux devant être rouges et les prochains feux verts)&nbsp;:<UL>
+<LI>Cliquer sur le bouton <IMG Alt="" SRC="BFEU.jpg" HEIGHT=22 WIDTH=22 BORDER=0> : il se met en position enfoncée.
+<LI>Double cliquer sur le ou les feux à sélectionner.
+<LI>Lorsqu&rsquo;un feu est sélectionné, il apparaît avec ses trois couleurs allumées (vert, orange et rouge).
+<LI>Pour retirer un feu de la sélection, il suffit de double cliquer à nouveau dessus. Le nombre courant de feux sélectionnés est affiché à gauche du bouton <IMG Alt="" SRC="BFEU.jpg" HEIGHT=22 WIDTH=22 BORDER=0>. 
+<LI>Une fois la sélection des feux terminée, cliquer sur le bouton <IMG Alt="" SRC="BFEU.jpg" HEIGHT=22 WIDTH=22 BORDER=0>.</UL>
+<H3>Plus d&rsquo;informations</H3>
+<A HREF="../tutocv/index.html#dmducaf">Exemple de pose de feux dans le tutoriel de création d&rsquo;un réseau</A>
+
+<HR>
+
+<A NAME="DDPP"></A><H2>Définition des priorités piétons</H2>
+Lorsque vous cliquez sur le bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, vous obtenez une boîte de dialogue comme ceci&nbsp;:<P>
+<IMG Alt="" SRC="FDP.jpg" HEIGHT=321 WIDTH=247 BORDER=0><P>
+Comme pour la <A HREF="#DDP">définition des priorités d&rsquo;une case</A>, elle est non modale. Les informations de cette boîte de dialogue sont celles de la case courante indiquée par  le curseur . Si la case courante change, les informations de cette fenêtre changent également.<P> 
+Les 4 boutons <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> représentent les priorités piétons vis-à-vis des voies de circulation (chaussée et voie de tram) dans les 4 directions : nord, est, sud et ouest. Seules les priorités dans les directions où se trouve un passage piétons sont&nbsp;&ndash; bien entendu&nbsp;&ndash; modifiables&nbsp;:<UL>
+<LI>Quand un bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> <B>est enfoncé</B>, cela signifie qu&rsquo;un feu de piéton se situe au pied du passage piéton.
+<LI>Quand un bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> <B>est relevé</B> et <B>non grisé</B>, cela signifie qu&rsquo;il est possible de poser un feu de piétons sous réserve que le passage piétons ne soit pas un cul-de-sac pour les piétons.
+<LI>Pour <B>placer ou modifier un feu de piétons</B>, il faut cliquer <U>une fois</U> sur le bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> si ce dernier est relevé (création) et <U>deux fois</U> si celui-ci est enfoncé (modification). Dans ces deux cas, la boîte de dialogue de <A HREF="#DDFDP">définition du feu de piétons</A> s&rsquo;affiche.<P>
+<LI>Pour <B>supprimer un feu de piétons</B>, il faut cliquer une fois sur le bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> si ce dernier <B>est enfoncé</B>.
+<LI>Utilisez le bouton <I><U>A</U>ppliquer</I> pour valider les modifications apportées et rafraîchir la zone d&rsquo;édition.</UL>
+<U>Important</U>&nbsp;: Un feu de piétons ne peut être placé que sur une case qui n&rsquo;est <B>pas traversée par des voies de circulation</B> et qui est <B>adjacente</B> à un <B>passage piéton</B>.
+
+<HR>
+
+<A NAME="DDFDP"></A><H2>Définition des feux de piétons</H2>
+Lorsque vous appuyez sur le bouton <IMG Alt="" SRC="BDEFFP.jpg" HEIGHT=24 WIDTH=24 BORDER=0> de la boîte de dialogue de <A HREF="#DDPP">définition des priorités piétons</A>, vous obtenez la boîte de dialogue suivante&nbsp;:<P>
+<IMG Alt="" SRC="DDFDP.jpg" HEIGHT=381 WIDTH=296 BORDER=0><P>
+Elle permet de paramétrer les feux de piétons. Il est fortement conseillé de poser d&rsquo;abord tous les feux de piétons liés avant de les paramétrer un par un.<P>
+Comme pour la <A HREF="#DDP">définition des priorités d&rsquo;une case</A>, elle est non modale. De plus, si vous changez de case, cette boîte de dialogue est fermée automatiquement.<P>
+La position du feu est indiquée en haut de la boîte de dialogue (coordonnées et sens). Suit ensuite son état initial, autrement dit sa couleur (inactif, vert ou rouge). L&rsquo;état inactif permet de désactiver un feu : il reste alors inactif durant toute la simulation et agit ni sur les piétons ni sur les feux de circulation.<P>
+La durée de traversée indiquée à droite du bouton <IMG Alt="" SRC="BFEU.jpg" HEIGHT=22 WIDTH=22 BORDER=0> indique le nombre de tours nécessaires à un piéton pour traverser la voie en empruntant le passage piétons. Ce nombre de tours s&rsquo;intercale entre le moment où le feu de piétons passe au rouge et le moment où le(s) feu(x) de circulation passent au vert. Cette phase permet aux piétons qui ont entamé la traversée de la finir sans être inquiété par les véhicules ou trams (surtout si le mode &laquo;&nbsp;sanglant&nbsp;&raquo; est activé).<P>
+Les autres paramètres sont les mêmes que ceux des <A HREF="#DDF">feux de circulation</A> sachant que les piétons correspondent aux véhicules.
+<H3>Plus d&rsquo;informations</H3>
+<A HREF="../tutocv/index.html#dmducaf">Exemple de pose de feux dans le tutoriel de création d&rsquo;un réseau</A>
+
+<HR>
+
+<A NAME="ODC"></A><H2>Outils de construction</H2>
+Tout ce qui permet la construction du réseau est disponible dans les <A HREF="#LBDO">barres d&rsquo;outils</A>.
+<H3>Plus d&rsquo;informations</H3>
+<A HREF="#OCUCS">Outils concernant une case sélectionnée</A><BR>
+<A HREF="#OCPCS">Outils concernant plusieurs cases sélectionnées</A>
+
+<HR>
+
+<A NAME="OCUCS"></A><H2>Outils concernant une case sélectionnée</H2>
+Les outils disponibles apparaissent par un clic droit sur une case de la zone de simulation avec le menu dérulant suivant qui s&rsquo;ouvre&nbsp;:<P>
+<IMG Alt="" SRC="MCAUCS.jpg" HEIGHT=430 WIDTH=329 BORDER=0><P>
+Ils sont disponibles également dans la barre d&rsquo;outils Edition (case).<P>
+<U>Remarque</U>&nbsp;: Si la case&nbsp;&ndash; sur laquelle le menu déroulant est appelé&nbsp;&ndash; n&rsquo;a pas de voies de circulation, alors la rubrique <IMG Alt="" SRC="PRIORITEV.jpg" HEIGHT=19 WIDTH=115 BORDER=0> est remplacée par la rubrique <IMG Alt="" SRC="PRIORITEP.jpg" HEIGHT=21 WIDTH=154 BORDER=0>.
+
+<H3>Directions</H3>
+<U>But</U>&nbsp;: Permet d&rsquo;effacer ou de tracer les chaussées et détermine leurs directions possibles. Sur chaque case par laquelle une voie de circulation passe, doivent être indiquées toutes les directions vers lesquelles les véhicules pourront se diriger. Si la direction existe déjà, elle est retirée.<BR>
+<U>Contrainte</U>&nbsp;: la case ne doit pas avoir de passages piétons, passages de bus, d&rsquo;arrêt de bus et, dans le même sens, il ne doit pas y avoir de feu, de cédez-le-passage, de stops ni de voie de tram.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+&uarr;, Ctrl+&rarr;, Ctrl+&darr;, Ctrl+&larr;</I>
+<H3>Effacement de la route</H3>
+<U>But</U>&nbsp;: Permet d&rsquo;effacer la chaussée (efface toutes les directions possibles).<BR>
+<U>Contrainte</U>&nbsp;: Si une des contraintes indiquées ci-dessus empêche la suppression de directions, elles ne sont pas retirées.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+Suppr</I>
+<H3>Prolongement de voie de tram</H3>
+<U>But</U>&nbsp;: Permet d&rsquo;effacer ou de tracer les voies de tram et détermine les directions possibles. Sur chaque case par laquelle une voie de tram passe, doivent être indiquées toutes les directions vers lesquelles les trams pourront se diriger. Si la direction existe déjà, elle est retirée.<BR>
+<U>Contrainte</U>&nbsp;: la case ne doit pas avoir de passages piétons, d&rsquo;arrêt de bus et, dans le même sens, il ne doit pas y avoir de feu, de cédez-le-passage, de stops ni de chaussée.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Maj+Ctrl+&uarr;, Maj+Ctrl+&rarr;, Maj+Ctrl+&darr;, Maj+Ctrl+&larr;</I>
+<H3>Effacement de la voie de tram</H3>
+<U>But</U>&nbsp;: Permet d&rsquo;effacer la voie de tram (efface toutes les directions possibles).<BR>
+<U>Contrainte</U>&nbsp;: Si une des contraintes indiquées ci-dessus empêche la suppression de directions, elles ne sont pas retirées.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Maj+Ctrl+Suppr</I>
+<H3>Obligation d&rsquo;aller Tout droit</H3>
+<U>But</U>&nbsp;: Permet d&rsquo;obliger de continuer tout droit si la direction existe. Elle interdit donc aux véhicules de changer de direction.<BR>
+<U>Contrainte</U>&nbsp;: Aucune.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+T</I>
+<H3>Définition des priorités</H3>
+<U>But</U>&nbsp;: Permet de définir les priorités dans les 4 directions : priorités à droite, feux, cédez-le-passage et stop. Voir <A HREF="#DDP">Définition des priorités</A>.<BR>
+<U>Contrainte</U>&nbsp;: Voie de circulation sur la case (chaussée ou voie de tram).<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+P</I>
+<H3>Définition des priorités piétons (feux)</H3>
+<U>But</U>&nbsp;: Permet de définir les priorités piétons dans les 4 directions. Voir <A HREF="#DDPP">Définition des priorités piétons piétons</A>.<BR>
+<U>Contrainte</U>&nbsp;: Pas de voies de circulations sur la case (chaussée ou voie de tram).<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+N</I>
+<H3>Parking (souterrain)&nbsp;&ndash; <I>anciennement étape</I></H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer un parking. Les parkings sont les origines et destination des véhicules (sauf bus et trams). Leur disposition sur la zone de simulation constitue la base de l&rsquo;équilibre du réseau.<BR>
+<U>Contrainte</U>&nbsp;: Aucune (à la conception). &Agrave; la vérification du réseau, il faudra au moins une entrée vers chaque parking ainsi qu&rsquo;une sortie depuis chaque parking.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+E</I>
+<H3>Dépôt de bus</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer un dépôt de bus. C&rsquo;est de là que sortent tous les bus de la simulation. Sa position est donc stratégique pour le fonctionnement du réseau de bus.<BR>
+<U>Contrainte</U>&nbsp;: Aucune (à la conception). &Agrave; la vérification du réseau, il faudra au moins une sortie mais aucune case ne doit être dirigée sur le dépôt de bus (sortie seule).<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+O</I>
+<H3>Passage piéton</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer un passage piéton. C&rsquo;est le seul moyen donné aux piétons de traverser les chaussées et voies de tram.<BR>
+<U>Contrainte</U>&nbsp;: Il ne doit pas y avoir deux directions possibles perpendiculaires (chaussées ou voie de tram) et il doit y avoir au moins un des deux côtés du passage accessibles aux piétons.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+G</I>
+<H3>Arrêts de bus ou de tram</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer un arrêt de bus ou de tram. C&rsquo;est par là que les piétons peuvent attendre, entrer ou sortir des bus ou des trams. Voir <A HREF="#PDRDB">Paramètres du réseau de bus</A> et <A HREF="#PDRDT">Paramètres du réseau de trams</A>.<BR>
+<U>Contrainte</U>&nbsp;: Il ne doit y avoir qu&rsquo;une direction possible sur la chaussée et qu&rsquo;un sens possible sur la voie de tram et il ne doit pas y avoir d&rsquo;arrêt des deux côtés.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+A</I>
+<H3>Passage réservés aux bus</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer un passage réservé aux bus. Ils permettent de restreindre une chaussée aux bus et aux véhicules prioritaires (urgence, police).<BR>
+<U>Contrainte</U>&nbsp;: Aucune (à la conception). &Agrave; la vérification du réseau, ils ne doivent pas provoquer de blocages pour les véhicules ne pouvant pas emprunter les passages de bus.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+B</I>
+<H3>Place de taxi</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer une place de taxi. Elle permet d&rsquo;ajouter un taxi à la simulation. Au lancement de celle-ci, un taxi sera posé sur cette case.<BR>
+<U>Contrainte</U>&nbsp;: Aucune (à la conception). &Agrave; la vérification du réseau, ils ne doit pas y avoir plus d&rsquo;une file de taxis qui soit dirigée vers une place de taxi.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+C</I>
+<H3>Place de parking</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer une place de parking. Elle permet d&rsquo;ajouter un point de départ et d&rsquo;arrivée pour un véhicule autre que depuis ou vers un parking souterrain. Au lancement de la simulation, de chaque place de parking, partira un véhicule et vers chaque place de parking, se destinera un véhicule.<BR>
+<U>Contrainte</U>&nbsp;: Aucune (à la conception). &Agrave; la vérification du réseau, ils ne doit pas y avoir plus d&rsquo;une file de parkings qui soit dirigée vers une place de parking.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+K</I>
+<H3>Place de vehlib</H3>
+<U>But</U>&nbsp;: Permet de poser ou de retirer une place de vehlib. Elle permet d&rsquo;ajouter un point de départ et d&rsquo;arrivée pour un vehlib. Au lancement de la simulation, de chaque place de vehlib pourra partir un vehlib emprunté par un piéton à condition qu'une autre place de vehlib soit libre auquel cas, elle sera réservée au moment où le vehlib quittera sa place.<BR>
+<U>Contrainte</U>&nbsp;: Aucune.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Maj+Ctrl+K</I>
+<H3>Déplacement d&rsquo;un feu</H3>
+<U>But</U>&nbsp;: Permet de déplacer un feu d&rsquo;une case à une autre case. Pour déplacer un feu, il suffit de cliquer sur une case comportant un feu puis sur le bouton ou la rubrique de déplacement de feu puis sur la case destination et à nouveau sur le bouton ou la rubrique de déplacement de feu.<BR>
+<U>Contrainte</U>&nbsp;: La case origine doit comporter un feu et la case destination doit avoir la direction possible correspondant au feu à déplacer.<BR>
+<U>Raccourcis clavier</U>&nbsp;: <I>Ctrl+F</I>
+<H3>Nature/décors</H3>
+<IMG Alt="" SRC="MND.jpg" HEIGHT=98 WIDTH=158 BORDER=0><P>
+<U>But</U>&nbsp;: Permet de changer la nature d&rsquo;une case et/ou de poser des éléments de décoration. Si la nature est une zone piétonne (trottoir), il est possible de poser un arbre (<I>Ctrl+*</I>) ou une pelouse (<I>Ctrl+L</I>). Cette dernière peut être également définie dans une sélection de plusieurs cases (voir <A HREF="#DDLNDUZ">Définition de la nature d&rsquo;une zone</A>). Trottoir et Immeuble (toit) sont des natures.<BR>
+<U>Contrainte</U>&nbsp;: La case sélectionnée ne doit pas comporter de voies de circulation (chaussée et voie de tram).<BR>
+<U>Raccourcis clavier</U>&nbsp;: Aucun.
+
+<HR>
+
+<A NAME="OCPCS"></A><H2>Outils concernant plusieurs cases sélectionnées</H2>
+Les outils de construction sont disponibles lorsque vous sélectionnez plusieurs cases en faisant glisser la souris (bougez la souris en maintenant le bouton gauche de la souris enfoncé). Le nombre de cases sélectionnées (nombre de lignes et de colonnes) s&rsquo;affiche en même temps en bas à gauche sur la <A HREF="#LBDE">barre d&rsquo;état</A>.<P>
+Dès la sélection terminée, relâchez le bouton de la souris. Ensuite, cliquez avec le bouton droit de la souris n&rsquo;importe où dans la zone de simulation, vous obtenez le menu suivant&nbsp;:<P>
+<IMG Alt="" SRC="MCAPCS.jpg" HEIGHT=209 WIDTH=253 BORDER=0><P>
+Il contient tous les outils de construction suivants&nbsp;:<P>
+<H3>Segment de route</H3>
+<U>But</U>&nbsp;: Trace ou efface un segment de route allant de la première à la dernière case sélectionnée si la sélection contient une ligne ou une colonne. Si la sélection contient deux lignes ou deux colonnes, avant une route en double sens est tracée ou effacée (allant de la première à la dernière case et vice versa).<BR>
+<U>Contrainte</U>&nbsp;: La sélection doit contenir 1 ligne ou 1 colonne pour une route en sens unique ; 2 lignes ou 2 colonnes pour une route en double sens.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+0</I> (zéro)
+<H3>Segment de voie de tram</H3>
+<U>But</U>&nbsp;: Trace ou efface un segment de voie de tram allant de la première à la dernière case sélectionnée si la sélection contient une ligne ou une colonne.<BR>
+<U>Contrainte</U>&nbsp;: La sélection doit contenir 1 ligne ou 1 colonne.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+5</I>
+<H3>Angles droits de route...</H3>
+Il s&rsquo;agit d&rsquo;un menu déroulant qui affiche 4 rubriques&nbsp;:<P>
+<IMG Alt="" SRC="MADDR.jpg" HEIGHT=82 WIDTH=172 BORDER=0><P>
+<U>But</U>&nbsp;: Trace ou efface un double segment de route dont le raccord fait un angle droit sur un des 4 bords choisis (inférieur/supérieur gauche/droit). La route tracée ou effacée est en sens unique et correspond au sens de la sélection (sens du glissé de souris).<BR>
+<U>Contrainte</U>&nbsp;: La sélection doit contenir au moins 2 colonnes ou 2 lignes.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+7, Ctrl+9, Ctrl+3, Ctrl+1</I>. Le coin où est situé le chiffre du raccourci clavier sur le pavé numérique correspond au coin du bord à tracer ou à effacer. Attention&nbsp;: le chiffre ne doit pas être tapé sur le pavé numérique.
+<H3>Périphérique...</H3>
+Il s&rsquo;agit d&rsquo;un menu déroulant qui affiche 2 rubriques&nbsp;:<P>
+<IMG Alt="" SRC="MP.jpg" HEIGHT=44 WIDTH=131 BORDER=0>
+<H4>Périphérique Extérieur</H4>
+<U>But</U>&nbsp;: Trace ou efface une route qui boucle faisant tout le bord de la sélection dans le sens inverse des aiguilles d&rsquo;une montre.<BR>
+<U>Contrainte</U>&nbsp;: La sélection doit contenir au moins 2 colonnes <U>ET</U> 2 lignes.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+X</I>
+<H4>Périphérique Intérieur</H4>
+<U>But</U>&nbsp;: Trace ou efface une route qui boucle faisant tout le bord de la sélection dans le sens des aiguilles d&rsquo;une montre.<BR>
+<U>Contrainte</U>&nbsp;: La sélection doit contenir au moins 2 colonnes <U>ET</U> 2 lignes.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+I</I><P>
+<U>Remarque</U>&nbsp;: Pour faire un périphérique en double sens, il faut d&rsquo;abord tracer le Périphérique Extérieur puis sélectionner toutes les cases à l&rsquo;intérieur du périphérique tracé (exclu) puis tracer le Périphérique Intérieur.<P>
+<U>Note sur tous les outils de type Tracer/Effacer ci-dessus</U>&nbsp;:<UL>
+<LI>Si la route à tracer existe déjà, elle est effacée ce qui implique que choisir deux fois la même opération sur la même sélection efface la route qui vient d&rsquo;être tracée.
+<LI>Les priorités et parkings ne sont pas supprimés dans les opérations d&rsquo;effacement de route ainsi que la direction sur laquelle est située la priorité.</UL>
+<H3>Carrefours</H3>
+<U>But</U>&nbsp;: Permet de poser des carrefours types suivant le nombre de cases sélectionnées. Une fenêtre apparaît avec des carrefours types affichés suivant le nombre de lignes et de colonnes sélectionnées (voir ci-dessous).<BR>
+<U>Contrainte</U>&nbsp;: La sélection doit contenir 3 colonnes et 4 lignes ; 4 colonnes et 3 lignes ; 4 lignes et 4 colonnes ; 6 lignes et 6 colonnes ou 8 lignes et 8 colonnes.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+Q</I><BR>
+<U>Pour plus d&rsquo;informations</U>&nbsp;: voir la rubrique <A HREF="#C">Carrefours</A>.
+<H3>Suppression des routes</H3>
+<U>But</U>&nbsp;: Toutes les routes se trouvant dans la sélection sont effacées, les éléments inclus compris (feux, arrêts de tram, passages piétons, etc.). Une confirmation est demandée pour la suppression de chaque feu et chaque arrêt de bus seulement.<BR>
+<U>Contrainte</U>&nbsp;: aucune.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+Suppr</I>
+<H3>Suppression des voies de tram</H3>
+<U>But</U>&nbsp;: Toutes les voies de tram se trouvant dans la sélection sont effacées, les éléments inclus compris (feux, arrêts de tram, passages piétons, etc.). Une confirmation est demandée pour la suppression de chaque feu et chaque arrêt de tram seulement.<BR>
+<U>Contrainte</U>&nbsp;: aucune.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Maj+Ctrl+Suppr</I>
+<H3>Définition de la nature de la zone</H3>
+<U>But</U>&nbsp;: Une zone est soit réservée aux voies de circulation (routes ou voies de tram), soit réservée aux piétons (trottoirs), soit réservée aux bâtiments. Il n&rsquo;est cependant pas possible de changer la nature des cases déjà occupées par une voie de circulation (route ou voie de tram).<BR>
+<U>Contrainte</U>&nbsp;: aucune.<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Maj+N</I><BR>
+<U>Pour plus d&rsquo;informations</U>&nbsp;: voir la rubrique <A HREF="#DDLNDUZ">Définition de la nature d&rsquo;une zone</A>.
+<H3>Copie vers un fichier</H3>
+<U>But</U>&nbsp;: Permet d&rsquo;enregistrer la sélection dans un fichier de sauvegarde (.cvw). Ceci a pour but principal d&rsquo;éliminer des bordures inutilisées.<BR>
+<U>Contrainte</U>&nbsp;: zone minimale : 8x8. Il n&rsquo;est pas possible d&rsquo;éliminer des parties contenant des éléments de la simulation sauf les voies de circulation, décors, passages réservés (piétons & bus) et signalisation horizontale de priorité (stops & cédez-le-passage).<BR>
+<U>Raccourci clavier</U>&nbsp;: <I>Ctrl+F12</I>
+
+<HR>
+
+<A NAME="C"></A><H2>Carrefours</H2>
+
+Lorsque vous sélectionnez une zone en mode conception puis que vous appuyez sur le bouton <IMG Alt="" SRC="BC.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Ctrl+Q</I> ou que vous choisissez la rubrique <I><U>C</U>arrefours...</I>, une boîte de dialogue de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="C.jpg" HEIGHT=463 WIDTH=421 BORDER=0><P>
+Certains boutons sont grisés suivant le nombre de lignes et de colonnes de cases sélectionnées (indiquées au dessus de chaque bouton).<P>
+Il faut cliquer sur le bouton correspondant au carrefour que vous souhaitez construire à l&rsquo;endroit de la sélection.<P>
+<U>Attention</U>&nbsp;: Tout ce qui est dans la sélection sera alors écrasé (une confirmation est demandée).<P>
+<U>Remarque</U>&nbsp;: Un seul groupe de carrefours correspondant au même nombre de colonnes et de lignes sélectionnées sera accessible en même temps. Cette fenêtre ne peut apparaître avec tous les groupes accessibles. La figure n&rsquo;est là que pour montrer tous les carrefours mis à disposition. 
+
+<HR>
+
+<A NAME="BDN"></A><H2>Boutons de navigation</H2>
+
+<IMG Alt="" SRC="BDN.jpg" HEIGHT=70 WIDTH=175 BORDER=0><P>
+Deux boîtes de dialogue ont des <B>boutons de navigation</B> dans le coin supérieur droit&nbsp;:<UL>
+<LI>les <A HREF="#PDRDB">paramètres du réseau de bus</A>
+<LI>les <A HREF="#PDRDT">paramètres du réseau de trams</A>
+<LI>les <A HREF="#SDFEDT">statistiques de fluidité et de trafic</A></UL>
+Les <B>flèches</B> permettent de déplacer le curseur sur le réseau de la simulation. Le <B>bouton de zoom</B> correspond au bouton de zoom <IMG Alt="" SRC="BBDOA1.jpg" HEIGHT=24 WIDTH=24 BORDER=0> de la <A HREF="#LBDOA">barre d&rsquo;outils <I>Affichage</I></A>.<BR>
+La case à cocher <I>Aller dans les <U>c</U>oins</I> permet d&rsquo;utiliser les touches fléchées pour aller dans les bords et les coins du réseau de la simulation.<BR>
+
+<HR>
+
+<A NAME="DDLNDUZ"></A><H2>Définition de la nature d&rsquo;une zone</H2>
+Depuis la version 3.8, lorsque vous sélectionnez une zone de la simulation puis que...<UL>
+<LI>soit vous appuyez sur le bouton <IMG Alt="" SRC="BBDOEC16.jpg" HEIGHT=24 WIDTH=24 BORDER=0> de la barre d&rsquo;outils <I>Edition (Sélection)</I> 
+<LI>soit vous choisissez la rubrique <I>Définition de la nature de la zone</I> en cliquant droit
+<LI>soit vous appuyez sur <I>Ctrl+N</I></UL>
+cette boîte de dialogue apparaît&nbsp;:<P>
+ <IMG Alt="" SRC="NDLZS.jpg" HEIGHT=154 WIDTH=247 BORDER=0><P>
+Elle permet de définir la nature de la zone sélectionnée. Cela permet de réserver une zone&nbsp;:<UL>
+<LI>pour un usage précis : soit pour les véhicules (voies de circulation), soit pour les piétons (trottoirs)
+<LI>pour y définir des immeubles (ils auront une fonction pour les versions futures...).</UL>
+Pour l&rsquo;instant, les piétons ne peuvent pénétrer dans les immeubles mais ils pourront y entrer et en sortir à la manière des véhicules entrant et sortant des parkings, dans une prochaine version...<P>
+Il suffit de choisir la nature souhaitée pour la zone sélectionnée puis d&rsquo;appuyer sur le bouton <I>A<U>p</U>pliquer</I>&nbsp;:<UL>
+<LI>Si vous ne souhaitez pas changer les cases qui ont déjà une nature <B>trottoirs</B> ou <B>immeubles</B>, ne cochez pas la case <I><U>E</U>craser si autre nature</I>. Si elle est cochée, toute la zone aura la nature choisie.
+<LI>Si vous choisissez <I><U>T</U>rottoirs</I>, vous pouvez alors également demander à couvrir la zone de <B>pelouse</B> depuis la version 3.9.</UL>
+Comme l&rsquo;indique la note en bas de la boîte de dialogue, les cases déjà utilisées par les voies de circulation (routes et voies de tram) ne peuvent changer de nature et ne sont donc pas concernées par la modification.<P>
+<U>Remarque</U>&nbsp;: Une fois la boîte de dialogue affichée, il est possible de modifier la nature d&rsquo;autres zones (boîte de dialogue non modale) mais surtout de pouvoir modifier la nature d&rsquo;une seule case (la case où se situe le curseur s&rsquo;il n&rsquo;y a pas de sélection).
+
+<HR>
+
+<A NAME="LDLS"></A><H2>Lancement de la simulation</H2>
+Pour lancer la simulation, appuyez sur le bouton <IMG Alt="" SRC="BBDOSI3.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.<BR>
+Pour que la simulation puisse se lancer, il faut que le réseau soit correct. La vérification est automatiquement lancée comme si vous aviez appuyé sur le bouton <IMG Alt="" SRC="BBDOSI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.<BR>
+Après la vérification du réseau, celui-ci est sauvegardé automatiquement. Un nom de fichier vous est demandé si le réseau n&rsquo;a pas encore été enregistré.<P>
+Durant la simulation, la première partie de la <A HREF="#LBDE">barre d&rsquo;état</A> affiche les informations suivantes&nbsp;:<UL> 
+<LI>le nombre et la proportion de véhicules sortis
+<LI>le nombre et la proportion de véhicules arrivés (par rapport aux nombre de sortis)
+<LI>le nombre de véhicules encore en course (sortis qui ne sont pas encore arrivés)
+<LI>le nombre et la proportion de véhicules déplacés (par rapport au nombre encore en course).</UL>
+La quatrième partie de la <A HREF="#LBDE">barre d&rsquo;état</A> affiche le nombre de tours passés.<P>
+Lorsque <B>tous les véhicules sont arrivés</B>, la simulation s&rsquo;arrête.<BR>
+Les véhicules sont représentés par des rectangles de couleur. Pour savoir dans quels sens ils se dirigent, l&rsquo;avant du véhicule a deux points jaunes (phares) et l&rsquo;arrière a deux points rouges (feux de stop).
+<H3>Boutons de la barre d&rsquo;outils <I>Simulation</I></H3>
+Lorsqu&rsquo;une simulation <B>est en cours</B>, les boutons <IMG Alt="" SRC="BBDOSI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> et <IMG Alt="" SRC="BBDOSI5.jpg" HEIGHT=24 WIDTH=24 BORDER=0> sont actifs et permettent respectivement d&rsquo;<B>interrompre</B> et de <B>stopper</B> la simulation.<BR>
+Lorsque vous <B>interrompez</B> une simulation, appuyez sur le bouton <IMG Alt="" SRC="BBDOSI3.jpg" HEIGHT=24 WIDTH=24 BORDER=0> pour poursuivre la simulation.<P>
+<H3>Mode sanglant</H3>
+Depuis la version 4.3, il est possible d&rsquo;utiliser le <B>mode sanglant</B> (option <IMG Alt="" SRC="BBDOSI6.jpg" HEIGHT=24 WIDTH=24 BORDER=0> cochée dans le menu <I><U>S</U>imulation</I>) dans lequel les piétons ne peuvent pas <B>bloquer</B> sur les voies, véhicules, bus, trams et taxis.<BR>
+Depuis la version 4.3.1, il est possible de <B>ressusciter</B> tous les piétons écrasés. <U>Attention</U>, cette commande ne désactive pas le mode sanglant.<P>
+<H3>Parkings</H3>
+Depuis la version 5.0, les étapes deviennent des parkings souterrains et il est possible de définir des places de parking en surface dans le même but que les parkings souterrains anciennement étapes : faire partir et arriver des véhicules des ou vers ces places de parking.<P>
+<H3>Informations sur les éléments de la simulation</H3>
+Au cours de la simulation, il est possible d&rsquo;obtenir des informations et visualiser les statistiques en temps réel&nbsp;:<UL>
+<LI><IMG Alt="" SRC="BISLEDLS1.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#EGDLS">Evolution générale de la simulation</A>
+<LI><IMG Alt="" SRC="BISLEDLS2.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#SDVDUEAUA">Statistiques des véhicules d&rsquo;un parking à un autre</A>
+<LI><IMG Alt="" SRC="BISLEDLS3.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ADDJAE">Affichage des distances jusqu&rsquo;aux parkings</A>
+<LI><IMG Alt="" SRC="BISLEDLS4.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ADDJAADB">Affichage des distances jusqu&rsquo;aux arrêts de bus</A>
+<LI><IMG Alt="" SRC="BISLEDLS5.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ADDJAADT">Affichage des distances jusqu&rsquo;aux arrêts de tram</A>
+<LI><IMG Alt="" SRC="BISLEDLS6.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ADDJAFDT">Affichage des distances jusqu&rsquo;aux files de taxis</A>
+<LI><IMG Alt="" SRC="BISLEDLS7.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ADDJAFDP">Affichage des distances jusqu&rsquo;aux files de parkings</A>
+<LI><IMG Alt="" SRC="BISLEDLS15.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ADDJAPDV">Affichage des distances jusqu&rsquo;aux places de vehlibs</A>
+<LI><IMG Alt="" SRC="BISLEDLS8.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#RDUEDLS">Recherche d&rsquo;un élément de la simulation</A>
+<LI><IMG Alt="" SRC="BISLEDLS9.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ISUV">Informations sur un véhicule</A>
+<LI><IMG Alt="" SRC="BISLEDLS10.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ISUB">Informations sur un bus</A>
+<LI><IMG Alt="" SRC="BISLEDLS11.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ISUT">Informations sur un tram</A>
+<LI><IMG Alt="" SRC="BISLEDLS12.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ISUVDT">Informations sur un taxi</A>
+<LI><IMG Alt="" SRC="BISLEDLS16.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ISUVL">Informations sur un vehlib</A>
+<LI><IMG Alt="" SRC="BISLEDLS13.jpg" HEIGHT=22 WIDTH=24>&nbsp;<A HREF="#ISUP">Informations sur un piéton</A></UL>
+
+Après avoir <B>interrompu</B> ou <B>arrêté</B> une simulation, vous avez un bilan&nbsp;:<P>
+<IMG Alt="" SRC="BILAN.jpg" HEIGHT=328 WIDTH=440 BORDER=0><P>
+On vous demande alors si vous souhaitez visualiser les <A HREF="#SDFEDT">statistiques de fluidité et de trafic</A>&nbsp;<IMG Alt="" SRC="BISLEDLS14.jpg" HEIGHT=22 WIDTH=24>.
+
+<HR>
+
+<A NAME="EGDLS"></A><H2>Evolution générale de la simulation</H2>
+Lors du déroulement d&rsquo;une simulation, lorsque l&rsquo;on appuie sur le bouton <IMG Alt="" SRC="BBDOST3.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Maj+Ctrl+S</I> ou que l&rsquo;on choisit la rubrique <I>S<U>t</U>atistiques | E<U>v</U>olution</I> du menu principal une boîte de dialogue de ce type apparaît&nbsp;:<P>
+<IMG Alt="" SRC="E.jpg" HEIGHT=251 WIDTH=596 BORDER=0><P>
+Les courbes représentent un nombre de véhicules (en ordonnées) par tour (en abscisses).<P>
+L&rsquo;évolution de la simulation est représentée par trois courbes&nbsp;:<UL>
+<LI>celle des véhicules <B>sortis</B> du parking de départ (<FONT COLOR="#808000"><B>couleur jaune</B></FONT>) ;
+<LI>celle des véhicules qui ont <B>rejoint</B> le parking d&rsquo;arrivée (<FONT COLOR="#800000"><B>couleur rouge</B></FONT>) ;
+<LI>celle des véhicules qui se sont <B>déplacés</B> (<FONT COLOR="#008000"><B>couleur verte</B></FONT>).</UL>
+La taille de la fenêtre est modifiable et il est possible de <A HREF="#PDLADSDE">paramétrer l&rsquo;affichage</A>.
+
+<HR>
+
+<A NAME="SDFEDT"></A><H2>Statistiques de fluidité et de trafic</H2>
+Lorsque la simulation se <B>termine</B> ou lorsqu&rsquo;on l&rsquo;<B>interrompt</B> ou on l&rsquo;<B>arrête</B>, un message demande si l&rsquo;on souhaite visualiser les statistiques de <B>fluidité et de trafic</B> (il n&rsquo;est pas possible de les visualiser lorsque la simulation est en marche).<P>
+Cependant lorsque la simulation est interrompue, il est possible d&rsquo;y accéder à nouveau&nbsp;:<UL>
+<LI>En cliquant sur le bouton <IMG Alt="" SRC="BISLEDLS14.jpg" HEIGHT=22 WIDTH=24>.
+<LI>En choisissant la rubrique <I><U>F</U>luidité &amp; Trafic</I> dans le menu <I>S<U>t</U>atistiques</I> du menu principal.</UL>
+Dans tous les cas une boîte de dialogue de ce type apparaît&nbsp;:<P>
+<IMG Alt="" SRC="SDFEDT1.jpg" HEIGHT=192 WIDTH=374 BORDER=0><P>
+Les couleurs du réseau changent et permettent de donner une situation globale immédiate des statistiques avec les couleurs dont la palette signalée en légende indique l&rsquo;ordre de grandeur.<P>
+Le type de statistiques par défaut est la fluidité (attente des véhicules en nombres de tours) : le bouton radio <I><U>A</U>ttente</I> est sélectionné par défaut. Si l&rsquo;on souhaite voir la situation globale du trafic, il suffit de cliquer sur le bouton radio <I><U>T</U>rafic</I>.<P>
+Il est possible d&rsquo;affiner les statistiques en choisissant les parkings de départ et/ou d&rsquo;arrivée en cochant la ou les cases correspondantes puis de choisir un numéro de parking à droite.<P>
+Les calculs de totaux, de moyennes et de valeurs maximales sont effectués à chaque fois que l&rsquo;on modifie les paramètres précédents. De la même façon, la visualisation des statistiques est rafraîchie à chaque changement des paramètres.<P>
+Depuis la version 3.0, en haut à droite des <A HREF="#BDN">boutons de navigation</A> sont à disposition pour vous permettre de naviguer dans la zone de simulation sans sortir des paramètres. De plus, le détail des statistiques pour la case sélectionnée s&rsquo;affiche dans la barre de statut.<P>
+<IMG Alt="" SRC="SDFEDT2.jpg" HEIGHT=587 WIDTH=785 BORDER=0><P>
+
+<HR>
+
+<A NAME="SDVDUEAUA"></A><H2>Statistiques des véhicules d&rsquo;un parking à un autre</H2>
+Lors du déroulement d&rsquo;une simulation, lorsque l&rsquo;on appuie sur le bouton <IMG Alt="" SRC="BISLEDLS2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Maj+Ctrl+E</I> ou encore lorsque l&rsquo;on choisit la rubrique <I>S<U>t</U>atistiques | Parkings</I> du menu principal, une boîte de dialogue de ce type apparaît&nbsp;:<P>
+<IMG Alt="" SRC="SDVDUEALA.jpg" HEIGHT=383 WIDTH=487 BORDER=0><P>
+Le tableau de droite varie suivant le nombre de parkings (liste à gauche).<BR>
+Ces statistiques permettent de voir si des véhicules font des détours (1<SUP>er</SUP> onglet) ou s&rsquo;arrêtent (2<SUP>ème</SUP> onglet).<BR>
+Plus les chiffres sont petits, plus le réseau est efficace. Le tableau de gauche rappelle la position des parkings.
+
+<HR>
+
+<A NAME="ADDJAE"></A><H2>Affichage des distances jusqu&rsquo;aux parkings</H2>
+Lorsque le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> est sur une case traversée par une route <IMG Alt="" SRC="CSLVDC.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, il est possible d&rsquo;obtenir les distances depuis le point indiqué par le curseur jusqu&rsquo;aux différents parkings (en nombre de cases, unité de longueur dans la simulation).<P>
+Ceci s&rsquo;obtient en appuyant sur le bouton <IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis sur <IMG Alt="" SRC="BISLEDLS3.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Ctrl+D</I> ou alors en choisissant la rubrique <I>V<U>o</U>ir les distances... | Aux parkings</I> après avoir fait clic droit sur la zone de simulation.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="DJAP.jpg" HEIGHT=276 WIDTH=141 BORDER=0><P>
+<U>Attention</U>&nbsp;: Ne pas confondre parkings (sous-entendus souterrains) et files ou places de parkings (sous-entendues de surface).<BR>
+Pour les distances aux files de parkings sous-entendues de surface, voir <A HREF="#ADDJAFDP">Affichage des distances jusqu&rsquo;aux files de parkings</A> <IMG Alt="" SRC="BISLEDLS7.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.<P>
+Dans ce tableau, il y a une ligne par parking destination (dont le n° est indiqué dans la première colonne) et une colonne par direction (indiquée par les flèches dans la première ligne).<P>
+Si le curseur a été positionné sur une intersection, il y a autant de colonnes que de directions possibles à partir du point où est situé le curseur.<BR>
+Il y a donc une distance par parking et par direction possible.<P>
+Depuis la version 3.5, comme certains véhicules peuvent emprunter les passages réservés aux bus&nbsp;&ndash; c&rsquo;est-à-dire bien entendu les bus mais aussi les véhicules prioritaires (police, urgence)&nbsp;&ndash; il y a donc deux distances possibles&nbsp;: l&rsquo;un tient compte des couloirs de bus (case <I>Avec couloirs de bus</I> cochée) et l&rsquo;autre pas (case décochée).<BR>
+Par défaut la case est décochée (la plupart des véhicules n&rsquo;empruntent pas les couloirs de bus).
+
+<HR>
+
+<A NAME="ADDJAADB"></A><H2>Affichage des distances jusqu&rsquo;aux arrêts de bus</H2>
+Depuis la version 3.0, lorsque le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> est sur une case traversée par une route <IMG Alt="" SRC="CSLVDC.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, il est possible d&rsquo;obtenir les distances depuis le point indiqué par le curseur jusqu&rsquo;aux différents arrêts de bus (en nombre de cases, unité de longueur dans la simulation).<P>
+Ceci s&rsquo;obtient en appuyant sur le bouton <IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis sur <IMG Alt="" SRC="BISLEDLS4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Ctrl+A</I> ou alors en choisissant la rubrique <I>Voir les distances... | Aux arrêts de bus</I> après avoir fait clic droit sur la zone de simulation.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="DJAADB.jpg" HEIGHT=574 WIDTH=141 BORDER=0><P>
+Dans ce tableau, il y a une ligne par arrêt de bus (dont le n° est indiqué dans la première colonne) et une colonne par direction (indiquée par les flèches dans la première ligne).<P>
+Si le curseur a été positionné sur une intersection, il y a autant de colonnes que de directions possibles à partir du point où est situé le curseur. Il y a donc une distance par arrêt de bus et par direction possible.
+
+<HR>
+
+<A NAME="ADDJAADT"></A><H2>Affichage des distances jusqu&rsquo;aux arrêts de trams</H2>
+Depuis la version 3.5, lorsque le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> est sur une case traversée par une voie de tram <IMG Alt="" SRC="CSLVDT.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, il est possible d&rsquo;obtenir les distances depuis le point indiqué par le curseur jusqu&rsquo;aux différents arrêts de tram (en nombre de cases, unité de longueur dans la simulation).<P>
+Ceci s&rsquo;obtient en appuyant sur le bouton <IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis sur <IMG Alt="" SRC="BISLEDLS5.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Ctrl+R</I> ou alors en choisissant la rubrique <I>Voir les distances... | Aux arrêts de tram</I> après avoir fait clic droit sur la zone de simulation.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="DJAADT.jpg" HEIGHT=385 WIDTH=172 BORDER=0><P>
+Dans ce tableau, il y a une ligne par arrêt de tram (dont le n° est indiqué dans la première colonne) et une colonne par direction (indiquée par les flèches dans la première ligne).<P>
+Si le curseur a été positionné sur une intersection, il y a autant de colonnes que de directions possibles à partir du point où est situé le curseur. Il y a donc une distance par arrêt de tram et par direction possible.
+
+<HR>
+
+<A NAME="ADDJAFDT"></A><H2>Affichage des distances jusqu&rsquo;aux files de taxis</H2>
+Depuis la version 3.6, lorsque le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> est sur une case traversée par une route <IMG Alt="" SRC="CSLVDC.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, il est possible d&rsquo;obtenir les distances depuis le point indiqué par le curseur jusqu&rsquo;aux différentes files de taxis (en nombre de cases, unité de longueur dans la simulation).<P>
+Ceci s&rsquo;obtient en appuyant sur le bouton <IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis sur <IMG Alt="" SRC="BISLEDLS6.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Ctrl+F</I> ou alors en choisissant la rubrique <I>Voir les distances... | Aux files de taxis</I> après avoir fait clic droit sur la zone de simulation.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="DJAFDT.jpg" HEIGHT=112 WIDTH=141 BORDER=0><P>
+Dans ce tableau, il y a une ligne par file de taxis (dont le n° est indiqué dans la première colonne) et une colonne par direction (indiquée par les flèches dans la première ligne).<P>
+Si le curseur a été positionné sur une intersection, il y a autant de colonnes que de directions possibles à partir du point où est situé le curseur. Il y a donc une distance par file de taxis par direction possible.
+
+<HR>
+
+<A NAME="ADDJAFDP"></A><H2>Affichage des distances jusqu&rsquo;aux files de parkings</H2>
+Depuis la version 5.0, lorsque le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> est sur une case traversée par une route <IMG Alt="" SRC="CSLVDC.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, il est possible d&rsquo;obtenir les distances depuis le point indiqué par le curseur jusqu&rsquo;aux différentes files de parkings (en nombre de cases, unité de longueur dans la simulation).<P>
+Ceci s&rsquo;obtient en appuyant sur le bouton <IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis sur <IMG Alt="" SRC="BISLEDLS7.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Ctrl+K</I> ou alors en choisissant la rubrique <I>Voir les distances... | Aux files de parkings</I> après avoir fait clic droit sur la zone de simulation.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="DJAFDP.jpg" HEIGHT=171 WIDTH=141 BORDER=0><P>
+<U>Attention</U>&nbsp;: Ne pas confondre parkings (sous-entendus souterrains) et files ou places de parkings (sous-entendues de surface).<BR>
+Pour les distances aux parkings sous-entendus souterrains, voir <A HREF="#ADDJAE">Affichage des distances jusqu&rsquo;aux parkings</A> <IMG Alt="" SRC="BISLEDLS3.jpg" HEIGHT=24 WIDTH=24 BORDER=0>.<P>
+Dans ce tableau, il y a une ligne par file de parkings (dont le n° est indiqué dans la première colonne) et une colonne par direction (indiquée par les flèches dans la première ligne).<P>
+Si le curseur a été positionné sur une intersection, il y a autant de colonnes que de directions possibles à partir du point où est situé le curseur.<BR>
+Il y a donc une distance par file de parkings et par direction possible.<P>
+Depuis la version 3.5, comme certains véhicules peuvent emprunter les passages réservés aux bus&nbsp;&ndash; c&rsquo;est-à-dire bien entendu les bus mais aussi les véhicules prioritaires (police, urgence)&nbsp;&ndash; il y a donc deux distances possibles&nbsp;: l&rsquo;un tient compte des couloirs de bus (case <I>Avec couloirs de bus</I> cochée) et l&rsquo;autre pas (case décochée).<BR>
+Par défaut la case est décochée (la plupart des véhicules n&rsquo;empruntent pas les couloirs de bus).
+
+<HR>
+
+<A NAME="ADDJAPDV"></A><H2>Affichage des distances jusqu&rsquo;aux places de vehlib</H2>
+Depuis la version 5.3, lorsque le curseur <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0> est sur une case traversée par une route <IMG Alt="" SRC="CSLVDC.jpg" HEIGHT=24 WIDTH=24 BORDER=0>, il est possible d&rsquo;obtenir les distances depuis le point indiqué par le curseur jusqu&rsquo;aux différentes places de vehlib (en nombre de cases, unité de longueur dans la simulation).<P>
+Ceci s&rsquo;obtient en appuyant sur le bouton <IMG Alt="" SRC="BBDOI4.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis sur <IMG Alt="" SRC="BISLEDLS15.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou sur <I>Maj+Ctrl+K</I> ou alors en choisissant la rubrique <I>Voir les distances... | Aux places de vehlib</I> après avoir fait clic droit sur la zone de simulation.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="DJAFDV.jpg" HEIGHT=261 WIDTH=141 BORDER=0><P>
+Dans ce tableau, il y a une ligne par place de vehlib (dont le n° est indiqué dans la première colonne) et une colonne par direction (indiquée par les flèches dans la première ligne).<P>
+Si le curseur a été positionné sur une intersection, il y a autant de colonnes que de directions possibles à partir du point où est situé le curseur.<BR>
+Il y a donc une distance par place de vehlib et par direction possible.
+<HR>
+
+<A NAME="RDUEDLS"></A><H2>Recherche d&rsquo;un élément de la simulation</H2>
+Pour effectuer une recherche, il faut appuyer sur le bouton <IMG Alt="" SRC="BBDOI1.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou appuyer sur <I>Ctrl+H</I> ou encore aller sur la rubrique <I><U>R</U>echercher</I> en cliquant avec le bouton droit de la souris sur la zone de simulation.<P>
+Une boîte de dialogue de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="RDUEDLS.jpg" HEIGHT=432 WIDTH=229 BORDER=0><P>
+On peut rechercher&nbsp;:<UL>
+<LI>une <B>case</B> à partir de ses coordonnées
+<LI>un <B>parking souterrain</B> (anciennement <I>étape</I>) 
+<LI>un <B>véhicule</B>, un <B>piéton</B>, un <B>feu tricolore</B>
+<LI>un <B>véhicule</B>, <B>file</B> ou <B>place de taxi</B>
+<LI>un <B>bus</B>, <B>un arrêt de bus</B> (depuis la version 3.0)
+<LI>un <B>tram</B>, un <B>arrêt de tram</B> (depuis la version 3.5)
+<LI>une <B>place</B> ou <B>file de parkings</B> (depuis la version 5.0)
+<LI>un <B>vehlib</B> ou une <B>place de vehlib</B> (depuis la version 5.3)</UL>
+Il faut d&rsquo;abord choisir l&rsquo;élément à chercher puis modifier le nombre qui correspond au numéro de l&rsquo;élément à chercher (sauf les coordonnées).<P>
+Lorsque la fenêtre apparaît, les coordonnées de la case courante sont affichées par défaut ainsi que les numéros des éléments s&rsquo;y trouvant le cas échéant.<BR>
+S&rsquo;il y a deux piétons sur une case, il s&rsquo;agit du premier arrivé sur la case.<P>
+Une fois un élément sélectionné il est mis en évidence sur le réseau où est situé le curseur qui clignote <IMG Alt="" SRC="CDLZDS.jpg" HEIGHT=18 WIDTH=18 BORDER=0>.<BR>
+Quand une place vehlib est recherchée et sélectionnée, le numéro de vehlib qui a réservé est indiqué entre parenthèses dans la barre de statut, par exemple&nbsp;: <TT>Place vehlib 12 (R=8)</TT>.
+
+<H3>Suivi</H3>
+Lorsqu&rsquo;un <B>véhicule</B>, un <B>piéton</B>, un <B>bus</B> ou un <B>tram</B> est trouvé et que celui-ci se déplace, le <B>curseur reste dessus</B>.<P>
+Dès qu&rsquo;un véhicule est arrivé à destination, la recherche passe au <B>prochain véhicule</B> encore en course par ordre croissant de leur numéro.<BR>
+Si le véhicule de numéro le plus élevé est arrivé à son parking, on repart au véhicule n°1 et ainsi de suite.<P>
+Il est fortement conseillé d&rsquo;afficher la fenêtre d&rsquo;<A HREF="#ISUV">informations sur le véhicule</A> pour mieux suivre un véhicule.<UL> 
+<LI>Depuis la version 3.0, il est possible de le faire pour les <A HREF="#ISUB">bus</A> et pour les <A HREF="#ISUP">piétons</A> 
+<LI>Depuis la version 3.5, il est possible de le faire pour les <A HREF="#ISUT">trams</A> 
+<LI>Depuis la version 3.6, il est possible de le faire pour les <A HREF="#ISUVDT">taxis</A>
+<LI>Depuis la version 5.3, il est possible de le faire pour les <A HREF="#ISUVL">vehlibs</A></UL>
+Cependant, il est possible de <B>suivre</B> un <B>véhicule</B>, un <B>piéton</B>, un <B>bus</B>, un <B>tram</B>, un <B>taxi</B> ou un <B>vehlib</B>, en cliquant droit dessus puis sur le menu <I>Suivre...</I> et enfin sur&nbsp;:<UL>
+<LI><I>Ce véhicule</I> (<I>Ctrl+S</I>)
+<LI><I>Ce bus</I> (<I>Ctrl+W</I>)
+<LI><I>Ce tram</I> (<I>Ctrl+X</I>)
+<LI><I>Ce taxi</I> (<I>Ctrl+Y</I>)
+<LI><I>Ce vehlib</I> (<I>Maj+Ctrl+E</I>)
+<LI><I>Le 1er piéton/Le 2ème piéton</I> (<I>Ctrl+L/Ctrl+M</I>)</UL>
+dès que l&rsquo;élément à suivre arrive sur la case sélectionnée.
+
+<HR>
+
+<A NAME="ISUV"></A><H2>Informations sur un véhicule</H2>
+Lors du déroulement de la simulation, pour obtenir des informations sur un véhicule, il suffit de cliquer gauche dessus puis d&rsquo;appuyer sur <IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis <IMG Alt="" SRC="BISLEDLS9.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou directement sur <I>Ctrl+V</I> ou alors de cliquer droit sur la zone de simulation puis de choisir la rubrique <I>Voir le détail sur... | Véhicule</I>.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="PDV.jpg" HEIGHT=403 WIDTH=295 BORDER=0><P>
+Elle donne la situation du véhicule sélectionné (aux coordonnées indiquées).<P>
+<U>Astuce</U>&nbsp;: il est fortement recommandé d&rsquo;utiliser la <A HREF="#RDUEDLS">recherche</A> de véhicule pour pouvoir suivre sa course.<P>
+<U>Notes</U>&nbsp;:<UL> 
+<LI>L&rsquo;unité de temps est le tour de simulation. L&rsquo;unité de mesure est la case qu&rsquo;occupe un véhicule. La vitesse maximale d&rsquo;un véhicule est d&rsquo;une case par tour.
+<LI>Depuis la version 2.2, il y a le niveau de priorité : <B>Normale</B>, <B><FONT COLOR="#FF0000">Urgences</FONT></B> ou <B><FONT COLOR="#0000FF">Police</FONT></B>.
+<LI>Lorsque un véhicule est sélectionné, un message bref d&rsquo;informations est affiché sur la barre d&rsquo;état : il indique le numéro du véhicule (exemple <TT>Véhicule 8</TT>).</UL>
+
+<HR>
+
+<A NAME="ISUB"></A><H2>Informations sur un bus</H2>
+Lors du déroulement de la simulation, pour obtenir des informations sur un bus, il suffit de cliquer gauche dessus puis d&rsquo;appuyer sur <IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis <IMG Alt="" SRC="BISLEDLS10.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou directement sur <I>Ctrl+B</I> ou alors de cliquer droit sur la zone de simulation puis de choisir la rubrique <I>Voir le détail sur... | Bus</I>.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="PDB.jpg" HEIGHT=428 WIDTH=295 BORDER=0><P>
+Elle donne la situation du bus sélectionné (aux coordonnées indiquées).<P>
+<U>Astuce</U>&nbsp;: il est fortement recommandé d&rsquo;utiliser la <A HREF="#RDUEDLS">recherche</A> de bus pour pouvoir suivre sa course.<P>
+<U>Notes</U>&nbsp;:<UL> 
+<LI>L&rsquo;unité de temps est le tour de simulation. L&rsquo;unité de mesure est la case qu&rsquo;occupe un véhicule.
+<LI>Les bus occupent toujours deux cases. 
+<LI>Les bus roulent toujours à la plus petite vitesse, c&rsquo;est-à-dire une case tous les <I>n</I> tours s&rsquo;il y a <I>n</I> vitesses différentes sélectionnées dans les <A HREF="#PDLS">paramètres de la simulation</A> (<I>n</I> allant de 1 à 3).
+<LI>Lorsque un bus est sélectionné, un message bref d&rsquo;informations est affiché sur la barre d&rsquo;état : il indique le numéro du bus suivi du numéro de la ligne correspondante (exemple <TT>Bus 4 Ligne 1</TT>). Si un astérisque suit le numéro de bus, cela signifie qu&rsquo;il s&rsquo;agit de la tête de bus.</UL>
+
+<HR> 
+
+<A NAME="ISUT"></A><H2>Informations sur un tram</H2>
+Lors du déroulement de la simulation, pour obtenir des informations sur un tram, il suffit de cliquer gauche dessus puis d&rsquo;appuyer sur <IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis <IMG Alt="" SRC="BISLEDLS11.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou directement sur <I>Ctrl+T</I> ou alors de cliquer droit sur la zone de simulation puis de choisir la rubrique <I>Voir le détail sur... | Tram</I>.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="PDTM.jpg" HEIGHT=412 WIDTH=295 BORDER=0><P>
+Elle donne la situation du tram sélectionné (aux coordonnées indiquées).<P>
+<U>Astuce</U>&nbsp;: il est fortement recommandé d&rsquo;utiliser la <A HREF="#RDUEDLS">recherche</A> de tram pour pouvoir suivre sa course.<P>
+<U>Notes</U>&nbsp;:<UL> 
+<LI>L&rsquo;unité de temps est le tour de simulation. L&rsquo;unité de mesure est la case qu&rsquo;occupe un véhicule.
+<LI>Les trams occupent toujours deux cases.
+<LI>Les trams roulent toujours à la plus petite vitesse c&rsquo;est-à-dire une case tous les <I>n</I> tours s&rsquo;il y a <I>n</I> vitesses différentes sélectionnées dans les paramètres de la simulationPDLS (<I>n</I> allant de 1 à 3).
+<LI>Lorsque un tram est sélectionné, un message bref d&rsquo;informations est affiché sur la barre d&rsquo;état : il indique le numéro du tram suivi du numéro de la ligne correspondante (exemple <TT>Tram C Ligne 2</TT>). Si un astérisque suit le numéro de tram, cela signifie qu&rsquo;il s&rsquo;agit de la tête de tram.</UL>
+
+<HR>
+
+<A NAME="ISUVDT"></A><H2>Informations sur un taxi</H2>
+Lors du déroulement de la simulation, pour obtenir des informations sur un taxi, il suffit de cliquer gauche dessus puis d&rsquo;appuyer sur <IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis <IMG Alt="" SRC="BISLEDLS12.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou directement sur <I>Ctrl+I</I> ou alors de cliquer droit sur la zone de simulation puis de choisir la rubrique <I>Voir le détail sur... | Taxi.</I><P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="PDT.jpg" HEIGHT=230 WIDTH=275 BORDER=0><P>
+Elle donne la situation du taxi sélectionné (aux coordonnées indiquées).<P>
+<U>Astuce</U>&nbsp;: il est fortement recommandé d&rsquo;utiliser la <A HREF="#RDUEDLS">recherche</A> de taxi pour pouvoir suivre sa course.<P>
+<U>Notes</U>&nbsp;:<UL> 
+<LI>L&rsquo;unité de temps est le tour de simulation. L&rsquo;unité de mesure est la case qu&rsquo;occupe un véhicule.
+<LI>Les taxis peuvent emprunter les passages réservés aux bus. 
+<LI>Lorsque un taxi est sélectionné, un message bref d&rsquo;informations est affiché sur la barre d&rsquo;état : il indique le numéro du taxi (exemple <TT>Taxi 7</TT>).</UL>
+
+<HR>
+
+<A NAME="ISUVL"></A><H2>Informations sur un vehlib</H2>
+Lors du déroulement de la simulation, pour obtenir des informations sur un bus, il suffit de cliquer gauche dessus puis d&rsquo;appuyer sur <IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis <IMG Alt="" SRC="BISLEDLS16.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou directement sur <I>Ctrl+E</I> ou alors de cliquer droit sur la zone de simulation puis de choisir la rubrique <I>Voir le détail sur... | Vehlib.</I><P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="PDVL.jpg" HEIGHT=328 WIDTH=295 BORDER=0><P>
+Elle donne la situation du vehlib sélectionné (aux coordonnées indiquées).<P>
+<U>Astuce</U>&nbsp;: il est fortement recommandé d&rsquo;utiliser la <A HREF="#RDUEDLS">recherche</A> de vehlib pour pouvoir suivre sa course.<P>
+<U>Notes</U>&nbsp;:<UL> 
+<LI>L&rsquo;unité de temps est le tour de simulation. L&rsquo;unité de mesure est la case qu&rsquo;occupe un vehlib.
+<LI>Lorsque un vehlib est sélectionné, un message bref d&rsquo;informations est affiché sur la barre d&rsquo;état : il indique le numéro du vehlib (exemple <TT>Vehlib 13</TT>).</UL>
+
+<HR>
+
+<A NAME="ISUP"></A><H2>Informations sur un piéton</H2>
+Lors du déroulement de la simulation, pour obtenir des informations sur un piéton, il suffit de cliquer gauche dessus puis d&rsquo;appuyer sur <IMG Alt="" SRC="BBDOI2.jpg" HEIGHT=24 WIDTH=24 BORDER=0> puis <IMG Alt="" SRC="BISLEDLS13.jpg" HEIGHT=24 WIDTH=24 BORDER=0> ou directement sur <I>Ctrl+P</I> ou alors de cliquer droit sur la zone de simulation puis de choisir la rubrique <I>Voir le détail sur... | Piéton</I>.<P>
+Une fenêtre de ce type s&rsquo;affiche&nbsp;:<P>
+<IMG Alt="" SRC="PDP.jpg" HEIGHT=260 WIDTH=295 BORDER=0><P>
+Elle donne la situation du piéton sélectionné (aux coordonnées indiquées).<BR>
+Si deux piétons sont présents sur la case, il s&rsquo;agit des informations du piéton n°1 (le numéro 1 ou 2 est attribué suivant le cours de la simulation.<BR>
+Si le piéton n°2 d&rsquo;une case s&rsquo;en va et que le n°1 reste, le prochain va prendre le n°2, et ainsi de suite).
+<A NAME="ISUPPP"></A><H3>Positions possibles</H3>
+<U>Entrée d&rsquo;une case</U>&nbsp;: le piéton vient d&rsquo;arriver sur une case.<BR> 
+<U>Sortie d&rsquo;une case</U>&nbsp;: le piéton sortira de la case au prochain déplacement.<BR>
+<U>Dans un bus/tram/taxi</U>&nbsp;: le piéton est invisible car il se trouve dans un bus, un tram ou un taxi. Dans le suivi, le curseur est sur le bus le tram ou le taxi en question.
+<A NAME="ISUPSP"></A><H3>Situations possibles</H3>
+<U>Se promène</U>&nbsp;: le piéton circule au hasard dans la zone qui lui est autorisée (zone noire et passages piétons).<BR>
+<U>Se dirige vers un passage piéton</U>&nbsp;: le piéton a détecté un passage piéton et s&rsquo;y dirige. Il se peut qu&rsquo;au cours du trajet jusqu&rsquo;au passage piéton, le piéton change de direction suite à un empêchement.<BR>
+<U>Se dirige vers un arrêt de bus/trams/file de taxis</U>&nbsp;: le piéton a détecté un arrêt de bus/tram ou une file de taxis et s&rsquo;y dirige. Comme pour le passage piéton, il se peut qu&rsquo;au cours du trajet jusqu&rsquo;au passage piéton, le piéton change de direction suite à un empêchement.<BR>
+<U>Attend un bus/tram/taxi à l&rsquo;arrêt de bus/trams/file de taxis</U>&nbsp;: le piéton est immobile près d&rsquo;un arrêt de bus/trams ou une file de taxis. Il attend le prochain bus, tram ou taxi. Il se peut qu&rsquo;il abandonne au bout d&rsquo;un certain nombre de tours (voir paramètres du réseau de <A HREF="#PDRDB">bus</A> de <A HREF="#PDRDT">trams</A> ou de <A HREF="#PDT">taxis</A>).<BR>
+<U>Attend dans le bus/tram/taxi</U>&nbsp;: le piéton est invisible car il se trouve dans un bus, un tram ou un taxi. Dans le suivi, le curseur est sur le bus, le tram ou le taxi en question. Le piéton y reste jusqu&rsquo;à ce qu&rsquo;il décide de descendre au prochain arrêt (bus/tram) ou à un prochain endroit (taxi). Voir situation suivante.<BR>
+<U>Descend au prochain arrêt</U>&nbsp;: le piéton est dans un bus ou un tram (toujours invisible) mais décide de descendre au prochain arrêt. Dès que le bus ou le tram s&rsquo;y arrêt, le piéton descend et redevient visible.<BR>
+<U>Mort, écrasé</U>&nbsp;: le piéton a été écrasé par un véhicule, bus, tram ou taxi en mode sanglant (versions 4.3 et supérieures).<P>
+<U>Astuce</U>&nbsp;: il est fortement recommandé d&rsquo;utiliser la <A HREF="#RDUEDLS">recherche</A> de piéton pour pouvoir suivre sa course<P>
+<U>Notes</U>&nbsp;:<UL> 
+<LI>L&rsquo;unité de temps est le tour de simulation. L&rsquo;unité de mesure est la case qu&rsquo;occupe un véhicule.
+<LI>Les piétons occupent toujours une &frac12; case. Il peut donc y avoir 2 piétons par case.
+<LI>La vitesse maximale des piétons est d&rsquo;une case tous les deux tours.
+<LI>Lorsque un ou deux piétons sont sélectionnés, un message bref d&rsquo;informations est affiché sur la <A HREF="#LBDE">barre d&rsquo;état</A>&nbsp;: il indique le numéro du ou des piétons (exemple <TT>Piétons 17 24</TT>).
+<LI>Si un symbole &laquo;&nbsp;&gt;&nbsp;&raquo; suit le numéro c&rsquo;est qu&rsquo;il vient d&rsquo;entrer dans la case sinon il s&rsquo;agit du symbole &laquo;&nbsp;&lt;&nbsp;&raquo; et alors cela signifie qu&rsquo;il va sortir de la case.
+<LI>Enfin si le symbole &laquo;&nbsp;&dagger;&nbsp;&raquo; apparaît après le numéro, cela indique qu&rsquo;il a été &laquo;&nbsp;écrasé&nbsp;&raquo; (versions 4.3 et supérieures).</UL>
+
+<HR>
+
+<A NAME="RC"></A><H2>Racccourcis clavier</H2>
+La liste suivante contient pour chaque rubrique de menu de l&rsquo;application les raccourcis clavier correspondant et le cas échéant le bouton de la barre d&rsquo;outils.<P>
+<U>En règle générale</U>&nbsp;:<UL>
+<LI>Les commandes du sous-menu Fichier utilisent les touches de fonction <I>F2</I> à <I>F12</I>.
+<LI>Les commandes du sous-menu Simulation utilisent les combinaisons de touche <I>Ctrl+Alt+</I>Touche.
+<LI>Les commandes du sous-menu Statistiques utilisent les combinaisons de touche <I>Maj+Ctrl+</I>Touche.
+<LI>Les commandes du sous-menu ? utilisent la touche <I>F1</I>.
+<LI>Les commandes de traçage des voies utilisent les combinaisons <I>Ctrl+</I>Touches fléchées pour les routes et <I>Maj+Ctrl+</I>Touches fléchées pour les voies de tram.
+<LI>Les commandes des menus déroulants de la zone de simulation utilisent les combinaisons <I>Ctrl+</I>Pavé num. (pour les routes) et <I>Maj+Ctrl+</I>Pavé num. (pour les voies de tram).</UL>
+<A NAME="RCMP"></A><H3>Menu principal</H3>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=1>
+<TR><TH>Rubrique de menu</TH><TH>Raccourci clavier</TH></TR>
+<TR><TD>Fichier | Nouveau</TD><TD>F4</TD></TR>
+<TR><TD>Fichier | Ouvrir</TD><TD>F3</TD></TR>
+<TR><TD>Fichier | Enregistrer</TD><TD>F2</TD></TR>
+<TR><TD>Fichier | Enregistrer sous...</TD><TD>Maj+F2</TD></TR>
+<TR><TD>Fichier | Quitter</TD><TD>Alt+F4</TD></TR>
+<TR><TD>Simulation | Paramètres</TD><TD>Ctrl+Alt+P</TD></TR>
+<TR><TD>Simulation | Vérifier le réseau</TD><TD>Ctrl+Alt+K</TD></TR>
+<TR><TD>Simulation | Marche</TD><TD>Ctrl+Alt+M</TD></TR>
+<TR><TD>Simulation | Interruption</TD><TD>Ctrl+Alt+I</TD></TR>
+<TR><TD>Simulation | Arrêt</TD><TD>Ctrl+Alt+A</TD></TR>
+<TR><TD>Simulation | Sanglante</TD><TD>Ctrl+Alt+G</TD></TR>
+<TR><TD>Simulation | Résurrection</TD><TD>Maj+Ctrl+Alt+G</TD></TR>
+<TR><TD>Affichage | Zoom</TD><TD>Ctrl+Alt+Z</TD></TR>
+<TR><TD>Affichage | Rafraîchir</TD><TD>F5</TD></TR>
+<TR><TD>Affichage | Directions</TD><TD>Ctrl+Alt+D</TD></TR>
+<TR><TD>Affichage | Signalisation</TD><TD>Ctrl+Alt+S</TD></TR>
+<TR><TD>Affichage | Voies de circulation</TD><TD>Ctrl+Alt+R</TD></TR>
+<TR><TD>Affichage | Véhicules</TD><TD>Ctrl+Alt+V</TD></TR>
+<TR><TD>Affichage | Piétons</TD><TD>Ctrl+Alt+T</TD></TR>
+<TR><TD>Affichage | Quadrillage</TD><TD>Ctrl+Alt+Q</TD></TR>
+<TR><TD>Affichage | Environnement</TD><TD>Ctrl+Alt+E</TD></TR>
+<TR><TD>Statistiques | Evolution</TD><TD>Maj+Ctrl+S</TD></TR>
+<TR><TD>Statistiques | Fluidité & Trafic</TD><TD>Maj+Ctrl+F</TD></TR>
+<TR><TD>Statistiques | Composition du réseau</TD><TD>Maj+Ctrl+R</TD></TR>
+<TR><TD>Statistiques | Parkings...</TD><TD>Maj+Ctrl+E</TD></TR>
+<TR><TD>Statistiques | Affichage | Quadrillage</TD><TD>Maj+Ctrl+Q</TD></TR>
+<TR><TD>Statistiques | Affichage | par Véhicule</TD><TD>Maj+Ctrl+V</TD></TR>
+<TR><TD>Statistiques | Affichage | par Pourcentage</TD><TD>Maj+Ctrl+C</TD></TR>
+<TR><TD>Statistiques | Affichage | 1. 10 derniers tours</TD><TD>Maj+Ctrl+1</TD></TR>
+<TR><TD>Statistiques | Affichage | 2. 20 derniers tours</TD><TD>Maj+Ctrl+2</TD></TR>
+<TR><TD>Statistiques | Affichage | 3. 50 derniers tours</TD><TD>Maj+Ctrl+5</TD></TR>
+<TR><TD>Statistiques | Affichage | 4. 100 derniers tours</TD><TD>Maj+Ctrl+Alt+1</TD></TR>
+<TR><TD>Statistiques | Affichage | 5. 200 derniers tours</TD><TD>Maj+Ctrl+Alt+2</TD></TR>
+<TR><TD>Statistiques | Affichage | 6. 500 derniers tours</TD><TD>Maj+Ctrl+Alt+5</TD></TR>
+<TR><TD>Informations | &Agrave; propos de Centre-Ville...</TD><TD>Alt+F1</TD></TR>
+<TR><TD>Informations | Sommaire de l&rsquo;aide</TD><TD>Maj+Alt+F1</TD></TR></TABLE>
+<A NAME="RCMD"></A><H3>Menus déroulants</H3>
+<H4>Mode conception, une seule case sélectionnée</H4>
+Ce menu apparaît lorsque l&rsquo;on clique droit sur la zone de simulation uniquement en dehors d&rsquo;une simulation (même interrompue) et lorsqu&rsquo;une seule case est sélectionnée.<P>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=1>
+<TR><TH>Rubrique de menu</TH><TH>Raccourci clavier</TH></TR>
+<TR><TD>Direction vers le Haut</TD><TD>Ctrl+?</TD></TR>
+<TR><TD>Direction vers la Droite</TD><TD>Ctrl+?</TD></TR>
+<TR><TD>Direction vers le Bas</TD><TD>Ctrl+?</TD></TR>
+<TR><TD>Direction vers la Gauche</TD><TD>Ctrl+?</TD></TR>
+<TR><TD>Effacer la route</TD><TD>Ctrl+Espace</TD></TR>
+<TR><TD>Prolonger la voie du tram vers le Haut</TD><TD>Maj+Ctrl+?</TD></TR>
+<TR><TD>Prolonger la voie du tram vers la Droite</TD><TD>Maj+Ctrl+?</TD></TR>
+<TR><TD>Prolonger la voie du tram vers le Bas</TD><TD>Maj+Ctrl+?</TD></TR>
+<TR><TD>Prolonger la voie du tram vers la Gauche</TD><TD>Maj+Ctrl+?</TD></TR>
+<TR><TD>Effacer la voie du tram</TD><TD>Maj+Ctrl+Espace</TD></TR>
+<TR><TD>Obligation d&rsquo;aller Tout droit</TD><TD>Ctrl+T</TD></TR>
+<TR><TD>Priorités...</TD><TD>Ctrl+P</TD></TR>
+<TR><TD>Priorités piétons...</TD><TD>Ctrl+N</TD></TR>
+<TR><TD>Parking souterrain (anciennement étape)</TD><TD>Ctrl+E</TD></TR>
+<TR><TD>Dépôt de bus</TD><TD>Ctrl+O</TD></TR>
+<TR><TD>Passage piéton</TD><TD>Ctrl+G</TD></TR>
+<TR><TD>Arrêt de bus/tram</TD><TD>Ctrl+A</TD></TR>
+<TR><TD>Passage de bus</TD><TD>Ctrl+B</TD></TR>
+<TR><TD>Place de taxi</TD><TD>Ctrl+C</TD></TR>
+<TR><TD>Place de parking</TD><TD>Ctrl+K</TD></TR>
+<TR><TD>Place de vehlib</TD><TD>Maj+Ctrl+K</TD></TR>
+<TR><TD>Déplacer le feu (source)</TD><TD>Ctrl+F</TD></TR>
+<TR><TD>Déplacer le feu (destination)</TD><TD>Ctrl+F</TD></TR>
+<TR><TD>Trottoir</TD><TD>Ctrl+R</TD></TR>
+<TR><TD>Arbre</TD><TD>Ctrl+*</TD></TR>
+<TR><TD>Pelouse</TD><TD>Ctrl+L</TD></TR>
+<TR><TD>Immeuble (toit)</TD><TD>Ctrl+I</TD></TR></TABLE>
+<H4>Mode conception, plusieurs cases sélectionnées</H4>
+Ce menu apparaît lorsque l&rsquo;on clique droit sur la zone de simulation uniquement en dehors d&rsquo;une simulation (même interrompue) et lorsque plus d&rsquo;une case est sélectionnée.<P>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=1>
+<TR><TH>Rubrique de menu</TH><TH>Raccourci clavier</TH></TR>
+<TR><TD>Segment de Route</TD><TD>Ctrl+0 (zéro)</TD></TR>
+<TR><TD>Segment de Voie de tram</TD><TD>Ctrl+5</TD></TR>
+<TR><TD>Coins de routes... | Supérieur Droit</TD><TD>Ctrl+9</TD></TR>
+<TR><TD>Coins de routes... | Inférieur Gauche</TD><TD>Ctrl+1</TD></TR>
+<TR><TD>Coins de routes... | Supérieur Gauche</TD><TD>Ctrl+7</TD></TR>
+<TR><TD>Coins de routes... | Inférieur Droit</TD><TD>Ctrl+3</TD></TR>
+<TR><TD>Périphérique... | Extérieur</TD><TD>Ctrl+X</TD></TR>
+<TR><TD>Périphérique... | Intérieur</TD><TD>Ctrl+I</TD></TR>
+<TR><TD>Carrefours...</TD><TD>Ctrl+Q</TD></TR>
+<TR><TD>Effacer les routes</TD><TD>Ctrl+Suppr</TD></TR>
+<TR><TD>Effacer les voies de tram</TD><TD>Maj+Ctrl+Suppr</TD></TR>
+<TR><TD>Définir la nature de la zone</TD><TD>Ctrl+N</TD></TR>
+<TR><TD>Copie vers un fichier</TD><TD>Ctrl+F12</TD></TR></TABLE>
+<A NAME="RCMS"></A><H3>Mode simulation</H3>
+Ce menu apparaît lorsque l&rsquo;on clique droit sur la zone de simulation uniquement si une simulation est en cours (en marche ou interrompue).<P>
+<TABLE BORDER=1 CELLSPACING=1 CELLPADDING=1>
+<TR><TH>Rubrique de menu</TH><TH>Raccourci clavier</TH></TR>
+<TR><TD>Rechercher...</TD><TD>Ctrl+H</TD></TR>
+<TR><TD>Suivre... | Ce véhicule</TD><TD>Ctrl+S</TD></TR>
+<TR><TD>Suivre... | Ce bus</TD><TD>Ctrl+W</TD></TR>
+<TR><TD>Suivre... | Ce tram</TD><TD>Ctrl+X</TD></TR>
+<TR><TD>Suivre... | Ce taxi</TD><TD>Ctrl+Y</TD></TR>
+<TR><TD>Suivre... | Ce vehlib</TD><TD>Maj+Ctrl+E</TD></TR>
+<TR><TD>Suivre... | Le 1er piéton</TD><TD>Ctrl+L</TD></TR>
+<TR><TD>Suivre... | Le 2ème piéton</TD><TD>Ctrl+M</TD></TR>
+<TR><TD>Voir le détail sur... | Véhicule</TD><TD>Ctrl+V</TD></TR>
+<TR><TD>Voir le détail sur... | Bus</TD><TD>Ctrl+B</TD></TR>
+<TR><TD>Voir le détail sur... | Tram</TD><TD>Ctrl+T</TD></TR>
+<TR><TD>Voir le détail sur... | Piéton</TD><TD>Ctrl+P</TD></TR>
+<TR><TD>Voir le détail sur... | Taxi</TD><TD>Ctrl+I</TD></TR>
+<TR><TD>Voir le détail sur... | Vehlib</TD><TD>Ctrl+E</TD></TR>
+<TR><TD>Voir les distances... | Aux parkings</TD><TD>Ctrl+D</TD></TR>
+<TR><TD>Voir les distances... | Aux arrêts de bus</TD><TD>Ctrl+A</TD></TR>
+<TR><TD>Voir les distances... | Aux arrêts de tram</TD><TD>Ctrl+R</TD></TR>
+<TR><TD>Voir les distances... | Aux files de taxis</TD><TD>Ctrl+F</TD></TR>
+<TR><TD>Voir les distances... | Aux files de parkings</TD><TD>Ctrl+K</TD></TR>
+<TR><TD>Voir les distances... | Aux places de vehlib</TD><TD>Maj+Ctrl+K</TD></TR></TABLE>
+
+<HR>
+
+<A NAME="MDE"></A><H2>Messages d&rsquo;erreur</H2>
+La liste suivante contient tous les <B>messages d&rsquo;erreur</B> que peut afficher l&rsquo;application lors de la vérification d&rsquo;intégrité du fichier (si l&rsquo;option vérifier l&rsquo;intégrité après ouverture ou avant simulation est cochée) à l&rsquo;ouverture et la vérification du réseau.<BR>
+Pour chaque message, est donné l&rsquo;élément concerné par le message puis le message proprement dit.<P>
+Voici la définition de deux d&rsquo;entre eux...<UL>
+<LI><U>Position</U>&nbsp;: il s&rsquo;agit des coordonnées d&rsquo;un élément (un feu, un parking, un véhicule, une voie). L&rsquo;élément concerné est affiché avant le message.
+<LI><U>Voie</U>&nbsp;: il s&rsquo;agit d&rsquo;une case sur laquelle peut circuler les véhicules (couleur bleu gris).</UL>
+<A NAME="MDEVDI"></A><H3>Vérification d&rsquo;intégrité</H3>
+Ces messages apparaissent lors de la vérification d&rsquo;intégrité des données du fichier de simulation qui vient d&rsquo;être ouvert. Ces messages apparaissent dans trois cas possibles&nbsp;:<UL>
+<LI>le fichier a été modifié en dehors de l&rsquo;application <I>Centre-Ville</I>
+<LI>le fichier a été endommagé lors de son enregistrement ou de son ouverture
+<LI>il y a un bogue dans la procédure d&rsquo;enregistrement ou de chargement.</UL>
+Je ne donne pas la signification de ces messages car il s&rsquo;agit d&rsquo;un problème interne et donc non corrigeable.<P>
+Par contre, si le problème persiste, il y a de fortes chances qu&rsquo;il soit dû à un bogue. Je vous serais alors gré de bien vouloir me le signaler par courrier électronique en m&rsquo;envoyant le fichier d&rsquo;extension <TT>cvw</TT> incriminé, en me signalant la version de l&rsquo;application et le message d&rsquo;erreur tel qu&rsquo;il apparaît.<P>
+La version et l&rsquo;adresse électronique sont affichées dans la boîte &laquo;&nbsp;&Agrave; propos&nbsp;&raquo; dans le menu <I><U>I</U>nformations | &Agrave; propos de Centre-Ville...</I>.<P>
+<H4>Liste des messages</H4>
+<UL>
+<LI><TT>position : abscisse incorrecte</TT>
+<LI><TT>position : ordonnée incorrecte</TT>
+<LI><TT>feu : état incorrect</TT>
+<LI><TT>feu : type de demande du vert incorrect</TT>
+<LI><TT>feu : type de passage au rouge incorrect</TT>
+<LI><TT>feu : numéro incorrect</TT>
+<LI><TT>feu : nombre des prochains feux verts incorrect</TT>
+<LI><TT>feu : numéro du nième prochain feu vert incorrect</TT>
+<LI><TT>feu : nombre des feux devant être rouge incorrect</TT>
+<LI><TT>feu : numéro du nième feu devant être rouge incorrect</TT>
+<LI><TT>feu : demande le vert alors qu&rsquo;il n&rsquo;est pas rouge</TT>
+<LI><TT>feu : le rouge est demandé alors qu&rsquo;il n&rsquo;est pas vert</TT>
+<LI><TT>parking : numéro incorrect</TT>
+<LI><TT>véhicule : numéro incorrect</TT>
+<LI><TT>véhicule : direction incorrecte</TT>
+<LI><TT>véhicule : numéro de parking de départ incorrect</TT>
+<LI><TT>véhicule : numéro de parking d&rsquo;arrivée incorrect</TT>
+<LI><TT>véhicule : numéro de file de parking de départ incorrect</TT>
+<LI><TT>véhicule : numéro de file de parking d&rsquo;arrivée incorrect</TT>
+<LI><TT>voie : priorité incorrecte</TT>
+<LI><TT>voie : directions possibles incorrectes</TT>
+<LI><TT>voie : numéro de feu mais priorité différente de Feu</TT>
+<LI><TT>voie : numéro de feu incorrect</TT>
+<LI><TT>voie : coordonnées du feu différentes des coordonnées de la case</TT>
+<LI><TT>voie : numéro de parking incorrect</TT>
+<LI><TT>voie : numéro d&rsquo;arrêt de bus incorrect</TT>
+<LI><TT>voie : numéro d&rsquo;arrêt de tram incorrect</TT>
+<LI><TT>voie : numéro de place de taxi incorrect</TT>
+<LI><TT>voie : numéro de place de parking incorrect</TT>
+<LI><TT>piéton : numéro incorrect</TT>
+<LI><TT>piéton : valeur ½ case incorrecte</TT>
+<LI><TT>arrêt de bus : numéro incorrect</TT>
+<LI><TT>arrêt de bus : nombre de lignes de bus incorrect</TT>
+<LI><TT>arrêt de bus : numéro de la nième ligne de bus incorrect</TT>
+<LI><TT>ligne de bus : numéro incorrect</TT>
+<LI><TT>ligne de bus : nombre d&rsquo;arrêts de bus incorrect</TT>
+<LI><TT>ligne de bus : numéro du nième arrêt de bus incorrect</TT>
+<LI><TT>taxi : numéro incorrect</TT>
+<LI><TT>taxi : numéro de file indéfini ou incorrect</TT>
+<LI><TT>place taxi : numéro incorrect</TT>
+<LI><TT>place taxi : numéro de file indéfini ou incorrect</TT>
+<LI><TT>place parking : numéro incorrect</TT>
+<LI><TT>place parking : numéro de file indéfini ou incorrect</TT>
+<LI><TT>Le nombre de feux est incorrect</TT>
+<LI><TT>Le nombre de parkings est incorrect</TT>
+<LI><TT>Le nombre de véhicules est incorrect</TT>
+<LI><TT>Le nombre de véhicules ne permet pas une simulation équilibrée</TT>
+<LI><TT>La durée du feu vert par défaut est incorrecte</TT>
+<LI><TT>La durée du feu orange est incorrecte</TT>
+<LI><TT>La durée du feu rouge par défaut est incorrecte</TT>
+<LI><TT>La durée d&rsquo;attente maximale d&rsquo;un véhicule est incorrecte</TT>
+<LI><TT>Le nombre de tours par seconde est incorrect</TT>
+<LI><TT>Le nombre de tours soumis aux statistiques est incorrect</TT>
+<LI><TT>Le type de statistique est incorrect</TT>
+<LI><TT>Le nombre de vitesses est incorrect</TT>
+<LI><TT>Le nombre de case maximal pour la détection de passage piéton est incorrect</TT>
+<LI><TT>La probabilité qu&rsquo;un piéton se dirige vers un passage piéton détecté est incorrecte</TT>
+<LI><TT>Le nombre d&rsquo;arrêts de bus est incorrect</TT>
+<LI><TT>Le nombre de lignes de bus est incorrect</TT></UL>
+<A NAME="MDEVDR"></A><H3>Vérification du réseau</H3>
+Les messages suivants peuvent apparaître lors de la vérification du réseau avant lancement d&rsquo;une simulation.
+<H4>Liste des messages</H4>
+<TT><B>Demi-tour obligé entre les cases (x, y) et (x&rsquo;, y&rsquo;)</B></TT><BR>
+Si une case est accessible (une case voisine pointe dessus), elle ne doit pas avoir comme seule direction possible la case origine voisine (cul-de-sac).<P>
+<TT><B>La voie de tram (x, y) est un cul-de-sac dans la direction d. Le réseau des voies de tram doit toujours boucler</B></TT><BR>
+Même situation que précédemment mais pour les voies de tram. Les lignes de trams doivent boucler (contrôle depuis la version 5.2.2).<P>
+<TT><B>La case (x, y) pointe sur (x&rsquo;, y&rsquo;) qui n&rsquo;a aucune direction possible</B></TT><BR>
+Si une case est accessible (une case voisine pointe dessus), elle doit avoir au moins une direction possible.<P>
+<TT><B>La case (x, y) est un parking mais n&rsquo;a aucune direction possible</B></TT><BR>
+Si une case est un parking, elle doit avoir au moins une direction possible.<P>
+<TT><B>La case (x, y) est un parking mais il est impossible d&rsquo;y accéder</B></TT><BR>
+Si une case est un parking, il doit y avoir au moins une case voisine qui pointe dessus.<P>
+<TT><B>Parking n°k non défini. Pour renuméroter : sauvez puis rouvrez le réseau</B></TT><BR>
+Ce message arrive lorsque vous avez supprimé un parking. Si vous souhaitez néanmoins garder le nombre actuel de parkings alors enregistrez puis rouvrez votre réseau : les parkings vont alors automatiquement être renumérotés (sans trou) à la réouverture du réseau.<P>
+<TT><B>Place de parking n°k non définie. Pour renuméroter : sauvez puis rouvrez le réseau</B></TT><BR>
+Ce message arrive lorsque vous avez supprimé une place de parking. Si vous souhaitez néanmoins garder le nombre actuel de places de parkings alors enregistrez puis rouvrez votre réseau : les places de parkings vont alors automatiquement être renumérotées (sans trou) à la réouverture du réseau.<P>
+<TT><B>L&rsquo;arrêt de bus (ou de tram) n°k n&rsquo;est défini que sur la case (x, y)</B></TT><BR>
+Un arrêt de bus (ou de tram) doit être défini au minimum sur deux cases.<P>
+<TT><B>La tête de l&rsquo;arrêt de bus (ou de tram) n°k n&rsquo;est pas définie ou est incorrecte</B></TT><BR>
+Ce message peut apparaître à partir de la 3.0.3 pour les réseaux créés avec une version antérieure.<BR>
+En effet, le message signifie qu&rsquo;il n&rsquo;y a pas de tête parmi les cases de l&rsquo;arrêt de bus. Il faut donc cliquer sur la première case de l&rsquo;arrêt de bus (ayant un trottoir à sa droite) jusqu&rsquo;à ce qu&rsquo;il y ait un arrêt de bus avec une tête (un astérisque apparaît à côté du numéro d&rsquo;arrêt de bus). Ce message concerne également les arrêts de trams depuis la version 3.5.<P>
+<TT><B>La ligne de bus (ou de tram) n°k utilise l&rsquo;arrêt n°k qui n&rsquo;est pas défini</B></TT><BR>
+Un arrêt de bus (ou de tram) a été supprimé alors qu&rsquo;il a été utilisé dans une des lignes du réseau de bus (ou de trams). Depuis la version 3.5, il n&rsquo;est plus nécessaire de définir tous les arrêts de bus (ou de trams) c&rsquo;est-à-dire le nombre défini dans les paramètres.<P>
+<TT><B>Si des arrêts et des lignes de bus sont définis, un dépôt de bus est obligatoire</B></TT><BR>
+Des arrêts et des lignes de bus ont été définis donc la présence d&rsquo;un et un seul dépôt de bus sur la zone de simulation est obligatoire. C&rsquo;est du dépôt de bus que sortent les bus au début de la simulation.<P>
+<TT><B>Un dépôt de bus doit avoir au moins une direction possible vers l&rsquo;extérieur</B></TT><BR>
+La case où se trouve le dépôt de bus doit avoir au moins une direction possible vers l&rsquo;extérieur pour que les bus puissent sortir.<P>
+<TT><B>On ne peut diriger une case vers le dépôt de bus (il est en SORTIE SEULE)</B></TT><BR>
+On ne doit pas pouvoir entrer dans le dépôt de bus donc aucune case voisine du dépôt de bus ne doit avoir de direction possible vers ce dernier.<P>
+<TT><B>Un passage piéton a été défini sur la case (x, y) mais il ne peut avoir de sens. Il a été retiré.</B></TT><BR>
+Un passage piéton a été défini sur la case mais le sens de la route ou de la voie de tram a changé et le passage piéton ne peut plus avoir de sens c&rsquo;est pour cela qu&rsquo;il n&rsquo;est plus visible. Il est supprimé automatiquement.<P>
+<TT><B>La case (x, y) n&rsquo;a aucune direction possible en dehors des passages de bus</B></TT><BR>
+Les véhicules ne pouvant pas emprunter les passages réservés aux bus n&rsquo;ont pas de directions possibles sur la case indiquée et y seraient donc bloqués. Un ou plusieurs passages réservés aux bus autour de cette case bloquent le passage pour ces véhicules. Il faut retirer au moins un passage de bus autour de la case pour leur permettre de se déplacer.<P>
+<TT><B>L&rsquo;obligation d&rsquo;aller tout droit sur la case (x, y) oblige à aller sur le passage bus d</B></TT><BR>
+L&rsquo;obligation de continuer tout droit sur la case indiquée peut obliger à prendre un passage réservé aux bus sur la case voisine dans la direction indiquée d. Il faut soit retirer l&rsquo;obligation d&rsquo;aller tout droit, soit retirer le passage de bus sur la case voisine, soit mettre la case indiquée dans la zone réservée aux bus (et/ou la case opposée à la case voisine).<P>
+<TT><B>Plusieurs files de taxis sont dirigées sur la place de taxi de la case (x, y)</B></TT><BR>
+Au plus une seule place de taxi doit être dirigée sur une autre place de taxi. Chaque place de taxi ne doit faire partie que d&rsquo;une seule file de taxis.<P>
+<TT><B>La place de taxi de la case (x, y) pointe sur plus d&rsquo;une file de taxis</B></TT><BR>
+Une place de taxi ne peut pas pointer vers plus d&rsquo;une autre place de taxi. Chaque place de taxi ne doit faire partie que d&rsquo;une seule file de taxis.<P>
+<TT><B>Plusieurs files de parkings sont dirigées sur la place de parking de la case (x, y)</B></TT><BR>
+Au plus une seule place de parking doit être dirigée sur une autre place de parking. Chaque place de parking ne doit faire partie que d&rsquo;une seule file de parkings.<P>
+<TT><B>Il n&rsquo;y a pas assez de place pour n piétons (m possibles). Ajoutez des trottoirs.</B></TT><BR>
+Le nombre de piétons définis dans les paramètres (n) est trop important par rapport à l&rsquo;espace de circulation des piétons (m cases si l&rsquo;on considère que l&rsquo;on place 1 piéton par case). Il faut donc définir plus de trottoirs et de zone piétonne.<BR>
+Pour ce faire, sélectionner une zone, choisir <I>Définir la nature de la zone</I> (bouton ou clic droit) puis enfin <I>Trottoir</I>.
+
+<HR>
+
+<CENTER>Dernière modification&nbsp;: le 7 janvier 2018.</CENTER>
+
+</BODY>
+</HTML> 

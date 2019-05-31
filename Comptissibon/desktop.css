@@ -1,0 +1,31 @@
+/*
+ 
+ File: iDeal.css
+ 
+ Abstract: CSS properties for the MotissimoT game
+ 
+ Version: <1.0>
+ 
+ Copyright (C) 2011 Patrice Fouquet. All Rights Reserved.
+*/
+
+body
+{
+ text-align:center;
+}
+
+img
+{
+ vertical-align: bottom;
+}
+
+#container
+{
+margin:0 auto;
+width: 320px;
+}
+
+.format
+{
+margin-top: 8px;
+}

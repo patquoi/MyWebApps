@@ -1,0 +1,142 @@
+/*
+ 
+ File: desktop.css
+ 
+ Abstract: CSS properties for the D-side game
+ 
+ Version: <1.0>
+ 
+ Copyright (C) 2014 Patrice Fouquet. All Rights Reserved.
+*/
+
+body
+{
+ text-align:center;
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+img 
+{ 
+ margin: 0;
+ padding: 0;
+ vertical-align: bottom
+}
+
+#container
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+.format
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+#content, #sidebar 
+{
+ margin: 0 auto;
+ padding: 0;
+ border-width: 0 0 0 0;
+}
+
+#footer
+{
+ display: none;
+}
+
+.abs
+{
+ position: absolute
+}
+
+.grosde
+{
+ height: 70px;
+ width: 70px;
+}
+
+.migrosdegd
+{
+ height: 70px;
+ width: 35px;
+}
+
+.migrosdehb
+{
+ height: 35px;
+ width: 70px;
+}
+
+
+.ptitde
+{
+ height: 35px;
+ width: 35px;
+}
+
+.drapeau
+{
+ height: 70px;
+ width: 105px;
+ border: 0px;
+}
+
+.msgdrap
+{
+ height: 21px;
+ width: 24px;
+}
+
+.msgmain
+{
+ height: 23px;
+ width: 8px;
+}
+
+.msginf
+{
+ height: 18px;
+ width: 6px;
+}
+
+.titre11
+{
+ height: 35px;
+ width: 11px;
+}
+
+.titre12
+{
+ height: 35px;
+ width: 12px;
+}
+
+.sepisoset
+{
+ height: 35px;
+ width: 86px;
+}
+
+.septitset
+{
+ height: 35px;
+ width: 23px;
+}
+
+.seprelance
+{
+ height: 35px;
+ width: 52px;
+}
+
+.sepclssmtch
+{
+ height: 23px;
+ width: 16px;
+}

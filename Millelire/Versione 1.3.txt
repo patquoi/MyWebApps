@@ -1,0 +1,6 @@
+Contenuto della versione 1.3
+----------------------------
+
+1. Il valore minimo è mostrato a destra del valore massimo.
+2. Se il valore minimo sparisce nella griglia, il valore superiore diviene il valore minimo tranne per 1 e 2 perché bisogna far sparire 1 e 2 per fare apparire al minimo 5 in seguito (anche per 10 e 20, 100 e 200, ecc.).
+3. Riduzione del tempo dell'esercitazione (3/5).

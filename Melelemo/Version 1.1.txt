@@ -1,0 +1,2 @@
+En cliquant sur les compteurs de mots, vous avez la liste des mots trouvés en majuscules.
+Pendant l'affichage des solutions non trouvées, les mots non trouvés apparaissent en minuscules.

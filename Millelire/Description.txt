@@ -1,0 +1,1 @@
+Devi radunare soldi e banconote per ottenere valori sempre più alti, lo scopo è mantenersi il più lontano possibile. Puoi addossare i soldi e le banconote contro uno dei quattro lati per ridurre il numero, allineandoli nel senso del movimento: 5 sostituisce due di 2 e uno di 1, 10 sostituisce due di 5 o cinque di 2, 20 sostituisce due di 10, ecc.

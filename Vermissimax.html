@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>V e r m i s s i m a x</title>
+<link rel="icon" type="image/png" href="Vermissimax/png/icon.png">
+</head>
+<body>
+<H1 ALIGN=CENTER>Vermissimax pour tablette tactile</H1>
+Bienvenue sur la page de <B>Vermissimax</B>.<BR>
+Vous trouverez ici des informations sur l'application pour tablette tactile.<P>
+<H2>Table des matières</H2>
+
+<UL>
+<LI><A HREF="#P">Présentation</A>
+<LI><A HREF="#PEM">Partie et manche</A>
+<LI><A HREF="#FDUM">Formation d'un mot</A>
+<LI><A HREF="#I">Indices</A>
+<LI><A HREF="#SBET">Score, bonus et total</A>
+ <UL>
+ <LI><A HREF="#SBETSDM">Score des mots</A>
+ <LI><A HREF="#SBETB">Bonus</A>
+ <LI><A HREF="#SBETT">Total</A>
+ </UL>
+<LI><A HREF="#IEO">Informations et options</A>
+<LI><A HREF="#ADS">Affichage des solutions</A>
+<LI><A HREF="#SER">Tops et statistiques</A>
+<LI><A HREF="#FR">Fil Rouge</A>
+ <UL>
+ <LI><A HREF="#FRSDM">Score des mots (bonus)</A>
+ <LI><A HREF="#FRE">Extras</A>
+ <LI><A HREF="#FRADS">Affichage des solutions</A>
+ <LI><A HREF="#TI">Top initiales</A>
+ </UL>
+<LI><A HREF="#DDM">Définition des mots</A>
+<LI><A HREF="#CDUG">Création d'une grille</A>
+</UL>
+
+<CENTER><IMG SRC="Vermissimax/img/Vermissimax.png" WIDTH=384 HEIGHT=512 BORDER=1 Alt="Exemple de partie de Vermissimax"></CENTER><P>
+
+<A NAME="P"></A><H2>Présentation</H2>
+
+<B>Vermissimax</B> est un jeu de mots <I>emmêlés</I>. Une partie est composée de grilles différentes dans lesquelles il faut retrouver <B>sept</B> mots de <B>douze</B> lettres puis <B>sept</B> mots de <B>huit</B> à <B>quinze</B> lettres.<P>
+
+Une version en ligne est disponible <A HREF="Vermissimax/index.html">ici</A> pour le navigateur <B>Safari, Firefox, Chrome sur PC et Mac</B> ainsi que sur les appareils utilisant les navigateurs par défaut des systèmes <B>iOS et Android</B>..<P>
+Une version pour <B>mobile</B> existe, avec une grille <B>plus petite</B> et des mots de <B>huit</B> lettres à trouver&nbsp;:  <A HREF="VermissimoT.html" target="_blank">VermissimoT</A>. 
+
+<A NAME="PEM"></A><H2>Partie et manche</H2>
+
+Une partie de <B>Vermissimax</B> se déroule en plusieurs <B>grilles</B> différentes, et pour chaque grille, il faut retrouver <B>sept</B> mots de <B>douze</B> lettres qui remplissent la grille&nbsp;:<UL>
+ <LI>Chaque mot commence dans un des <B>six</B> coins ou au <B>centre</B> (les points de départ apparaissent en <FONT COLOR="#FF0000">rouge</FONT> au départ)&nbsp;; 
+ <LI>Chaque lettre de la grille ne doit être utilisée que par un seul mot et une seule fois dans le mot&nbsp;;
+ <LI>Les lettres composant le mot doivent être <B>contiguës</B> et <B>reliées</B> entre elles dans le sens de lecture&nbsp;;
+ <LI>Le joueur doit sélectionner les lettres dans l'ordre de lecture, le mot s'affichant sous la grille et les lettres choisies s'affichent en <FONT COLOR="#FF0000">rouge</FONT> (exemple ci-dessus avec le mot <TT>GRAVILLONNA</TT>)&nbsp;; 
+ <LI>Chaque mot trouvé est <FONT COLOR="#00A000">verdi</FONT>, le but étant de <FONT COLOR="#00A000">verdir</FONT> toute la grille&nbsp;;
+ <LI>Une fois la grille <FONT COLOR="#00A000">verdie</FONT>, vous entrez alors dans une manche <I>bonus</I>, le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> dans lequel vous devez trouver <B>sept</B> autres mots de <B>huit</B> à <B>quinze</B> lettres, et pour cela le joueur doit...<UL>
+  <LI>d'abord sélectionner un point de départ (un des <B>sept</B> "?" <FONT COLOR="#00A000">verts</FONT>)&nbsp;;
+  <LI>ensuite choisir une lettre comme initiale du mot parmi les lettres de la grille mais également parmi les lettres affichées <B>autour</B> de la grille&nbsp;;
+  <LI>et enfin indiquer les lettres du mot comme pour la 1<SUP>ère</SUP> manche si le choix permet de trouver au moins un mot de <B>huit</B> lettres sinon le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> se termine et une nouvelle grille apparaît.</UL>
+ <LI>La lettre d'un point de départ du <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> doit être <B>différente</B> de celle des points de départ de la 1<SUP>ère</SUP> manche les plus proches. Si c'est le cas, un message s'affiche avec la ou les lettres interdites.
+ <LI>Toucher <IMG SRC="Vermissimax/img/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)"> permet d'abandonner la partie (uniquement dans la 1<SUP>ère</SUP> manche), une confirmation demande de toucher à nouveau <IMG SRC="Vermissimax/img/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)">&nbsp;;
+ <LI>Toucher <IMG SRC="Vermissimax/img/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)"> permet d'abandonner le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> et passer à la grille suivante, une confirmation demandant de toucher à nouveau <IMG SRC="Vermissimax/img/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)">.</UL>
+
+<A NAME="FDUM"></A><H2>Formation d'un mot</H2>
+
+Une fois sélectionné l'un des six coins ou le centre, il faut sélectionner les lettres dans l'ordre d'épellation du mot.<BR>
+Il est possible que pour un mot il puisse y avoir plusieurs choix de sélection de lettres.<BR>
+Dans l'exemple qui suit, on souhaite sélectionner le mot <TT><B>CRANTERAIENT</B></TT>.<BR>
+Cependant, il y a <B>quatre</B> façons d'y parvenir mais une seule est valable et il faut la trouver.<BR>
+Les différentes possibilités dans l'exemple ci-dessous concernent le dernier <TT><B>R</B></TT> et le dernier <TT><B>T</B></TT> de <TT><B>CRANTE<FONT COLOR="#FF0000">R</FONT>AIEN<FONT COLOR="#FF0000">T</FONT></B></TT>&nbsp;:<P>
+<CENTER><IMG SRC="Vermissimax/img/posa.png" HEIGHT=364 WIDTH=128 BORDER=1 Alt="Une première possibilité">&nbsp;
+<IMG SRC="Vermissimax/img/posb.png" HEIGHT=364 WIDTH=128 BORDER=1 Alt="Une deuxième possibilité">&nbsp;
+<IMG SRC="Vermissimax/img/posc.png" HEIGHT=364 WIDTH=128 BORDER=1 Alt="Une trois!ème possibilité">&nbsp;
+<IMG SRC="Vermissimax/img/posd.png" HEIGHT=364 WIDTH=128 BORDER=1 Alt="La bonne solution"></CENTER><P>
+
+Il y a néanmoins quelques raisons d'éliminer certaines possibilités. Par exemple, dans la <B>troisième</B> possibilité ci-dessus, on peut remarquer un <TT><B>I</B></TT> isolé, ce qui n'est pas possible puisqu'il faut verdir toute la grille.<P>
+
+Dans la 1<SUP>ère</SUP> manche, il n'est pas possible de sélectionner un point de départ au milieu d'un mot, à savoir un coin ou le centre. Si vous essayez de choisir un point de départ alors que vous avez déjà commencé à former un mot, un message s'affiche la première fois.
+ 
+<A NAME="I"></A><H2>Indices</H2>
+Des <B>indices</B> vous permettent de vous aider à trouver les mots&nbsp;:<UL>
+<LI>Au départ, les <B>initiales</B> vous sont données&nbsp;: les <B>quatre premières lettres</B> pour la première grille avec une lettre de moins par mot à chaque nouvelle grille&nbsp;;
+<LI>Vous pouvez également savoir si la sélection des lettres est bonne en touchant <B><FONT COLOR="#00A000">Indices</FONT></B>&nbsp;: les lettres communes restent alors affichées en <FONT COLOR="#FF0000">rouge</FONT>... Ces indices sont limités (le nombre est affiché à droite du bouton <B><FONT COLOR="#00A000">Indices</FONT></B>). Vous n'êtes pas obligé d'utiliser tous les indices dans une grille, les indices sont cumulables sur les grilles suivante. Si vous n'avez plus d'indices disponibles, toucher <B><FONT COLOR="#FF0000">Indices</FONT></B> affiche les indices de départ.</UL>
+
+<A NAME="SBET"></A><H2>Score, bonus, extras et total</H2>
+
+<A NAME="SBETSDM"></A><H3>Score des mots</H3>
+Dans la <B>première manche</B>, le score pour chaque mot trouvé vaut de 20 à 50 points selon le nombre d'initiales données au départ (respectivement de 4 à 1).<BR>
+La première manche de la <B>première grille</B> vaut <B>140</B> points. La <B>deuxième</B> <B>150</B> points et ainsi de suite avec <B>10</B> points de plus à chaque nouvelle grille.<BR>
+À partir de la <B>22<SUP>ème</SUP></B> grille, le score de la première manche est plafonné à <B>350</B> points (sans indices de départ).
+
+<A NAME="SBETB"></A><H3>Bonus</H3>
+Les bonus sont attribués lors du <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> dans lequel chaque mot trouvé rapporte simplement l'équivalant de sa taille en nombre de lettres.<P>
+
+<A NAME="SBETT"></A><H3>Total</H3>
+Le total est le cumul du score et des bonus.
+ 
+<A NAME="IEO"></A><H2>Informations et options</H2>
+
+Reportez-vous aux renvois numérotés en <FONT COLOR="#976B00">marron</FONT> pour les détails…<P>
+<CENTER><IMG SRC="Vermissimax/img/mancheverte.png" WIDTH=384 HEIGHT=512 border=1 Alt="Manche verte"></CENTER><BR>
+<B><U>Description</U></B>&nbsp;:<P>
+<FONT COLOR="#976B00"><TT><B>&nbsp;1</B></TT></FONT>. Les lettres en <FONT COLOR="#FF0000">rouge</FONT> sont les points de départs des <B>sept</B> mots de <B>douze</B> lettres à trouver (aux six <B>coins</B> et au <B>centre</B>).<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;2</B></TT></FONT>. Les "<B>?</B>" en <FONT COLOR="#00A000">vert</FONT> sont réservés aux <B>points de départ</B> du <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B>.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;3</B></TT></FONT>. Il s'agit des compteurs de tailles des mots réservés au <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B>.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;4</B></TT></FONT>. <B>&Agrave; propos</B> de Vermissimax.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;5</B></TT></FONT>. <B>Tops</B> et <B>statistiques</B> selon la manche en cours.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;6</B></TT></FONT>. <B>Aide succinte</B> sur comment jouer la manche en cours.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;7</B></TT></FONT>. Les boutons <IMG SRC="Vermissimax/img/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)"> et <IMG SRC="Vermissimax/img/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)"> permettent respectivement d'abandonner <B>la partie</B> et le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B>. Le nombre indiqué à sa droite est le <B>numéro de la grille courante</B>.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;8</B></TT></FONT>. Le bouton <IMG SRC="Vermissimax/img/indicesv.png" HEIGHT=16 WIDTH=18 Alt="Indices (vert)"> permet d'obtenir un <B>coup de pouce</B>&nbsp;: Si une sélection est en cours il permet de laisser en <FONT COLOR="#FF0000">rouge</FONT> les lettres communes avec le mot à découvrir, sinon il permet d'afficher les 1<SUP>ères</SUP> lettres des mots à trouver.<BR>
+<FONT COLOR="#976B00"><TT><B>&nbsp;9</B></TT></FONT>. <B>Score</B> de la 1<SUP>ère</SUP> manche de la grille courante suivi de la proportion par rapport au score à faire pour terminer la manche.<BR>
+<FONT COLOR="#976B00"><TT><B>10</B></TT></FONT>. <B>Bonus</B> réservé au <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B>.<BR>
+<FONT COLOR="#976B00"><TT><B>11</B></TT></FONT>. <B>Total</B> de la grille courante (<B>Score</B> + <B>Bonus</B>) suivi de la proportion par rapport au total maximal possible.<BR>
+<FONT COLOR="#976B00"><TT><B>12</B></TT></FONT>. <B>Score</B> de la partie (cumul du score des grilles successives).<BR>
+<FONT COLOR="#976B00"><TT><B>13</B></TT></FONT>. <B>Nombre de mots trouvés</B> sur le nombre de mots à trouver (1<SUP>ère</SUP> manche uniquement). Le mot en cours de sélection s'affiche juste à gauche de ce compteur.
+
+<A NAME="ADS"></A><H2>Affichage des solutions</H2>
+
+Reportez-vous aux renvois numérotés en <FONT COLOR="#976B00">marron</FONT> pour les détails…<P>
+<CENTER><IMG SRC="Vermissimax/img/solutions.png" HEIGHT=312 WIDTH=237 BORDER=1 Alt="Visualisation des solutions"></CENTER><BR>
+
+Toucher <IMG SRC="Vermissimax/img/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)"> dans la 1<SUP>ère</SUP> manche permet d'abandonner la partie.<BR>
+Les mots non trouvés sont alors affichés en rouge dans la grille (<FONT COLOR="#976B00"><TT><B>1</B></TT></FONT>) et sous la grille (<FONT COLOR="#976B00"><TT><B>2</B></TT></FONT>).<BR>
+Pour passer d'une solution à l'autre, il suffit de toucher <IMG SRC="Vermissimax/img/p.png" HEIGHT=12 WIDTH=16 Alt="%"> (<FONT COLOR="#976B00"><TT><B>3</B></TT></FONT>).<BR>
+Toucher <IMG SRC="Vermissimax/img/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)"> permet de commencer une nouvelle partie.
+
+
+<A NAME="SER"></A><H2>Tops et statistiques</H2>
+
+En cours de partie, lorsque vous touchez <IMG SRC="Vermissimax/img/s.png" HEIGHT=12 WIDTH=16 Alt="%"> une 1<SUP>ère</SUP> fois vous obtenez les <B>tops</B>...<P>
+<IMG SRC="Vermissimax/img/tops.png" HEIGHT=314 WIDTH=303 Alt="Exemple de Tops"><P>
+<B><U>Description</U></B>&nbsp;:<P>
+<FONT COLOR="#00ff37"><TT><B>1</B></TT></FONT>. Nombre de parties sur lesquelles ont été calculées les tops qui suivent (score de partie et nombre de grilles résolues).<BR>
+<FONT COLOR="#00ff37"><TT><B>2</B></TT></FONT>. Score top de partie.<BR>
+<FONT COLOR="#00ff37"><TT><B>3</B></TT></FONT>. Nombre record de grilles résolues dans une partie (première manche complétée).<BR>
+<FONT COLOR="#00ff37"><TT><B>4</B></TT></FONT>. Nombre de grilles sur lesquelles ont été calculées les tops qui suivent (bonus, total et nombre de mots trouvés dans un Fil Rouge).<BR>
+<FONT COLOR="#00ff37"><TT><B>5</B></TT></FONT>. Bonus record dans une grille (entre parenthèses, la proportion par rapport au bonus max record).<BR>
+<FONT COLOR="#00ff37"><TT><B>6</B></TT></FONT>. Total record (score+bonus) dans une grille (entre parenthèses, la proportion par rapport au total max record).<BR>
+<FONT COLOR="#00ff37"><TT><B>7</B></TT></FONT>. Nombre record de mots trouvés dans un <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> (entre parenthèses, la proportion par rapport au maximum qui est <B>sept</B> mots).<BR>
+<FONT COLOR="#00ff37"><TT><B>8</B></TT></FONT>. Le message informe que toucher à nouveau "%" permet d'afficher les statistiques.<P>
+
+La deuxième fois de suite, vous obtenez les <B>statistiques</B>…<P>
+<IMG SRC="Vermissimax/img/stats.png" HEIGHT=370 WIDTH=301 Alt="Exemple de Statistiques"><P>
+<B><U>Description</U></B>&nbsp;:<P>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;1</B></TT></FONT>. Nombre de parties sur lesquelles ont été calculées les statistiques qui suivent (score de partie et nombre de grilles résolues).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;2</B></TT></FONT>. Score moyen d'une partie.<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;3</B></TT></FONT>. Nombre moyen de grilles résolues dans une partie (première manche complétée).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;4</B></TT></FONT>. Nombre de grilles sur lesquelles ont été calculées les statistiques qui suivent (bonus, total et nombre de mots trouvés dans un Fil Rouge).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;5</B></TT></FONT>. Score moyen dans une grille (entre parenthèses, la proportion par rapport au score max moyen).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;6</B></TT></FONT>. Bonus moyen dans une grille (entre parenthèses, la proportion par rapport au bonus max moyen).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;7</B></TT></FONT>. Total moyen (score+bonus) dans une grille (entre parenthèses, la proportion par rapport au total max moyen).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;8</B></TT></FONT>. Nombre moyen de mots trouvés dans un <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> (entre parenthèses, la proportion par rapport au maximum qui est <B>sept</B> mots).<BR>
+<FONT COLOR="#00ffff"><TT><B>&nbsp;9</B></TT></FONT>. Proportion de grilles avec un <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> complété (<B>sept</B> mots trouvés).<BR>
+<FONT COLOR="#00ffff"><TT><B>10</B></TT></FONT>. Proportion de grilles avec un <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> top (<B>sept</B> mots trouvés avec à chaque fois la taille maximale).<BR>
+<FONT COLOR="#00ffff"><TT><B>11</B></TT></FONT>. Le message informe que toucher à nouveau "%" permet de réinitialiser les tops et les statistiques (avec confirmation).
+
+<A NAME="FR"></A><H2>Fil Rouge</H2>
+
+<CENTER><IMG SRC="Vermissimax/img/filrouge.png" HEIGHT=512 WIDTH=384 BORDER=1 Alt="Exemple de Fil Rouge"></CENTER><BR>
+<B><U>Description</U></B>&nbsp;:<P>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;1</B></TT></FONT>. Lettres <B>autour de la grille</B> qui sont celles parmi les 26 lettres de l'alphabet ne faisant pas partie de la grille. Elles permettent de <B>sélectionner une lettre</B> lors du <B>choix de l'initiale</B> d'un point de départ (<FONT COLOR="#ff0077"><TT><B>2</B></TT></FONT>). Elles changent à chaque fois qu'un mot est trouvé afin que toutes les lettres absentes de la grille puissent apparaître.<BR>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;2</B></TT></FONT>. <B>Points de départ</B> du <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> ("<B>?</B>" en <FONT COLOR="#00A000">vert</FONT>).<BR>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;3</B></TT></FONT>. Lettres d'un mot en cours de <B>sélection</B> apparaissant en <FONT COLOR="#FF0000">rouge</FONT> dans la grille.<BR>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;4</B></TT></FONT>. Compteurs servant à donner la <B>taille</B> des mots sélectionnés, suivis de la <B>taille maximale possible</B> selon le <B>choix de la lettre</B> comme <B>initiale</B> du mot. Le <FONT COLOR="#00A000">vert</FONT> indique que le mot sélectionné a la <B>taille maximale</B>. Le <FONT COLOR="#FF0000">rouge</FONT> indique que la taille maximale n'a pas été atteinte. Le <B>noir</B> indique une sélection en cours (seule la taille maximale est alors indiquée).<BR>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;5</B></TT></FONT>. Mot en cours de <B>sélection</B>. La couleur <FONT COLOR="#00A000">verte</FONT> indique que le mot a été <B>accepté</B>. Le score est alors indiqué à droite du mot.<BR>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;6</B></TT></FONT>. Dictionnaire de définition courant. Pour changer de dictionnaire, il faut appuyer sur le <B>livre</B>. Pour accéder à la <B>définition en ligne</B> du mot indiqué à gauche, il suffit d'appuyer sur <B>?</B> à droite du livre. Voir <A HREF="#DDM">Définition des mots</A>.<BR>
+<FONT COLOR="#ff0077"><TT><B>&nbsp;7</B></TT></FONT>. Scores des mots validés pendant le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> qui se cumulent dans le <B>bonus</B>, suivi de la proportion par rapport au score maximal possible (quand tous les mots sélectionnés sont de taille maximale) au fur et à mesure du choix des initiales.<BR>
+
+<A NAME="FRSDM"></A><H3>Score des mots (bonus)</H3>
+
+Chaque mot formé et validé dans un <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> apporte un nombre de points équivalant simplement à sa <B>taille</B> en nombre de lettres. Le score se cumulent dans le <B>bonus</B>.
+
+<A NAME="FRE"></A><H3>Extras</H3>
+
+<IMG SRC="Vermissimax/img/extras.png" HEIGHT=40 WIDTH=96 Alt="Extras"><P>
+
+Si <B>sept</B> mots sont trouvés pendant le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B>, le bonus <B>est doublé</B> !<BR>
+Si ces <B>sept</B> mots ont la taille maximale possible, un extra de <B>100 points</B> est attribué en plus du doublement du bonus.
+
+<A NAME="FRADS"></A><H3>Affichage des solutions</H3>
+
+Toucher <IMG SRC="Vermissimax/img/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)"> permet d'abandonner le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B> et de passer à la grille suivante.<BR>
+Avant de passer à la grille suivante, un message affiche la ou les meilleures solutions si un point de départ et une lettre ont été choisis.<BR>
+
+<A NAME="TI"></A><H3>Top initiales</H3>
+
+Depuis la version 1.3, un bouton <IMG SRC="Vermissimax/img/topb.png" HEIGHT=16 WIDTH=18 Alt="Top (bleu)"> apparaît à gauche du score.<BR>
+Il devient <IMG SRC="Vermissimax/img/topr.png" HEIGHT=16 WIDTH=18 Alt="Top (rouge)"> pendant le <B><FONT COLOR="#FF0000">Fil Rouge</FONT></B>, dès qu'un point de départ et une lettre ont été choisis.<P>
+Juste après avoir choisi une lettre comme initiale d'un point de départ, <IMG SRC="Vermissimax/img/topb.png" HEIGHT=16 WIDTH=18 Alt="Top (bleu)"> est remplacé par des lettres durant la recherche des <B>Tops Initiales</B>. La couleur renseigne sur le résultat de la recherche&nbsp;:<UL>
+<LI><IMG SRC="Vermissimax/img/top0.png" HEIGHT=16 WIDTH=18 Alt="Top (lettre noire)"> indique que la lettre <B>A</B> ne permet pas de trouver de mot d'au moins 7 lettres.
+<LI><IMG SRC="Vermissimax/img/top1.png" HEIGHT=16 WIDTH=18 Alt="Top (lettre verte)"> indique que la lettre <B>B</B> permet de trouver au moins un mot d'au moins 7 lettres mais ce n'est pas un top.
+<LI><IMG SRC="Vermissimax/img/top2.png" HEIGHT=16 WIDTH=18 Alt="Top (lettre orange)"> indique que la lettre <B>C</B> permet de trouver au moins un mot d'au moins 7 lettres et c'est le top actuel.
+<LI><IMG SRC="Vermissimax/img/top3.png" HEIGHT=16 WIDTH=18 Alt="Top (lettre rouge)"> indique que la lettre <B>D</B> permet de trouver au moins un mot d'au moins 7 lettres et c'est un nouveau top.
+</UL>
+Toucher <IMG SRC="Vermissimax/img/topr.png" HEIGHT=16 WIDTH=18 Alt="Top (rouge)"> permet d'obtenir le résultat de la recherche des Tops Initiales avec la liste des plus longs mots par lettre top.<P>
+En dehors du Fil Rouge, le bouton est <IMG SRC="Vermissimax/img/topb.png" HEIGHT=16 WIDTH=18 Alt="Top (bleu)"> ou <IMG SRC="Vermissimax/img/topg.png" HEIGHT=16 WIDTH=18 Alt="Top (gris)">&nbsp;:<UL>
+<LI>Toucher <IMG SRC="Vermissimax/img/topb.png" HEIGHT=16 WIDTH=18 Alt="Top (bleu)"> permet de désactiver la recherche des Tops Initiales et le bouton devient <IMG SRC="Vermissimax/img/topg.png" HEIGHT=16 WIDTH=18 Alt="Top (gris)">.
+<LI>Toucher <IMG SRC="Vermissimax/img/topg.png" HEIGHT=16 WIDTH=18 Alt="Top (gris)"> permet d'activer la recherche des Tops Initiales et le bouton devient <IMG SRC="Vermissimax/img/topb.png" HEIGHT=16 WIDTH=18 Alt="Top (bleu)">.
+</UL>
+<U>Exemple de résultat</U><P>
+<TT>Avec A, 1 mot de 11 lettres (ANECDOTIQUE)<BR>
+Avec E, 2 mots de 11 lettres (ENDOCTRINEE, ENDORMIRAIT)<BR>
+Avec T, 1 mot de 11 lettres (TIRAILLEURS)</TT>
+
+<A NAME="DDM"></A><H2>Définition des mots</H2>
+
+Les définitions de mots ne sont pas incluses dans le jeu. Les définitions sont néanmoins accessibles mais elles nécessitent une connexion internet. Vous avez actuellement le choix entre <B>cinq</B> sites de définitions de mots&nbsp;: le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A>* (par défaut), le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, <A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, <A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et <A HREF="http://1mot.fr" target="_blank">1mot.fr</A>**. Touchez le livre ouvert pour choisir le site et touchez le point d'interrogation blanc pour voir la définition du dernier mot trouvé affiché à gauche du livre ouvert. Si vous ne trouvez pas la définition sur un site, essayez sur les autres.<P>
+
+<FONT SIZE=2>
+(*) Centre National de Ressources Textuelles et Lexicales.<BR>
+(**) Ce site ne donne que des éléments grammaticaux et non lexicaux. Par contre tous les mots du jeu y ont une page consacrée.
+</FONT>
+
+<A NAME="CDUG"></A><H2>Création d'une grille</H2>
+
+Chaque nouvelle grille est créée aléatoirement garantissant un nombre illimité de grilles.<P>
+À chaque fois qu'une grille est en cours de création, le bouton <B>Grille</B> est remplacé par un sablier <IMG SRC="Vermissimax/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier">&nbsp;: attendez que le bouton <B>Grille</B> s'affiche avant de continuer.<P>
+Le sablier est également affiché lorsque l'on choisit une lettre pour un point de départ lors du <A HREF="#FR">Fil Rouge</A>.<BR>
+Le temps nécessaire à la création d'une grille varie selon le cours de la création et les performances du matériel mais prend moins de dix secondes.
+
+<HR>
+<CENTER><FONT SIZE=2>
+&copy; 2013, Patrice Fouquet - Dernière mise à jour le 12 octobre 2018<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:Vermissimax@patquoi.fr?subject=Vermissimax">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/vermissimax" target="_blank">iTunes Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.Vermissimax" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.Vermissimax" target="_blank">Amazon.fr</A> - <A HREF="Vermissimax/index.html" target="_blank">WebApp Vermissimax</A>
+</FONT></CENTER>
+</body>
+</html>

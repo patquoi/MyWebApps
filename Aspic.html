@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>A s p i c</title>
+<link rel="icon" type="image/png" href="Aspic/img/icon.png">
+</head>
+<body BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00FFFF" VLINK="#A0A0FF">
+
+<H1 ALIGN=CENTER>Aspic : règle du jeu et utilisation</H1>
+
+Bienvenue sur la page du jeu <B>Aspic</B>.<BR>
+Vous trouverez ici des informations sur la WebApp et l'application pour tablette.<P>
+
+<H2>Menu principal</H2>
+<UL>
+ <LI><A HREF="#DDJ">Description du jeu</A>
+ <LI><A HREF="#RDJ">Règle du jeu</A>
+ <LI><A HREF="#PhDJ">Phases de jeu</A><UL>
+  <LI><A HREF="#PDP">Pose des pions</A>
+  <LI><A HREF="#DDUP">Déplacement d'un pion</A>
+  <LI><A HREF="#T">Tir</A><UL>
+   <LI><A HREF="#CDDPB">Case destination du pion-ballon</A>
+   <LI><A HREF="#ROB">Rebond ou but&nbsp;?</A>
+   <LI><A HREF="#DDPTEPB">Déplacement des pion-tireur et pion-ballon</A>
+   <LI><A HREF="#RL">Rebond latéral</A>
+   <LI><A HREF="#RSLLDB">Rebond sur la ligne de but</A>
+   <LI><A HREF="#DR">Double rebond</A>
+   <LI><A HREF="#PTB">Permutation tireur-ballon</A>
+   <LI><A HREF="#BM">But marqué</A></UL></UL>
+ <LI><A HREF="#CDJ">Commandes de jeu</A><UL>  
+  <LI><A HREF="#DORUP">Démarrer ou reprendre une partie</A>
+  <LI><A HREF="#CDJCDC">Choix du côté et des couleurs</A>
+  <LI><A HREF="#CDJPDP">Pose des pions</A>
+  <LI><A HREF="#CDJDDUP">Déplacement d'un pion</A>
+  <LI><A HREF="#CDJT">Tir</A></UL>
+ <LI><A HREF="#PDJ">Paramètres de jeu</A><UL>
+  <LI><A HREF="#NDTPM">Nombre de tours par manche</A>
+  <LI><A HREF="#NDPPJ">Nombre de pions par joueur</A>
+  <LI><A HREF="#TPTEPJ">Temps par tour et par joueur</A></UL>
+ <LI><A HREF="#IES">Informations et statistiques</A><UL>
+  <LI><A HREF="#IESS">Score</A>
+  <LI><A HREF="#IESTDJ">Tours de jeu</A>
+  <LI><A HREF="#IESPhDJ">Phases de jeu</A>
+  <LI><A HREF="#IESTR">Temps restant</A>
+  <LI><A HREF="#IESODT">Occupation du terrain</A>
+  <LI><A HREF="#IESDP">Distance parcourue</A></UL>
+</UL><P>
+
+<HR>
+
+<A NAME="DDJ"></A><H2>Description du jeu</H2>
+
+Le plateau de jeu où se déroulent toutes les actions est un rectangle de 99 cases (11&times;9).<P>
+<CENTER><IMG Alt="Plateau de jeu" SRC="Aspic/img/pdj1.png" WIDTH=396 HEIGHT=375 BORDER=0>&nbsp;<IMG Alt="Plateau de jeu" SRC="Aspic/img/pdj2.png" WIDTH=396 HEIGHT=375 BORDER=0><BR>
+<I>Figure 1 et 2&nbsp;: Exemples de choix de couleurs de pions</I></CENTER><P>
+Chaque camp choisit un côté (gauche/droite) et une couleur de pion (voir ci-dessous) <B>pour toute la durée d'une partie</B> (il n'y a donc pas de changement de côté).<P>
+<CENTER><IMG Alt="Couleurs de pions" SRC="Aspic/img/cdp.png" WIDTH=276 HEIGHT=73 BORDER=0><BR>
+<I>Figure 3&nbsp;: Choix possibles de couleurs de pions</I></CENTER><P>
+Selon la couleur choisie par camp, le fond du plateau de jeu est adapté (voir les deux exemples précédents).<P>
+
+Le plateau de jeu est composé de&nbsp;:<UL>
+<LI>Deux <B>zones libres</B> (colonnes B à E pour le camp de gauche et colonnes G à J pour le camp de droite) qui sont les zones sur lesquelles doivent être posés les pions avant l'<B>engagement</B> (au début d'une manche ou après un but).
+<LI>Une <B>zone neutre</B> au centre (colonne F) sur laquelle est posée le pion-ballon à l'<B>engagement</B>.
+<LI>Deux <B>zones de défense</B> (colonnes A pour le camp de gauche et colonne K pour le camp de droite) sur lesquelles seuls les pions du camp correspondant peuvent pénétrer sauf sur la <B>zone de but</B> (lignes 4 à 6) quadrillée par des filets.
+<LI>Deux <B>lignes de but</B> (situées entre les colonnes A et B pour le camp de gauche et entre les colonnes J et K pour le camp de droite).</UL>
+
+Chaque camp doit avoir <B>six</B> pions (par défaut mais il est possible de jouer avec <B>cinq</B> ou <B>sept</B> pions, voir <A HREF="#PDJ">Paramètres de jeu</A>). Il n'y a qu'un seul <B>pion-ballon</B>.<P>
+
+<HR>
+
+<A NAME="RDJ"></A><H2>Règle du jeu</H2>
+
+L'<B>objectif</B> est de <B>marquer le plus de buts</B>, c'est-à-dire porter le plus grand nombre de fois le pion-ballon au delà de la <B>ligne de but</B> en la croisant entre les lignes <B>4 et 6 incluses</B> (entre les <I>poteaux</I>).<P>
+Une <B>partie</B> se joue en <B>deux manches de 50 tours</B> (par défaut mais il est possible de jouer en 2&times;25, 2&times;10 et 2&times;5 tours, voir <A HREF="#PDJ">Paramètres de jeu</A>).<P>
+Le camp de gauche engage la première manche et commence chacun des tours suivants.<BR>
+Le camp de droite engage la deuxième manche et commence chacun des tours suivants.<P>
+
+<HR>
+
+<A NAME="PhDJ"></A><H2>Phases de jeu</H2>
+
+Un tour de jeu peut inclure plusieurs <B>phases de jeu</B>&nbsp; dans cet ordre uniquement&nbsp;:<UL>
+<LI>la <A HREF="#PDP">pose de pions</A>,
+<LI>le <A HREF="#DDUP">déplacement d'un pion</A>,
+<LI>le <A HREF="#T">tir</A>.</UL>
+
+<U>Contraintes</U>&nbsp;:<UL>
+<LI>La pose de pions se déroule uniquement au début d'une manche ou après un but. 
+<LI>Le tour peut comprendre un déplacement de joueur et un tir dans cet ordre mais doit comprendre au moins l'une des deux phases (un déplacement ou un tir).
+<LI>Au cours d'un même tour, le pion <B>déplacé ne peut être le pion-tireur</B>.
+</UL>
+
+<A NAME="PDP"></A><H3>Pose des pions</H3>
+
+Au début de la partie ou de la deuxième manche, chaque joueur doit poser un pion à tour de rôle.<P>
+Le joueur qui n'engage pas le jeu pose le premier pion, puis l'adversaire pose son premier pion et ainsi de suite de telle sorte que le joueur qui engage est le dernier à poser un pion.<P>
+Ainsi, au début de la première manche, le joueur de droite pose le premier un pion et le joueur de gauche est le dernier à poser un pion avant d'engager le jeu par un déplacement et/ou un tir.<P>
+Au début de la deuxième manche, c'est l'inverse&nbsp;: le joueur de gauche pose le premier un pion et le joueur de droite est le dernier à poser un pion avant d'engager la deuxième manche.<P>
+
+Les pions doivent obligatoirement être posés sur la <B>zone libre</B> du côté du camp qui pose le pion.<BR>
+La zone libre du camp de gauche se trouve entre les colonnes B et E.
+La zone libre du camp de droite se trouve entre les colonnes G et J.
+
+<A NAME="DDUP"></A><H3>Déplacement d'un pion</H3>
+
+Voici les conditions à respecter lors du déplacement d'un pion&nbsp;:<UL>
+<LI>Il pion ne peut être déplacé qu'horizontalement, verticalement ou en diagonale <B>jusqu'à trois cases</B> maximum.<BR>
+<LI>Il ne faut pas qu'il y ait de pions sur la trajectoire du déplacement (entre le pion à déplacer et la case destination incluse).
+<LI>Il ne peut jamais aller, ni sur une <B>zone de but</B>, ni sur la <B>zone de défense adverse</B>&nbsp;:<UL>
+ <LI>Un pion du camp de gauche ne peut aller, ni sur la colonne K, ni sur la colonne A entre les lignes 4 et 6.
+ <LI>Un pion du camp de droite ne peut aller, ni sur la colonne A, ni sur la colonne K entre les lignes 4 et 6.</UL>
+</UL>
+
+Voici un premier exemple de déplacements possibles (coches vertes) d'un pion du camp de gauche (les verts) depuis sa zone libre&nbsp;:<P>
+<CENTER><IMG Alt="Déplacement d'un pion (1/2)" SRC="Aspic/img/ddup1.png" WIDTH=289 HEIGHT=258 BORDER=0><BR>
+<I>Figure 4&nbsp;: Choix possibles de cases cibles du déplacement d'un pion depuis sa zone libre</I></CENTER><P>
+Voici un deuxième exemple de déplacements possibles d'un pion du même camp mais depuis la zone libre adverse&nbsp;:<P>
+<CENTER><IMG Alt="Déplacement d'un pion (2/2)" SRC="Aspic/img/ddup2.png" WIDTH=268 HEIGHT=187 BORDER=0><BR>
+<I>Figure 5&nbsp;: Choix possibles de cases cibles du déplacement d'un pion depuis la zone libre adverse</I></CENTER><P>
+
+<A NAME="T"></A><H3>Tir</H3>
+
+Le tir consiste dans un premier temps à désigner un de ses pions comme tireur. Voici les conditions à remplir pour pouvoir réussir un tir&nbsp;:<UL>
+<LI>Le pion-tireur ne peut être le pion qui vient d'être déplacé au cours du même tour.
+<LI>Le pion-tireur doit être au plus à trois lignes et trois colonnes du pion-ballon.
+<LI>Le tir en arrière est interdit donc le pion-tireur ne doit pas être situé après le pion-ballon par rapport à la direction vers le but adverse.
+<LI>Si la direction pion-tireur/pion-ballon <B>est cardinale</B> (c'est-à-dire horizontale, verticale ou en diagonale), alors il ne doit y avoir aucun pion entre le pion-tireur et le pion-ballon et entre le pion-ballon et sa case destination (voir <A HREF="#CDDPB">détermination</A> de celle-ci au paragraphe suivant).
+<LI>Si la direction pion-tireur/pion-ballon <B>n'est pas cardinale</B>, seule la case destination du pion-ballon doit être vide.</UL><P>
+
+Dans l'exemple qui suit, les verts tirent. Le pion-tireur doit se trouver dans la zone bleue. Les pions vert clair peuvent tirer. Le pion vert foncé ne le peut pas&nbsp;: un pion adverse est sur la trajectoire, juste devant le pion-ballon.<P> 
+<CENTER><IMG Alt="Pions-tireurs éligibles" SRC="Aspic/img/ddpt.png" WIDTH=405 HEIGHT=334 BORDER=0><BR>
+<I>Figure 6&nbsp;: Zone de tir possible</I></CENTER><P>
+
+<A NAME="CDDPB"></A><H4>Case destination du pion-ballon</H4>
+
+La case du pion-ballon est le centre du segment pion-tireur/future case du pion-ballon si le segment pion-ballon/future case du pion-ballon ne coupe pas un bord latéral ou une ligne de but. Si le trajet du pion-ballon coupe un bord latéral ou une ligne de but, il y a <A HREF="#ROB">rebond ou but</A>.<P>
+Si l'on reprend l'exemple précédent, voici où se trouverait le pion-ballon si l'un des deux pions vert clair tirait. Les lignes jaunes matérialisent l'axe <I>Tireur/Ballon/Future case</I>.<P>
+
+<CENTER><IMG Alt="Pions-tireurs éligibles" SRC="Aspic/img/ddlfc.png" WIDTH=405 HEIGHT=334 BORDER=0><BR>
+<I>Figure 7&nbsp;: Cases destinations du pion-ballon</I></CENTER><P>
+
+Pour aider à trouver la case destination du pion-ballon, il faut compter les lignes et les colonnes qui séparent le pion-tireur du pion ballon d'une part (chiffres en <FONT COLOR="#FFFF00">jaune</FONT> sur la figure 7), et les répéter depuis le pion-ballon pour trouver sa case destination (chiffres en <FONT COLOR="#00FFFF">bleu</FONT>).
+
+<A NAME="ROB"></A><H4>Rebond ou but&nbsp;?</H4>
+
+Plusieurs cas peuvent se présenter&nbsp;:<UL>
+<LI>Si le trajet du pion-ballon coupe le bord latéral, il y a <B>rebond</B>.
+<LI>S'il coupe la ligne de but adverse sur la ligne 4, 5 ou 6, il y a <B>but</B> sinon <B>rebond</B>.
+<LI>S'il coupe la ligne de but exactement entre les lignes 3 et 4 ou entre les lignes 6 et 7, il y a rebond (le pion-ballon &laquo;&nbsp;tape le poteau&nbsp;&raquo;).</UL>
+<CENTER><IMG Alt="Poteau !" SRC="Aspic/img/poteau.png" WIDTH=417 HEIGHT=348 BORDER=0><BR>
+<I>Figure 8&nbsp;: Tir et rebond sur le poteau</I></CENTER><P>
+
+<A NAME="DDPTEPB"></A><H4>Déplacement des pion-tireur et pion-ballon</H4>
+
+Une fois déterminée la future case du pion-ballon, le tir peut être effectué&nbsp;:<UL>
+<LI>Le pion-tireur remplace le pion-ballon.
+<LI>Le pion-ballon est déplacé sur sa case destination.</UL>
+<CENTER><IMG Alt="Phases de tir" SRC="Aspic/img/pdt.png" HEIGHT=176 WIDTH=316><BR>
+<I>Figure 9&nbsp;: Phase de tir</I></CENTER><P>
+
+<A NAME="RL"></A><H4>Rebond latéral</H4>
+
+Il y a <B>rebond latéral</B> quand le trajet du pion-ballon croise le bord gauche ou droit du plateau de jeu (au-delà des lignes 1 et 9).<P>
+<CENTER><IMG alt="Rebond latéral" SRC="Aspic/img/rl.png" HEIGHT=258 WIDTH=289 BORDER=0><BR>
+<I>Figure 10&nbsp;: Tir avec rebond latéral</I></CENTER><P>
+Lors du décompte du nombre de colonnes séparant le pion-ballon de sa future case, il faut revenir en arrière au moment d'atteindre le bord latéral&nbsp;: exemple sur la figure 10 avec le chiffre 3 en <FONT COLOR="#00FFFF">bleu</FONT>.
+
+<A NAME="RSLLDB"></A><H4>Rebond sur la ligne de but</H4>
+
+Il y a <B>rebond sur la ligne de but</B> quand le trajet du pion-ballon croise la ligne de but adverse (entre les colonnes A et B pour le camp de droite et entre les colonnes J et K pour le camp de droite).<P>
+<CENTER><IMG alt="Rebond sur la ligne de but" SRC="Aspic/img/rslldb.png" HEIGHT=201 WIDTH=339 BORDER=0><BR>
+<I>Figure 11&nbsp;: Tir avec rebond sur la ligne de but</I></CENTER><P>
+Lors du décompte du nombre de lignes séparant le pion-ballon de sa future case, il faut revenir en arrière au moment d'atteindre la ligne de but&nbsp;: exemple sur la figure 11 avec les chiffres 2 et 3 en <FONT COLOR="#00FFFF">bleu</FONT>.
+
+<A NAME="DR"></A><H4>Double rebond</H4>
+
+Il y a <B>double rebond</B> quand le trajet du pion-ballon croise la ligne de but adverse et un des bords latéraux.<P>
+<CENTER><IMG alt="Double rebond" SRC="Aspic/img/dr.png" HEIGHT=295 WIDTH=291 BORDER=0><BR>
+<I>Figure 12&nbsp;: Tir avec double rebond</I></CENTER>
+
+<A NAME="PTB"></A><H4>Permutation tireur-ballon</H4>
+
+Dans certains cas de figure, le tir a pour résultat la permutation des pion-tireur et pion-ballon. Voici les conditions à remplir&nbsp;:<UL>
+<LI>Le pion-ballon doit être contre la ligne de but adverse ou contre un bord latéral.
+<LI>Si le pion-ballon est...<UL>
+ <LI>contre un bord latéral, le pion-tireur doit être sur la même colonne et aucun pion ne doit être entre le pion-tireur et le pion-ballon.
+ <LI>contre la ligne de but adverse, le pion-tireur doit être sur la même ligne et aucun pion ne doit être entre le pion-tireur et le pion-ballon.
+ <LI>dans un des coins de la zone libre adverse, aucun pion ne doit être entre le pion-tireur et le pion-ballon si la direction pion-tireur/pion-ballon est cardinale.</UL></UL>
+<CENTER><IMG alt="Permutation latérale" SRC="Aspic/img/pl.png" HEIGHT=224 WIDTH=158 BORDER=0>&nbsp;&nbsp;&nbsp;&nbsp;<IMG alt="Permutation latérale" SRC="Aspic/img/pslldb.png" HEIGHT=224 WIDTH=218 BORDER=0>&nbsp;<IMG alt="Permutation latérale" SRC="Aspic/img/pdlc.png" HEIGHT=224 WIDTH=217 BORDER=0><BR>
+<I>Figures 13, 14 et 15&nbsp;: Tirs avec permutations latérale, sur la ligne de but et dans le coin</I></CENTER>
+
+<A NAME="BM"></A><H4>But marqué</H4>
+
+Voici trois exemples&nbsp;:<UL>
+<LI>Les violets tirent et marquent...
+<LI>Les bleu ciel tirent et marquent...
+<LI>Les bleu ciel tirent mais ne marquent pas&nbsp;: il y a double rebond&nbsp;!</UL>
+<CENTER><IMG Alt="But marqué (1/2)" SRC="Aspic/img/but1.png" WIDTH=199 HEIGHT=298 BORDER=0>&nbsp;&nbsp;&nbsp;<IMG Alt="But marqué (2/2)" SRC="Aspic/img/but2.png" WIDTH=344 HEIGHT=298 BORDER=0>&nbsp;&nbsp;&nbsp;<IMG Alt="Il n'y a pas but" SRC="Aspic/img/pasbut.png" WIDTH=296 HEIGHT=298 BORDER=0><BR>
+<I>Figures 16, 17 et 18&nbsp;: deux buts et un rebond</I></CENTER><P>
+<U>Remarques</U>&nbsp;:<UL>
+<LI>Il n'est pas possible de contrer ces deux buts.
+<LI>Il n'est pas possible de marquer un but avec un rebond.</UL><P>
+
+<HR>
+
+<A NAME="CDJ"></A><H2>Commandes de jeu</H2>
+
+Toutes les commandes de l'application sont accessibles via des boutons dans la zone de message de chaque côté des deux camps.<BR>
+Les commandes liées aux phases de jeu sont également accessibles sur le terrain selon la situation des phases de jeu.<P>
+
+<A NAME="DORUP"></A><H3>Démarrer ou reprendre une partie</H3>
+
+Au lancement de l'application, vous avez accès au menu principal&nbsp;:<P>
+<CENTER><IMG alt="Menu principal" SRC="Aspic/img/menu1.png" HEIGHT=124 WIDTH=265 BORDER=0><BR>
+<I>Figures 19&nbsp;: menu principal</I></CENTER><P>
+
+Pour débuter une partie, vous avez deux choix&nbsp;:<UL>
+<LI>Si une partie a été interrompue, choisissez <B>CONTINUER LA PARTIE</B> pour la reprendre au moment précis où elle a été interrompue.
+<LI>Pour en commencer une nouvelle, choisissez <B>NOUVELLE PARTIE</B>. Si une partie a été sauvegardée, elle sera perdue dès que les deux camps auront <A HREF="#CDJCDC">choisi leurs couleurs</A>.</UL>
+
+<A NAME="CDJCDC"></A><H3>Choix du côté et des couleurs</H3>
+
+Dès que vous avez choisi <B>NOUVELLE PARTIE</B>, on vous propose huit couleurs de pions.<BR>
+Les deux joueurs choisissent d'abord un côté (gauche ou droite) puis une couleur de camp parmi celles-ci&nbsp;:<P>
+<CENTER><IMG Alt="Couleurs de pions" SRC="Aspic/img/cdp.png" WIDTH=276 HEIGHT=73 BORDER=0><BR>
+<I>Figure 20&nbsp;: Choix possibles de couleurs de pions</I></CENTER><P>
+Certaines couleurs ne peuvent pas être choisies l'une contre l'autre pour des risques de confusion&nbsp;:<P>
+<CENTER><IMG Alt="associations de couleurs non autorisées" SRC="Aspic/img/cdci.png" WIDTH=220 HEIGHT=122 BORDER=0><BR>
+<I>Figure 21&nbsp;: Oppositions de couleurs de pions impossibles</I></CENTER><P>
+
+Dès que les deux camps ont choisi une couleur, la partie peut commencer par la pose des pions.<BR>
+À ce stade, toute sauvegarde de partie est perdue.<P>
+
+<A NAME="CDJPDP"></A><H3>Pose des pions</H3>
+
+La pose de pions a lieu en début de manche ou après un <A HREF="#BM">but</A>.<BR>
+C'est l'adversaire de celui qui engage qui pose le premier pion afin que celui-ci pose le dernier pion et engage le jeu.<BR>
+À tour de rôle, chaque camp pose un pion-joueur.<P>
+Pour poser pion, il suffit de toucher une des cases de la zone libre de son camp (zones colorées)&nbsp;:<P>
+<CENTER><IMG Alt="Zones libres" SRC="Aspic/img/zl.png" WIDTH=396 HEIGHT=325 BORDER=0><BR>
+<I>Figure 22&nbsp;: Zones libres où l'on doit poser les pions</I></CENTER><P>
+Le pion-ballon est posé au centre du terrain avant l'engagement du jeu.<P>
+ 
+<A NAME="CDJDDUP"></A><H3>Déplacement d'un pion</H3>
+
+Le déplacement du pion est la première phase de jeu après l'éventuelle pose des pions.<BR>
+Il n'est possible de passer le déplacement d'un pion que si un <A HREF="#T">tir</A> est possible. Dans ce cas ce dernier est obligatoire.<BR>
+Si le tir n'est pas possible, le déplacement est alors obligatoire (toujours possible).<P>
+
+Selon la situation&nbsp;:<UL>
+<LI>S'il est possible d'ignorer le déplacement, le bouton <B>PASSER</B> vous est alors proposé&nbsp;:<P>
+<CENTER><IMG Alt="Déplacement avec possiblité de passer" SRC="Aspic/img/pd.png" WIDTH=283 HEIGHT=124 BORDER=0><BR>
+<I>Figure 23&nbsp;: Tour de déplacement de pion avec possibilité de passer</I></CENTER><P>
+<LI>Si le tir n'est pas possible, le bouton <B>PASSER</B> ne vous est pas proposé&nbsp;:<P>
+<CENTER><IMG Alt="Déplacement obligatoire" SRC="Aspic/img/do.png" WIDTH=283 HEIGHT=101 BORDER=0><BR>
+<I>Figure 24&nbsp;: Tour de déplacement de pion obligatoire</I></CENTER><P></UL>
+Pour effectuer le déplacement, il faut choisir le pion à déplacer puis la case destination.<BR>
+Dès que vous avez choisi le pion à déplacer, celui-ci est <B>obscurci</B>&nbsp;:<P>
+<CENTER><IMG Alt="pion-joueur vert" SRC="Aspic/png/jvhg.png" HEIGHT=72 WIDTH=72 BORDER=0>&nbsp;<IMG Alt="pion-joueur vert déplacé" SRC="Aspic/png/dvhg.png" HEIGHT=72 WIDTH=72 BORDER=0><BR>
+<I>Figure 25&nbsp;: Le pion déplacé est obscurci</I></CENTER><P>
+ Vous pouvez annuler le choix du pion à déplacer en touchant <B>ANNULER</B>&nbsp;:<P>
+<CENTER><IMG Alt="Choix de la case destination d'un déplacement de pion" SRC="Aspic/img/cdlcd.png" WIDTH=300 HEIGHT=100 BORDER=0><BR>
+<I>Figure 26&nbsp;: Choix de la case destination d'un déplacement</I></CENTER><P>
+
+<H4>Actions sur le terrain</H4>
+
+Vous pouvez également&nbsp;:<UL>
+<LI><B>Passer</B> le déplacement en touchant le <B>pion-ballon</B> (bouton <B>PASSER</B>).
+<LI><B>Annuler le choix du pion</B> en touchant le <B>pion-joueur déplacé</B> (bouton <B>ANNULER</B>).</UL>
+
+<A NAME="CDJT"></A><H3>Tir</H3>
+
+Le tir est la deuxième phase de jeu après le déplacement de pion&nbsp;:<UL>
+<LI>Si le déplacement de pion a été passé, le tir est obligatoire sinon il peut être passé.
+<LI>Si le tir n'est pas possible, le tour passe à l'adversaire et le tir n'est même pas proposé.
+<LI>Depuis la version 1.1, un <A HREF="#MTT">mode test</A> est proposé en appuyant sur le bouton <B>TESTER</B>.</UL>
+
+Selon la situation&nbsp;:<UL>
+<LI>S'il est possible d'ignorer le tir, le bouton <B>PASSER</B> vous est alors proposé&nbsp;:<P>
+<CENTER><IMG Alt="Tir avec possiblité de passer" SRC="Aspic/img/pt.png" WIDTH=310 HEIGHT=100 BORDER=0><BR>
+<I>Figure 27&nbsp;: Tour de tir avec possibilité de passer</I></CENTER><P>
+<LI>Si le déplacement n'a pas été effectué, le bouton <B>PASSER</B> ne vous est pas proposé mais vous pouvez revenir à la phase de déplacement en touchant <B>ANNULER</B>&nbsp;:<P>
+<CENTER><IMG Alt="Tir obligatoire" SRC="Aspic/img/to.png" WIDTH=313 HEIGHT=100 BORDER=0><BR>
+<I>Figure 28&nbsp;: Tour de tir obligatoire</I></CENTER><P>
+</UL>
+
+<A NAME="MTT"></A><H4>Mode test</H4>
+
+En <B>mode test</B>, vous pouvez toucher un pion-tireur pour voir pendant quelques secondes le résultat sans jouer le coup.<BR>
+Le message suivant vous permet de savoir si vous êtes en mode test&nbsp;:<P>
+<CENTER><IMG alt="Mode de test de tir" SRC="Aspic/img/tlt.png" HEIGHT=100 WIDTH=313 BORDER=0><BR>
+<I>Figure 29&nbsp;: Mode test de tir</I></CENTER><P>
+Appuyer sur <B>ANNULER</B> permet de sortir du mode test.
+<UL>
+<LI>Si le <B>tir est valide</B> sans qu'un but ne soit marqué, les cases finales du tireur et du ballon sont respectivement remplacées par les pion-tireur et pion-ballon pendant quelques secondes.
+<LI>Si le tir est valide et qu'un <B>but est marqué</B>, le mot <B>But!</B> sera affiché sur le pion-ballon <IMG Alt="Ballon barré" SRC="Aspic/png/blnb.png" HEIGHT=32 WIDTH=32 BORDER=0> pendant quelques secondes.<BR><BR>
+<LI>Dans les cas suivants, aucun changement n'apparaît sur le terrain&nbsp;:<UL>
+ <LI>Si le pion est trop éloigné, le message <B>PION HORS DE PORTEE</B> s'affiche.
+ <LI>Si vous choisissez un pion advere ou une case vide, le message <B>CHOIX INCORRECT</B> s'affiche.
+ <LI>Si vous choisissez le pion qui vient d'être déplacé dans le même tour, le message <B>PION DEPLACE NON TIREUR</B> s'affiche.
+ <LI>Si vous choisissez un pion sur une ligne située après celle du pion-ballon, le message <B>TIR EN ARRIERE INTERDIT&nbsp;!</B> s'affiche.</UL>
+<LI>Dans les cas suivants, un ballon barré <IMG Alt="Ballon barré" SRC="Aspic/png/blnti.png" HEIGHT=32 WIDTH=32 BORDER=0> s'affiche à la place du pion-ballon pendant quelques secondes&nbsp;:<UL>
+ <LI>Si un pion est situé sur la trajectoire, le message <B>TRAJET OCCUPE</B> s'affiche.
+ <LI>Si la case finale du pion-ballon est occupée, le message <B>CASE FINALE OCCUPEE&nbsp;!</B> s'affiche.
+ <LI>Si les cases finales tireur et ballon sont identiques, le messag <B>MEME CASE TIREUR&nbsp;+&nbsp;BALLON</B> s'affiche.</UL></UL>
+
+<H4>Actions sur le terrain</H4>
+
+Vous pouvez également&nbsp;:<UL>
+<LI><B>passer le tir</B> en touchant <B>le pion-ballon</B> (bouton <B>PASSER</B>).<BR>
+<LI><B>revenir à la phase de déplacement</B> en touchant le <B>pion-ballon</B> (bouton <B>ANNULER</B>).
+<LI><B>Sortir du mode test</B> en touchant <B>pion-ballon</B> (bouton <B>ANNULER</B>) depuis la version 1.1.</UL><P>
+
+<HR>
+
+<A NAME="PDJ"></A><H2>Paramètres de jeu</H2>
+
+Il y a trois paramètres de jeu modifiables&nbsp;:<UL>
+<LI>Le nombre de <B>pions par joueur</B>,
+<LI>Le nombre de <B>tours par manche</B>,
+<LI>Le <B>temps par tour et par joueur</B> (depuis la version 1.1).</UL>
+
+Les paramètres d'une partie en cours ne sont pas modifiables. Les changements éventuels seront appliqués lors d'une nouvelle partie.<P>
+
+<U>Informations affichées</U>&nbsp;:<UL>
+<LI>Les paramètres affichés après &laquo;&nbsp;<TT>ACTUELLEMENT&nbsp;:</TT>&nbsp;&raquo; sont les paramètres de la partie en cours ou des derniers paramètres avant changement si aucune partie n'est entamée (non modifiables).
+<LI>Le temps affiché entre parenthèses dans le menu <B>PARAMETRES</B> est la durée maximale d'une partie avec les paramètres en vigueur (tours par partie et temps/tour/joueur).<BR>
+Il équivaut à deux fois le nombre de tours par partie multiplié par le temps par tour par joueur.<BR>
+Le temps maximal de jeu pour chaque joueur est donc de la moitié du temps maximal d'une partie.<BR>
+Dans l'exemple des figures 31, 34 et 37, on a une partie maximale de 18 minutes (2&times;5 &times; 54&quot; &times; 2 = 1080&quot; = 18'). Le temps de jeu imparti par joueur est donc de 9'.</UL>
+<A NAME="NDTPM"></A><H3>Nombre de tours par partie</H3>
+
+Par défaut, une partie dure <B>2&times;50</B> tours. Il est possible de jouer à <B>2&times;5</B>, <B>2&times;10</B> ou <B>2&times;25</B> tours.<BR>
+Pour changer ce paramètre, au lancement de l'application il faut choisir <B>PARAMETRES DE JEU</B> puis <B>TOURS PAR PARTIE</B>.
+<CENTER><IMG alt="Menu principal" SRC="Aspic/img/menu1.png" HEIGHT=124 WIDTH=265 BORDER=0>&nbsp;<IMG alt="Paramètres" SRC="Aspic/img/menu2.png" HEIGHT=123 WIDTH=300 BORDER=0>&nbsp;<IMG alt="Tours de jeu" SRC="Aspic/img/menu3a.png" HEIGHT=124 WIDTH=300 BORDER=0><BR>
+<I>Figures 30, 31 et 32&nbsp;: changement des paramètres de tours par partie</I></CENTER>
+
+<A NAME="NDPPJ"></A><H3>Nombre de pions par joueur</H3>
+
+Par défaut, chaque joueur a <B>six</B> pions. Il est possible de jouer à <B>cinq</B> ou <B>sept</B> pions.<BR>
+Pour changer ce paramètre, au lancement de l'application il faut choisir <B>PARAMETRES DE JEU</B> puis <B>PIONS PAR JOUEUR</B>.<P>
+<CENTER><IMG alt="Menu principal" SRC="Aspic/img/menu1.png" HEIGHT=124 WIDTH=265 BORDER=0>&nbsp;<IMG alt="Paramètres" SRC="Aspic/img/menu2.png" HEIGHT=123 WIDTH=300 BORDER=0>&nbsp;<IMG alt="Pions de jeu" SRC="Aspic/img/menu3b.png" HEIGHT=124 WIDTH=300 BORDER=0><BR>
+<I>Figures 33, 34 et 35&nbsp;: changement des paramètres de pions par joueur</I></CENTER><P>
+
+<A NAME="TPTEPJ"></A><H3>Temps par tour et par joueur</H3>
+
+Par défaut, chaque joueur a <B>36</B> secondes de temps de jeu par tour en moyenne. Il est possible de jouer de <B>18</B> à <B>54</B> secondes par tour.<BR>
+Pour changer ce paramètre, au lancement de l'application il faut choisir <B>PARAMETRES DE JEU</B> puis <B>TEMPS/TOUR/JOUEUR</B>.<P>
+<CENTER><IMG alt="Menu principal" SRC="Aspic/img/menu1.png" HEIGHT=124 WIDTH=265 BORDER=0>&nbsp;<IMG alt="Paramètres" SRC="Aspic/img/menu2.png" HEIGHT=123 WIDTH=300 BORDER=0>&nbsp;<IMG alt="Temps/tour/joueur" SRC="Aspic/img/menu3c.png" HEIGHT=124 WIDTH=275 BORDER=0><BR>
+<I>Figures 36, 37 et 38&nbsp;: changement des paramètres de temps/tour/joueur</I></CENTER><P>
+
+Ce temps de jeu doit être multiplié par deux fois le nombre de tours par manche pour avoir le temps de jeu maximal que chaque joueur bénéficie au cours d'une partie (colonnes <B>TMJ</B> dans le tableau ci-après).<BR>
+Une partie peut donc durer au maximum deux fois le temps octroyé à chaque joueur (colonnes <B>DMP</B> dans le tableau ci-après).<BR>
+Si un joueur dépasse le temps maximal par joueur (TMJ), la partie est terminée et l'adversaire remporte le match quel que soit le score.<P>
+<TABLE border=1 cellspacing=1 cellpadding=1>
+<TR><TH rowspan=3>T/t/j*</TH><TH colspan=8>Nombre de tours d'une partie</TH>
+<TR><TH colspan=2>2&times;5</TH><TH colspan=2>2&times;10</TH><TH colspan=2>2&times;25</TH><TH colspan=2>2&times;50</TH>
+<TR><TH>TMJ*</TH><TH>DMP*</TH><TH>TMJ*</TH><TH>DMP*</TH><TH>TMJ*</TH><TH>DMP*</TH><TH>TMJ*</TH><TH>DMP*</TH></TR>
+<TR><TD align=right>18&quot;</TD><TD align=center>3'</TD><TD align=center>6'</TD><TD align=center>6'</TD><TD align=center>12'</TD><TD align=center>15'</TD><TD align=center>30'</TD><TD align=center>30'</TD><TD align=center>1h</TD></TR>
+<TR><TD align=right>27&quot;</TD><TD align=center>4'30</TD><TD align=center>9'</TD><TD align=center>9'</TD><TD align=center>18'</TD><TD align=center>22'30</TD><TD align=center>45'</TD><TD align=center>45'</TD><TD align=center>1h30</TD></TR>
+<TR><TD align=right>36&quot;</TD><TD align=center>6'</TD><TD align=center>12'</TD><TD align=center>12'</TD><TD align=center>24'</TD><TD align=center>30'</TD><TD align=center>60'</TD><TD align=center>1h</TD><TD align=center>2h</TD></TR>
+<TR><TD align=right>45&quot;</TD><TD align=center>7'30</TD><TD align=center>15'</TD><TD align=center>15'</TD><TD align=center>30'</TD><TD align=center>37'30</TD><TD align=center>1h15</TD><TD align=center>1h15</TD><TD align=center>2h30</TD></TR>
+<TR><TD align=right>54&quot;</TD><TD align=center>9'</TD><TD align=center>18'</TD><TD align=center>18'</TD><TD align=center>36'</TD><TD align=center>45'</TD><TD align=center>1h30</TD><TD align=center>1h30</TD><TD align=center>3h</TD></TR>
+</TABLE><FONT size=1>
+(*) <B>T/t/j</B> = Temps par Tour par Joueur (paramètre de jeu) &ndash; <B>TMJ</B> = Temps Maximal par Joueur &ndash; <B>DMP</B> = Durée Maximale de la Partie.</FONT><P> 
+
+
+<HR>
+
+<A NAME="IES"></A><H2>Informations et statistiques</H2>
+
+Les <B>informations et statistiques</B> sont affichées de part et d'autre du terrain entre les deux camps&nbsp;:<UL>
+<LI><B>En haut</B> de l'écran sont affichés la situation des <B>tours</B> de jeu, la <B>phase</B> de jeu en cours&nbsp;; et par camp le <B>score</B> et le <B>temps restant</B>.<P>
+<CENTER><IMG alt="Infos (haut)" SRC="Aspic/img/iet.png" HEIGHT=45 WIDTH=407 BORDER=0><BR>
+<I>Figure 39&nbsp;: informations (haut)</I></CENTER><P>
+<LI><B>En bas</B> de l'écran sont affichés l'<B>occupation du terrain</B> et par camp, la <B>distance parcourue</B> des pions-joueurs et du pion-ballon.<P>
+<CENTER><IMG alt="Stats (bas)" SRC="Aspic/img/ipp.png" HEIGHT=43 WIDTH=390 BORDER=0><BR>
+<I>Figure 40&nbsp;: statistiques (bas)</I></CENTER><P></UL>
+
+<A NAME="IESS"></A><H3>Score</H3>
+
+En haut de l'écran, sont affichés deux gros chiffres dans la couleur des deux camps&nbsp;: il s'agit du <B>score</B>.<BR>
+Il est augmenté de 1 après chaque but. Le camp qui marque le plus de buts a <B>remporté la partie</B>.<P>
+<CENTER><IMG alt="Score" SRC="Aspic/img/score.png" HEIGHT=45 WIDTH=125 BORDER=0><BR>
+<I>Figure 41&nbsp;: score</I></CENTER><P>
+
+<A NAME="IESTDJ"></A><H3>Tours de jeu</H3>
+
+En haut de l'écran au centre, est affiché le tour de jeu en cours exprimé en <B>pourcents</B> par rapport à l'ensemble de la partie.<BR>
+Le premier tour est affiché <B>00%</B>. La fin de partie représente <B>100%</B>.<P>
+<CENTER><IMG alt="Tours" SRC="Aspic/img/tours.png" HEIGHT=45 WIDTH=42 BORDER=0><BR>
+<I>Figure 42&nbsp;: Tour de jeu</I></CENTER><P>
+Dans l'exemple ci-dessus&nbsp;:<UL>
+<LI>Si la partie est en 2&times;5 tours, <B>20%</B> signifie <B>2<sup>ème</SUP></B> tour.
+<LI>Si la partie est en 2&times;10 tours, c'est le <B>3<sup>ème</SUP></B> tour.
+<LI>Si la partie est en 2&times;25 tours, c'est le <B>11<sup>ème</SUP></B> tour.
+<LI>Si la partie est en 2&times;50 tours, c'est le <B>21<sup>ème</SUP></B> tour.</UL>
+La couleur indique le camp en action.
+
+<A NAME="IESPhDJ"></A><H3>Phases de jeu</H3>
+
+En haut de l'écran de part et d'autre du <A HREF="#IESTDJ">nombre de tours</A>, est affiché la phase de jeu en cours, du côté du camp en action.<P>
+<CENTER><IMG alt="Pose" SRC="Aspic/png/jvhd.png" HEIGHT=72 WIDTH=72 BORDER=0>&nbsp;&nbsp;&nbsp;<IMG alt="Déplacement" SRC="Aspic/png/dvhd.png" HEIGHT=72 WIDTH=72 BORDER=0>&nbsp;&nbsp;&nbsp;<IMG alt="Tir" SRC="Aspic/png/bln.png" HEIGHT=72 WIDTH=72 BORDER=0>&nbsp;&nbsp;&nbsp;<IMG alt="Mode test de tir" SRC="Aspic/png/blnt.png" HEIGHT=72 WIDTH=72 BORDER=0><BR>
+<I>Figure 43&nbsp;: Phases de jeu (pose des pions, déplacement, tir et mode test de tir)</I></CENTER><P>
+Est affiché&nbsp;:<UL>
+<LI>un <B>pion-joueur</B> si la phase en cours est une <B>pose de pions</B>,
+<LI>un <B>pion-joueur obscurci</B> s'il s'agit d'un <B>déplacement de pion</B> (choix du pion et choix de la case destination),
+<LI>un <B>pion-ballon</B> s'il s'agit d'un <B>tir</B>,
+<LI>un <B>pion-ballon obscurci</B> s'il s'agit d'un <B>test de tir</B> (depuis la version 1.1).</UL>
+Le côté d'affichage (par rapport au nombre de tours) et la couleur indiquent le camp en action&nbsp;: sur la figure 39, il s'agit de la phase de déplacement des orange.
+
+<A NAME="IESTR"></A><H3>Temps restant</H3>
+
+Depuis la version 1.1, le <B>temps écoulé</B> est remplacé par le <B>temps restant</B> (compte à rebours) ce qui entraîne la fin de la partie quand ce dernier arrive à zéro et la perte automatique du match pour le joueur concerné.<P>
+En haut de l'écran du côté de chaque camp, le <B>temps restant</B> est affiché en heures, minutes et secondes.<BR>
+Le temps s'écoule pour le joueur en action dans les phases de <B>pose de pions</B>, de <B>déplacement d'un pion</B>, de <B>tir</B> et de <B>test de tir</B>.<P>
+<CENTER><IMG alt="Temps restant" SRC="Aspic/img/tr.png" HEIGHT=45 WIDTH=144 BORDER=0><BR>
+<I>Figure 44&nbsp;: Temps restant par camp</I></CENTER>
+
+<A NAME="IESODT"></A><H3>Occupation du terrain</H3>
+
+En bas de l'écran au centre, est affiché l'<B>occupation du terrain</B> exprimée en <B>pourcents</B> par rapport à la distance entre les deux <B>zones de défense</B>.<BR>
+Il s'agit de la moyenne des positions du pion-ballon après chaque tour de jeu de chaque camp.<P>
+<CENTER><IMG alt="Tours" SRC="Aspic/img/odt.png" HEIGHT=43 WIDTH=64 BORDER=0><BR>
+<I>Figure 45&nbsp;: Occupation du terrain</I></CENTER><P>
+La couleur indique le camp qui a l'avantage de l'occupation du terrain (>50%).<P>
+<U>Remarques</U>&nbsp;:<UL>
+<LI>Un but correspond à 100% pour le camp qui a marqué.
+<LI>Le pion-ballon au centre du terrain (zone neutre) représente 50%.</UL>
+
+<H4>Exemple de calcul d'occupation du terrain</H4>
+Les violets engagent et positionnent le pion-ballon sur la colonne <TT>G</TT> (+1 colonne) puis les orange ripostent et placent le pion-ballon en <TT>D</TT> (-3 colonnes)&nbsp;:<UL>
+<LI>La première position du pion-ballon correspond à 60% pour les violets ou 40% pour les orange.
+<LI>La deuxième position du pion-ballon correspond à 30% pour les violets ou 70% pour les orange.
+<LI>L'occupation du terrain est donc de (60+30)/2 = 45% pour les violets ou 55% pour les orange. L'occupation du terrain afficherait donc 55% en orange.</UL>
+En supposant que les violets ne puissent tirer et que les orange marquent&nbsp;:<UL>
+<LI>On ajoute aux 60 et 30, à nouveau 30 (le pion-ballon n'ayant pas bougé) et 0 (but pour les orange).<BR>
+<LI>L'occupation du terrain est donc de (60+30+30+0)/4 = 30% pour les violets ou 70% pour les orange. L'occupation du terrain afficherait donc 70% en orange.</UL>
+
+<A NAME="IESDP"></A><H3>Distance parcourue</H3>
+
+En bas de l'écran du côté de chaque camp, est affiché la <B>distance parcourue</B> par les <B>pions-joueurs</B> et par le <B>pion-ballon</B> au cours de leurs tours de jeu.<P>
+<CENTER><IMG alt="Distance parcourue" SRC="Aspic/img/dp.png" HEIGHT=43 WIDTH=335 BORDER=0><BR>
+<I>Figure 46&nbsp;: Distance parcourue par camp</I></CENTER><P>
+La distance parcourue est exprimée en <B>nombre de cases</B> sachant qu'un déplacement de <I>l</I> lignes et <I>c</I> colonnes équivaut à <IMG Alt="Calcul de distance parcourue" SRC="Aspic/img/fdp.png" HEIGHT=20 WIDTH=50 BORDER=0> cases.<P>
+
+
+<HR>
+
+<CENTER>&copy; Patrice Fouquet - Dernière mise à jour le 23 septembre 2018<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:aspic@patquoi.fr?subject=Aspic">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/aspic" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.Aspic" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.Aspic" target="_blank">Amazon.fr</A></CENTER>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>C r u c i v e r m o T</title>
+<link rel="icon" type="image/png" href="CrucivermoT/png/icon.png">
+</head>
+<body>
+<H1 ALIGN=CENTER>CrucivermoT pour smartphones et tablettes tactiles</H1>
+Bienvenue sur la page de <B>CrucivermoT</B>.<BR>
+Vous trouverez ici des informations sur l'application pour smartphones et tablettes tactiles.<P>
+
+<H2>Table des matières</H2>
+
+<UL>
+<LI><A HREF="#P">Présentation</A>
+<LI><A HREF="#PET">Partie et tour</A>
+<LI><A HREF="#DDEDJ">Description des éléments de jeu</A>
+<LI><A HREF="#CN">Case noire</A>
+<LI><A HREF="#CTES">Compte, total et score</A>
+ <UL>
+ <LI><A HREF="#CTESC">Compte</A>
+ <LI><A HREF="#CTEST">Total</A>
+ <LI><A HREF="#CTESS">Score</A>
+ </UL>
+<LI><A HREF="#PDS">Partie de Solitaire</A>
+ <UL>
+  <LI><A HREF="#PDSDDEDJ">Description des éléments de jeu</A>
+  <LI><A HREF="#PDSS">Statistiques</A>
+ </UL>
+<LI><A HREF="#CDUG">Création d'une grille</A>
+</UL>
+
+<CENTER><IMG SRC="CrucivermoT/img/CrucivermoT.png" WIDTH=384 HEIGHT=512 BORDER=1 Alt="Exemple de partie de CrucivermoT"></CENTER><P>
+
+<A NAME="P"></A><H2>Présentation</H2>
+
+<B>CrucivermoT</B> est un jeu de <B>verbicrucistes</B>. Un verbicruciste crée une grille de mots-croisés. <B>CrucivermoT</B> permet de jouer au verbicruciste en créant petit à petit une grille de mots-croisés sans les définitions.<P>
+
+Une version en ligne est disponible <A HREF="CrucivermoT/index.html">ici</A> pour le navigateur <B>Safari, Firefox, Chrome sur PC et Mac</B> ainsi que sur les appareils utilisant les navigateurs par défaut des systèmes <B>iOS et Android</B> ou autres.<P>
+
+<A NAME="PET"></A><H2>Partie et tour</H2>
+
+Une partie à deux joueurs se divise en <B>56 tours</B> qui se divisent en <B>trois phases</B>&nbsp;:<UL>
+<LI>Le joueur qui sert le tour (appelé le <I>serveur</I>), choisit une case libre de la grille (case qui n'est ni une lettre, ni une <A HREF="#CN">case noire</A>)
+<LI>Le même joueur choisit une lettre (de A à Z)
+<LI>Si le <B>serveur</B> n'a pas trouvé de <B>lettre top</B> garantissant la victoire du tour, l'autre joueur propose à son tour une lettre.</UL>
+Les <A HREF="#CTESS">scores</A> sont attribués selon le résultat.<BR>
+Le <B>serveur</B> change à chaque tour quelle que soit l'issue du tour précédent.<BR>
+
+<A NAME="DDEDJ"></A><H2>Description des éléments de jeu</H2>
+
+Les numéros <FONT COLOR="#0000FF"><B>1</B></FONT> à <FONT COLOR="#0000FF"><B>14</B></FONT> renvoient à la description des éléments.<P>
+<CENTER><IMG SRC="CrucivermoT/img/Description.png" WIDTH=652 HEIGHT=819 BORDER=1 Alt="Exemple de partie de CrucivermoT"></CENTER><P>
+<FONT COLOR="#0000FF"><TT><B> 1</B></TT></FONT>. Case vide de la grille.<BR>
+<FONT COLOR="#0000FF"><TT><B> 2</B></TT></FONT>. Case contenant une lettre donnée en début de partie&nbsp;: une lettre par ligne et par colonne.<BR>
+<FONT COLOR="#0000FF"><TT><B> 3</B></TT></FONT>. Case sélectionnée par le serveur et pour laquelle le joueur <FONT COLOR="#A06040"><B>orange</B></FONT> doit choisir une lettre.<BR>
+<FONT COLOR="#0000FF"><TT><B> 4</B></TT></FONT>. Le joueur <FONT COLOR="#A06040"><B>orange</B></FONT> a remporté le tour quand il a choisi cette lettre <TT><B>T</B></TT>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 5</B></TT></FONT>. Le joueur <FONT COLOR="#00A000"><B>vert</B></FONT> a remporté le tour quand il a choisi cette lettre <TT><B>A</B></TT>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 6</B></TT></FONT>. <A HREF="#CN">Case noire</A>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 7</B></TT></FONT>. <A HREF="#CTESS">Lettre top</A> n'ayant été trouvée par aucun des joueurs.<BR>
+<FONT COLOR="#0000FF"><TT><B> 8</B></TT></FONT>. <A HREF="#CTESC">Compte horizontal</A> pour le joueur <FONT COLOR="#00A000"><B>vert</B></FONT> qui a déjà joué pour la case <FONT COLOR="#0000FF"><TT><B>3</B></TT></FONT>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 9</B></TT></FONT>. <A HREF="#CTESC">Compte vertical</A> pour le joueur <FONT COLOR="#00A000"><B>vert</B></FONT> qui a déjà joué pour la case <FONT COLOR="#0000FF"><TT><B>3</B></TT></FONT>.<BR>
+<FONT COLOR="#0000FF"><TT><B>10</B></TT></FONT>. <A HREF="#CTEST">Total</A> pour le joueur <FONT COLOR="#00A000"><B>vert</B></FONT> qui a déjà joué pour la case <FONT COLOR="#0000FF"><TT><B>3</B></TT></FONT>. Un fond bleu-gris indique que le joueur a trouvé une lettre top<BR>
+<FONT COLOR="#0000FF"><TT><B>11</B></TT></FONT>. <B>Indicateurs de tour</B>&nbsp;: au centre, est affiché le numéro du tour courant (<TT>06</TT> dans l'exemple) avec un fond bleu-gris qui matérialise la partie jouée et le fond rouge la partie qu'il reste à jouer sachant qu'il y a 56 tours de jeu&nbsp;; De part et d'autre du numéro de tour, sont affichés les indicateurs de <B>phase de jeu</B>&nbsp;: en haut le choix de la case qui s'allume dans la couleur du joueur concerné et en bas, le choix de la lettre qui s'allume dans la couleur du joueur concerné comme dans l'exemple, le choix de la case pour le joueur <FONT COLOR="#A06040"><B>orange</B></FONT>.<BR>
+<FONT COLOR="#0000FF"><TT><B>12</B></TT></FONT>. <A HREF="#CTESS">Scores</A> de la partie.<BR>
+<FONT COLOR="#0000FF"><TT><B>13</B></TT></FONT>. Zone des messages.<BR>
+<FONT COLOR="#0000FF"><TT><B>14</B></TT></FONT>. Boutons pour choisir la lettre.<BR>
+
+<A NAME="CN"></A><H2>Case noire</H2>
+
+Il arrive que le choix d'une case ne permette pas de poser de mot horizontalement ou verticalement, qui aurait assuré un score nul pour les deux joueurs.<BR>
+Le tour se termine par la pose d'une case noire sur la case sélectionnée par le serveur qui est sanctionné par un <A HREF="#CTESSBM">bonus/malus</A> selon les nouvelles zones engendrées de part et d'autre de la case noire.
+ 
+<A NAME="CTES"></A><H2>Compte, total et score</H2>
+
+<A NAME="CTESC"></A><H3>Compte</H3>
+Le <B>compte</B> est le nombre de mots qu'il est possible de poser horizontalement ou verticalement de part et d'autre de la case choisie par le joueur commençant un tour.<BR>
+La limite de la zone est le bord de la grille ou une case noire.<BR>
+À chaque pose d'une lettre, il y a deux comptes&nbsp;:<UL>
+<LI>Le compte <B>horizontal</B> affiché à droite de la ligne où se situe la case sélectionnée, dans la couleur du joueur 
+<LI>Le compte <B>vertical</B> affiché en dessous de la colonne où se situe la case sélectionnée, dans la couleur du joueur</UL> 
+Les mots comptabilisés sont ceux existant dans le dictionnaire de référence du jeu (ODS).<P>
+
+<A NAME="CTEST"></A><H3>Total</H3>
+Le <B>total</B> est le minimum des <A HREF="#CTESC">comptes</A> horizontaux et verticaux.
+ 
+<A NAME="CTESS"></A><H3>Score</H3>
+
+Voici le mode d'attribution des scores par tour&nbsp;:<UL>
+<LI><B>0 point</B> si le joueur a eu un <A HREF="#CTESC">compte</A> à zéro horizontal ou vertical
+<LI><B>0 point</B> si le joueur n'a pas trouvé le meilleur <A HREF="#CTEST">total</A> des deux joueurs (en cas d'égalité, c'est le meilleur <A HREF="#CTESC">compte</A> qui départage)
+<LI><B>1 point</B> si le joueur a trouvé le meilleur <A HREF="#CTEST">total</A> des deux joueurs (en cas d'égalité, c'est le meilleur <A HREF="#CTESC">compte</A> qui départage)
+<LI><B>2 points</B> si le joueur a trouvé la lettre (ou l'une des lettres) qui a (ou ont) le meilleur total puis le meilleur compte (ces lettres sont appelées <I>lettres tops</I>) 
+<LI><A NAME="CTESSBM"></A><B>Bonus/malus de -12 à +4 points</B> si le joueur qui commence le tour a choisi une case sur laquelle il a été nécessaire de poser une <A HREF="#CN">case noire</A> créant au maximum quatre nouvelles zones de part et d'autres&nbsp;:<UL>
+ <LI><B>-3 points</B> pour chaque zone créée d'au moins deux lettres ne permettant pas d'y poser un mot
+ <LI><B>+1 point</B> pour chaque zone créée d'au moins deux lettres permettant d'y poser au moins un mot.</UL></UL>
+
+<A NAME="PDS"></A><H2>Partie de Solitaire</H2>
+
+Une partie de Solitaire se joue - comme son nom l'indique - seul.<BR>
+Le but est de poser le plus de lettres possibles, et, dans l'idéal, remplir toute la grille formant alors une grille de mots-croisés <I>valide</I>.<BR>
+Le joueur répète les deux actions <B>choix d'une case</B> puis <B>choix d'une lettre</B>.<BR>
+La partie s'arrête quand la grille est remplie ou dès qu'une case noire engendre une zone ne permettant pas d'y poser un mot.<BR>
+Le système des scores est quasiment le même que pour une partie à deux joueurs&nbsp;:<UL>
+<LI><B>0 point</B> si le joueur a eu un <A HREF="#CTESC">compte</A> à zéro, horizontal <B>ou</B> vertical
+<LI><B>1 point</B> si le joueur a eu deux <A HREF="#CTESC">comptes</A> supérieurs à zéro, horizontal <B>et</B> vertical
+<LI><B>2 points</B> si le joueur a trouvé une <B>lettre top</B>
+<LI><B>De 0 à 4 points</B> si le joueur a choisi une case sur laquelle il a été nécessaire de poser une <A HREF="CN">case noire</A> créant des zones de part et d'autres permettant d'y poser au moins un mot&nbsp;:<UL>
+ <LI><B>1 point</B> pour chaque zone créée d'au moins deux lettres permettant d'y poser au moins un mot.</UL></UL>
+
+Un <B>super bonus</B> ne concerne que le solitaire&nbsp;: le score est <B>doublé</B> si la grille est <B>remplie</B>.
+
+<A NAME="PDSDDEDJ"></A><H3>Description des éléments de jeu</H3>
+
+Les numéros <FONT COLOR="#0000FF"><B>1</B></FONT> à <FONT COLOR="#0000FF"><B>6</B></FONT> renvoient à la description des éléments.<P>
+<CENTER><IMG SRC="CrucivermoT/img/Solitaire.png" WIDTH=320 HEIGHT=406 BORDER=1 Alt="Exemple de partie de Solitaire"></CENTER><P>
+<FONT COLOR="#0000FF"><TT><B> 1</B></TT></FONT>. Le joueur a remporté le tour quand il a choisi cette lettre <TT><B>S</B></TT>, le <FONT COLOR="#FF0000">rouge</FONT> étant la couleur du joueur solitaire.<BR>
+<FONT COLOR="#0000FF"><TT><B> 2</B></TT></FONT>. <A HREF="#CTESC">Compte horizontal</A>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 3</B></TT></FONT>. <A HREF="#CTESC">Compte vertical</A>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 4</B></TT></FONT>. <A HREF="#CTEST">Total</A>.<BR>
+<FONT COLOR="#0000FF"><TT><B> 5</B></TT></FONT>. Les quatre <B>indicateurs de phase</B> sont inactifs en mode solitaire.<BR>
+<FONT COLOR="#0000FF"><TT><B> 6</B></TT></FONT>. <A HREF="#CTESS">Score</A> de la partie.<BR>
+
+<A NAME="PDSS"></A><H3>Statistiques des parties de solitaires</H3>
+
+Des statistiques sont disponibles dès qu'une partie de solitaire a été jouée. Il suffit de toucher le bouton <B>STATS</B> au menu principal&nbsp;:<UL>
+<LI>Nombre de parties de solitaires <B>jouées</B>
+<LI>Nombre de parties de solitaires <B>réussies</B> (avec la grille remplie)
+<LI>Meilleur score de partie de solitaire.</UL>
+
+<A NAME="CDUG"></A><H2>Création d'une grille</H2>
+
+Chaque nouvelle grille est créée aléatoirement garantissant un nombre quasiment illimité de grilles.<P>
+À chaque fois qu'une grille est en cours de création, l'indicateur de tour est remplacé par un sablier <IMG SRC="CrucivermoT/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier">&nbsp;: attendez que le numéro du tour s'affiche avant de continuer.<P>
+Le sablier est également affiché lorsque l'on a choisi une case ou une lettre.<BR>
+
+<HR>
+<CENTER><FONT SIZE=2>
+&copy; 2014, Patrice Fouquet - Dernière mise à jour le 5 Janvier 2013<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:CrucivermoT@patquoi.fr?subject=CrucivermoT">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/crucivermot" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.CrucivermoT" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.CrucivermoT" target="_blank">Amazon.fr</A> - <A HREF="CrucivermoT/index.html" target="_blank">WebApp</A>
+</FONT></CENTER>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>M é m o r i s s i b o n</title>
+	
+	<link rel="stylesheet" media="only screen" href="desktop.css" type="text/css">
+	<link rel="icon" type="image/png" href="png/icon.png">
+	<script type="text/javascript" charset="utf-8" src="memorissibon.js"></script>
+    <script type="text/javascript" charset="utf-8">	
+    	function onBodyLoad() {
+    		cachePersonnages();
+			adapteDimensions();
+    		bienvenue();
+        } 
+    </script>
+  </head>
+  <body bgcolor="#A0A0A0" text="#FFFFFF" link="#00FFFF" alink="#FF00FF" vlink="#FFFF00" onload="onBodyLoad()">
+   <center>
+    <div id="container">
+     <table border="0" cellpadding="0" cellspacing="0" id="1h">
+      <tr><!-- bras & têtes de la ligne 1 -->
+       <td rowspan=2><img src="png/gbglb.png" width=16 height=76 id="A1bg"></td><td><img src="png/gtttn.png" width=44 heigth=34 id="A1tt"><td rowspan=2><img src="png/gbdbb.png" width=16 height=76 id="A1bd"></td>
+       <td rowspan=2><img src="png/fbglr.png" width=16 height=76 id="B1bg"></td><td><img src="png/ftttc.png" width=44 heigth=34 id="B1tt"><td rowspan=2><img src="png/fbdbr.png" width=16 height=76 id="B1bd"></td>
+       <td rowspan=2><img src="png/gbgbb.png" width=16 height=76 id="C1bg"></td><td><img src="png/gttgb.png" width=44 heigth=34 id="C1tt"><td rowspan=2><img src="png/gbdlb.png" width=16 height=76 id="C1bd"></td>
+       <td rowspan=2><img src="png/fbgbr.png" width=16 height=76 id="D1bg"></td><td><img src="png/fttgr.png" width=44 heigth=34 id="D1tt"><td rowspan=2><img src="png/fbdlr.png" width=16 height=76 id="D1bd"></td>
+      </tr>
+      <tr><!-- torse & ceinture de la ligne 1 -->
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="A1tn"><img src="png/gtcbn.png" width=44 heigth=42 id="A1tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="B1tn"><img src="png/ftcrn.png" width=44 heigth=42 id="B1tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="C1tn"><img src="png/gtcbn.png" width=44 heigth=42 id="C1tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="D1tn"><img src="png/ftcrn.png" width=44 heigth=42 id="D1tc"></td>
+      </tr>
+     </table> 
+     <table border="0" cellpadding="0" cellspacing="0" id="1b">
+      <tr><!-- jambes & entre-jambe de la ligne 1 -->
+       <td><img src="png/gjgcerj.png" width=36 height=52 id="A1jg"></td><td><img src="png/gejcr.png" width=4 heigth=52 id="A1ej"><td><img src="png/gjdcjrj.png" width=36 height=52 id="A1jd"></td>
+       <td><img src="png/fjglevb.png" width=36 height=52 id="B1jg"></td><td><img src="png/fejlv.png" width=4 heigth=52 id="B1ej"><td><img src="png/fjdljvb.png" width=36 height=52 id="B1jd"></td>
+       <td><img src="png/gjgljrj.png" width=36 height=52 id="C1jg"></td><td><img src="png/gejlr.png" width=4 heigth=52 id="C1ej"><td><img src="png/gjdlerj.png" width=36 height=52 id="C1jd"></td>
+       <td><img src="png/fjgcjvb.png" width=36 height=52 id="D1jg"></td><td><img src="png/fejcv.png" width=4 heigth=52 id="D1ej"><td><img src="png/fjdcevb.png" width=36 height=52 id="D1jd"></td>
+      </tr>
+	 </table>
+     <table border="0" cellpadding="0" cellspacing="0" id="2h">
+      <tr><!-- bras & têtes de la ligne 2 -->
+       <td rowspan=2><img src="png/gbglb.png" width=16 height=76 id="A2bg"></td><td><img src="png/gtttn.png" width=44 heigth=34 id="A2tt"><td rowspan=2><img src="png/gbdbb.png" width=16 height=76 id="A2bd"></td>
+       <td rowspan=2><img src="png/fbglr.png" width=16 height=76 id="B2bg"></td><td><img src="png/ftttc.png" width=44 heigth=34 id="B2tt"><td rowspan=2><img src="png/fbdbr.png" width=16 height=76 id="B2bd"></td>
+       <td rowspan=2><img src="png/gbgbb.png" width=16 height=76 id="C2bg"></td><td><img src="png/gttgb.png" width=44 heigth=34 id="C2tt"><td rowspan=2><img src="png/gbdlb.png" width=16 height=76 id="C2bd"></td>
+       <td rowspan=2><img src="png/fbgbr.png" width=16 height=76 id="D2bg"></td><td><img src="png/fttgr.png" width=44 heigth=34 id="D2tt"><td rowspan=2><img src="png/fbdlr.png" width=16 height=76 id="D2bd"></td>
+      </tr>
+      <tr><!-- torse & ceinture de la ligne 2 -->
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="A2tn"><img src="png/gtcbn.png" width=44 heigth=42 id="A2tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="B2tn"><img src="png/ftcrn.png" width=44 heigth=42 id="B2tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="C2tn"><img src="png/gtcbn.png" width=44 heigth=42 id="C2tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="D2tn"><img src="png/ftcrn.png" width=44 heigth=42 id="D2tc"></td>
+      </tr>
+     </table> 
+     <table border="0" cellpadding="0" cellspacing="0" id="2b">
+      <tr><!-- jambes & entre-jambe de la ligne 2 -->
+       <td><img src="png/gjgcjrj.png" width=36 height=52 id="A2jg"></td><td><img src="png/gejcr.png" width=4 heigth=52 id="A2ej"><td><img src="png/gjdcjrj.png" width=36 height=52 id="A2jd"></td>
+       <td><img src="png/fjgljvb.png" width=36 height=52 id="B2jg"></td><td><img src="png/fejlv.png" width=4 heigth=52 id="B2ej"><td><img src="png/fjdljvb.png" width=36 height=52 id="B2jd"></td>
+       <td><img src="png/gjgljrj.png" width=36 height=52 id="C2jg"></td><td><img src="png/gejlr.png" width=4 heigth=52 id="C2ej"><td><img src="png/gjdljrj.png" width=36 height=52 id="C2jd"></td>
+       <td><img src="png/fjgcjvb.png" width=36 height=52 id="D2jg"></td><td><img src="png/fejcv.png" width=4 heigth=52 id="D2ej"><td><img src="png/fjdcjvb.png" width=36 height=52 id="D2jd"></td>
+      </tr>
+	 </table>
+     <table border="0" cellpadding="0" cellspacing="0" id="3h">
+      <tr><!-- bras & têtes de la ligne 3 -->
+       <td rowspan=2><img src="png/gbglb.png" width=16 height=76 id="A3bg"></td><td><img src="png/gtttn.png" width=44 heigth=34 id="A3tt"><td rowspan=2><img src="png/gbdbb.png" width=16 height=76 id="A3bd"></td>
+       <td rowspan=2><img src="png/fbglr.png" width=16 height=76 id="B3bg"></td><td><img src="png/ftttc.png" width=44 heigth=34 id="B3tt"><td rowspan=2><img src="png/fbdbr.png" width=16 height=76 id="B3bd"></td>
+       <td rowspan=2><img src="png/gbgbb.png" width=16 height=76 id="C3bg"></td><td><img src="png/gttgb.png" width=44 heigth=34 id="C3tt"><td rowspan=2><img src="png/gbdlb.png" width=16 height=76 id="C3bd"></td>
+       <td rowspan=2><img src="png/fbgbr.png" width=16 height=76 id="D3bg"></td><td><img src="png/fttgr.png" width=44 heigth=34 id="D3tt"><td rowspan=2><img src="png/fbdlr.png" width=16 height=76 id="D3bd"></td>
+      </tr>
+      <tr><!-- torse & ceinture de la ligne 3 -->
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="A3tn"><img src="png/gtcbn.png" width=44 heigth=42 id="A3tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="B3tn"><img src="png/ftcrn.png" width=44 heigth=42 id="B3tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="C3tn"><img src="png/gtcbn.png" width=44 heigth=42 id="C3tc"></td>
+       <td><img class="abs" src="png/tn0.png" width=44 heigth=42 id="D3tn"><img src="png/ftcrn.png" width=44 heigth=42 id="D3tc"></td>
+      </tr>
+     </table> 
+     <table border="0" cellpadding="0" cellspacing="0" id="3b">
+      <tr><!-- jambes & entre-jambe de la ligne 3 -->
+       <td><img src="png/gjgcerj.png" width=36 height=52 id="A3jg"></td><td><img src="png/gejcr.png" width=4 heigth=52 id="A3ej"><td><img src="png/gjdcerj.png" width=36 height=52 id="A3jd"></td>
+       <td><img src="png/fjglevb.png" width=36 height=52 id="B3jg"></td><td><img src="png/fejlv.png" width=4 heigth=52 id="B3ej"><td><img src="png/fjdlevb.png" width=36 height=52 id="B3jd"></td>
+       <td><img src="png/gjglerj.png" width=36 height=52 id="C3jg"></td><td><img src="png/gejlr.png" width=4 heigth=52 id="C3ej"><td><img src="png/gjdlerj.png" width=36 height=52 id="C3jd"></td>
+       <td><img src="png/fjgcevb.png" width=36 height=52 id="D3jg"></td><td><img src="png/fejcv.png" width=4 heigth=52 id="D3ej"><td><img src="png/fjdcevb.png" width=36 height=52 id="D3jd"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="2" cellspacing="0" id="interligne"><tr><td></td></tr></table>
+     <table border="0" cellpadding="0" cellspacing="0" id="texte0">
+      <tr><!-- texte ligne 1 -->
+       <td><img src="png/espace.png" width=8 height=16 id="a00"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a01"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a02"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a03"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a04"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a05"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a06"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a07"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a08"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a09"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a10"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a11"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a12"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a13"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a14"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a15"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a16"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a17"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a18"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a19"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a20"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a21"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a22"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a23"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a24"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a25"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a26"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a27"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a28"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a29"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a30"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a31"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a32"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a33"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a34"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a35"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a36"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a37"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a38"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="a39"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="2" cellspacing="0" id="interligne"><tr><td></td></tr></table>
+     <table border="0" cellpadding="0" cellspacing="0" id="texte1">
+      <tr><!-- texte ligne 2 -->
+       <td><img src="png/espace.png" width=8 height=16 id="b00"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b01"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b02"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b03"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b04"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b05"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b06"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b07"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b08"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b09"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b10"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b11"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b12"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b13"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b14"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b15"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b16"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b17"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b18"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b19"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b20"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b21"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b22"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b23"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b24"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b25"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b26"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b27"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b28"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b29"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b30"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b31"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b32"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b33"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b34"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b35"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b36"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b37"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b38"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="b39"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="2" cellspacing="0" id="interligne"><tr><td></td></tr></table>
+     <table border="0" cellpadding="0" cellspacing="0" id="texte2">
+      <tr><!-- texte ligne 3 -->
+       <td><img src="png/espace.png" width=8 height=16 id="c00"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c01"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c02"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c03"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c04"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c05"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c06"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c07"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c08"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c09"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c10"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c11"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c12"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c13"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c14"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c15"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c16"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c17"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c18"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c19"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c20"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c21"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c22"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c23"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c24"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c25"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c26"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c27"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c28"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c29"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c30"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c31"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c32"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c33"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c34"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c35"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c36"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c37"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c38"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="c39"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="2" cellspacing="0" id="interligne"><tr><td></td></tr></table>
+     <table border="0" cellpadding="0" cellspacing="0" id="texte3">
+      <tr><!-- texte ligne 4 -->
+       <td><img src="png/espace.png" width=8 height=16 id="d00"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d01"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d02"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d03"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d04"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d05"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d06"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d07"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d08"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d09"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d10"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d11"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d12"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d13"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d14"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d15"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d16"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d17"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d18"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d19"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d20"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d21"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d22"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d23"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d24"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d25"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d26"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d27"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d28"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d29"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d30"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d31"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d32"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d33"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d34"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d35"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d36"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d37"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d38"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="d39"></td>
+      </tr>
+     </table>
+     <table border="0" cellpadding="2" cellspacing="0" id="interligne"><tr><td></td></tr></table>
+     <table border="0" cellpadding="0" cellspacing="0" id="texte4">
+      <tr><!-- texte ligne 5 -->
+       <td><img src="png/espace.png" width=8 height=16 id="e00"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e01"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e02"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e03"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e04"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e05"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e06"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e07"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e08"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e09"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e10"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e11"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e12"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e13"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e14"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e15"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e16"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e17"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e18"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e19"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e20"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e21"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e22"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e23"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e24"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e25"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e26"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e27"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e28"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e29"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e30"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e31"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e32"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e33"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e34"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e35"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e36"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e37"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e38"></td>       
+       <td><img src="png/espace.png" width=8 height=16 id="e39"></td>
+      </tr>                                                 
+     </table>
+    </div>
+    </center>
+  </body>
+</html>
+

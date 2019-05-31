@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>M é l i s s i m a x</title>
+<link rel="icon" type="image/png" href="MelissimoT/png/icon.png">
+</head>
+<body BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1 ALIGN=CENTER>Mélissimax pour tablette tactile</H1>
+Bienvenue sur la page de <B>Mélissimax</B>.<BR>
+Vous trouverez ici toutes les informations nécessaires sur l'application pour tablette.<P>
+<H2>Table des matières</H2>
+
+<UL>
+<LI><A HREF="#P">Présentation</A>
+<LI><A HREF="#PEM">Partie et manche</A>
+<LI><A HREF="#C">Chances</A>
+<LI><A HREF="#SBET">Score, bonus et total</A>
+ <UL>
+ <LI><A HREF="#SBETSDM">Score des mots</A>
+ <LI><A HREF="#SBETSDLM">Score de la manche</A>
+ <LI><A HREF="#SBETB">Bonus</A>
+ <LI><A HREF="#SBETT">Total</A>
+ </UL>
+<LI><A HREF="#IEO">Informations et options</A>
+<LI><A HREF="#SER">Statistiques et Tops</A>
+ <UL>
+ <LI><A HREF="#SERS">Statistiques</A>
+ <LI><A HREF="#SERR">Tops</A>
+ </UL>
+<LI><A HREF="#DDM">Définition des mots</A>
+<LI><A HREF="#CDUG">Création d'une grille</A>
+</UL>
+
+<CENTER><IMG SRC="MelissimoT/img/M132x.png" WIDTH=384 HEIGHT=512 BORDER=1 Alt="Exemple de partie de Mélissimax"></CENTER><P>
+
+<A NAME="P"></A><H2>Présentation</H2>
+
+<B>Mélissimax</B> est une version de <A HREF="MelissimoT.html">MélissimoT</A> (application pour mobile tactile) dédiée et étendue à la tablette tactile.<BR>
+La différence réside en une meilleure résolution (1024×768 minimum) et une grille qui passe de 8×8 à 10×10 et donc avec des mots qui passe de 8 à 10 lettres maximum.<P>
+Une version <B>WebApp</B> en ligne est disponible <A HREF="Melissimax">ici</A>.
+
+
+<A NAME="PEM"></A><H2>Partie et manche</H2>
+
+Une partie de <B>Mélissimax</B> se déroule en plusieurs <B>manches</B>. Il n'y a pas de temps imparti.
+Dans chaque manche, vous devez trouver les mots cachés dans une grille en sélectionnant des mots valides selon un dictionnaire de référence qui est l'<I>ODS7</I>* (noms communs, verbes conjugués).
+Les mots à découvrir apparaissent horizontalement, verticalement, en diagonale, dans les deux sens.<P>
+Pour sélectionner un mot, touchez la première lettre qui s'affiche alors en rouge, puis la dernière lettre du mot dans le sens de lecture&nbsp;:<UL>
+<LI>Si le mot est valide, ses lettres se verdissent dans la grille. Le mot s'affiche sous la grille avec le nombre de points gagnés.
+<LI>Si le mot n'est pas valide, vous perdez une chance. Si vous n'avez plus de chance, la partie est terminée.
+</UL>
+<FONT SIZE=2>(*) Depuis la version 2.2, sinon <I>ODS6</I></FONT><P>
+Vous pouvez (et devez si vous souhaitez gagner les bonus) sélectionner les mots même s'ils sont inclus dans d'autres mots ou si les lettres sont déjà toutes <FONT COLOR="#00FF00">vertes</FONT>, par exemple&nbsp;:<UL>
+<LI>Dans le mot <TT>ORIENTER</TT>, il y a également les mots <TT>ORIENTE</TT>, <TT>ORIENT</TT> et <TT>RIENT</TT> dans le même sens.
+<LI>Dans le mot <TT>GAINER</TT> il y a également le mot <TT>RENIA</TT> dans le sens opposé. 
+<LI>Les palindromes doivent être sélectionnés dans les deux sens.
+</UL>
+
+<A NAME="C"></A><H2>Chances</H2>
+Vous avez <B>dix</B> chances de vous tromper au début d'une partie (première manche). L'accès à la deuxième manche vous donne droit à neuf chances supplémentaires, puis huit dans la troisième et ainsi de suite jusqu'à un plancher d'une chance à partir de la dixième manche. Toutes les chances inutilisées d'une manche sont reportées sur la suivante.
+
+<A NAME="SBET"></A><H2>Score, bonus et total</H2>
+
+<A NAME="SBETSDM"></A><H3>Score des mots</H3>
+Le score pour chaque mot trouvé va 3 à 60 points selon de sa <B>taille</B> et son <B>orientation</B> dans la grille&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Taille&nbsp;×&nbsp;Orientation</TH><TH><IMG SRC="MelissimoT/img/e.png" width=16 height=16 alt="Est"></TH><TH><IMG SRC="MelissimoT/img/se.png" width=16 height=16 alt="Sud-Est"></TH><TH><IMG SRC="MelissimoT/img/s.png" width=16 height=16 alt="Sud"></TH><TH><IMG SRC="MelissimoT/img/so.png" width=16 height=16 alt="Sud-Ouest"></TH><TH><IMG SRC="MelissimoT/img/o.png" width=16 height=16 alt="Ouest"></TH><TH><IMG SRC="MelissimoT/img/no.png" width=16 height=16 alt="Nord-Ouest"></TH><TH><IMG SRC="MelissimoT/img/n.png" width=16 height=16 alt="Nord"></TH><TH><IMG SRC="MelissimoT/img/ne.png" width=16 height=16 alt="Nord-Est"></TH></TR>
+<TR><TH>5 lettres</TH><TD>6&nbsp;×&nbsp;3&nbsp;=&nbsp;<B>18</B></TD><TD>6&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>30</B></TD><TD>6&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>24</B></TD><TD>6&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>54</B></TD><TD>6&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>42</B></TD><TD>6&nbsp;×&nbsp;10&nbsp;=&nbsp;<B>60</B></TD><TD>6&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>48</B></TD><TD>6&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>36</B></TD></TR>
+<TR><TH>6 lettres</TH><TD>5&nbsp;×&nbsp;3&nbsp;=&nbsp;<B>15</B></TD><TD>5&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>25</B></TD><TD>5&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>20</B></TD><TD>5&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>45</B></TD><TD>5&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>35</B></TD><TD>5&nbsp;×&nbsp;10&nbsp;=&nbsp;<B>50</B></TD><TD>5&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>40</B></TD><TD>5&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>30</B></TD></TR>
+<TR><TH>7 lettres</TH><TD>4&nbsp;×&nbsp;3&nbsp;=&nbsp;<B>12</B></TD><TD>4&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>20</B></TD><TD>4&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>16</B></TD><TD>4&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>36</B></TD><TD>4&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>28</B></TD><TD>4&nbsp;×&nbsp;10&nbsp;=&nbsp;<B>40</B></TD><TD>4&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>32</B></TD><TD>4&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>24</B></TD></TR>
+<TR><TH>8 lettres</TH><TD>3&nbsp;×&nbsp;3&nbsp;=&nbsp;<B>9</B></TD><TD>3&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>15</B></TD><TD>3&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>12</B></TD><TD>3&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>27</B></TD><TD>3&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>21</B></TD><TD>3&nbsp;×&nbsp;10&nbsp;=&nbsp;<B>30</B></TD><TD>3&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>24</B></TD><TD>3&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>18</B></TD></TR>
+<TR><TH>9 lettres</TH><TD>2&nbsp;×&nbsp;3&nbsp;=&nbsp;<B>6</B></TD><TD>2&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>10</B></TD><TD>2&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>8</B></TD><TD>2&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>18</B></TD><TD>2&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>14</B></TD><TD>2&nbsp;×&nbsp;10&nbsp;=&nbsp;<B>20</B></TD><TD>2&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>16</B></TD><TD>2&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>12</B></TD></TR>
+<TR><TH>10 lettres</TH><TD>1&nbsp;×&nbsp;3&nbsp;=&nbsp;<B>3</B></TD><TD>1&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>5</B></TD><TD>1&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>4</B></TD><TD>1&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>9</B></TD><TD>1&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>7</B></TD><TD>1&nbsp;×&nbsp;10&nbsp;=&nbsp;<B>10</B></TD><TD>1&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>8</B></TD><TD>1&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>6</B></TD></TR>
+</TABLE>
+</CENTER><P>
+
+<A NAME="SBETSDLM"></A><H3>Score de la manche</H3>
+Le score d'une manche est le cumul des scores de tous les mots trouvés.<BR>
+
+<A NAME="SBETB"></A><H3>Bonus</H3>
+Il y a cinq bonus différents à gagner&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Situation de jeu</TH><TH>Bonus</TH></TR>
+<TR><TD align=center>Tous les mots de 10 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 10 lettres de la grille × 1 point</TD></TR>
+<TR><TD align=center>Tous les mots de 9 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 9 lettres de la grille × 2 points</TD></TR>
+<TR><TD align=center>Tous les mots de 8 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 8 lettres de la grille × 3 points</TD></TR>
+<TR><TD align=center>Tous les mots de 7 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 7 lettres de la grille × 4 points</TD></TR>
+<TR><TD align=center>Tous les mots de 6 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 6 lettres de la grille × 5 points</TD></TR>
+<TR><TD align=center>Tous les mots de 5 lettres de la grille ont été trouvés</TD><TD align=center>Nombre de mots de 5 lettres de la grille × 6 points</TD></TR>
+<TR><TD align=center>Tous les mots de la grille ont été trouvés</TD><TD align=center>Cumul des six bonus précédents (bonus doublé)</TD></TR>
+</TABLE>
+</CENTER>
+
+<A NAME="SBETT"></A><H3>Total</H3>
+
+Le total est le cumul du score et des bonus.
+ 
+<A NAME="IEO"></A><H2>Informations et options</H2>
+
+Les informations et options sont identiques à celles de l'application mobile <A HREF="MelissimoT.html">MélissimoT</A>. Il y a des mots de 9 et 10 lettres en plus.<P> 
+En dehors des boutons de commandes en <FONT COLOR="#0000FF">bleu</FONT>, de <IMG SRC="MelissimoT/png/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)"> ou de <IMG SRC="MelissimoT/png/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)">, vous pouvez obtenir une boîte de dialogue d'informations en touchant les zones sur lesquelles vous souhaitez des informations comme les zones numérotées décrites ci-dessous...<P>
+<CENTER>
+<IMG SRC="MelissimoT/img/M132i.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Descriptif des informations et options (1)">&nbsp;<IMG SRC="MelissimoT/img/M133i.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Descriptif des informations et options (2)">
+</CENTER><P>
+
+<FONT COLOR="#9437FF">1.</FONT> Nombre de mots de 5 lettres trouvés dans la grille courante* sur (/) le nombre de mots à trouver*.<BR>
+<FONT COLOR="#9437FF">2.</FONT> Nombre de mots de 6 lettres trouvés dans la grille courante* sur (/) le nombre de mots à trouver*.<BR>
+<FONT COLOR="#9437FF">3.</FONT> Nombre de mots de 7 lettres trouvés dans la grille courante* sur (/) le nombre de mots à trouver*.<BR>
+<FONT COLOR="#9437FF">4.</FONT> Nombre de mots de 8 lettres trouvés dans la grille courante* sur (/) le nombre de mots à trouver*.<BR>
+<FONT COLOR="#9437FF">5.</FONT> Dernier mot trouvé dans la grille ou mot affiché en rouge dans le cas où les solutions non trouvées sont montrées (voir deuxième figure ci-dessus).<BR>
+<FONT COLOR="#9437FF">6a.</FONT> Score du dernier mot trouvé dans la grille ou du mot affiché en rouge dans le cas où les solutions non trouvées sont montrées (voir deuxième figure ci-dessus).<BR>
+<FONT COLOR="#9437FF">6b.</FONT> Dictionnaire en ligne de définitions utilisé. Toucher le livre change le dictionnaire parmi cinq sites.<BR>
+<FONT COLOR="#9437FF">6c.</FONT> Toucher le point d'interrogation permet d'accéder en ligne au site de définition concernant le mot affiché à gauche (voir <FONT COLOR="#9437FF">5.</FONT>).<BR>
+<FONT COLOR="#9437FF">7.</FONT> Score de la manche* sur (/) score maximal possible*.<BR>
+<FONT COLOR="#9437FF">8.</FONT> Bonus de la manche* sur (/) bonus maximal possible*.<BR>
+<FONT COLOR="#9437FF">9.</FONT> Total de la manche* (score + bonus) sur (/) total maximal possible*.<BR>
+<FONT COLOR="#9437FF">10.</FONT> Numéro de la manche ou de la grille. La première manche ou grille porte le numéro <IMG SRC="MelissimoT/png/0o.png" HEIGHT=10 WIDTH=8 Alt="0"><IMG SRC="MelissimoT/png/1o.png" HEIGHT=10 WIDTH=8 Alt="1">. Lorsque toute la grille est verte, touchez <IMG SRC="MelissimoT/png/grillev.png" HEIGHT=16 WIDTH=18 Alt="Grille (vert)"> pour passer à la manche ou grille suivante. Pour abandonner la partie, touchez <IMG SRC="MelissimoT/png/grillex.png" HEIGHT=16 WIDTH=18 Alt="Grille (rouge)">.<BR>
+<FONT COLOR="#9437FF">11.</FONT> Nombre de chances restantes. <IMG SRC="MelissimoT/png/chancesx.png" HEIGHT=16 WIDTH=18 Alt="Chances (rouge)"> signale que vous n'avez plus droit à l'erreur !<BR>
+<FONT COLOR="#9437FF">12.</FONT> Score de la partie (score + bonus des manches précédentes + score + bonus de la manche actuelle).<BR>
+<FONT COLOR="#9437FF">13.</FONT> Boutons d'informations&nbsp;: <IMG SRC="MelissimoT/png/i.png" HEIGHT=8 WIDTH=11 Alt="?">affiche l'À propos, <IMG SRC="MelissimoT/png/a.png" HEIGHT=8 WIDTH=11 Alt="(i)">affiche l'aide rapide et <IMG SRC="MelissimoT/png/s.png" HEIGHT=8 WIDTH=11 Alt="%"> affiche stats (toucher une fois) et tops (toucher deux fois) et permet de réinitialiser ces derniers (toucher trois fois).<BR>
+<FONT COLOR="#9437FF">14.</FONT> Le mot en rouge dans la grille est l'un des mots non trouvés en mode visualisation des solutions. Son score apparaît sous la grille (voir <FONT COLOR="#9437FF">5.</FONT> et <FONT COLOR="#9437FF">6.</FONT>).<P>
+<FONT COLOR="#9437FF">15.</FONT> Boutons de commandes en mode visualisation des solutions non trouvées. Les solutions sont montrées en <FONT COLOR="#FF0000">rouge</FONT> dans la grille (voir <FONT COLOR="#9437FF">14.</FONT>) dans l'ordre décroissant de la taille des mots (de 10 lettres à 5 lettres). <IMG SRC="MelissimoT/png/m.png" HEIGHT=8 WIDTH=11 Alt="<"> et <IMG SRC="MelissimoT/png/p.png" HEIGHT=8 WIDTH=11 Alt=">"> permettent de défiler les solutions et <IMG SRC="MelissimoT/png/s.png" HEIGHT=8 WIDTH=11 Alt="%"> affiche les statistiques d'efficacité de la manche et de la partie à ce stade (nombre de points obtenus sur le nombre de points maximal pour le score, le bonus et le total).<P>
+
+(*) Les compteurs sont en <FONT COLOR="#00FF00">vert</FONT> lorsque le nombre maximal est atteint sinon il sont en <FONT COLOR="#FF0000">rouge</FONT> sauf si le maximum est à zéro (noir). Cliquer dessus permet également de voir la liste des mots trouvés (en majuscules) et non trouvés (en minuscules) si les solutions sont affichées ou si vous avez trouvé tous les mots de la grille.
+
+<A NAME="SER"></A><H2>Statistiques et tops</H2>
+
+En cours de partie, lorsque vous touchez <IMG SRC="MelissimoT/png/s.png" HEIGHT=8 WIDTH=11 Alt="%"> une première fois vous obtenez les tops (voir première figure ci-dessous).<BR>
+La deuxième fois de suite, vous obtenez les statistiques (voir deuxième figure ci-dessous)…<P>
+
+<CENTER>
+<IMG SRC="MelissimoT/img/M135.png" HEIGHT=400 WIDTH=320 BORDER=1 Alt="Exemple de tops">&nbsp;<IMG SRC="MelissimoT/img/M134.png" HEIGHT=400 WIDTH=320 BORDER=1 Alt="Exemple de statistiques">
+</CENTER><P>
+
+Voici les détails…
+
+<A NAME="SERR"></A><H3>Tops</H3>
+
+<FONT COLOR="#0000FF"><B>1.</B></FONT> Score de partie le plus élevé (somme des scores des manches de la partie).<BR>
+<FONT COLOR="#0000FF"><B>2.</B></FONT> Bonus de partie le plus élevé.<BR>
+<FONT COLOR="#0000FF"><B>3.</B></FONT> Total de partie le plus élevé (score + bonus).<BR>
+<FONT COLOR="#0000FF"><B>4.</B></FONT> Nombre de grilles (ou manches) le plus élevé dans une partie.<BR>
+<FONT COLOR="#0000FF"><B>5.</B></FONT> Nombre de chances le plus élevé dans une partie.<BR>
+<FONT COLOR="#0000FF"><B>7.</B></FONT> Score de grille (ou manche) le plus élevé.<BR>
+<FONT COLOR="#0000FF"><B>8.</B></FONT> Bonus de grille (ou manche) le plus élevé.<BR>
+<FONT COLOR="#0000FF"><B>9.</B></FONT> Total de grille (ou manche) le plus élevé (score + bonus).<BR>
+<FONT COLOR="#0000FF"><B>10.</B></FONT> Nombre le plus élevé de mots de 5 lettres trouvés dans une grille.<BR>
+<FONT COLOR="#0000FF"><B>11.</B></FONT> Nombre le plus élevé de mots de 6 lettres trouvés dans une grille.<BR>
+<FONT COLOR="#0000FF"><B>12.</B></FONT> Nombre le plus élevé de mots de 7 lettres trouvés dans une grille.<BR>
+<FONT COLOR="#0000FF"><B>13.</B></FONT> Nombre le plus élevé de mots de 8 lettres trouvés dans une grille.<BR>
+
+<A NAME="SERS"></A><H3>Statistiques</H3>
+
+<FONT COLOR="#0000FF"><B>1.</B></FONT> Nombre de parties pour lesquelles ont été calculées les 3 statistiques qui suivent. Il s'agit de moyennes (somme des données divisées par le nombre de parties indiquées).<BR>
+<FONT COLOR="#0000FF"><B>2.</B></FONT> Moyenne des scores par partie.<BR>
+<FONT COLOR="#0000FF"><B>3.</B></FONT> Moyenne des bonus par partie.<BR>
+<FONT COLOR="#0000FF"><B>4.</B></FONT> Moyenne des totaux (score + bonus) par partie.<BR>
+<FONT COLOR="#0000FF"><B>5.</B></FONT> Nombre de grilles pour lesquelles ont été calculées les statistiques qui suivent. Il s'agit de moyennes (somme des données divisées par le nombre de grilles indiquées).<BR>
+<FONT COLOR="#0000FF"><B>6.</B></FONT> Moyenne des scores par grille. Entre parenthèses, la proportion par rapport à la moyenne des scores maximaux qu'il était possible de faire pour chaque score.<BR>
+<FONT COLOR="#0000FF"><B>7.</B></FONT> Moyenne des bonus par grille.<BR>
+<FONT COLOR="#0000FF"><B>8.</B></FONT> Moyenne des totaux (score + bonus) par grille.<BR>
+<FONT COLOR="#0000FF"><B>9.</B></FONT> Moyenne de nombre de mots de 8 lettres trouvés par grille. Entre parenthèse, la proportion par rapport à la moyenne des nombres de mots de 8 lettres à trouver.<BR>
+<FONT COLOR="#0000FF"><B>10.</B></FONT> Moyenne de nombre de mots de 7 lettres trouvés par grille.<BR>
+<FONT COLOR="#0000FF"><B>11.</B></FONT> Moyenne de nombre de mots de 6 lettres trouvés par grille.<BR>
+<FONT COLOR="#0000FF"><B>12.</B></FONT> Moyenne de nombre de mots de 5 lettres trouvés par grille.<BR>
+
+<A NAME="DDM"></A><H2>Définition des mots</H2>
+
+Les définitions de mots ne sont pas incluses dans le jeu. Les définitions sont néanmoins accessibles mais elles nécessitent une connexion internet. Vous avez actuellement le choix entre <B>cinq</B> sites de définitions de mots&nbsp;: le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A>*, le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, <A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, <A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et <A HREF="http://1mot.net" target="_blank">1mot.net</A>** (par défaut). Touchez le livre ouvert pour choisir le site et touchez le point d'interrogation noir pour voir la définition du dernier mot trouvé affiché à gauche du livre ouvert. Si vous ne trouvez pas la définition sur un site, essayez sur les autres.<P>
+
+<FONT SIZE=2>
+(*) Centre National de Ressources Textuelles et Lexicales.<BR>
+(**) Ce site donne la définition de tous les mots présents dans le jeu.
+</FONT>
+
+<A NAME="CDUG"></A><H2>Création d'une grille</H2>
+
+Chaque nouvelle grille est créée aléatoirement garantissant un nombre illimité de grilles.<P>
+À chaque fois qu'une grille est en cours de création, le bouton <B>Grille</B> est remplacé par un sablier <IMG SRC="MelissimoT/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier">&nbsp;: attendez que le bouton <B>Grille</B> s'affiche avant de continuer.<P>
+Le temps nécessaire à la création d'une grille varie selon le cours de la création et les performances du matériel mais prend autour de trente secondes.<P>
+
+<HR>
+<CENTER>&copy; Patrice Fouquet - Dernière mise à jour le 30 janvier 2019<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:melissimax@patquoi.fr?subject=Melissimax">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/melissimax" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.Melissimax" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.Melissimax" target="_blank">Amazon.fr</A> - <A HREF="MelissimoT.html" target="_blank">MélissimoT</A></CENTER>
+</body>
+</html>

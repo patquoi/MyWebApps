@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>D - S i d e</title>
+    <!-- police chiffres Optima Heavy 150 -->
+	<link rel="stylesheet" media="only screen"  href="desktop.css" type="text/css">
+	<link rel="icon" type="image/png" href="png/icon.png">
+	<script type="text/javascript" charset="utf-8" src="D-side.js"></script>
+    <script type="text/javascript" charset="utf-8">	
+    	function onBodyLoad() {
+			bienvenue();
+        } 
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+	<center>
+      <div id="container">
+      	<table border="0" cellspacing="0" cellpadding="0" id="joueurs">
+      	 <tr>
+      	  <td><img id="jg" src="png/flg/United_States.png" class="drapeau"></td><td><img src="png/-.png" class="migrosdegd"></td><td align=center><img id="pg" src="png/chf/9.png" class="grosde"></td>
+      	  <td><img id="camp" src="png/go.png" class="grosde" onClick="clic(10)"></td>
+      	  <td align=center><img id="pd" src="png/chf/9.png" class="grosde"></td><td><img src="png/-.png" class="migrosdegd"></td><td><img id="jd" src="png/flg/Russia.png" class="drapeau"></td>
+      	 </tr>
+      	</table>
+      	<table border="0" cellspacing="0" cellpadding="0">
+      	 <tr>
+      	  <td><img id="ig1" src="png/msg/mUl.png" class="titre12"></td>
+      	  <td><img id="ig2" src="png/msg/mSl.png" class="titre12"></td>
+      	  <td><img id="ig3" src="png/msg/mAl.png" class="titre12"></td>
+      	  <td><img src="png/-.png" class="sepisoset"></td>
+      	  <td><img id="mg" src="png/chf/0.png" class="ptitde"></td>
+
+      	  <td><img src="png/-.png" class="septitset"></td>
+          <td><img src="png/msg/mCv.png" class="titre12"></td>
+          <td><img src="png/msg/mHv.png" class="titre12"></td>
+          <td><img src="png/msg/mOv.png" class="titre12"></td>
+          <td><img src="png/msg/mIv.png" class="titre11"></td>
+          <td><img src="png/msg/mXv.png" class="titre12"></td>
+      	  <td><img src="png/-.png" class="septitset"></td>
+
+      	  <td><img id="md" src="png/chf/0.png" class="ptitde"></td>
+      	  <td><img src="png/-.png" class="sepisoset"></td>
+      	  <td><img id="id1" src="png/msg/mRl.png" class="titre12"></td>
+      	  <td><img id="id2" src="png/msg/mUl.png" class="titre12"></td>
+      	  <td><img id="id3" src="png/msg/mSl.png" class="titre12"></td>
+      	 </tr>
+      	</table>
+      	<table border="0" cellspacing="0" cellpadding="0" id="manche">
+      	 <tr>
+		  <td><img id="1g" src="png/1.png" class="ptitde"></td><td><img id="2g" src="png/1.png" class="ptitde"></td><td><img id="3g" src="png/1.png" class="ptitde"></td>
+          <td rowspan=2><img src="png/-.png" class="migrosdegd"></td>
+          <td rowspan=2 colspan=6 align=center><img id="dg" src="png/1.png" class="grosde"></td>
+          <td rowspan=2 colspan=6><img id="stop" src="png/-.png" class="grosde" onClick="clic(0)"></td>
+          <td rowspan=2 colspan=6 align=center><img id="dd" src="png/9.png" class="grosde"></td><td rowspan=2><img src="png/-.png" class="migrosdegd"></td>
+		  <td><img id="1d" src="png/9.png" class="ptitde"></td><td><img id="2d" src="png/9.png" class="ptitde"></td><td><img id="3d" src="png/9.png" class="ptitde"></td>
+         </tr>
+      	 <tr>
+		  <td><img id="4g" src="png/1.png" class="ptitde"></td><td><img id="5g" src="png/1.png" class="ptitde"></td><td><img id="6g" src="png/1.png" class="ptitde"></td>
+		  <td><img id="4d" src="png/9.png" class="ptitde"></td><td><img id="5d" src="png/9.png" class="ptitde"></td><td><img id="6d" src="png/9.png" class="ptitde"></td>
+         </tr>
+      	 <tr>
+		  <td><img id="7g" src="png/1.png" class="ptitde"></td><td><img id="8g" src="png/1.png" class="ptitde"></td><td><img id="9g" src="png/1.png" class="ptitde"></td>
+          <td><img src="png/-.png" class="ptitde"></td>
+          <td><img src="png/-.png" class="titre11"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/msg/mLv.png" class="titre12"></td>
+          <td><img src="png/msg/mAv.png" class="titre12"></td>
+          <td><img src="png/msg/mNv.png" class="titre11"></td>
+          <td><img src="png/msg/mCv.png" class="titre11"></td>
+          <td><img src="png/msg/mEv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/msg/mDv.png" class="titre12"></td>
+          <td><img src="png/msg/mEv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre11"></td>
+          <td><img src="png/msg/mDv.png" class="titre11"></td>
+          <td><img src="png/msg/mEv.png" class="titre12"></td>
+          <td><img src="png/msg/mSv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre11"></td>
+          <td><img src="png/-.png" class="ptitde"></td>
+		  <td><img id="7d" src="png/9.png" class="ptitde"></td><td><img id="8d" src="png/9.png" class="ptitde"></td><td><img id="9d" src="png/9.png" class="ptitde"></td>
+         </tr>
+      	</table>
+		<table border="0" cellspacing="0" cellpadding="0" id="arene">
+		 <tr>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/msg/mMv.png" class="titre11"></td>
+          <td><img src="png/msg/mAv.png" class="titre12"></td>
+          <td><img src="png/msg/mNv.png" class="titre12"></td>
+          <td><img src="png/msg/mCv.png" class="titre11"></td>
+          <td><img src="png/msg/mHv.png" class="titre12"></td>
+          <td><img src="png/msg/mEv.png" class="titre11"></td>
+          <td><img src="png/msg/mSv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+		  <td rowspan=2 colspan=6><img id="d1" src="png/1.png" class="grosde" onClick="clic(1)"></td>
+		  <td rowspan=2 colspan=6><img id="d2" src="png/2.png" class="grosde" onClick="clic(2)"></td>
+		  <td rowspan=2 colspan=6><img id="d3" src="png/3.png" class="grosde" onClick="clic(3)"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/msg/mMv.png" class="titre11"></td>
+          <td><img src="png/msg/mAv.png" class="titre12"></td>
+          <td><img src="png/msg/mNv.png" class="titre12"></td>
+          <td><img src="png/msg/mCv.png" class="titre11"></td>
+          <td><img src="png/msg/mHv.png" class="titre12"></td>
+          <td><img src="png/msg/mEv.png" class="titre11"></td>
+          <td><img src="png/msg/mSv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+    	 </tr>
+		 <tr>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m0g" src="png/chf/1.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m0d" src="png/chf/1.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m1g" src="png/chf/2.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td rowspan=2 colspan=6><img id="d4" src="png/4.png" class="grosde" onClick="clic(4)"></td>
+		  <td rowspan=2 colspan=6><img id="d5" src="png/5.png" class="grosde" onClick="clic(5)"></td>
+		  <td rowspan=2 colspan=6><img id="d6" src="png/6.png" class="grosde" onClick="clic(6)"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m1d" src="png/chf/2.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m2g" src="png/chf/3.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m2d" src="png/chf/3.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m3g" src="png/chf/4.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td rowspan=2 colspan=6><img id="d7" src="png/7.png" class="grosde" onClick="clic(7)"></td>
+		  <td rowspan=2 colspan=6><img id="d8" src="png/8.png" class="grosde" onClick="clic(8)"></td>
+		  <td rowspan=2 colspan=6><img id="d9" src="png/9.png" class="grosde" onClick="clic(9)"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m3d" src="png/chf/4.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m4g" src="png/chf/5.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m4d" src="png/chf/5.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m5g" src="png/chf/6.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+          <td><img src="png/-.png" class="titre11"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/msg/mDv.png" class="titre12"></td>
+          <td><img src="png/msg/mEv.png" class="titre12"></td>
+          <td><img src="png/msg/mSv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre11"></td>
+          <td><img src="png/msg/mAv.png" class="titre11"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/msg/mRv.png" class="titre12"></td>
+          <td><img src="png/msg/mEv.png" class="titre12"></td>
+          <td><img src="png/msg/mLv.png" class="titre12"></td>
+          <td><img src="png/msg/mAv.png" class="titre11"></td>
+          <td><img src="png/msg/mNv.png" class="titre11"></td>
+          <td><img src="png/msg/mCv.png" class="titre12"></td>
+          <td><img src="png/msg/mEv.png" class="titre12"></td>
+          <td><img src="png/msg/mRv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre11"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		  <td colspan=3><img id="m5d" src="png/chf/6.png" class="ptitde"></td>
+		  <td colspan=3><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="0" id="talon">
+		 <tr>
+		  <td><img src="png/-.png" class="ptitde"></td><td><img id="m6g" src="png/chf/7.png" class="ptitde"></td><td colspan=2><img src="png/-.png" class="migrosdehb"></td>
+		  <td><img src="png/-.png" class="seprelance"></td>
+		  <td><img id="t1" src="png/1.png" class="ptitde"></td><td><img id="t2" src="png/2.png" class="ptitde"></td><td><img id="t3" src="png/3.png" class="ptitde"></td>
+		  <td><img src="png/-.png" class="seprelance"></td>
+		  <td colspan=2><img src="png/-.png" class="migrosdehb"></td><td><img id="m6d" src="png/chf/7.png" class="ptitde"></td><td><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td><img src="png/-.png" class="ptitde"></td><td><img id="m7g" src="png/chf/8.png" class="ptitde"></td><td colspan=2><img src="png/-.png" class="migrosdehb"></td>
+		  <td><img src="png/-.png" class="seprelance"></td>
+		  <td><img id="t4" src="png/4.png" class="ptitde"></td><td><img id="t5" src="png/5.png" class="ptitde"></td><td><img id="t6" src="png/6.png" class="ptitde"></td>
+		  <td><img src="png/-.png" class="seprelance"></td>
+		  <td colspan=2><img src="png/-.png" class="migrosdehb"></td><td><img id="m7d" src="png/chf/8.png" class="ptitde"></td><td><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		 <tr>
+		  <td><img src="png/-.png" class="ptitde"></td><td><img id="m8g" src="png/chf/9.png" class="ptitde"></td><td colspan=2><img src="png/-.png" class="migrosdehb"></td>
+		  <td><img src="png/-.png" class="seprelance"></td>
+		  <td><img id="t7" src="png/7.png" class="ptitde"></td><td><img id="t8" src="png/8.png" class="ptitde"></td><td><img id="t9" src="png/9.png" class="ptitde"></td>
+		  <td><img src="png/-.png" class="seprelance"></td>
+		  <td colspan=2><img src="png/-.png" class="migrosdehb"></td><td><img id="m8d" src="png/chf/9.png" class="ptitde"></td><td><img src="png/-.png" class="ptitde"></td>
+		 </tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="0" id="titmsg">
+		 <tr>
+          <td><img src="png/msg/mTv.png" class="titre12"></td>
+          <td><img src="png/msg/mOv.png" class="titre12"></td>
+          <td><img src="png/msg/mUv.png" class="titre12"></td>
+          <td><img src="png/msg/mRv.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img id="tour" src="png/msg/m0v.png" class="titre12"></td>
+          <td><img src="png/-.png" class="titre12"></td>
+          <td><img id="g1" src="png/msg/mmoinsv.png" class="titre12"></td>
+          <td><img id="g2" src="png/-.png" class="titre12"></td>
+          <td><img id="g3" src="png/msg/mGv.png" class="titre12"></td>
+          <td><img id="g4" src="png/msg/mRv.png" class="titre12"></td>
+          <td><img id="g5" src="png/msg/mOv.png" class="titre12"></td>
+          <td><img id="g6" src="png/msg/mUv.png" class="titre12"></td>
+          <td><img id="g7" src="png/msg/mPv.png" class="titre12"></td>
+          <td><img id="g8" src="png/msg/mEv.png" class="titre12"></td>
+          <td><img id="g9" src="png/-.png" class="titre12"></td>
+          <td><img id="gd" src="png/msg/m0v.png" class="titre12"></td>
+          <td><img id="gu" src="png/msg/m0v.png" class="titre12"></td>
+         </tr> 
+		</table>
+		<table border="0" cellspacing="0" cellpadding="0" id="msg">
+		 <tr>
+		  <td><img id="1cl" src="png/msg/m1v.png" class="msgmain"></td><td><img id="1pt" src="png/msg/mpointv.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1p" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1i1" src="png/msg/mDv.png" class="msgmain"></td><td><img id="1i2" src="png/msg/mEv.png" class="msgmain"></td><td><img id="1i3" src="png/msg/mNv.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1sd" src="png/-.png" class="msgmain"></td><td><img id="1su" src="png/msg/m0v.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1mpd" src="png/-.png" class="msgmain"></td><td><img id="1mpu" src="png/msg/m0v.png" class="msgmain"></td><td><img id="1m1" src="png/msg/mmoinsv.png" class="msgmain"></td><td><img id="1mcd" src="png/-.png" class="msgmain"></td><td><img id="1mcu" src="png/msg/m0v.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1dpd" src="png/-.png" class="msginf"></td><td><img id="1dpu" src="png/msg/m0v.png" class="msginf"></td><td><img id="1m2" src="png/msg/mmoinsv.png" class="msginf"></td><td><img id="1dcd" src="png/-.png" class="msginf"></td><td><img id="1dcu" src="png/msg/m0v.png" class="msginf"></td>
+		  <td><img src="png/-.png" class="sepclssmtch"></td><td><img id="1mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="1mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="1mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="6mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="6mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="11mgd" src="png/flg/-.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="11mgm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="11mgs" src="png/msg/-.png" class="msgmain"></td><td><img id="11mdt" src="png/msg/-.png" class="msgmain"></td><td><img id="11mds" src="png/msg/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="11mdm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="11mdd" src="png/flg/-.png" class="msgdrap"></td>
+		 </tr>
+		 <tr>
+		  <td><img id="2cl" src="png/msg/m2v.png" class="msgmain"></td><td><img id="2pt" src="png/msg/mpointv.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2p" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2i1" src="png/msg/mBv.png" class="msgmain"></td><td><img id="2i2" src="png/msg/mEv.png" class="msgmain"></td><td><img id="2i3" src="png/msg/mLv.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2sd" src="png/-.png" class="msgmain"></td><td><img id="2su" src="png/msg/m0v.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2mpd" src="png/-.png" class="msgmain"></td><td><img id="2mpu" src="png/msg/m0v.png" class="msgmain"></td><td><img id="2m1" src="png/msg/mmoinsv.png" class="msgmain"></td><td><img id="2mcd" src="png/-.png" class="msgmain"></td><td><img id="2mcu" src="png/msg/m0v.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2dpd" src="png/-.png" class="msginf"></td><td><img id="2dpu" src="png/msg/m0v.png" class="msginf"></td><td><img id="2m2" src="png/msg/mmoinsv.png" class="msginf"></td><td><img id="2dcd" src="png/-.png" class="msginf"></td><td><img id="2dcu" src="png/msg/m0v.png" class="msginf"></td>
+		  <td><img src="png/-.png" class="sepclssmtch"></td><td><img id="2mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="2mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="2mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="7mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="7mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="7mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="7mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="7mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="7mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="12mgd" src="png/flg/-.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="12mgm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="12mgs" src="png/msg/-.png" class="msgmain"></td><td><img id="12mdt" src="png/msg/-.png" class="msgmain"></td><td><img id="12mds" src="png/msg/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="12mdm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="12mdd" src="png/flg/-.png" class="msgdrap"></td>
+		 </tr>
+		 <tr>
+		  <td><img id="3cl" src="png/msg/m3l.png" class="msgmain"></td><td><img id="3pt" src="png/msg/mpointl.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3p" src="png/flg/France.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3i1" src="png/msg/mFl.png" class="msgmain"></td><td><img id="3i2" src="png/msg/mRl.png" class="msgmain"></td><td><img id="3i3" src="png/msg/mAl.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3sd" src="png/-.png" class="msgmain"></td><td><img id="3su" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3mpd" src="png/-.png" class="msgmain"></td><td><img id="3mpu" src="png/msg/m0l.png" class="msgmain"></td><td><img id="3m1" src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="3mcd" src="png/-.png" class="msgmain"></td><td><img id="3mcu" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3dpd" src="png/-.png" class="msginf"></td><td><img id="3dpu" src="png/msg/m0l.png" class="msginf"></td><td><img id="3m2" src="png/msg/mmoinsl.png" class="msginf"></td><td><img id="3dcd" src="png/-.png" class="msginf"></td><td><img id="3dcu" src="png/msg/m0l.png" class="msginf"></td>
+		  <td><img src="png/-.png" class="sepclssmtch"></td><td><img id="3mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="3mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="3mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="8mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="8mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="8mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="8mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="8mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="8mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="13mgd" src="png/flg/-.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="13mgm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="13mgs" src="png/msg/-.png" class="msgmain"></td><td><img id="13mdt" src="png/msg/-.png" class="msgmain"></td><td><img id="13mds" src="png/msg/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="13mdm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="13mdd" src="png/flg/-.png" class="msgdrap"></td>
+		 </tr>
+		 <tr>
+		  <td><img id="4cl" src="png/msg/m4l.png" class="msgmain"></td><td><img id="4pt" src="png/msg/mpointl.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4p" src="png/flg/Australia.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4i1" src="png/msg/mAl.png" class="msgmain"></td><td><img id="4i2" src="png/msg/mUl.png" class="msgmain"></td><td><img id="4i3" src="png/msg/mSl.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4sd" src="png/-.png" class="msgmain"></td><td><img id="4su" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4mpd" src="png/-.png" class="msgmain"></td><td><img id="4mpu" src="png/msg/m0l.png" class="msgmain"></td><td><img id="4m1" src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="4mcd" src="png/-.png" class="msgmain"></td><td><img id="4mcu" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4dpd" src="png/-.png" class="msginf"></td><td><img id="4dpu" src="png/msg/m0l.png" class="msginf"></td><td><img id="4m2" src="png/msg/mmoinsl.png" class="msginf"></td><td><img id="4dcd" src="png/-.png" class="msginf"></td><td><img id="4dcu" src="png/msg/m0l.png" class="msginf"></td>
+		  <td><img src="png/-.png" class="sepclssmtch"></td><td><img id="4mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="4mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="4mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="9mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="9mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="9mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="9mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="9mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="9mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="14mgd" src="png/flg/-.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="14mgm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="14mgs" src="png/msg/-.png" class="msgmain"></td><td><img id="14mdt" src="png/msg/-.png" class="msgmain"></td><td><img id="14mds" src="png/msg/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="14mdm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="14mdd" src="png/flg/-.png" class="msgdrap"></td>
+		 </tr>
+		 <tr>
+		  <td><img id="5cl" src="png/msg/m5l.png" class="msgmain"></td><td><img id="5pt" src="png/msg/mpointl.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5p" src="png/flg/Bolivia.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5i1" src="png/msg/mBl.png" class="msgmain"></td><td><img id="5i2" src="png/msg/mOl.png" class="msgmain"></td><td><img id="5i3" src="png/msg/mLl.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5sd" src="png/-.png" class="msgmain"></td><td><img id="5su" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5mpd" src="png/-.png" class="msgmain"></td><td><img id="5mpu" src="png/msg/m0l.png" class="msgmain"></td><td><img id="5m1" src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="5mcd" src="png/-.png" class="msgmain"></td><td><img id="5mcu" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5dpd" src="png/-.png" class="msginf"></td><td><img id="5dpu" src="png/msg/m0l.png" class="msginf"></td><td><img id="5m2" src="png/msg/mmoinsl.png" class="msginf"></td><td><img id="5dcd" src="png/-.png" class="msginf"></td><td><img id="5dcu" src="png/msg/m0l.png" class="msginf"></td>
+		  <td><img src="png/-.png" class="sepclssmtch"></td><td><img id="5mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="5mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="5mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="10mgd" src="png/flg/Denmark.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="10mgm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="10mgs" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/msg/mmoinsl.png" class="msgmain"></td><td><img id="10mds" src="png/msg/m0l.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="10mdm" src="png/msg/m0l.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="10mdd" src="png/flg/Belgium.png" class="msgdrap"></td><td><img src="png/-.png" class="sepclssmtch"></td><td><img id="15mgd" src="png/flg/-.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="15mgm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="15mgs" src="png/msg/-.png" class="msgmain"></td><td><img id="15mdt" src="png/msg/-.png" class="msgmain"></td><td><img id="15mds" src="png/msg/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="15mdm" src="png/msg/-.png" class="msginf"></td><td><img src="png/-.png" class="msginf"></td><td><img id="15mdd" src="png/flg/-.png" class="msgdrap"></td>
+		 </tr>
+		 <tr>
+		  <td><img id="6cl" src="png/-.png" class="msgmain"></td><td><img id="6pt" src="png/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6p" src="png/-.png" class="msgdrap"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6i1" src="png/-.png" class="msgmain"></td><td><img id="6i2" src="png/-.png" class="msgmain"></td><td><img id="6i3" src="png/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6sd" src="png/-.png" class="msgmain"></td><td><img id="6su" src="png/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6mpd" src="png/-.png" class="msgmain"></td><td><img id="6mpu" src="png/-.png" class="msgmain"></td><td><img id="6m1" src="png/-.png" class="msgmain"></td><td><img id="6mcd" src="png/-.png" class="msgmain"></td><td><img id="6mcu" src="png/-.png" class="msgmain"></td><td><img src="png/-.png" class="msginf"></td><td><img id="6dpd" src="png/-.png" class="msginf"></td><td><img id="6dpu" src="png/-.png" class="msginf"></td><td><img id="6m2" src="png/-.png" class="msginf"></td><td><img id="6dcd" src="png/-.png" class="msginf"></td><td><img id="6dcu" src="png/-.png" class="msginf"></td>
+		 </tr>
+		</table>
+      </div>
+	</center>
+  </body>
+</html>

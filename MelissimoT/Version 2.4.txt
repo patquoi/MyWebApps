@@ -1,0 +1,4 @@
+En cliquant sur les compteurs de mots, vous avez la liste des mots trouvés en majuscules.
+Pendant l'affichage des solutions non trouvées, les mots non trouvés apparaissent en minuscules.
+
+When you click the word counters, you can see the list of found or unfound words for each word length.

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>C o m p t i s s i b o n</title>
+<link rel="icon" type="image/png" href="Comptissibon/png/icon.png">
+</head>
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF">
+<H1 ALIGN=CENTER>Comptissibon</H1>
+Bienvenue sur la page de <B>Comptissibon</B>.<BR>
+Vous trouverez ici des informations sur l'application mobile.<P>
+
+<H2>Table des matières</H2>
+<UL>
+ <LI><A HREF="#P">Partie</A>
+ <LI><A HREF="#RDS">Recherche des solutions</A>
+ <LI><A HREF="#OEI">Options et informations</A>
+ <LI><A HREF="#S">Statistiques</A>
+ <LI><A HREF="#CDC">Critères de complexité</A>
+ <LI><A HREF="#SA">Sauvegarde automatique</A>
+ <LI><A HREF="#TDRDS">Temps de recherche des solutions</A>
+</UL>
+
+<CENTER><IMG SRC="Comptissibon/img/C77c.png" BORDER=1 HEIGHT=361 WIDTH=350 Alt="Exemple de partie de Comptissibon"></CENTER><P>
+La version de <B>Comptissibon</B> dédiée aux tablettes Android et à l'iPad (iOS), s'appelle <A HREF="http://patquoi.fr/Comptissimax.html"><B>Comptissimax</B></A>.<P>
+Une version <B>WebApp</B> en ligne est disponible <A HREF="Comptissibon">ici</A>.
+
+<A NAME="P"></A><H2>Partie</H2>
+
+Une partie de Comptissibon consiste à trouver un compte (ou s'en rapprocher le plus) en n'utilisant au plus une seule fois chacun des six nombres tirés au sort parmi 24 (de 1 à 10 en deux exemplaires plus 25, 50, 75 et 100).<BR>
+Les opérations autorisées sont l'addition, la soustraction (le résultat doit être supérieur à zéro), la multiplication et la division (le dénominateur doit diviser le numérateur).<P>
+
+<A NAME="MO"></A><H2>Mode opératoire</H2>
+
+<UL>
+<LI>Pour utiliser un nombre, il suffit de le toucher à condition qu'il soit disponible. Les nombres déjà utilisés sont en <FONT COLOR="#FF0000">rouge</FONT> (résultats) ou ont une croix rouge en dessous <IMG SRC="Comptissibon/png/x.png" HEIGHT=16 WIDTH=16 Alt="x">.
+<LI>Les quatre opérateurs sont accessibles en bas de l'écran. Pour les utiliser, il suffit de les toucher. 
+<LI>Vous devez entrer des lignes de calculs (vous pouvez utiliser plus de deux nombres par ligne) en finissant par un nombre, puis toucher <IMG SRC="Comptissibon/png/en.png" HEIGHT=16 WIDTH=16 Alt="="> pour obtenir le résultat de la ligne.
+<LI>Vous ne pouvez pas mélanger les opérateurs <IMG SRC="Comptissibon/png/pn.png" HEIGHT=16 WIDTH=16 Alt="+"> et <IMG SRC="Comptissibon/png/mn.png" HEIGHT=16 WIDTH=16 Alt="-"> avec <IMG SRC="Comptissibon/png/fn.png" HEIGHT=16 WIDTH=16 Alt="×"> et <IMG SRC="Comptissibon/png/dn.png" HEIGHT=16 WIDTH=16 Alt="÷"> sur une même ligne.
+<LI>Dès que le résultat est calculé, il apparaît en <FONT COLOR="#00FF00">vert</FONT> signalant sa disponibilité.
+<LI>Dès que vous utilisez le résultat d'une ligne, celui-ci apparaît en <FONT COLOR="#FF0000">rouge</FONT> sur sa ligne dont il est le résultat, signalant qu'il est utilisé.
+<LI>Dès que vous utilisez un des six nombres en haut de l'écran, une croix rouge <IMG SRC="Comptissibon/png/x.png" HEIGHT=16 WIDTH=16 Alt="x"> apparaît en dessous signalant qu'il est utilisé. 
+<LI>Lorsque vous avez touché un opérateur, vous pouvez toujours le changer tant que vous n'avez pas choisi un nombre.
+<LI>Lorsque vous avez touché un nombre, vous pouvez toujours le changer tant que vous n'avez pas choisi un opérateur ou le signe <IMG SRC="Comptissibon/png/en.png" HEIGHT=16 WIDTH=16 Alt="=">.
+<LI>Si vous avez commencé une ligne et vous souhaitez l'effacer, touchez <IMG SRC="Comptissibon/png/-.png" HEIGHT=16 WIDTH=16 Alt="←"> en bas de l'écran.
+<LI>Si vous souhaitez effacer tout le calcul, touchez deux fois <IMG SRC="Comptissibon/png/-.png" HEIGHT=16 WIDTH=16 Alt="←">.
+<LI>Dès que vous avez utilisé tous les nombres et tous les résultats, le calcul s'arrête automatiquement.
+<LI>Dès que vous avez obtenu le compte recherché, le calcul s'arrête automatiquement.
+<LI>Si vous n'êtes pas dans une des deux situations précédentes, il faut toucher <IMG SRC="Comptissibon/png/kn.png" HEIGHT=16 WIDTH=16 Alt="OK"> pour terminer le calcul.
+<LI>Si vous choisissez un opérateur en début de ligne (à partir de la deuxième ligne), le dernier résultat est automatiquement sélectionné avant l'opérateur (à partir de la version 1.1).
+</UL>
+
+<A NAME="RDS"></A><H2>Recherche des solutions</H2>
+
+Lorsque vous avez saisi votre calcul et obtenu un résultat, on vous propose de connaître la ou les solutions qui aboutissement au meilleur résultat (le compte ou le résultat le plus proche). Vous avez deux options&nbsp;:<UL>
+<LI>Soit vous souhaitez simplement avoir la première solution trouvée aboutissant au meilleur résultat, dans ce cas il faut faire apparaître en bas de l'écran <IMG SRC="Comptissibon/png/ox.png" HEIGHT=16 WIDTH=16 Alt="1/1"> et dans le cas où il n'apparaît pas, toucher <IMG SRC="Comptissibon/png/ov.png" HEIGHT=16 WIDTH=16 Alt="<ok>"> (option par défaut jusqu'aux versions 2.2.x).
+<LI>Soit vous souhaitez voir toutes les les solutions distinctes, dans ce cas il faut faire apparaître en bas de l'écran <IMG SRC="Comptissibon/png/ov.png" HEIGHT=16 WIDTH=16 Alt="<ok>"> et dans le cas où il n'apparaît pas, toucher <IMG SRC="Comptissibon/png/ox.png" HEIGHT=16 WIDTH=16 Alt="1/1"> (option par défaut à partir de la version 2.3).
+</UL>
+<U>Remarques</U>&nbsp;:<UL>
+<LI>Durant la recherche, un sablier <IMG SRC="Comptissibon/png/sabliern.png" HEIGHT=18 WIDTH=20 BORDER=0 Alt="Sablier"> est affiché incitant à patienter et à ne pas toucher les boutons de navigation avant que la boîte de dialogue de résultat ne s'affiche.
+<LI>L'option de recherche de toutes les solutions distinctes peut coûter en temps (cela peut demander jusqu'à une minute selon la performance de l'appareil).
+<LI>L'option de recherche de toutes les solutions distinctes vous permet de connaître le rang* de complexité votre proposition dans le cas où vous avez obtenu le meilleur résultat possible (le compte ou le résultat le plus proche). 
+</UL>
+<FONT SIZE=2>(*) À partir de la version 2.3, il est affiché en rouge (au lieu de vert) en bas à droite, au moment du défilement de toutes les solutions distinctes.</FONT><P>
+Lorsque vous avez choisi de voir toutes les solutions distinctes et que la recherche est terminée, un message vous invite à consulter les solutions.<BR>
+Les solutions sont classées par ordre de complexité (de la plus simple à la plus complexe).<P>
+<CENTER><IMG SRC="Comptissibon/img/C84c.png" HEIGHT=362 WIDTH=333 BORDER=1 Alt="Visualisation des solutions distinctes"></CENTER><P>
+Les commandes de visualisation apparaissent en bas de l'écran&nbsp;:<UL>
+<LI><IMG SRC="Comptissibon/png/zn.png" HEIGHT=16 WIDTH=16 Alt="X"> permet d'afficher la solution la plus simple.
+<LI><IMG SRC="Comptissibon/png/cn.png" HEIGHT=16 WIDTH=16 Alt="XXX"> permet d'afficher la solution la plus complexe.  
+<LI><IMG SRC="Comptissibon/png/in.png" HEIGHT=16 WIDTH=16 Alt="&lt;"> permet d'afficher la solution précédente.
+<LI><IMG SRC="Comptissibon/png/sn.png" HEIGHT=16 WIDTH=16 Alt="&gt;"> permet d'afficher la solution suivante.
+<LI><IMG SRC="Comptissibon/png/kn.png" HEIGHT=16 WIDTH=16 Alt="OK"> termine la consultation des solutions.
+<LI><IMG SRC="Comptissibon/png/sabliern.png" HEIGHT=16 WIDTH=18 Alt="Sablier"> (à la place de <IMG SRC="Comptissibon/png/k.png" HEIGHT=16 WIDTH=16 Alt="OK">) indique qu'une recherche est en cours incitant à patienter et à ne pas toucher les boutons de navigation.
+</UL>
+Des informations apparaissent lors de l'affichage des solutions&nbsp;:<UL>
+<LI>Sous ces commandes de consultation des solutions, apparaît en <FONT COLOR="#00FF00">vert</FONT> le rang de la solution courante suivi du nombre de solutions distinctes trouvées.<BR>
+Par exemple, <IMG SRC="Comptissibon/png/8v.png" HEIGHT=16 WIDTH=16 Alt="8"><IMG SRC="Comptissibon/png/lv.png" HEIGHT=16 WIDTH=16 Alt="/"><IMG SRC="Comptissibon/png/1v.png" HEIGHT=16 WIDTH=16 Alt="1"><IMG SRC="Comptissibon/png/0v.png" HEIGHT=16 WIDTH=16 Alt="0"> indique que la solution affichée est la huitième solution la plus simple parmi les dix solutions trouvées.<BR>&nbsp;
+<LI>En haut à droite du compte apparaissent des étoiles. Elles indiquent la difficulté du compte (à partir de la version 1.1)&nbsp;:<BR><BR>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Difficulté</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d0.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 0"></TD><TD>Très facile. La plus simple des solutions a nécessité 2 nombres et 1 opération.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d1.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 1"></TD><TD>Très facile. La plus simple des solutions a nécessité 3 nombres et 1 opération.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d2.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 2"></TD><TD>Facile. La plus simple des solutions a nécessité 3 nombres et 2 opérations ou 4 nombres et 1 opération.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d3.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 3"></TD><TD>Facile. La plus simple des solutions a nécessité 4 nombres et 2 opérations ou 5 nombres et 1 opération.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d4.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 4"></TD><TD>Moyenne. La plus simple des solutions a nécessité 4 nombres et 3 opérations, 5 nombres et 2 opérations ou 6 nombres et 1 opération.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d5.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 5"></TD><TD>Difficile. La plus simple des solutions a nécessité 5 nombres et 3 opérations ou 6 nombres et 2 opérations.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d6.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 6"></TD><TD>Difficile. La plus simple des solutions a nécessité 5 nombres et 4 opérations ou 6 nombres et 3 opérations.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d7.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 7"></TD><TD>Très difficile. La plus simple des solutions a nécessité 6 nombres et 4 opérations.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d8.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 8"></TD><TD>Très difficile. La plus simple des solutions a nécessité 6 nombres et 5 opérations.</TD></TR>
+<TR><TD><IMG SRC="Comptissibon/png/d9.png" HEIGHT=12 WIDTH=100 Alt="Difficulté 9"></TD><TD>Compte introuvable.</TD></TR>
+</TABLE>
+</UL>
+
+<A NAME="OEI"></A><H2>Options et informations</H2>
+
+En bas à gauche en bleu, vous avez accès à des informations&nbsp;:<UL>
+<LI><IMG SRC="Comptissibon/png/a.png" HEIGHT=16 WIDTH=16 Alt="?"> affiche l'À propos (version, site web et adresse).
+<LI><IMG SRC="Comptissibon/png/n.png" HEIGHT=16 WIDTH=16 Alt="(i)"> affiche le descriptif des commandes et des options de jeu.
+<LI><IMG SRC="Comptissibon/png/t.png" HEIGHT=16 WIDTH=16 Alt="%"> affiche les statistiques (nombre de parties, propositions, meilleurs résultats trouvés, taux moyen de complexité).
+<LI><IMG SRC="Comptissibon/png/ox.png" HEIGHT=16 WIDTH=16 Alt="1/1"> indique que seule la première solution est recherchée et affichée. Toucher <IMG SRC="Comptissibon/png/ox.png" HEIGHT=16 WIDTH=16 Alt="1/1"> change l'option en <IMG SRC="Comptissibon/png/ov.png" HEIGHT=16 WIDTH=16 Alt="<ok>">.
+<LI><IMG SRC="Comptissibon/png/ov.png" HEIGHT=16 WIDTH=16 Alt="<ok>"> indique que toutes les solutions distinctes sont recherchées et affichées. Toucher <IMG SRC="Comptissibon/png/ov.png" HEIGHT=16 WIDTH=16 Alt="<ok>"> change l'option en <IMG SRC="Comptissibon/png/ox.png" HEIGHT=16 WIDTH=16 Alt="1/1">.
+<LI><IMG SRC="Comptissibon/png/t.png" HEIGHT=16 WIDTH=16 Alt="RAZ"> permet de réinitialiser les paramètres par défaut (remise à zéro des statistiques, options par défaut et nouvelle partie). Pour confirmer cette opération, il faut toucher à nouveau <IMG SRC="Comptissibon/png/t.png" HEIGHT=16 WIDTH=16 Alt="RAZ">.
+</UL>
+
+<A NAME="S"></A><H2>Statistiques</H2>
+
+<CENTER><IMG SRC="Comptissibon/img/C85.png" HEIGHT=480 WIDTH=320 BORDER=1 Alt="Exemple de statistiques"></CENTER><P>
+
+Les statistiques affichées lorsque l'on touche <IMG SRC="Comptissibon/png/t.png" HEIGHT=16 WIDTH=16 Alt="%"> résument la tendance de vos parties&nbsp;:<P>
+
+<TT>
+Sur <B>n</B> comptes, vous avez…<BR>
+ - proposé <B>p</B> fois un calcul (<B>P</B>%),<BR>
+ - trouvé <B>t</B> fois le meilleur (<B>T</B>%) dont <B>B</B>% de bons comptes.<BR><BR>
+
+Sur <B>r</B> propositions, vous en avez…<BR>
+ - saisies <B>u</B> en 1 fois (<B>U</B>%) en <B>s</B> secondes en moyenne,<BR>
+ - saisies <B>f</B> en + d'1 fois (<B>F</B>%) : <B>m</B> fois en moyenne.<BR><BR> 
+
+Votre «&nbsp;tendance&nbsp;» à la complexité est de <B>C</B>% sur <B>c</B> comptes.
+</TT><P>
+
+<U>Description</U>&nbsp;:<UL>
+<LI><TT><B>n</B></TT> est le nombre de comptes à trouver pour lesquels une solution a été recherchée (mais on y a pas forcément saisi de propositions).
+<LI><TT><B>p</B></TT> est le nombre de propositions saisies avec au moins une ligne et un résultat.
+<LI><TT><B>P</B></TT> est le pourcentage de propositions (100&nbsp;×&nbsp;<TT><B>p</B></TT>&nbsp;/&nbsp;<TT><B>n</B></TT>).
+<LI><TT><B>t</B></TT> est le nombre de propositions saisies aboutissant au meilleur résultat possible.
+<LI><TT><B>T</B></TT> est le pourcentage de performance (100&nbsp;×&nbsp;<TT><B>t</B></TT>&nbsp;/&nbsp;<TT><B>p</B></TT>).
+<LI><TT><B>c</B></TT> est le nombre de comptes sur lesquels il y a eu calcul du rang de complexité de votre proposition parmi toutes les solutions trouvées. Les conditions de calcul du rang de complexité sont les suivantes&nbsp;:<UL>
+ <LI>L'option <IMG SRC="Comptissibon/png/ov.png" HEIGHT=16 WIDTH=16 Alt="<ok>"> (calcul de toutes les solutions distinctes) doit être activée,
+ <LI>La proposition doit aboutir au meilleur résultat possible (le bon compte ou le résultat le plus proche).
+ </UL>
+<LI><TT><B>r</B></TT> est le nombre de propositions saisies pour lesquelles ont été calculés le temps de saisie ou le nombre de fois où le calcul a été repris. Cette statistique et les autres qui suivent ne sont disponibles que depuis la version 1.1.
+<LI><TT><B>u</B></TT> est le nombre de propositions saisies en une fois (sans avoir quitté et redémarré Comptissibon) et pour lesquelles le temps de saisie a été calculé.
+<LI><TT><B>U</B></TT> est le pourcentage de propositions saisies en une fois (100&nbsp;×&nbsp;<TT><B>u</B></TT>&nbsp;/&nbsp;<TT><B>r</B></TT>).
+<LI><TT><B>f</B></TT> est le nombre de propositions saisies en plusieurs fois et pour lesquelles le nombre de fois a été calculé.
+<LI><TT><B>F</B></TT> est le pourcentage de propositions saisies en plusieurs fois (100&nbsp;×&nbsp;<TT><B>f</B></TT>&nbsp;/&nbsp;<TT><B>r</B></TT>).
+<LI><TT><B>m</B></TT> est le nombre moyen de fois qu'une proposition a été présentée lorsque celle-ci a été saisie en plusieurs fois.
+<LI><TT><B>C</B></TT> est le taux moyen de complexité de vos propositions. Si <TT><B>r</B></TT> est le rang de la proposition et <TT><B>s</B></TT> le nombre total de solutions distinctes trouvées alors le taux de complexité est égal à (<TT><B>r</B></TT>&nbsp;-&nbsp;1)&nbsp;/&nbsp;(<TT><B>s</B></TT>&nbsp;-&nbsp;1) ce qui signifie qu'un taux de 0% équivaut à avoir saisi la solution la plus simple et 100% la solution la plus complexe. Si <TT><B>s</B></TT> vaut 1, le taux vaut 0% par convention.  
+</UL>   
+
+<U>Remarque</U>&nbsp;:<UL>
+<LI>Les informations de complexité n'apparaissent que si au moins un calcul de taux de complexité a été calculé (voir conditions dans la description ci-dessus).
+</UL>
+
+<A NAME="CDC"></A><H2>Critères de complexité</H2>
+
+Une solution est moins complexe qu'une autre dès qu'elle remplit l'une des conditions suivantes, dans cet ordre&nbsp;:<UL>
+<LI>elle nécessite moins de nombres parmi les six donnés au départ,
+<LI>elle nécessite moins de lignes de calcul (lorsqu'elles sont écrites avec le moins de lignes possibles),
+<LI>elle a le maximum des résultats intermédiaires moins élevé (résultat final exclu),
+<LI>l'écriture du calcul sur une seule ligne est classé avant dans l'ordre alphabétique.
+</UL>
+
+Dans l'exemple de la <A HREF="#RDS">recherche des solutions</A>, le calcul n°1/3 affiché...<UL>
+<LI>utilise <B>cinq</B> des <B>six</B> nombres au départ,
+<LI>nécessite <B>trois</B> lignes de calcul,
+<LI>a comme résultat intermédiaire maximal <B>80</B>.
+</UL>
+
+<A NAME="SA"></A><H2>Sauvegarde automatique</H2>
+
+Si vous quittez Comptissibon…<UL>
+<LI>alors que vous n'aviez pas terminé votre calcul, celui-ci est sauvegardé et il est réaffiché au prochain lancement exactement comme vous l'avez laissé.
+<LI>alors que vous n'aviez pas encore recherché les solutions d'un compte, celles-ci seront recherchées au prochain lancement.
+<LI>alors que vous consultiez les solutions d'un compte, un nouveau compte vous sera proposé au prochain lancement.
+</UL>
+
+<A NAME="TDRDS"></A><H2>Temps de recherche des solutions</H2>
+
+Selon la puissance des appareils et la difficulté du compte à trouver, le temps de recherche de toutes les solutions distinctes peut varier de trois secondes à environ une minute.<BR>
+Pour les appareils ayant des temps de calcul longs, il est fortement conseillé d'utiliser l'option de calcul <IMG SRC="Comptissibon/png/ox.png" HEIGHT=16 WIDTH=16 Alt="1/1">.<P>
+
+<CENTER>
+Exemple de calcul sur iPad 3<BR>
+<IMG SRC="Comptissibon/img/C01.png" HEIGHT=512 WIDTH=384 BORDER=1 Alt="Exemple de résultat e recherche sur iPad"></CENTER><P>
+
+<HR>
+<CENTER>&copy; Patrice Fouquet - Dernière mise à jour le 8 octobre 2018<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:comptissibon@patquoi.fr?subject=Comptissibon">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/comptissibon" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.Comptissibon" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.Comptissibon" target="_blank">Amazon.fr</A></CENTER>
+</body>
+</html>

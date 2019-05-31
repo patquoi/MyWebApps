@@ -1,0 +1,2 @@
+Rassemblez pièces et billets pour obtenir des valeurs de plus en plus grandes, le but étant de réduire le nombre de pièces et de billets pour éviter l'engorgement.deux 1 permettent d'obtenir un 2. deux 2 et un 1 sont remplacés par un 5. cinq 1 consécutifs donnent un 5 et ainsi de suite.Après chaque action, une pièce ou un billet est ajouté de manière aléatoire.Version 1.1- Affichage progressif des faces de pièces.
+- Revue des côtés piles de pièces pour une meilleure lisibilité et une meilleure harmonisation avec les côtés faces. 

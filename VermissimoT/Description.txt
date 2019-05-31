@@ -1,0 +1,7 @@
+Vous devez trouver 7 mots de 8 lettres cachés dans la grille, commençant dans les coins ou le centre. Les lettres doivent être reliées entre elles et chaque lettre ne doit être utilisée que dans un seul mot et une seule fois.
+
+Une fois trouvés tous les mots d'une grille et avant de passer à la suivante, vous avez un fil rouge dans lequel vous pouvez chercher 5 mots de 7 à 12 lettres en choisissant l'initiale.
+
+Chaque grille est générée aléatoirement grâce à un dictionnaire d'environ 45 000 mots permettant un nombre quasi illimité de possibilités.
+
+Cette version est universelle mais une version étendue pour iPad existe et s'appelle Vermissimax avec une grille plus grande.

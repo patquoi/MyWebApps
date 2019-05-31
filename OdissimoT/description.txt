@@ -1,0 +1,5 @@
+OdissimoT est un outil destiné aux amateurs de jeux de lettres : mots croisés, mots mêlés, jeux de lettres.
+
+Il vous permet de rechercher des mots de 2 à 15 lettres en fournissant un filtre ou un tirage avec ou sans jokers sans limites. Le dictionnaire intégré est l'ODS7 avec un peu moins de 400 000 mots.
+
+Cette application fonctionne sur tous les appareils et s'adapte à l'écran suivant sa résolution.

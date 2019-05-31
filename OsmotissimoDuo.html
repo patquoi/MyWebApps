@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>O s m o t i s s i m o D u o</title>
+<link rel="icon" type="image/png" href="OsmotissimoDuo/png/icon.png">
+</head>
+<body BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#00FFFF" VLINK="#A0A0FF">
+<H1 ALIGN=CENTER>OsmotissimoDuo pour tablette tactile</H1>
+Bienvenue sur la page d'<B>OsmotissimoDuo</B>.<BR>
+Vous trouverez ici des informations sur l'application pour tablette tactile.<P>
+<H2>Table des matières</H2>
+
+<UL>
+<LI><A HREF="#P">Présentation</A>
+<LI><A HREF="#PAD">Partie à deux joueurs</A>
+<LI><A HREF="#PGEM">Partie, grille et manche</A>
+<LI><A HREF="#C">Chances</A>
+<LI><A HREF="#S">Scores</A>
+ <UL>
+ <LI><A HREF="#SDM">Score des mots</A>
+ </UL>
+<LI><A HREF="#IEO">Informations et options</A>
+<LI><A HREF="#SER">Tops et statistiques</A>
+ <UL>
+ <LI><A HREF="#SERR">Tops</A>
+ <LI><A HREF="#SERS">Statistiques</A>
+ </UL>
+<LI><A HREF="#FO">Deuxième manche</A>
+ <UL>
+ <LI><A HREF="#CDULADLG">Choix d'une lettre autour de la grille</A>
+ <LI><A HREF="#FDLDM">Fin de la deuxième manche</A>
+ <LI><A HREF="#FOVDMF">Visualisation des mots formés et score du dernier coup</A>
+ <LI><A HREF="#FOSDM">Score des mots</A>
+ <LI><A HREF="#FOB">Bonus</A>
+ <LI><A HREF="#FOSER">Tops et statistiques</A>
+  <UL>
+  <LI><A HREF="#FOSERR">Tops</A>
+  <LI><A HREF="#FOSERS">Statistiques</A>
+  </UL>
+ </UL>
+<LI><A HREF="#FDP">Fin de partie</A>
+<LI><A HREF="#DDM">Définition des mots</A>
+<LI><A HREF="#CDUG">Création d'une grille</A>
+</UL>
+
+<CENTER><IMG SRC="OsmotissimoDuo/img/OsmotissimoDuo.png" WIDTH=360 HEIGHT=548 BORDER=1 Alt="Exemple de partie d'OsmotissimoDuo"></CENTER><P>
+
+<A NAME="P"></A><H2>Présentation</H2>
+
+<B>OsmotissimoDuo</B> est la version à deux joueurs du jeu <A HREF="Osmotissimax.html">Osmotissimax</A>, à savoir que&nbsp;:<UL>
+<LI>les couleurs <FONT COLOR="#00FF00">verte</FONT> et <FONT COLOR="#FF8000">orange</FONT> représentent les joueurs,
+<LI>la <B>première manche</B> d'une grille équivaut à la <FONT COLOR="#00FF00">phase verte</FONT> d'<B>Osmotissimax</B>,
+<LI>la <B>deuxième manche</B> d'une grille équivaut au <FONT COLOR="#FF8000">Fil Orange</FONT> d'<B>Osmotissimax</B>.
+</UL>
+
+Une version en ligne est disponible <A HREF="OsmotissimoDuo/index.html">ici</A> pour le navigateur <B>Safari, Firefox, Chrome sur PC et Mac</B> ainsi que sur les appareils utilisant les navigateurs par défaut des systèmes <B>iOS et Android</B>.<P>
+
+<A NAME="PAD"></A><H2>Partie à deux joueurs</H2>
+
+La partie se déroule à tour de rôle, sachant que si une erreur est commise, c'est au tour de l'adversaire de jouer, y compris si un mot déjà trouvé a été sélectionné.
+Les chances ne sont pas les mêmes que dans <B>Osmotissimax</B>, il s'agit de chances consécutives. Si un mot valide qui n'a pas déjà été trouvé est sélectionné, le joueur retrouve le plein de chances (deux dans la première manche et une seule dans la deuxième manche).
+
+<A NAME="PGEM"></A><H2>Partie, grille et manche</H2>
+
+Une <B>partie</B> d'<B>OsmotissimoDuo</B> se déroule en plusieurs <B>grilles</B> avec <B>deux manches</B> par grille (il n'y a pas de temps imparti)&nbsp;:<UL>
+<LI>Dans la <B>première manche</B>, vous devez trouver les mots cachés dans la grille en sélectionnant des mots valides selon un dictionnaire de référence qui est l'<I>ODS7</I>* (noms communs, verbes conjugués). Les mots à découvrir apparaissent alignés mais dans toutes les directions. Pour sélectionner un mot, touchez la première lettre qui s'affiche alors en <FONT COLOR="FF0000">rouge</FONT>, puis la dernière lettre du mot dans le sens de lecture&nbsp;:<UL>
+ <LI>Si le mot est valide, ses lettres sont mises en évidence dans la grille dans la couleur du joueur (<FONT COLOR="#00FF00">vert</FONT> ou <FONT COLOR="#FF8000">orange</FONT>). Le mot s'affiche sous la grille avec le nombre de points gagnés.
+ <LI>Si le mot n'est pas valide ou si le mot a déjà été trouvé, vous perdez une chance. Si les deux joueurs perdent chacun une chance quatre fois de suite, la partie est terminée. 
+ </UL>
+Vous pouvez sélectionner les mots même s'ils sont inclus dans d'autres mots ou si les lettres sont déjà toutes colorées, par exemple&nbsp;:<UL>
+ <LI>Dans le mot <TT>ORIENTER</TT>, il y a également les mots <TT>ORIENTE</TT>, <TT>ORIENT</TT> et <TT>RIENT</TT> dans le même sens.
+ <LI>Dans le mot <TT>GAINER</TT> il y a également le mot <TT>RENIA</TT> dans le sens opposé. 
+ <LI>Les palindromes peuvent être sélectionnés dans les deux sens, comme par exemple&nbsp;: <TT>ETETE</TT>, ainsi que les anagrammes inversés comme par exemple <TT>ECART</TT> et <TT>TRACE</TT>.</UL>
+Vous devez colorer toute la grille pour passer à la deuxième manche.<P>
+<LI>Dans la <B>deuxième manche</B>, vous ne pouvez pas terminer la partie comme dans la première manche. Par contre, si les deux joueurs perdent chacun une chance deux fois de suite, la deuxième manche est terminée mais la partie se poursuit sur une nouvelle grille. Le but est toujours de colorer la grille mais le principe est de changer une lettre afin que la nouvelle lettre forme de nouveaux mots de cinq à onze lettres. Tous les mots formés grâce à cette nouvelle lettre sont colorés (<FONT COLOR="#00FF00">vert</FONT> ou <FONT COLOR="#FF8000">orange</FONT>). La deuxième manche se termine si plus aucun changement n'est possible ou si deux coups consécutifs ne permettent pas de former de mots.
+Quelle que soit l'issue de la deuxième manche, vous passez à une nouvelle grille et la partie continue.
+</UL>
+<FONT SIZE=2>(*) À partir de la version 1.3, sinon <I>ODS6</I></FONT>
+
+<A NAME="C"></A><H2>Chances</H2>
+Un joueur perd une chance quand&nbsp;:<UL>
+<LI>il sélectionne un mot invalide dans la première manche,
+<LI>il sélectionne un mot valide mais qui a déjà été trouvé.
+<LI>dans la deuxième manche, il change une lettre qui ne permet pas de former de mot.
+</UL> 
+<B><U>Autres règles</U></B>&nbsp;:<UL>
+<LI>Si un joueur sélectionne un mot valide qui n'a pas déjà été trouvé dans la première manche, les compteurs sont remis à deux chances pour chaque joueur.
+<LI>Si un joueur change une lettre pour former au moins un mot dans la deuxième manche, les compteurs sont remis à une chance pour chaque joueur.
+<LI>Si quatre chances consécutives sont perdues pour les deux joueurs dans la première manche, <B>la partie est terminée</B>.
+<LI>Si deux chances consécutives sont perdues pour les deux joueurs dans la première manche, <B>la deuximèe manche se termine et la partie se poursuit sur une autre grille</B>.
+</UL>
+<A NAME="S"></A><H2>Scores</H2>
+
+<A NAME="SDM"></A><H3>Score des mots</H3>
+Dans la première manche, le score pour chaque mot trouvé va 4 à 63 points selon de sa <B>taille</B> (inversement proportionnelle) et son <B>orientation</B> dans la grille&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Taille&nbsp;×&nbsp;Orientation</TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/0h.png" width=16 height=16 alt="0h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/2h.png" width=16 height=16 alt="2h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/4h.png" width=16 height=16 alt="4h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/6h.png" width=16 height=16 alt="6h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/8h.png" width=16 height=16 alt="8h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/10h.png" width=16 height=16 alt="10h"></TH></TR>
+<TR><TH>5 lettres</TH><TD>7&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>49</B></TD><TD>7&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>35</B></TD><TD>7&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>28</B></TD><TD>7&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>42</B></TD><TD>7&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>56</B></TD><TD>7&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>63</B></TD></TR>
+<TR><TH>6 lettres</TH><TD>6&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>42</B></TD><TD>6&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>30</B></TD><TD>6&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>24</B></TD><TD>6&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>36</B></TD><TD>6&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>48</B></TD><TD>6&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>54</B></TD></TR>
+<TR><TH>7 lettres</TH><TD>5&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>35</B></TD><TD>5&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>25</B></TD><TD>5&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>20</B></TD><TD>5&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>30</B></TD><TD>5&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>40</B></TD><TD>5&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>45</B></TD></TR>
+<TR><TH>8 lettres</TH><TD>4&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>28</B></TD><TD>4&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>20</B></TD><TD>4&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>16</B></TD><TD>4&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>24</B></TD><TD>4&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>32</B></TD><TD>4&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>36</B></TD></TR>
+<TR><TH>9 lettres</TH><TD>3&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>21</B></TD><TD>3&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>15</B></TD><TD>3&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>12</B></TD><TD>3&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>18</B></TD><TD>3&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>24</B></TD><TD>3&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>27</B></TD></TR>
+<TR><TH>10 lettres</TH><TD>2&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>14</B></TD><TD>2&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>10</B></TD><TD>2&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>8</B></TD><TD>2&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>12</B></TD><TD>2&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>16</B></TD><TD>2&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>18</B></TD></TR>
+<TR><TH>11 lettres</TH><TD>1&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>7</B></TD><TD>1&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>5</B></TD><TD>1&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>4</B></TD><TD>1&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>6</B></TD><TD>1&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>8</B></TD><TD>1&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>9</B></TD></TR>
+</TABLE>
+</CENTER><P>
+
+<A NAME="IEO"></A><H2>Informations et options</H2>
+
+Reportez-vous aux renvois numérotés en <FONT COLOR="#FF00FF">fuchsia</FONT> pour les détails…<P>
+<CENTER><IMG SRC="OsmotissimoDuo/img/PremiereManche.png" WIDTH=360 HEIGHT=548 BORDER=1 Alt="Exemple de première manche"></CENTER><BR>
+<B><U>Description</U></B>&nbsp;:<P>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;1</B></TT></FONT>. Nombre de mots de <B>5</B> lettres trouvés* par joueur sur le nombre total* de mots de 5 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;2</B></TT></FONT>. Nombre de mots de <B>6</B> lettres trouvés* par joueur sur le nombre total* de mots de 6 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;3</B></TT></FONT>. Nombre de mots de <B>7</B> lettres trouvés* par joueur sur le nombre total* de mots de 7 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;4</B></TT></FONT>. Nombre de mots de <B>8</B> lettres trouvés* par joueur sur le nombre total* de mots de 8 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;5</B></TT></FONT>. Nombre de mots de <B>9</B> lettres trouvés* par joueur sur le nombre total* de mots de 9 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;6</B></TT></FONT>. Nombre de mots de <B>10</B> lettres trouvés* par joueur sur le nombre total* de mots de 10 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;7</B></TT></FONT>. Nombre de mots de <B>11</B> lettres trouvés* par joueur sur le nombre total* de mots de 11 lettres <B>à trouver</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;8</B></TT></FONT>. Dernier mot trouvé** avec le score obtenu***.<BR>
+<FONT COLOR="#FF00FF"><TT><B>&nbsp;9</B></TT></FONT>. Accès au dictionnaire des définitions° du dernier mot trouvé.<BR>
+<FONT COLOR="#FF00FF"><TT><B>10</B></TT></FONT>. À propos d'<B>OsmotissimoDuo</B>.<BR>
+<FONT COLOR="#FF00FF"><TT><B>11</B></TT></FONT>. Accès aux statistiques et tops de parties et de grilles.<BR>
+<FONT COLOR="#FF00FF"><TT><B>12</B></TT></FONT>. Aide succinte sur la règle du jeu affichée la toute première fois.<BR>
+<FONT COLOR="#FF00FF"><TT><B>13</B></TT></FONT>. Bouton <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> permettant d'abandonner la partie°° ou de passer à la manche°° ou la grille°° suivante.<BR>
+<FONT COLOR="#FF00FF"><TT><B>14</B></TT></FONT>. N° de grille courante. La couleur est celle du joueur (<FONT COLOR="#00FF00">vert</FONT> ou <FONT COLOR="#FF8000">orange</FONT>) qui mène dans la grille courante.<BR>
+<FONT COLOR="#FF00FF"><TT><B>15</B></TT></FONT>. Manche courante de la grille sur le nombre de manches (deux).<BR>
+<FONT COLOR="#FF00FF"><TT><B>16</B></TT></FONT>. Indicateur de joueur courant. Le joueur qui a la main... <I>a la main dans sa couleur&nbsp;!</I><BR>
+<FONT COLOR="#FF00FF"><TT><B>17</B></TT></FONT>. Nombre de grilles gagnées par chaque joueur.<BR>
+<FONT COLOR="#FF00FF"><TT><B>18</B></TT></FONT>. Score de chaque joueur dans la grille courante (cumul des deux manches).<BR>
+<FONT COLOR="#FF00FF"><TT><B>19</B></TT></FONT>. Nombre de lettres de chaque joueur dans la grille courante (cumul des deux manches).<BR>
+<FONT COLOR="#FF00FF"><TT><B>20</B></TT></FONT>. Nombre de mots trouvés par chaque joueur dans la grille courante (cumul des deux manches).<BR>
+<FONT COLOR="#FF00FF"><TT><B>21</B></TT></FONT>. Nombre restant°°° de chances.<P>
+<FONT SIZE=2>
+(*) Pour chaque taille de mot, de gauche à droite, il s'agit&nbsp;: du nombre de mots trouvés par le joueur <FONT COLOR="#00FF00">vert</FONT> puis par le joueur <FONT COLOR="#FF8000">orange</FONT> et enfin le nombre total de mots à trouver. Ce dernier est <B>blanc</B> si tous les mots ont été trouvés, sinon il est  <FONT COLOR="#FF0000">rouge</FONT>. S'il n'y a aucun mot de la taille correspondante, tous les compteurs sont <FONT COLOR="#A0A0A0">gris foncé</FONT>.<BR>
+(**) La couleur des lettres reflète leur état <B>avant</B> la sélection.<BR>
+(***) Voir <A HREF="#SDM">tableau</A> plus haut pour la distribution des points.<BR>
+(°) Toucher le livre ouvert permet de changer le dictionnaire. Vous avez alors le choix entre le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A> (par défaut), le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, <A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, <A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et <A HREF="http://1mot.fr" target="_blank">1mot.fr</A>. Une connexion internet est nécessaire. Toucher le point d'interrogation blanc permet d'accéder à la définition du mot affiché à gauche du livre ouvert via le site internet choisi.<BR>
+(°°) Toucher <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> <U>deux fois</U> abandonne la partie. Vous devez toucher <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> pour passer à la manche ou à la grille suivante quand on vous le demande<BR>
+(°°°) Une étoile pleine représente une chance restante. Il s'agit de chances consécutives. Il y a deux chances par joueur dans la première manche (avec risque de fin de partie) mais une seule par joueur dans la deuxième manche (avec risque de fin de deuxième manche).<BR>
+</FONT>
+
+<A NAME="SER"></A><H2>Tops et statistiques (première manche)</H2>
+
+<CENTER><IMG SRC="OsmotissimoDuo/img/tops.png" BORDER=1 HEIGHT=345 WIDTH=292 Alt="Tops première manche">&nbsp;<IMG SRC="OsmotissimoDuo/img/stats.png" BORDER=1 HEIGHT=345 WIDTH=292 Alt="Stats première manche"><P></CENTER>
+
+Lors de la première manche, appuyer sur <IMG SRC="OsmotissimoDuo/img/s.png" WIDTH=22 HEIGHT=16 Alt="Bouton Tops et Stats"> permet d'afficher les <B>tops</B> de la première manche (voir ci-dessus à gauche).<BR>
+Appuyer une <B>deuxième fois</B> sur <IMG SRC="OsmotissimoDuo/img/s.png" WIDTH=22 HEIGHT=16 Alt="Bouton Tops et Stats"> permet d'afficher les <B>statistiques</B> de la première manche (voir ci-dessus à droite).<BR>
+Appuyer une <B>troisième fois</B> sur <IMG SRC="OsmotissimoDuo/img/s.png" WIDTH=22 HEIGHT=16 Alt="Bouton Tops et Stats"> permet de réinitialiser tous les tops et toutes les statistiques.<P>
+
+<A NAME="SERR"></A><H3>Tops</H3>
+
+<UL>
+<LI>La première ligne donne le nombre record de grilles dans une partie. Dans l'exemple&nbsp;: <TT>Parties: 2 grilles.</TT><BR>
+<LI>La deuxième ligne donne le meilleur score cumulé des deux joueurs dans une première manche, suivi du meilleur score possible dans une grille. Dans l'exemple&nbsp;: <TT>Grille: score 1368, max 1788.</TT><BR>
+<LI>Les lignes suivantes donnent, par taille de mot, le plus grand nombre de mots trouvés par les joueurs suivi du nombre maximal de mots à trouver. Par exemple&nbsp;: <TT>3 mots de 8 lettres, max 4.</TT>
+</UL>
+
+<A NAME="SERS"></A><H3>Statistiques</H3>
+
+<UL>
+<LI>La première ligne donne le nombre de grilles des statistiques qui suivent&nbsp;: <TT>En moyenne, sur 2 grilles...</TT><BR>
+<LI>La deuxième ligne donne le score moyen cumulé des deux joueurs dans une première manche, suivi du taux moyen par rapport au score maximal possible dans une grille. Dans l'exemple&nbsp;: <TT>score 1060 (67%).</TT><BR>
+<LI>Les lignes suivantes donnent, par taille de mot, le nombre moyen de mots trouvés par les joueurs suivi du taux de mots trouvés. Par exemple&nbsp;: <TT>3 mots de 8 lettres (75%).</TT>
+</UL>
+
+
+<A NAME="FO"></A><H2>Deuxième manche</H2>
+
+<CENTER><IMG SRC="OsmotissimoDuo/img/DeuxiemeManche.png" HEIGHT=551 WIDTH=360 BORDER=1 Alt="Exemple de deuxième manche"></CENTER><P>
+La deuxième manche d'une grille commence quand les deux conditions suivantes sont réunies lors de la première manche&nbsp;:<UL>
+<LI>La grille est entièrement colorée&nbsp;;
+<LI>Les deux joueurs ont épuisé leurs deux chances ou tous les mots de la grille ont été trouvés.</UL>
+Après avoir visualisé les mots non trouvés (le cas échéant), vous devez toucher <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> afin de passer à la deuxième manche. La grille est alors décolorée (grisée).<BR>
+Vous remarquerez alors, comme dans l'exemple ci-dessus, que des lettres apparaissent autour de la grille&nbsp;: il s'agit des lettres qui y sont absentes. Elles permettent le choix lors du changement de lettre.<P>
+Dans la deuxième manche, chaque joueur à tour de rôle, doit changer une lettre afin de former de nouveaux mots d'au moins <B>cinq</B> lettres. Comme dans la première manche, chaque nouveau mot formé est alors <B>coloré</B> dans la couleur du joueur courant avec comme but de colorer toute la grille.<BR>
+<IMG SRC="OsmotissimoDuo/img/bonus.png" WIDTH=41 HEIGHT=16 BORDER=0 Alt="Bonus"> Le joueur qui colore le premier toute la grille <U>double le score</U> qu'il a obtenu au cours de la deuxième manche.<P>
+Dans l'exemple ci-dessus, remplacer un <TT>P</TT> par un <TT>C</TT> permet de former le mot <TT>RECLUSE</TT> (en rouge) mais également, vers le bas et la gauche, le mot <TT>CAQUAI</TT>.<BR>
+Les compteurs de mots en <FONT COLOR="#A0A0A0">gris foncé</FONT> sont les compteurs de la première manche. Il n'est pas assuré que la grille puisse être entièrement <B>colorée</B> mais il y a une forte probabilité.<BR>
+
+Le changement de lettre est simple… Il suffit de toucher la lettre à changer puis la nouvelle lettre.
+
+<A NAME="CDULADLG"></A><H3>Choix d'une lettre autour de la grille</H3>
+
+Si vous cherchez une lettre dans la grille mais que vous ne la voyez pas, regardez parmi les lettres grises autour de la grille. Dans ce cas, il faut effectuer un changement avec une des lettres autour de la grille. Elles sont limitées à <B>huit</B>, donc il se peut que la lettre recherchée n'y soit pas mais c'est très rare.<BR>
+<IMG SRC="OsmotissimoDuo/img/bonus.png" WIDTH=41 HEIGHT=16 BORDER=0 Alt="Bonus"> Former au moins un mot en choisissant une lettre autour de la grille donne <U>droit à rejouer</U>&nbsp;!<P>
+
+<A NAME="FDLDM"></A><H3>Fin de la deuxième manche</H3>
+
+La deuxième manche se termine dans trois cas&nbsp;:<UL>
+<LI>Vous avez coloré toute la grille&nbsp;;
+<LI>Il n'y a aucun coup possible permettant de former un mot&nbsp;;
+<LI>Les deux joueurs n'ont pas pu former de mots.</UL>
+Quel que soit le cas, vous passez à la grille suivante en touchant <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> quand un message vous le demande.<BR>
+Touchez <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> deux fois pendant le jeu permet de terminer de recommencer une nouvelle partie.<P>
+Si la deuxième manche se termine sans que toute la grille soit colorée, une solution est donnée...<P>
+<CENTER><IMG SRC="OsmotissimoT/img/solution.png" HEIGHT=308 WIDTH=290 BORDER=1 Alt="Exemple de solution donnée"></CENTER><P>
+Le système de coordonnées, <TT>(C,F)</TT> dans l'exemple, est le même que celui utilisé dans <A HREF="Osmotik.html#sdcedd">Osmotik</A> (il faut imaginer les lettres autour de la grille.)
+
+<A NAME="FOVDMF"></A><H3>Visualisation des mots formés et score du dernier coup</H3>
+
+Contrairement à la première manche, dès que vous avez choisi la nouvelle lettre, le premier mot formé s'affiche et les scores sont mis à jour. Si d'autres mots sont formés, il faut toucher <IMG SRC="OsmotissimoDuo/img/p.png" HEIGHT=12 WIDTH=16 Alt=">"> pour voir le mot suivant ou terminer la visualisation des mots formés. Si aucun changement de lettre (entraînant la formation d'au moins un mot d'au moins <B>cinq</B> lettres) n'est possible, un message vous en informe et la deuxième manche se termine. Touchez alors <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> pour passer à la grille suivante.<P>
+
+Après l'affichage du dernier mot en rouge dans la grille, le bouton <IMG SRC="OsmotissimoDuo/img/p.png" HEIGHT=12 WIDTH=16 Alt=">"> est remplacé par un sablier <IMG SRC="OsmotissimoT/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier"> le temps de savoir si un coup est encore possible. Si ce n'est pas le cas, un message l'annonce avec la fin de la deuxième manche.<P>
+
+Après la visualisation, le nombre de mots formés et le score du dernier coup sont affichés, suivis du meilleur score (top)&nbsp;:<P>
+<IMG SRC="OsmotissimoDuo/img/drncp.png" width=448 height=48 Alt="Mots, score du dernier coup ainsi que le meilleur score">
+
+<A NAME="FOSDM"></A><H3>Score des mots</H3>
+Durant la deuxième manche, le score pour chaque mot trouvé va 4 à 63 points selon de sa <B>taille</B> (proportionnelle) et son <B>orientation</B> dans la grille&nbsp;:<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TH>Taille&nbsp;×&nbsp;Orientation</TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/0h.png" width=16 height=16 alt="0h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/2h.png" width=16 height=16 alt="2h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/4h.png" width=16 height=16 alt="4h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/6h.png" width=16 height=16 alt="6h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/8h.png" width=16 height=16 alt="8h"></TH>
+    <TH><IMG SRC="OsmotissimoDuo/img/10h.png" width=16 height=16 alt="10h"></TH></TR>
+<TR><TH>5 lettres</TH><TD>1&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>7</B></TD><TD>1&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>5</B></TD><TD>1&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>4</B></TD><TD>1&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>6</B></TD><TD>1&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>8</B></TD><TD>1&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>9</B></TD></TR>
+<TR><TH>6 lettres</TH><TD>2&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>14</B></TD><TD>2&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>10</B></TD><TD>2&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>8</B></TD><TD>2&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>12</B></TD><TD>2&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>16</B></TD><TD>2&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>18</B></TD></TR>
+<TR><TH>7 lettres</TH><TD>3&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>21</B></TD><TD>3&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>15</B></TD><TD>3&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>12</B></TD><TD>3&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>18</B></TD><TD>3&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>24</B></TD><TD>3&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>27</B></TD></TR>
+<TR><TH>8 lettres</TH><TD>4&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>28</B></TD><TD>4&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>20</B></TD><TD>4&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>16</B></TD><TD>4&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>24</B></TD><TD>4&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>32</B></TD><TD>4&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>36</B></TD></TR>
+<TR><TH>9 lettres</TH><TD>5&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>35</B></TD><TD>5&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>25</B></TD><TD>5&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>20</B></TD><TD>5&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>30</B></TD><TD>5&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>40</B></TD><TD>5&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>45</B></TD></TR>
+<TR><TH>10 lettres</TH><TD>6&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>42</B></TD><TD>6&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>30</B></TD><TD>6&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>24</B></TD><TD>6&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>36</B></TD><TD>6&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>48</B></TD><TD>6&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>54</B></TD></TR>
+<TR><TH>11 lettres</TH><TD>7&nbsp;×&nbsp;7&nbsp;=&nbsp;<B>49</B></TD><TD>7&nbsp;×&nbsp;5&nbsp;=&nbsp;<B>35</B></TD><TD>7&nbsp;×&nbsp;4&nbsp;=&nbsp;<B>28</B></TD><TD>7&nbsp;×&nbsp;6&nbsp;=&nbsp;<B>42</B></TD><TD>7&nbsp;×&nbsp;8&nbsp;=&nbsp;<B>56</B></TD><TD>7&nbsp;×&nbsp;9&nbsp;=&nbsp;<B>63</B></TD></TR>
+</TABLE>
+</CENTER><P>
+
+<A NAME="FOB"></A><H3>Bonus</H3>
+
+Dans la deuxième manche, il n'y a qu'un bonus possible mais de taille&nbsp;! Le score de la deuxième manche est doublé pour le joueur qui aura coloré toute la grille&nbsp;!<BR>
+Ce bonus n'est pas toujours possible d'une grille à l'autre mais une stratégie de jeu à découvrir peut faciliter l'obtention de ce bonus.
+
+<A NAME="FOSER"></A><H3>Tops et statistiques (deuxième manche)</H3>
+
+<CENTER><IMG SRC="OsmotissimoDuo/img/tops2.png" BORDER=1 HEIGHT=345 WIDTH=292 Alt="Tops deuxième manche">&nbsp;<IMG SRC="OsmotissimoDuo/img/stats2.png" BORDER=1 HEIGHT=345 WIDTH=292 Alt="Stats deuxième manche"><P></CENTER>
+
+Lors de la deuxième manche, appuyer sur <IMG SRC="OsmotissimoDuo/img/s.png" WIDTH=22 HEIGHT=16 Alt="Bouton Tops et Stats"> permet d'afficher les <B>tops</B> de la deuxième manche (voir ci-dessus à gauche).<BR>
+Appuyer une <B>deuxième fois</B> sur <IMG SRC="OsmotissimoDuo/img/s.png" WIDTH=22 HEIGHT=16 Alt="Bouton Tops et Stats"> permet d'afficher les <B>statistiques</B> de la deuxième manche (voir ci-dessus à droite).<BR>
+Appuyer une <B>troisième fois</B> sur <IMG SRC="OsmotissimoDuo/img/s.png" WIDTH=22 HEIGHT=16 Alt="Bouton Tops et Stats"> permet de réinitialiser tous les tops et toutes les statistiques.<P>
+
+<A NAME="FOSERR"></A><H4>Tops</H4>
+
+<UL>
+<LI>La première ligne donne le meilleur score cumulé des deux joueurs dans une deuxième manche. Dans l'exemple&nbsp;: <TT>score 312.</TT><BR>
+<LI>Sur les lignes suivantes, sont affichés les nombres records de mots formés, une ligne par taille de mot. Par exemple&nbsp;: <TT>2 mots de 7 lettres.</TT><BR>
+<LI>Après les mots formés, est affiché le meilleur coup : le plus grand nombre de mots formés en un seul coup et le meilleur score. Dans l'exemple&nbsp;: <TT>5 mots, score 50.</TT>
+</UL>
+
+<A NAME="FOSERS"></A><H4>Statistiques</H4>
+
+<UL>
+<LI>La première ligne donne le nombre de grilles des statistiques qui suivent puis le score moyen. Dans l'exemple&nbsp;: <TT>Sur 3 grilles score moyen 311.</TT><BR>
+<LI>Les lignes suivantes donnent, par taille de mot, le nombre moyen de mots trouvés par les joueurs. Par exemple&nbsp;: <TT>12 mots de 6 lettres.</TT>
+</UL>
+
+
+
+<A NAME="FDP"></A><H2>Fin de partie</H2>
+
+La partie se termine dans la première manche d'une grille si chaque joueur perd deux chances consécutivement, c'est-à-dire quatre erreurs à la suite. Une erreur se produit...<UL>
+ <LI>quand un mot incorrect est sélectionné (mot qui n'est pas autorisé selon le dictionnaire en vigueur, l'ODS6)&nbsp;;
+ <LI>quand un mot déjà trouvé est sélectionné.</UL>
+Le vainqueur est le joueur ayant remporté le plus de grilles. Le nombre de grilles remportées par chaque joueur est affiché de part et d'autre du bouton <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> (voir <FONT COLOR="#FF00FF"><TT><B>17</B></TT></FONT> dans <A HREF="#IEO">Informations et options</A>).<BR>
+En cas d'égalité et si la partie est terminée dans la première manche d'une grille, le vainqueur est celui qui menait dans la première manche de la dernière grille. Le numéro de la grille à droite du bouton <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> est de la couleur du meneur (voir <FONT COLOR="#FF00FF"><TT><B>14</B></TT></FONT> dans <A HREF="#IEO">Informations et options</A>).
+
+<A NAME="DDM"></A><H2>Définition des mots</H2>
+
+Les définitions de mots ne sont pas incluses dans le jeu. Les définitions sont néanmoins accessibles mais elles nécessitent une connexion internet. Vous avez actuellement le choix entre <B>cinq</B> sites de définitions de mots&nbsp;: le <A HREF="http://www.cnrtl.fr/definition/" target="_blank">CNRTL</A>* (par défaut), le <A HREF="http://fr.wiktionary.org/wiki" target="_blank">Wiktionnaire</A>, <A HREF="http://www.larousse.fr/dictionnaires/francais-monolingue" target="_blank">Larousse</A>, <A HREF="http://dictionnaire.reverso.net/francais-definition" target="_blank">Reverso</A> et <A HREF="http://1mot.fr" target="_blank">1mot.fr</A>**. Touchez le livre ouvert pour choisir le site et touchez le point d'interrogation blanc pour voir la définition du dernier mot trouvé affiché à gauche du livre ouvert. Si vous ne trouvez pas la définition sur un site, essayez sur les autres.<P>
+
+<FONT SIZE=2>
+(*) Centre National de Ressources Textuelles et Lexicales.<BR>
+(**) Ce site ne donne que des éléments grammaticaux et non lexicaux. Par contre tous les mots du jeu y ont une page consacrée.
+</FONT>
+
+<A NAME="CDUG"></A><H2>Création d'une grille</H2>
+
+Chaque nouvelle grille est créée aléatoirement garantissant un nombre illimité de grilles.<BR>
+À chaque fois qu'une grille est en cours de création, le bouton <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> est remplacé par un sablier <IMG SRC="OsmotissimoT/img/sablier.png" HEIGHT=16 WIDTH=18 Alt="Sablier">&nbsp;: attendez que le bouton <IMG SRC="OsmotissimoDuo/img/g.png" WIDTH=22 HEIGHT=16 Alt="Bouton Grille"> s'affiche avant de continuer.<BR>
+Le temps nécessaire à la création d'une grille varie selon le cours de la création et les performances du matériel mais prend autour de trente secondes.<P>
+
+<HR>
+<CENTER><FONT SIZE=2>
+&copy; 2012, Patrice Fouquet - Dernière mise à jour le 23 novembre 2016<BR>
+<A HREF="http://patquoi.fr" target="_blank">Patquoi.fr</A> - <A HREF="mailto:OsmotissimoDuo@patquoi.fr?subject=OsmotissimoDuo">Envoyer un mail</A> - <A HREF="http://forum.patquoi.fr" target="_blank">Forum</A> - <A HREF="http://appstore.com/osmotissimoduo" target="_blank">App Store</A> - <A HREF="https://play.google.com/store/apps/details?id=com.patquoi.OsmotissimoDuo" target="_blank">Google Play</A> - <A HREF="http://www.amazon.fr/gp/mas/dl/android?p=com.patquoi.OsmotissimoDuo" target="_blank">Amazon.fr</A> - <A HREF="OsmotissimoDuo/index.html" target="_blank">WebApp OsmotissimoDuo</A>
+</FONT></CENTER>
+</body>
+</html>

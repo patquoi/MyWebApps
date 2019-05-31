@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1">
+<title>Statistiques sur le Compte Est Bon</title>
+</head>
+<body BGCOLOR="#000000" TEXT="#FFFFF" LINK="#00FFFF" VLINK="#A0A0FF">
+<H1>Bienvenue sur le site consacré aux statistiques sur le jeu le Compte Est Bon</H1>
+Les statistiques présentées ici ont été calculées grâce à l'algorithme utilisé dans le jeu <A HREF="http://patquoi.free.fr/#jm">Le Compte Pour De Bon</A>.<BR>
+Les calculs incluent toutes les solutions distinctes non présentées ici par manque de place (nécessiterait une soixantaine de gigaoctets).<BR>
+Les calculs a été effectué sur un <A HREF="http://www.apple.com/macpro/">MacPro</A> Quad (2 Xeon bicoeurs) 2.66Ghz et 2 Go de mémoire.<BR>
+Il a permis 3 programmes de calculs en parallèle divisant théoriquement le temps par 3 si les calculs avaient été parallélisés depuis le départ.<BR>
+
+<H2>Définitions</H2>
+
+<TABLE border=1 cellspacing=0 cellpadding=3>
+<CAPTION align=TOP>Dans cette page certains termes sont utilisés. Voici leurs définitions&nbsp;:</CAPTION>
+<TR><TH>Terme</TH><TH>Définition</TH></TR>
+<TR><TD>Compte</TD><TD>But des calculs. On doit aboutir au compte à l'aide uniquement des plaques et des opérations arithmétiques sur les entiers naturels (+, -, x, /). Un compte est compris entre 101 et 999.</TD></TR>
+<TR><TD>Plaque</TD><TD>Les plaques sont des nombres donnés au départ allant de 1 à 10 (2 exemplaires max.) ou 25, 50, 75, 100 (1 seul exemplaire possible) avec lesquels on doit trouver le compte.</TD></TR>
+<TR><TD>Tirage</TD><TD>Choix de six plaques parmi quatorze, c'est-à-dire deux exemplaires pour chaque plaque de 1 à 10 et un seul exemplaire pour les plaques 25, 50, 75 et 100.</TD></TR>
+<TR><TD>Ligne de calcul</TD><TD>Opération aboutissant à un résultat intermédiaire utilisant un même type d'opérateur (+ et -) ou (x et /) sur la même ligne.<BR>
+Deux lignes de calculs qui se suivent ne peuvent avoir le même type d'opérateur car elles seraient fusionnées.<BR>
+Par exemple 6+4=10 10-8=2 ne sont pas deux lignes de calculs car elles seraient fusionnées en une seule&nbsp;: 6+4-8=2.</TD></TR>
+<TR><TD>Calcul</TD><TD>Ensemble des lignes de calculs aboutissant à un résultat (compte trouvé ou approché).</TD></TR>
+<TR><TD>Solution</TD><TD>Calcul aboutissant au compte à trouver.</TD></TR>
+<TR><TD>Résultat Intermédiaire (RI)</TD><TD>Résultat d'une ligne de calcul. Celui-ci peut être réutilisé comme pour les plaques pour les lignes de calculs à venir.<BR>
+Attention, le résultat d'une opération précédant une autre de même type (+ et -) ou (x et /) n'est pas considéré comme résultat intermédiaire car l'opération est fusionnée.<BR>
+Exemple : dans 6+4=10 10-8=2, 10 n'est pas un RI car la ligne de calcul retenue est 6+4-8=2 et c'est 2 qui est un RI.</TD>
+<TR><TD>Résultat Intermédiaire max. (RIMax)</TD><TD>Pour un calcul, il s'agit du résultat intermédiaire le plus élevé de toutes les lignes de calculs.<BR>
+Pour un compte associé à un tirage, il s'agit du RIMax le plus élevé de toutes les solutions distinctes trouvées.<BR>
+Pour un tirage, il s'agit du RIMax le plus élevé de tous les comptes associés à ce tirage.</TD></TR>
+<TR><TD>Double</TD><TD>Plaque qui est en deux exemplaires parmi les six plaques du tirage. Seules les plaques de 1 à 10 peuvent être des doubles.</TD></TR>
+<TR><TD>Compte le plus difficile</TD><TD>Il s'agit d'un compte associé à un tirage qui n'a qu'une seule solution et qui nécessite l'utilisation des six plaques et cinq lignes de calculs.<BR>
+Parmi ceux-ci, le compte le plus difficile est celui qui a le résultat intermédiaire le plus élevé.</TD></TR>
+</TABLE> 
+
+<H2>Propriétés des solutions distinctes retenues</H2>
+
+<ul>
+<li> Il n'y a jamais de ligne de calcul qui contiennent à la fois un opérande et son inverse ou son opposé (exemple&nbsp;: ...+7...-7...=... ou ...x5.../5...=...).
+<li> On ne multiplie ou divise jamais par 1.
+<li> Aucune ligne de calcul n'a comme résultat l'un de ses opérandes (exemple&nbsp;: ...4x.../...=4 ou ...6+...-...=6).     
+</ul>
+
+<H2>Statistiques principales sur tous les tirages</H2>
+
+Nombre de tirages de plaques : 13 243.<BR>
+Nombre de comptes réalisables (ayant au moins une solution) : 10 858 746 sur 11 905 457 (91,21%).<BR>Nombre de solutions distinctes : 160 890 617 (moyenne de 14,82 solutions par compte).<BR>Nombre de solutions le plus élevé : 457 (Tirage 2 4 5 6 8 10 - 120).<BR>
+Le compte le plus difficile** : 10 10 25 50 75 100 - 653 (RIMax** = 49000).<BR>
+Durée des calculs* : 59j 8h 28' 40" (31,27 solutions par seconde).<BR>Nombre total de solutions envisagées : 11 601 895 136 544 (soit en moyenne 2 262 407 par seconde).<BR>Résultat intermédiaire le plus élevé (RIMax**) : 93800 (Tirage 5 10 25 50 75 100 - 938).<BR>
+Nombre de tirages dont tous les comptes peuvent être trouvés : 1226 (9,26%).<BR>
+
+<H2>Statistiques principales par nombre exact de doubles dans les tirages</H2>
+
+<A HREF="0.html">Statistiques des tirages sans double (3 003 tirages)</A><BR>
+<A HREF="1.html">Statistiques des tirages à un seul double (7 150 tirages)</A><BR>
+<A HREF="2.html">Statistiques des tirages à deux doubles exactement (2 970 tirages)</A><BR>
+<A HREF="3.html">Statistiques des tirages à trois doubles (120 tirages)</A><BR><BR>
+
+(*) Temps constaté sur matériel utilisé détaillé en tête de cette page.<BR>
+(**) voir tableau des définitions.<BR>
+</body>
+</html>
