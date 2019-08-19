@@ -1,4 +1,4 @@
-﻿const dico = [[
+const dico = [[
 'ÂBAGO',
 'ABAJÛ',
 'ÂBAKE',
@@ -2925,6 +2925,7 @@
 'VALET',
 'VALIZ',
 'VALOP',
+'VALPA',
 'VALSE',
 'VALSÊ',
 'VÂNEN',
@@ -8658,6 +8659,7 @@
 'SITASYÔ',
 'SITELMÂ',
 'SITIRÂS',
+'SITIREZ',
 'SITWAYÊ',
 'SIVEYAN',
 'SIVÛPLE',
@@ -9989,6 +9991,7 @@
 'KONFWÔTE',
 'KONFYANS',
 'KONFYOLO',
+'KONIFLET',
 'KONKERAN',
 'KONKIRAN',
 'KONKIRÂS',
@@ -10721,6 +10724,7 @@
 'WONWONNÊ',
 'WOTASYON',
 'ZABELBOK',
+'ZAGRIBAY',
 'ZANDOLIT',
 'ZANMITAY',
 'ZANNANNA',
