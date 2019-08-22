@@ -4,7 +4,7 @@
  
  Sujet: JavaScript for the index.html file
   
- Version: <1.7.2>
+ Version: <1.7.3>
  
  Copyright (C) 2012 Patrice Fouquet.
  
@@ -14,7 +14,7 @@
 // CONSTANTES
 //---------------------------------------------------------------------------
 
-const stVersion = '1.7.2';
+const stVersion = '1.7.3';
 
 /*
 Version 1.1.1
@@ -53,6 +53,8 @@ Version 1.7.1
  - Optimisation pour iOS (splash + spinner)
 Version 1.7.2
  - Constantes de tailles de dictionnaire par lettres ne sont plus en constantes mais recalculés à la volée : nbMots[x] = dico[x].length
+Version 1.7.3
+ - Clic sur les compteurs de mots : on affiche les mots (trouvés/tous si manche terminée)
  */
 
 const stVerDico = '7';
@@ -2659,10 +2661,10 @@ function finGrille(stMsg) // Met en mode d'affichage des solutions
 		solutionVisualisee = indefini;
 		localStorage.vs = vrai; localStorage.sv = indefini; // enregistrement auto
 		montreSolution(suivante);
-		if (lettresRestantes)
-			alert(stDebutMsg + 'Vous pouvez visualiser les mots non trouvés en utilisant "<" et ">".\n\nTouchez "Grille" pour en commencer une nouvelle.');
+		if (lettresRestantes) // v1.7.3 ajout de "ou les compteurs de mots" (2 fois)
+			alert(stDebutMsg + 'Vous pouvez visualiser les mots non trouvés en utilisant "<" et ">" ou les compteurs de mots.\n\nTouchez "Grille" pour en commencer une nouvelle.');
 		else
-			alert('Vous pouvez visualiser les mots non trouvés en utilisant "<" et ">".\n\nTouchez "Grille" pour passer au Fil Orange.');
+			alert('Vous pouvez visualiser les mots non trouvés en utilisant "<" et ">" ou les compteurs de mots.\n\nTouchez "Grille" pour passer au Fil Orange.');
 	}
 	else
 		if (fin == typeFin.fGrille)
@@ -2983,6 +2985,22 @@ function afficheSolutions() // v1.6 : affichage des solutions avec code triche
 	alert(stListeMots);
 }
 //---------------------------------------------------------------------------
+function afficheMots(n)// v1.7.3 : affiche la liste des mots trouvés (ou non si fin de grille) en touchant un compteur de mots. Les mots non trouvés sont en minuscules
+{
+    var listeMots = '';
+    var iMax = s[n].length;
+    for(var i = 0; i < iMax; i++) {
+        if (s[n][i].trouvee) 
+			listeMots = listeMots + s[n][i].stMot + ' ';
+        else
+            if (fin) // Les mots non trouvés sont en minuscules
+				listeMots = listeMots + s[n][i].stMot.toLowerCase() + ' ';
+    }
+    if (listeMots == '')
+		listeMots = 'Aucun mot trouvé ';
+    return listeMots.substring(0, listeMots.length-1)+'.';
+}
+//---------------------------------------------------------------------------
 // onClick
 //---------------------------------------------------------------------------
 // index 
@@ -3194,13 +3212,14 @@ function clic(i)
 			localStorage.acd = affichagesChgtDico;
 		}
 	}
-	else if ((index > 100) && (index < 108) && 
+	else if ((index > 100) && (index < 108) /* && // v1.7.3 : On permet d'afficher la liste des mots même quand on a fini ou que l'on a trouvé tous les mots  
 			 (!visualisationSolutions) && 
-	    	 (scoreGrille.bonus < scoreGrille.bonusMax)) // Infos compteurs
+	    	 (scoreGrille.bonus < scoreGrille.bonusMax) */ ) // Infos compteurs
 	    if (filOrange)
 	    	alert('En orange, il s\'agit du nombre de mots de '+(index-96)+' lettres formés durant le Fil Orange.\n\nEn gris foncé, il s\'agit du nombre de mots de '+(index-96)+' lettres qu\'il fallait trouver avant le Fil Orange.');
-	    else
-			alert('Il s\'agit du nombre de mots de '+(index-96)+' lettres trouvés par rapport au nombre total de mots de '+(index-96)+' lettres à trouver'+stPourcents(index)+'.\n\nLa couleur verte indique que tous les mots ont été trouvés. La couleur rouge indique qu\'il reste des mots à trouver.');
+		else
+			// v1.7.3 : on affiche les mots trouvés (et non trouvé en fin de grille/partie) + suppression du texte explicatif sur la couleur
+			alert('Il s\'agit du nombre de mots de '+(index-96)+' lettres trouvés par rapport au nombre total de mots de '+(index-96)+' lettres à trouver'+stPourcents(index)+'.\n\nVoici la liste des mots : '+afficheMots(index-96-tailleMinMot)); 
 	else if (index < 124) { // Autres...
 		switch(index) {
 			case 108: 	if (filOrange) { // v1.2 : aide sur les infos du dernier coup du Fil Orange
