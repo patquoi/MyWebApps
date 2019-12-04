@@ -4,7 +4,7 @@
  
  Sujet: JavaScript for the index.html file
   
- Version: <1.4>
+ Version: <1.5>
  
  Copyright (C) 2011 Patrice Fouquet.
  
@@ -18,8 +18,8 @@
 // CONSTANTES
 //---------------------------------------------------------------------------
 
-const stVersion = '1.4';
-const stVerDico = '7'; // v1.4
+const stVersion = '1.5';
+const stVerDico = '8'; // v1.4
 
 /*
 Version 1.3.1
@@ -28,6 +28,8 @@ Version 1.3.1
 Version 1.4
  - Nouvelle version du dictionnaire : ODS7 (2016) avec +7406 mots.
  - Comptage des mots du dico.
+Version 1.5
+ - Nouvelle version du dictionnaire : ODS8 (2020) avec +8655 mots.
 */
 
 //---------------------------------------------------------------------------
