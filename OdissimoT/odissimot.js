@@ -3,13 +3,15 @@
   File:OdissimoT.js
   Abstract: main JavaScript for the index.html file
   
-  Version: <2.1.1>
+  Version: <2.2>
   
   Copyright (C) 2012 Patrice Fouquet. All Rights Reserved.
  
  */ 
 
 /*
+Version 2.2
+ - Nouveau Dictionnaire ODS8
 Version 2.1
  - Nouveau Dictionnaire ODS7
 Version 2.0
@@ -30,7 +32,7 @@ Version 2.1.1
  /* CONSTANTES */
 /**************/
 
-const stVersion = '2.1.1'; 
+const stVersion = '2.2'; 
 
 // Police Noteworthy Bold
 
@@ -322,7 +324,7 @@ function clic(x)
 	var touche = clavier[x];
 	switch(touche) {
 		case ' ':   break; 
-		case 'i': 	alert('À propos d\'OdissimoT...\n\nWebApp OdissimoT version '+stVersion+'\n\nCréé par Patrice Fouquet\nodissimot@patquoi.fr\npatquoi.fr/OdissimoT.html\n\nBase de 393 671 mots (ODS7)\n\nA=Affiche/Cache les Anagrammes\nT=Cherche avec Tirage\nF=Cherche avec Filtre\nLivre=Change site définitions\n\nEn bas de l\'écran, accès à l\'aide en ligne et à des jeux de lettres.'); // v2.1 (ODS7)
+		case 'i': 	alert('À propos d\'OdissimoT...\n\nWebApp OdissimoT version '+stVersion+'\n\nCréé par Patrice Fouquet\nodissimot@patquoi.fr\npatquoi.fr/OdissimoT.html\n\nBase de 402 325 mots (ODS8)\n\nA=Affiche/Cache les Anagrammes\nT=Cherche avec Tirage\nF=Cherche avec Filtre\nLivre=Change site définitions\n\nEn bas de l\'écran, accès à l\'aide en ligne et à des jeux de lettres.'); // v2.2 (ODS8) // v2.1 (ODS7)
 					break;
 		case 'a':	if (afficheTirages) {
 						document.images['a'].src = chmPng + 'Am' + extPng;
@@ -417,7 +419,7 @@ function clic(x)
 }
 
 function adapteDimensions()
-{
+{ 
 	var largeur = document.getElementById('container').offsetWidth; 
     if (largeur != 320) { 
  		var n=document.images.length;
@@ -431,7 +433,7 @@ function adapteDimensions()
  			document.images[i].width=Math.round(coef*largeur);
  		}
  	}
-    delete adapteDimensions;
+    delete adapteDimensions; 
 }
 
 function bienvenue() // v1.1
