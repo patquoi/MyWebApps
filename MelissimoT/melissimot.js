@@ -3,7 +3,7 @@
   File:Mélissimot.js
   Abstract: JavaScript for the index.html file
   
-  Version: <2.4>
+  Version: <2.5>
   
   Copyright (C) 2011 Patrice Fouquet. All Rights Reserved.
  
@@ -33,14 +33,16 @@ Version 2.3.1
  - Site de définitions de mots par défaut = 1mot.net au lieu de cnrtl
 Version 2.4
  - Clic sur les compteurs de mots : on affiche les mots (trouvés/tous si manche terminée)
+Version 2.5
+ - ODS8
 */
 
 // ---------
 // Constants
 // ---------
 
-const stVersion 			= '2.4'; // v1.5
-const stVerDico				= '7'; // v1.5
+const stVersion 			= '2.5'; // v1.5
+const stVerDico				= '8'; // v1.5
 
 // Font of letters : Arial Rounded MT bold. Size 35 (green/red/gray).
 

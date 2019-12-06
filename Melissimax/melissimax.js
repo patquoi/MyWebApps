@@ -3,7 +3,7 @@
   File:Melissimax.js
   Abstract: JavaScript for the index.html file
   
-  Version: <2.4>
+  Version: <2.5>
   
   Copyright (C) 2012 Patrice Fouquet. All Rights Reserved.
  
@@ -32,14 +32,16 @@ Version 2.3.1
 Version 2.4
  - Clic sur les compteurs de mots : on affiche les mots (trouvés/tous si manche terminée)
  - Site de définition de mots : 1mot.net au lieu de 1mot.fr
+Version 2.5
+ - ODS8
 */
 
 // ---------
 // Constants
 // ---------
 
-const stVersion 			= '2.4'; // v1.4
-const stVerDico				= '7'; // v1.4
+const stVersion 			= '2.5'; // v1.4
+const stVerDico				= '8'; // v1.4
 
 // Font of letters : Arial Rounded MT bold. Size 35 (green/red/gray).
 
