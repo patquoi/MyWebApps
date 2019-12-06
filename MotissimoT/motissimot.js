@@ -3,7 +3,7 @@
   File:Motissimot.js
   Abstract: JavaScript for the index.html file
   
-  Version: <2.2>
+  Version: <2.3>
   
   Copyright (C) 2011 Patrice Fouquet. All Rights Reserved.
  
@@ -13,8 +13,8 @@
 // Constants
 // ---------
 
-const stVersion = '2.2'; // v1.9
-const stVerDico = '7'; // v2.1
+const stVersion = '2.3'; // v1.9
+const stVerDico = '8'; // v2.1
 
 // Font of letters : Arial Rounded MT bold. Size 35 (green/red/gray).
 // Version 2.0 : NoteWorthy Bold 48

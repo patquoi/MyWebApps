@@ -4,7 +4,7 @@
  
  Sujet: JavaScript principal de jeu
   
- Version: <2.1>
+ Version: <2.2>
  
  Copyright (C) 2012 Patrice Fouquet.
  
@@ -34,14 +34,16 @@ v2.0
  - Lifting complet !
 v2.1
  - ODS7 (+4043 mots)
+v2.2
+ - ODS8 (+8655 mots)
 */
 
 //-----------
 // CONSTANTES
 //-----------
 
-const stVersion 		= '2.1'; // v1.2 (stVersion)
-const stVerDico			= '7'; // v2.1
+const stVersion 		= '2.2'; // v1.2 (stVersion)
+const stVerDico			= '8'; // v2.1 (stVerDico)
 
 // diverses dimensions
 const joueurs			=  2;
