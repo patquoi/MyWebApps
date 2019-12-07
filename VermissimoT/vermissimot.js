@@ -4,7 +4,7 @@
  
  Sujet: JavaScript for the index.html file
   
- Version: <1.3.1>
+ Version: <1.4>
  
  Copyright (C) 2012 Patrice Fouquet.
  
@@ -14,7 +14,7 @@
 // CONSTANTES
 //---------------------------------------------------------------------------
 
-const stVersion = '1.3.1';
+const stVersion = '1.4';
 
 /*
 Version 1.0
@@ -28,9 +28,11 @@ Version 1.3
  - Possibilité de connaître les "Tops Initiales" pour le dernier mot trouvé du Fil Rouge (bouton "Top")
 Version 1.3.1
  - La recherche de "Tops Initiales" était lancée alors que le choix de la lettre du point de départ correspond à un point de départ de la 1ère manche (choix incorrect).
+Version 1.2
+ - ODS8
 */
 
-const stVersionODS = '7';
+const stVersionODS = '8';
 
 //---------------------------------------------------------------------------
 // IA
