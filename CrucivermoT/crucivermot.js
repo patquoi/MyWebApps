@@ -4,7 +4,7 @@
  
  Sujet: JavaScript for the index.html file
   
- Version: <1.1>
+ Version: <1.2>
  
  Copyright (C) 2013 Patrice Fouquet.
  
@@ -14,12 +14,14 @@
 // CONSTANTES
 //---------------------------------------------------------------------------
 
-const stVersion = '1.1';
-const stVerDico = '7';
+const stVersion = '1.2';
+const stVerDico = '8';
 
 /*
 Version 1.0 
  - première version.
+Version 1.2
+ - ODS8 
 */
 
 // Diverses chaînes
