@@ -4,7 +4,7 @@
  
  Sujet: JavaScript for the index.html file
   
- Version: <1.3>
+ Version: <1.4>
  
  Copyright (C) 2012 Patrice Fouquet.
  
@@ -24,15 +24,17 @@ Version 1.2
  - Optimisation de vitesse dans la création d'une grille
 Version 1.3
  - ODS7: ajout de 5068 mots. On compte le nombre de mots en temps réel.
+Version 1.4
+ - ODS8
 */
 
 //---------------------------------------------------------------------------
 // CONSTANTES
 //---------------------------------------------------------------------------
 
-const stVersion = '1.3';
+const stVersion = '1.4';
 
-const stVerDico = '7';
+const stVerDico = '8';
 
 //---------------------------------------------------------------------------
 // ia

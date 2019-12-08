@@ -4,7 +4,7 @@
  
  Sujet: JavaScript for the index.html file
   
- Version: <1.7.4>
+ Version: <1.8>
  
  Copyright (C) 2012 Patrice Fouquet.
  
@@ -14,7 +14,7 @@
 // CONSTANTES
 //---------------------------------------------------------------------------
 
-const stVersion = '1.7.4';
+const stVersion = '1.8';
 
 /*
 version 1.1
@@ -47,9 +47,11 @@ Version 1.7.2
  - Constantes de tailles de dictionnaire par lettres ne sont plus en constantes mais recalculés à la volée : nbMots[x] = dico[x].length
 Version 1.7.4 (alignement des versions)
  - Clic sur les compteurs de mots : on affiche les mots (trouvés/tous si manche terminée)
+Version 1.8
+ - ODS8
  */
 
-const stVerDico = '7';
+const stVerDico = '8';
 
 //---------------------------------------------------------------------------
 // ia
