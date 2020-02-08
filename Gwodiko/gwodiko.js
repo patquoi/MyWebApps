@@ -3,7 +3,7 @@
   File:Gwodiko.js
   Abstract: main JavaScript for the index.html file
   
-  Version: <1.0>
+  Version: <1.1>
   
   Copyright (C) 2018 Patrice Fouquet. All Rights Reserved.
  
@@ -11,13 +11,14 @@
 
 /*
 Version 1.0 : Première version créée à partir de la version 2.1.1 de OdissimoT
+Version 1.1 : Ajout du bouton "Oun" issu de Diplikata 1.8 (nouveau jeton)
 */
 
   /**************/
  /* CONSTANTES */
 /**************/
 
-const stVersion = '1.0'; 
+const stVersion = '1.1'; 
 
 // Police Noteworthy Bold
 
@@ -32,8 +33,8 @@ const charCodeMin   	 = 64;
 const colNblRang 		 = [[0],[0],[2,5,8,11,14,17,20,23,26,29],[1,5,9,13,17,21,25,29],[2,7,12,17,22,27], [4,11,18,25], [3,10,17,24], [2,10,18,26], [3,13,23], [2,12,22], [1,12,23], [4,18], [3,18], [3,18], [2,18], [1,17]];  
 
 // chaînes diverses
-const clavier 			 = ' atf>d    AZERTYÎIOPÛSDFGHJKLMiWÑÇVBNÔ!ckÊÂ'; 
-const imgJeton				 = [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','A','Z','E','R','T','Y','UI','I','O','P','OU','S','D','F','G','H','J','K','L','M',' ','W','NG','CH','V','B','N','ON','!',' ',' ','EN','AN'];
+const clavier 			 = ' atf>d    AZERTYÎIOPÛSDFGHJKLMiWÑÇVBNÔ!ckÊÂÜ'; // v1.1 : ajout du bouton "Oun" (Ü) = click(43)
+const imgJeton				 = [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','A','Z','E','R','T','Y','UI','I','O','P','OU','S','D','F','G','H','J','K','L','M',' ','W','NG','CH','V','B','N','ON','!',' ',' ','EN','AN','OUN']; // v1.1 : ajout du bouton "Oun" (Ü)
 const joker 			 = '?';
 
 // Constantes HTML
@@ -209,6 +210,7 @@ function toImgJeton(caractere)
      case 'Ô': return 'ON';
      case 'Ê': return 'EN';
      case 'Â': return 'AN';
+     case 'Ü': return 'OUN'; // v1.1 : ajout du bouton "Oun" (Ü)
      default : return caractere;
    }
 }
