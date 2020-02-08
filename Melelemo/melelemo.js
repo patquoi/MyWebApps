@@ -12,6 +12,8 @@
 /*
 Version 1.1 (v2.4 MélissimoT)
  - Clic sur les compteurs de mots : on affiche les mots (trouvés/tous si manche terminée)
+Version 1.2 
+ - Ajout d'une cas "Oun" (issus de Diplikata 1.8 avec le nouveau jeton "Oun")
 */
 
 // ---------
@@ -19,7 +21,7 @@ Version 1.1 (v2.4 MélissimoT)
 // ---------
 
 // Mélélémo 1.0 créé à partir de MélissimoT v2.3
-const stVersion 			= '1.1'; // (Mélélémo 1.1 = MélissimoT 2.4) 
+const stVersion 			= '1.2'; // (Mélélémo 1.1 = MélissimoT 2.4) 
 
 // Font of letters : Arial Rounded MT bold. Size 35 (green/red/gray).
 
@@ -1379,6 +1381,7 @@ function addLetterInGrid(l, x, y)
 		case 'Ñ': letter='NG'; break;
 		case 'Ô': letter='ON'; break;
 		case 'Û': letter='OU'; break;
+		case 'Ü': letter='OUN'; break; // v1.2 : Ajout de la nouvelle case "Oun" issu de Dipliakta 1.8 (nouveau jeton éponyme)
 		default:  letter=l; break;
 	}
 	newSrc = pngFolder+letter+'p.png';
@@ -1876,6 +1879,7 @@ function paintLetterInGrid(x, y, color)
 		case 'Ñ': letter='NG'; break;
 		case 'Ô': letter='ON'; break;
 		case 'Û': letter='OU'; break;
+		case 'Ü': letter='OUN'; break; // v1.2 : Ajout de la nouvelle case "Oun" issu de Dipliakta 1.8 (nouveau jeton éponyme)
 		default:  letter=grid[x][y]; break;
 	}
 	newSrc = pngFolder+letter+letterColorSuffix[color]+'.png';
@@ -1903,6 +1907,7 @@ function showWordAndHisScore(x, y, d, l, s)
 			case 'Ñ': letter='NG'; break;
 			case 'Ô': letter='ON'; break;
 			case 'Û': letter='OU'; break;
+			case 'Ü': letter='OUN'; break; // v1.2 : Ajout de la nouvelle case "Oun" issu de Dipliakta 1.8 (nouveau jeton éponyme)
 			default:  letter=lm; break;
 		}
 		stDrnMotForme = stDrnMotForme + letter; // avec doubles lettres
@@ -2110,6 +2115,7 @@ function translateWordToShow(word) // spécial Créole Haïtien
    		{
      	 case 'Î': wordToShow=wordToShow+'UI'; break;
      	 case 'Û': wordToShow=wordToShow+'OU'; break;
+     	 case 'Ü': wordToShow=wordToShow+'OUN'; break; // v1.2 : Ajout de la nouvelle case "Oun" issu de Dipliakta 1.8 (nouveau jeton éponyme)
      	 case 'Ñ': wordToShow=wordToShow+'NG'; break;
      	 case 'Ç': wordToShow=wordToShow+'CH'; break;
      	 case 'Ô': wordToShow=wordToShow+'ON'; break;
