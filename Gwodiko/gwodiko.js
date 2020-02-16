@@ -12,13 +12,14 @@
 /*
 Version 1.0 : Première version créée à partir de la version 2.1.1 de OdissimoT
 Version 1.1 : Ajout du bouton "Oun" issu de Diplikata 1.8 (nouveau jeton)
+Version 1.1.1 : Règles d'utilisation des jetons "Oun" et "Ng" issus de Diplikata 1.8.1.1 (dico/anagrammes/tirages)
 */
 
   /**************/
  /* CONSTANTES */
 /**************/
 
-const stVersion = '1.1'; 
+const stVersion = '1.1.1'; 
 
 // Police Noteworthy Bold
 
