@@ -14,6 +14,7 @@ Version 1.1 (v2.4 MélissimoT)
  - Clic sur les compteurs de mots : on affiche les mots (trouvés/tous si manche terminée)
 Version 1.2 
  - Ajout d'une cas "Oun" (issus de Diplikata 1.8 avec le nouveau jeton "Oun")
+Version 1.2.1 : Règles d'utilisation des jetons "Oun" et "Ng" issus de Diplikata 1.8.1.1 (dico/anagrammes/tirages)
 */
 
 // ---------
@@ -21,7 +22,7 @@ Version 1.2
 // ---------
 
 // Mélélémo 1.0 créé à partir de MélissimoT v2.3
-const stVersion 			= '1.2'; // (Mélélémo 1.1 = MélissimoT 2.4) 
+const stVersion 			= '1.2.1'; // (Mélélémo 1.1 = MélissimoT 2.4) 
 
 // Font of letters : Arial Rounded MT bold. Size 35 (green/red/gray).
 
