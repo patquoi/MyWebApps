@@ -3,7 +3,7 @@
   File:Mélélémo.js
   Abstract: JavaScript for the index.html file
   
-  Version: <1.1>
+  Version: <1.2.1>
   
   Copyright (C) 2018 Patrice Fouquet. All Rights Reserved.
  
