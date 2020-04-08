@@ -9,13 +9,12 @@
 <BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF">
 
 <A NAME="tdm"></A><H1>Tutoriel sur Centre-Ville, la simulation de circulation urbaine</H1>
-<UL>
-<LI><A HREF="#rpdcv">Rapide présentation de Centre-Ville</A>
-<LI><A HREF="#ldcv">Lancement de Centre-Ville</A>
-<LI><A HREF="#cdunr">Création d'un nouveau réseau</A>
-<LI><A HREF="#tdvdc">Tracé des voies de circulation</A>
-<LI><A HREF="#pdelps">Pose des étapes : les parkings souterrains</A>
-<LI><A HREF="#ddp">Définition des priorités</A>
+<A HREF="#rpdcv">Rapide présentation de Centre-Ville</A><BR><BR>
+<A HREF="#ldcv">Lancement de Centre-Ville</A><BR><BR>
+<A HREF="#cdunr">Création d'un nouveau réseau</A><BR><BR>
+<A HREF="#tdvdc">Tracé des voies de circulation</A><BR><BR>
+<A HREF="#pdelps">Pose des étapes : les parkings souterrains</A><BR><BR>
+<A HREF="#ddp">Définition des priorités</A>
 <UL>
 <LI><A HREF="#tdp">Types de priorités</A>
 <LI><A HREF="#odcp">Outils de carrefours prédéfinis</A>
@@ -26,19 +25,18 @@
 <LI><A HREF="#aeldb">Arrêts et lignes de bus</A>
 <LI><A HREF="#cdb">Couloirs de bus</A>
 </UL>
-<LI><A HREF="#cdp">Circulation des piétons</A>
-<LI><A HREF="#rdt">Création d'un réseau de trams</A>
+<A HREF="#cdp">Circulation des piétons</A><BR><BR>
+<A HREF="#rdt">Création d'un réseau de trams</A>
 <UL>
 <LI><A HREF="#vdt">Voies de trams</A>
 <LI><A HREF="#tdvdt">Tracé des voies de trams</A>
 <LI><A HREF="#adt">Arrêts de trams</A>
 <LI><A HREF="#ldt">Lignes de trams</A>
 </UL>
-<LI><A HREF="#pefdt">Places et files de taxis</A>*
-<LI><A HREF="#dtapei">Décoration (trottoirs, arbres, pelouse et immeubles)</A>*
-<LI><A HREF="#ndt">Notion de tore</A>
-<LI><A HREF="#mepdfdp">Mise en place de feux de piétons</A>*
-</UL></UL>
+<A HREF="#pefdt">Places et files de taxis</A>*<BR><BR>
+<A HREF="#dtapei">Décoration (trottoirs, arbres, pelouse et immeubles)</A>*<BR><BR>
+<A HREF="#ndt">Notion de tore</A><BR><BR>
+<A HREF="#mepdfdp">Mise en place de feux de piétons</A>*<BR><BR>
 
 (*) Les fichiers de simulation exemples sont fournis à la fin des sections <A HREF="#pefdt">Places et files de taxis</A>, <A HREF="#dtapei">Décoration (trottoirs, arbres, pelouse et immeubles)</A>, <A HREF="#mepdfdp">Mise en place de feux de piétons</A> et correspondent au stade de la conception de ces sections.<BR><BR>
 
@@ -54,7 +52,7 @@ Les bus et les trams nécessitent la création d'un réseau de lignes passant par d
 <HR><A NAME="ldcv"></A><H1>Lancement de Centre-Ville</H1>
 
 Si vous avez installé <I>Centre-Ville</I> grâce à l'archive d'installation, vous pouvez le lancer depuis le menu <I>Démarrer</I>...<BR><BR>
-<IMG SRC="demarrer.jpg" HEIGHT=86 WIDTH=742 ALT="Centre-Ville par le menu Démarrer"><BR><BR>
+<IMG SRC="demarrerb.jpg" HEIGHT=85 WIDTH=723 ALT="Centre-Ville par le menu Démarrer"><BR><BR>
 
 Au lancement, vous obtenez une fenêtre comme ceci&nbsp;:<BR><BR>
 <IMG SRC="lancement.jpg" HEIGHT=305 WIDTH=407 ALT="Fenêtre principale au lancement de Centre-Ville"><BR><BR>
@@ -74,8 +72,7 @@ Les paramètres affichés sont les paramètres que vous allez choisir pour créer no
 <LI>Le nombre de piétons (0) que l'on définira par la suite,
 <LI>Le nombre de tours par seconde (25).
 </UL>
-Appuyez enfin sur le bouton <B>[Vu]</B> puis enregistrez votre réseau en appuyant sur <B>[F2]</B> ou en choisissant la rubrique <I>Fichier | Enregistrer</I> puis en spécifiant le nom et le chemin.<BR>
-Afin de voir plus précisément les éléments du réseau, cliquez sur le bouton de zoom de la barre d'outils&nbsp;: <IMG SRC="zoom.jpg" HEIGHT=18 WIDTH=18 ALT="bouton de zoom">.<BR><BR>
+Appuyez enfin sur le bouton <B>[Vu]</B> puis enregistrez votre réseau en appuyant sur <B>[F2]</B> ou en choisissant la rubrique <I>Fichier | Enregistrer</I> puis en spécifiant le nom et le chemin.<BR><BR>
 
 <HR><A NAME="tdvdc"></A><H1>Tracé des voies de circulation</H1>
 
@@ -233,7 +230,7 @@ En l'occurrence, il ne s'agit que de carrefours avec feux donc soit le deuxième,
 <TR><TD ALIGN=CENTER>(61, 36)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>S/O</TD></TR>
 <TR><TD ALIGN=CENTER>(29, 44)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>Rajouter la direction <I>Gauche</I> à la case (29, 45)</TD></TR>
 <TR><TD ALIGN=CENTER>(0, 17)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Troisième</TD><TD>- Supprimer la direction <I>Droite</I> des cases (0, 19), (1, 19) et (2, 19)&nbsp;;<BR>- Déplacer*** le feu (1, 20) en (1, 19).</TD></TR>
-<TR><TD ALIGN=CENTER>(28, 22)</TD><TD ALIGN=CENTER>4, 4</TD><TD>Troisième</TD><TD>Supprimer la direction <I>Gauche</I> des cases (28, 23) et (29, 23)</TD></TR>
+<TR><TD ALIGN=CENTER>(28, 22)</TD><TD ALIGN=CENTER>4, 4</TD><TD>Troisième</TD><TD>- Supprimer la direction <I>Gauche</I> des cases (28, 23) et (29, 23)&nbsp;;<BR>- Laisser le feu en (29, 22).</TD></TR>
 <TR><TD ALIGN=CENTER>(11, 28)</TD><TD ALIGN=CENTER>3, 4</TD><TD>Deuxième</TD><TD>- Ajouter la direction <I>Droite</I> à la case (13, 30)&nbsp;;<BR>- Supprimer la direction <I>Gauche</I> des cases (11, 29), (12, 29) et (13, 29).<BR>- Déplacer le feu (12, 28) en (12, 29).</TD></TR>
 </TABLE><BR>
 (*) Coin supérieur gauche de la sélection<BR>
@@ -280,8 +277,8 @@ Pour chaque feu et en se référant à chaque ligne du tableau ci-dessus pour les i
 <IMG SRC="def_feu.jpg" WIDTH=222 HEIGHT=300 ALT="Définition d'un feu comme propriété"><BR><BR>
   <UL>
   <LI>Dans le cadre de la <B>direction</B> du feu, choisir le bouton radio <I>Feu...</I> (1),
-  <LI>Appuyer sur le bouton <I>Appliquer</I>,
-  <LI>Cliquer sur le bouton <IMG SRC="btn_duree_feu.jpg" WIDTH=18 HEIGHT=17 ALT="Bouton d'accès aux propriétés du feu"> qui vient d'être activé (2)&nbsp;; 
+  <LI>Appuyer sur le bouton <I>Appliquer</I> (2),
+  <LI>Cliquer sur le bouton <IMG SRC="btn_duree_feu.jpg" WIDTH=18 HEIGHT=17 ALT="Bouton d'accès aux propriétés du feu"> qui vient d'être activé (3)&nbsp;; 
   </UL><BR>
 <LI>Dans la fenêtre de définition du feu...<BR><BR> 
 <IMG SRC="param_feu.jpg" WIDTH=296 HEIGHT=393 ALT="Paramètres d'un feu"><BR><BR>
@@ -333,13 +330,7 @@ La première case de l'arrêt de bus à définir doit être la tête, c'est-à-dire que
 Les têtes d'arrêts de bus sont reconnaissables par l'astérisque qui suit le numéro de l'arrêt dans la barre de statut.<BR>
 Nous allons donc définir les arrêts de bus suivant le tableau qui suit.<BR>
 Chaque ligne correspond à un arrêt de bus. Seules les coordonnées de la tête sont données.<BR>
-On va définir treize arrêts de bus. Pour ce faire
-<UL>
-<LI>Aller au menu <B>Simulation | Paramètres</B>,
-<LI>Définir <B>13 arrêts de bus</B>,
-<LI><B>Appliquer</B>,
-<LI><B>Enregistrer.</B>
-</UL>
+On va définir treize arrêts de bus.<P> 
 
 Pour chaque ligne du tableau ci-dessous et donc chaque arrêt, procéder comme ceci&nbsp;:
 <UL>
@@ -450,7 +441,7 @@ Le réseau de trams est similaire à celui des bus&nbsp;:
 </UL>
 <A NAME="vdt"></A><H2>Voies de trams</H2>
 Néanmoins, la différence réside dans la voie de circulation.<BR>
-Les voies de trams sont spécifiques, elles sont ferrées et non pas de notions de sens.<BR>
+Les voies de trams sont spécifiques, elles sont ferrées et n'ont pas de notion de sens.<BR>
 Par exemple, pour une voie horizontale, il n'y a pas de sens <I>gauche vers droite</I> ou <I>droite vers gauche</I>.
 Il n'y a pas de restriction de sens comme pour les voies de circulation des véhicules.<BR><BR>
 Le sens du mouvement des trams est conditionné par la pose des arrêts et des aiguillages aux intersections des voies ferrées.<BR><BR>
@@ -488,7 +479,13 @@ Pour pouvoir tracer la courbe voie, il faut procéder comme suit&nbsp;:
 Les commandes sont involutives, c'est-à-dire que deux mêmes actions consécutives annulent l'effet de la première action.<BR>
 D'autre part, si un tracé est déjà présent sur une case et que l'on souhaite poser un autre tracé différent, ils seront cumulés.<BR>
 Dans l'exemple ci-dessus, si la case (x, y) contenait déjà un tracé de voie vertical, le résultat de l'opération effectuée ci-dessus donnerait ce résultat&nbsp;:<BR><BR>
-<IMG SRC="trace_aiguillage.jpg" HEIGHT=48 WIDTH=44 ALT="Exemple d'aiguillage"><BR>
+<IMG SRC="trace_aiguillage.jpg" HEIGHT=48 WIDTH=44 ALT="Exemple d'aiguillage"><P>
+Vous avez également un outil de traçage de segment de voie exactement comme le segment de route&nbsp;:
+<UL>
+<LI>Sélectionner la ligne sur laquelle il est souhaité de construire la voie de tram,
+<LI>Cliquer droit,
+<LI>Choisir <IMG SRC="segment_voie.jpg" HEIGHT=18 WIDTH=16 ALT="Segment de voie de tram"> <I>Segment de Voie de tram</I> <B>[Ctrl][5]</B>.
+</UL>
  
 <A NAME="adt"></A><H2>Arrêts de trams</H2>
 
@@ -677,6 +674,6 @@ Ceci assure à tout piéton engagé de pouvoir finir la traversée.<BR><BR>
 Les autres paramètres ont les mêmes fonctions que ceux des feux de circulation étant entendu que le piéton est au feu piéton ce que le véhicule (ou le tram) est au feu de circulation.<BR>
 Pour ouvrir le fichier de simulation à ce stade, cliquer <A HREF="tutocvptn.cvw">ici</A>.<BR><BR>
 <HR>
-Ce Tutoriel est à jour par rapport à la version 5.2.1 de <I>Centre-Ville</I>. Dernière mise à jour le 18 mars 2009.<BR>
+Ce Tutoriel est à jour par rapport à la version 5.4 de <I>Centre-Ville</I>. Dernière mise à jour le 22 mars 2020.<BR>
 </BODY>
 </HTML>
